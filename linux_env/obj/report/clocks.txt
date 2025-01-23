@@ -1,0 +1,62 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Jan 23 23:47:04 2025
+| Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_clocks -file /home/oppenyes/workspace/test_scripct/fpga/ddr200t/obj/report/clocks.txt
+| Design       : system_top
+| Device       : 7a200t-fbg484
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------
+
+Clock Report
+
+
+Attributes
+  P: Propagated
+  G: Generated
+  A: Auto-derived
+  R: Renamed
+  V: Virtual
+  I: Inverted
+  S: Pin phase-shifted with Latency mode
+
+Clock          Period(ns)  Waveform(ns)       Attributes  Sources
+CLK100MHZ      10.000      {0.000 5.000}      P           {CLK100MHZ}
+sys_clk_pin    30517.582   {0.000 15258.791}  P           {CLK32768KHZ}
+clk_out2_mmcm  62.500      {0.000 31.250}     P,G,A       {ip_mmcm/inst/mmcm_adv_inst/CLKOUT1}
+clkfbout_mmcm  10.000      {0.000 5.000}      P,G,A       {ip_mmcm/inst/mmcm_adv_inst/CLKFBOUT}
+
+
+====================================================
+Generated Clocks
+====================================================
+
+Generated Clock     : clk_out2_mmcm
+Master Source       : ip_mmcm/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : CLK100MHZ
+Edges               : {1 2 3}
+Edge Shifts(ns)     : {0.000 26.250 52.500}
+Generated Sources   : {ip_mmcm/inst/mmcm_adv_inst/CLKOUT1}
+
+Generated Clock     : clkfbout_mmcm
+Master Source       : ip_mmcm/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : CLK100MHZ
+Multiply By         : 1
+Generated Sources   : {ip_mmcm/inst/mmcm_adv_inst/CLKFBOUT}
+
+
+
+====================================================
+User Uncertainty
+====================================================
+
+
+
+====================================================
+User Jitter
+====================================================
+
+Clock      Jitter(ns)
+CLK100MHZ  0.100
+

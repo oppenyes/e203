@@ -1,0 +1,405 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Jan 23 23:46:53 2025
+| Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_datasheet -file /home/oppenyes/workspace/test_scripct/fpga/ddr200t/obj/report/datasheet.txt
+| Design       : system_top
+| Device       : 7a200t-fbg484
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------
+
+Data Sheet Report
+
+Input Ports Setup/Hold
+
+------------+-------------+---------+-------+---------------+---------+---------------+---------+---------------+
+Reference   | Input       | IO Reg  | Delay |     Setup(ns) | Process |      Hold(ns) | Process | Internal      |
+Clock       | Port        | Type    | Type  | to Clk (Edge) | Corner  | to Clk (Edge) | Corner  | Clock         |
+------------+-------------+---------+-------+---------------+---------+---------------+---------+---------------+
+CLK100MHZ   | CLK32768KHZ | FDCE    | -     |     6.347 (r) | SLOW    |    -2.295 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[0]    | FDCE    | -     |     7.292 (r) | SLOW    |    -3.411 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[1]    | FDCE    | -     |     7.161 (r) | SLOW    |    -3.410 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[2]    | FDCE    | -     |     8.922 (r) | SLOW    |    -4.517 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[3]    | FDCE    | -     |     5.042 (r) | SLOW    |    -2.588 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[4]    | FDCE    | -     |     4.990 (r) | SLOW    |    -2.536 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[5]    | FDCE    | -     |     5.354 (r) | SLOW    |    -2.753 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[6]    | FDCE    | -     |     4.981 (r) | SLOW    |    -2.531 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[7]    | FDCE    | -     |     4.965 (r) | SLOW    |    -2.572 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[8]    | FDCE    | -     |     6.548 (r) | SLOW    |    -3.258 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[9]    | FDCE    | -     |     6.380 (r) | SLOW    |    -3.151 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[10]   | FDCE    | -     |     6.437 (r) | SLOW    |    -3.212 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[11]   | FDCE    | -     |     6.334 (r) | SLOW    |    -3.093 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[12]   | FDCE    | -     |     6.205 (r) | SLOW    |    -3.030 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[13]   | FDCE    | -     |     5.412 (r) | SLOW    |    -2.796 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[14]   | FDCE    | -     |     5.251 (r) | SLOW    |    -2.568 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[15]   | FDCE    | -     |     5.232 (r) | SLOW    |    -2.560 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[16]   | FDCE    | -     |     4.803 (r) | SLOW    |    -2.280 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[17]   | FDCE    | -     |     4.831 (r) | SLOW    |    -2.321 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[18]   | FDCE    | -     |     7.581 (r) | SLOW    |    -3.668 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[19]   | FDCE    | -     |     5.000 (r) | SLOW    |    -2.416 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[20]   | FDCE    | -     |     7.348 (r) | SLOW    |    -3.689 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[21]   | FDCE    | -     |     7.696 (r) | SLOW    |    -3.883 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[22]   | FDCE    | -     |     8.149 (r) | SLOW    |    -4.087 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[23]   | FDCE    | -     |     8.040 (r) | SLOW    |    -4.047 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[24]   | FDCE    | -     |     7.915 (r) | SLOW    |    -3.998 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[25]   | FDCE    | -     |     8.206 (r) | SLOW    |    -4.109 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[26]   | FDCE    | -     |     4.907 (r) | SLOW    |    -2.512 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[27]   | FDCE    | -     |     4.431 (r) | SLOW    |    -2.245 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[28]   | FDCE    | -     |     4.860 (r) | SLOW    |    -2.493 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[29]   | FDCE    | -     |     4.944 (r) | SLOW    |    -2.521 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[30]   | FDCE    | -     |     4.946 (r) | SLOW    |    -2.525 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[31]   | FDCE    | -     |     5.173 (r) | SLOW    |    -2.666 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[0]    | FDCE    | -     |     5.507 (r) | SLOW    |    -2.737 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[1]    | FDCE    | -     |     5.738 (r) | SLOW    |    -2.812 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[2]    | FDCE    | -     |     5.606 (r) | SLOW    |    -2.777 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[3]    | FDCE    | -     |     5.814 (r) | SLOW    |    -2.863 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[4]    | FDCE    | -     |     5.719 (r) | SLOW    |    -2.839 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[5]    | FDCE    | -     |     5.668 (r) | SLOW    |    -2.820 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[6]    | FDCE    | -     |     5.749 (r) | SLOW    |    -2.787 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[7]    | FDCE    | -     |     5.467 (r) | SLOW    |    -2.639 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[8]    | FDCE    | -     |     5.753 (r) | SLOW    |    -2.863 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[9]    | FDCE    | -     |     5.323 (r) | SLOW    |    -2.594 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[10]   | FDCE    | -     |     4.654 (r) | SLOW    |    -2.257 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[11]   | FDCE    | -     |     4.423 (r) | SLOW    |    -2.057 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[12]   | FDCE    | -     |     4.852 (r) | SLOW    |    -2.351 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[13]   | FDCE    | -     |     4.710 (r) | SLOW    |    -2.197 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[14]   | FDCE    | -     |     5.530 (r) | SLOW    |    -2.731 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[15]   | FDCE    | -     |     5.992 (r) | SLOW    |    -2.996 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[16]   | FDCE    | -     |     4.385 (r) | SLOW    |    -2.031 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[17]   | FDCE    | -     |     4.798 (r) | SLOW    |    -2.255 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[18]   | FDCE    | -     |     4.843 (r) | SLOW    |    -2.389 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[19]   | FDCE    | -     |     5.693 (r) | SLOW    |    -2.761 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[20]   | FDCE    | -     |     5.094 (r) | SLOW    |    -2.367 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[21]   | FDCE    | -     |     5.055 (r) | SLOW    |    -2.457 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[22]   | FDCE    | -     |     4.915 (r) | SLOW    |    -2.348 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[23]   | FDCE    | -     |     4.901 (r) | SLOW    |    -2.323 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[24]   | FDCE    | -     |     4.603 (r) | SLOW    |    -2.102 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[25]   | FDCE    | -     |     4.154 (r) | SLOW    |    -1.898 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[26]   | FDCE    | -     |     4.589 (r) | SLOW    |    -2.127 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[27]   | FDCE    | -     |     4.908 (r) | SLOW    |    -2.351 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[28]   | FDCE    | -     |     4.787 (r) | SLOW    |    -2.264 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[29]   | FDCE    | -     |     5.039 (r) | SLOW    |    -2.386 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[30]   | FDCE    | -     |     4.614 (r) | SLOW    |    -2.180 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[31]   | FDCE    | -     |     5.412 (r) | SLOW    |    -2.620 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_dq[0] | FDCE    | -     |     5.621 (r) | SLOW    |    -2.627 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_dq[1] | FDCE    | -     |     5.721 (r) | SLOW    |    -2.625 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_dq[2] | FDCE    | -     |     5.644 (r) | SLOW    |    -2.635 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_dq[3] | FDCE    | -     |     5.810 (r) | SLOW    |    -2.687 (r) | FAST    | clk_out2_mmcm |
+sys_clk_pin | fpga_rst    | FDCE    | -     |     3.658 (r) | SLOW    |    -1.796 (r) | FAST    |               |
+sys_clk_pin | mcu_rst     | FDCE    | -     |     1.760 (r) | SLOW    |    -0.420 (r) | SLOW    |               |
+sys_clk_pin | mcu_wakeup  | FDRE    | -     |     0.123 (r) | FAST    |     1.905 (r) | SLOW    |               |
+------------+-------------+---------+-------+---------------+---------+---------------+---------+---------------+
+
+
+Output Ports Clock-to-out
+
+------------+-------------+--------+-------+----------------+---------+----------------+---------+---------------+
+Reference   | Output      | IO Reg | Delay | Max Clk (Edge) | Process | Min Clk (Edge) | Process | Internal      |
+Clock       | Port        | Type   | Type  |    to port(ns) | Corner  |    to port(ns) | Corner  | Clock         |
+------------+-------------+--------+-------+----------------+---------+----------------+---------+---------------+
+CLK100MHZ   | gpioA[0]    | FDCE   | -     |     11.246 (r) | SLOW    |      2.929 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[1]    | FDCE   | -     |     10.232 (r) | SLOW    |      3.156 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[2]    | FDCE   | -     |     11.982 (r) | SLOW    |      3.323 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[3]    | FDCE   | -     |      8.389 (r) | SLOW    |      2.235 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[4]    | FDCE   | -     |      7.769 (r) | SLOW    |      1.973 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[5]    | FDCE   | -     |      7.978 (r) | SLOW    |      2.131 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[6]    | FDCE   | -     |      8.195 (r) | SLOW    |      2.271 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[7]    | FDCE   | -     |      8.302 (r) | SLOW    |      1.845 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[8]    | FDCE   | -     |      8.964 (r) | SLOW    |      3.017 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[9]    | FDCE   | -     |      9.970 (r) | SLOW    |      2.877 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[10]   | FDCE   | -     |     10.551 (r) | SLOW    |      2.817 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[11]   | FDCE   | -     |      9.192 (r) | SLOW    |      2.809 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[12]   | FDCE   | -     |      8.990 (r) | SLOW    |      2.807 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[13]   | FDCE   | -     |      7.443 (r) | SLOW    |      2.319 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[14]   | FDPE   | -     |      8.516 (r) | SLOW    |      2.000 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[15]   | FDPE   | -     |      7.967 (r) | SLOW    |      2.190 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[16]   | FDCE   | -     |      7.688 (r) | SLOW    |      2.093 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[17]   | FDCE   | -     |      9.125 (r) | SLOW    |      1.931 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[18]   | FDCE   | -     |     10.931 (r) | SLOW    |      3.353 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[19]   | FDCE   | -     |      9.410 (r) | SLOW    |      2.027 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[20]   | FDCE   | -     |      9.345 (r) | SLOW    |      3.228 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[21]   | FDCE   | -     |      9.301 (r) | SLOW    |      2.777 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[22]   | FDCE   | -     |     10.298 (r) | SLOW    |      3.673 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[23]   | FDCE   | -     |     10.038 (r) | SLOW    |      2.978 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[24]   | FDCE   | -     |      9.770 (r) | SLOW    |      3.388 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[25]   | FDCE   | -     |      9.399 (r) | SLOW    |      3.028 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[26]   | FDCE   | -     |      6.726 (r) | SLOW    |      1.842 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[27]   | FDCE   | -     |      6.561 (r) | SLOW    |      1.720 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[28]   | FDCE   | -     |      6.524 (r) | SLOW    |      1.774 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[29]   | FDCE   | -     |      6.409 (r) | SLOW    |      1.337 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[30]   | FDCE   | -     |      6.123 (r) | SLOW    |      1.774 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioA[31]   | FDCE   | -     |      6.154 (r) | SLOW    |      1.380 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[0]    | FDCE   | -     |      8.817 (r) | SLOW    |      2.403 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[1]    | FDCE   | -     |      9.088 (r) | SLOW    |      2.347 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[2]    | FDCE   | -     |      9.052 (r) | SLOW    |      2.356 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[3]    | FDCE   | -     |      8.589 (r) | SLOW    |      2.384 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[4]    | FDCE   | -     |      8.501 (r) | SLOW    |      2.470 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[5]    | FDCE   | -     |      8.999 (r) | SLOW    |      2.448 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[6]    | FDCE   | -     |      8.176 (r) | SLOW    |      1.877 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[7]    | FDCE   | -     |      8.786 (r) | SLOW    |      2.385 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[8]    | FDCE   | -     |      7.952 (r) | SLOW    |      2.366 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[9]    | FDCE   | -     |      8.662 (r) | SLOW    |      2.193 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[10]   | FDCE   | -     |      9.420 (r) | SLOW    |      1.791 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[11]   | FDPE   | -     |      7.877 (r) | SLOW    |      2.280 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[12]   | FDCE   | -     |      8.043 (r) | SLOW    |      2.378 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[13]   | FDCE   | -     |      8.001 (r) | SLOW    |      2.324 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[14]   | FDPE   | -     |      9.096 (r) | SLOW    |      2.643 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[15]   | FDPE   | -     |      9.221 (r) | SLOW    |      2.734 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[16]   | FDCE   | -     |      7.459 (r) | SLOW    |      2.145 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[17]   | FDCE   | -     |      7.900 (r) | SLOW    |      2.009 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[18]   | FDCE   | -     |      7.761 (r) | SLOW    |      2.124 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[19]   | FDCE   | -     |      7.566 (r) | SLOW    |      2.094 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[20]   | FDCE   | -     |      7.687 (r) | SLOW    |      2.091 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[21]   | FDCE   | -     |      7.725 (r) | SLOW    |      2.299 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[22]   | FDCE   | -     |      7.415 (r) | SLOW    |      1.922 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[23]   | FDCE   | -     |      7.457 (r) | SLOW    |      2.185 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[24]   | FDCE   | -     |      6.776 (r) | SLOW    |      1.756 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[25]   | FDCE   | -     |      6.840 (r) | SLOW    |      1.802 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[26]   | FDCE   | -     |      7.042 (r) | SLOW    |      1.904 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[27]   | FDCE   | -     |      7.160 (r) | SLOW    |      1.872 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[28]   | FDCE   | -     |      7.217 (r) | SLOW    |      1.939 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[29]   | FDCE   | -     |      6.965 (r) | SLOW    |      2.002 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[30]   | FDCE   | -     |      7.585 (r) | SLOW    |      2.074 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | gpioB[31]   | FDCE   | -     |      7.389 (r) | SLOW    |      2.033 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_cs    | FDPE   | -     |      6.086 (r) | SLOW    |      1.735 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_dq[0] | FDCE   | -     |      7.260 (r) | SLOW    |      1.775 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_dq[1] | FDCE   | -     |      7.165 (r) | SLOW    |      1.861 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_dq[2] | FDCE   | -     |      7.308 (r) | SLOW    |      1.716 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_dq[3] | FDCE   | -     |      7.171 (r) | SLOW    |      1.843 (r) | FAST    | clk_out2_mmcm |
+CLK100MHZ   | qspi0_sck   | FDCE   | -     |      6.431 (r) | SLOW    |      1.896 (r) | FAST    | clk_out2_mmcm |
+sys_clk_pin | pmu_paden   | FDCE   | -     |     11.206 (r) | SLOW    |      3.913 (r) | FAST    |               |
+sys_clk_pin | pmu_padrst  | FDCE   | -     |     10.996 (r) | SLOW    |      3.778 (r) | FAST    |               |
+------------+-------------+--------+-------+----------------+---------+----------------+---------+---------------+
+
+
+Setup between Clocks
+
+------------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+Source      | Destination |  Src:Rise     | Process |  Src:Rise     | Process |  Src:Fall     | Process |  Src:Fall     | Process |
+Clock       | Clock       | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  |
+------------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+CLK100MHZ   | CLK100MHZ   |        39.082 | SLOW    |               |         |               |         |               |         |
+sys_clk_pin | CLK100MHZ   |         8.984 | SLOW    |               |         |         6.347 | SLOW    |               |         |
+CLK100MHZ   | sys_clk_pin |         8.789 | SLOW    |               |         |               |         |               |         |
+sys_clk_pin | sys_clk_pin |         9.748 | SLOW    |               |         |               |         |               |         |
+------------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+
+
+Setup / Hold times for input bus
+Clocked by: CLK100MHZ
+Worst Case Data Window: 6.677 ns
+Ideal Clock Offset to Actual Clock: -5.583 ns
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+                   |             | Process |             | Process | Setup     |  Hold     | Source Offset |
+Source             |   Setup(ns) | Corner  |    Hold(ns) | Corner  | Slack(ns) | Slack(ns) | to Center(ns) |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+gpioA[0]           |   7.292 (r) | SLOW    |  -3.411 (r) | FAST    |       inf |       inf |             - |
+gpioA[1]           |   7.161 (r) | SLOW    |  -3.410 (r) | FAST    |       inf |       inf |             - |
+gpioA[2]           |   8.922 (r) | SLOW    |  -4.517 (r) | FAST    |       inf |       inf |             - |
+gpioA[3]           |   5.042 (r) | SLOW    |  -2.588 (r) | FAST    |       inf |       inf |             - |
+gpioA[4]           |   4.990 (r) | SLOW    |  -2.536 (r) | FAST    |       inf |       inf |             - |
+gpioA[5]           |   5.354 (r) | SLOW    |  -2.753 (r) | FAST    |       inf |       inf |             - |
+gpioA[6]           |   4.981 (r) | SLOW    |  -2.531 (r) | FAST    |       inf |       inf |             - |
+gpioA[7]           |   4.965 (r) | SLOW    |  -2.572 (r) | FAST    |       inf |       inf |             - |
+gpioA[8]           |   6.548 (r) | SLOW    |  -3.258 (r) | FAST    |       inf |       inf |             - |
+gpioA[9]           |   6.380 (r) | SLOW    |  -3.151 (r) | FAST    |       inf |       inf |             - |
+gpioA[10]          |   6.437 (r) | SLOW    |  -3.212 (r) | FAST    |       inf |       inf |             - |
+gpioA[11]          |   6.334 (r) | SLOW    |  -3.093 (r) | FAST    |       inf |       inf |             - |
+gpioA[12]          |   6.205 (r) | SLOW    |  -3.030 (r) | FAST    |       inf |       inf |             - |
+gpioA[13]          |   5.412 (r) | SLOW    |  -2.796 (r) | FAST    |       inf |       inf |             - |
+gpioA[14]          |   5.251 (r) | SLOW    |  -2.568 (r) | FAST    |       inf |       inf |             - |
+gpioA[15]          |   5.232 (r) | SLOW    |  -2.560 (r) | FAST    |       inf |       inf |             - |
+gpioA[16]          |   4.803 (r) | SLOW    |  -2.280 (r) | FAST    |       inf |       inf |             - |
+gpioA[17]          |   4.831 (r) | SLOW    |  -2.321 (r) | FAST    |       inf |       inf |             - |
+gpioA[18]          |   7.581 (r) | SLOW    |  -3.668 (r) | FAST    |       inf |       inf |             - |
+gpioA[19]          |   5.000 (r) | SLOW    |  -2.416 (r) | FAST    |       inf |       inf |             - |
+gpioA[20]          |   7.348 (r) | SLOW    |  -3.689 (r) | FAST    |       inf |       inf |             - |
+gpioA[21]          |   7.696 (r) | SLOW    |  -3.883 (r) | FAST    |       inf |       inf |             - |
+gpioA[22]          |   8.149 (r) | SLOW    |  -4.087 (r) | FAST    |       inf |       inf |             - |
+gpioA[23]          |   8.040 (r) | SLOW    |  -4.047 (r) | FAST    |       inf |       inf |             - |
+gpioA[24]          |   7.915 (r) | SLOW    |  -3.998 (r) | FAST    |       inf |       inf |             - |
+gpioA[25]          |   8.206 (r) | SLOW    |  -4.109 (r) | FAST    |       inf |       inf |             - |
+gpioA[26]          |   4.907 (r) | SLOW    |  -2.512 (r) | FAST    |       inf |       inf |             - |
+gpioA[27]          |   4.431 (r) | SLOW    |  -2.245 (r) | FAST    |       inf |       inf |             - |
+gpioA[28]          |   4.860 (r) | SLOW    |  -2.493 (r) | FAST    |       inf |       inf |             - |
+gpioA[29]          |   4.944 (r) | SLOW    |  -2.521 (r) | FAST    |       inf |       inf |             - |
+gpioA[30]          |   4.946 (r) | SLOW    |  -2.525 (r) | FAST    |       inf |       inf |             - |
+gpioA[31]          |   5.173 (r) | SLOW    |  -2.666 (r) | FAST    |       inf |       inf |             - |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+Worst Case Summary |   8.922 (r) | SLOW    |  -2.245 (r) | FAST    |       inf |       inf |             - |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+
+
+
+Setup / Hold times for input bus
+Clocked by: CLK100MHZ
+Worst Case Data Window: 4.094 ns
+Ideal Clock Offset to Actual Clock: -3.945 ns
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+                   |             | Process |             | Process | Setup     |  Hold     | Source Offset |
+Source             |   Setup(ns) | Corner  |    Hold(ns) | Corner  | Slack(ns) | Slack(ns) | to Center(ns) |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+gpioB[0]           |   5.507 (r) | SLOW    |  -2.737 (r) | FAST    |       inf |       inf |             - |
+gpioB[1]           |   5.738 (r) | SLOW    |  -2.812 (r) | FAST    |       inf |       inf |             - |
+gpioB[2]           |   5.606 (r) | SLOW    |  -2.777 (r) | FAST    |       inf |       inf |             - |
+gpioB[3]           |   5.814 (r) | SLOW    |  -2.863 (r) | FAST    |       inf |       inf |             - |
+gpioB[4]           |   5.719 (r) | SLOW    |  -2.839 (r) | FAST    |       inf |       inf |             - |
+gpioB[5]           |   5.668 (r) | SLOW    |  -2.820 (r) | FAST    |       inf |       inf |             - |
+gpioB[6]           |   5.749 (r) | SLOW    |  -2.787 (r) | FAST    |       inf |       inf |             - |
+gpioB[7]           |   5.467 (r) | SLOW    |  -2.639 (r) | FAST    |       inf |       inf |             - |
+gpioB[8]           |   5.753 (r) | SLOW    |  -2.863 (r) | FAST    |       inf |       inf |             - |
+gpioB[9]           |   5.323 (r) | SLOW    |  -2.594 (r) | FAST    |       inf |       inf |             - |
+gpioB[10]          |   4.654 (r) | SLOW    |  -2.257 (r) | FAST    |       inf |       inf |             - |
+gpioB[11]          |   4.423 (r) | SLOW    |  -2.057 (r) | FAST    |       inf |       inf |             - |
+gpioB[12]          |   4.852 (r) | SLOW    |  -2.351 (r) | FAST    |       inf |       inf |             - |
+gpioB[13]          |   4.710 (r) | SLOW    |  -2.197 (r) | FAST    |       inf |       inf |             - |
+gpioB[14]          |   5.530 (r) | SLOW    |  -2.731 (r) | FAST    |       inf |       inf |             - |
+gpioB[15]          |   5.992 (r) | SLOW    |  -2.996 (r) | FAST    |       inf |       inf |             - |
+gpioB[16]          |   4.385 (r) | SLOW    |  -2.031 (r) | FAST    |       inf |       inf |             - |
+gpioB[17]          |   4.798 (r) | SLOW    |  -2.255 (r) | FAST    |       inf |       inf |             - |
+gpioB[18]          |   4.843 (r) | SLOW    |  -2.389 (r) | FAST    |       inf |       inf |             - |
+gpioB[19]          |   5.693 (r) | SLOW    |  -2.761 (r) | FAST    |       inf |       inf |             - |
+gpioB[20]          |   5.094 (r) | SLOW    |  -2.367 (r) | FAST    |       inf |       inf |             - |
+gpioB[21]          |   5.055 (r) | SLOW    |  -2.457 (r) | FAST    |       inf |       inf |             - |
+gpioB[22]          |   4.915 (r) | SLOW    |  -2.348 (r) | FAST    |       inf |       inf |             - |
+gpioB[23]          |   4.901 (r) | SLOW    |  -2.323 (r) | FAST    |       inf |       inf |             - |
+gpioB[24]          |   4.603 (r) | SLOW    |  -2.102 (r) | FAST    |       inf |       inf |             - |
+gpioB[25]          |   4.154 (r) | SLOW    |  -1.898 (r) | FAST    |       inf |       inf |             - |
+gpioB[26]          |   4.589 (r) | SLOW    |  -2.127 (r) | FAST    |       inf |       inf |             - |
+gpioB[27]          |   4.908 (r) | SLOW    |  -2.351 (r) | FAST    |       inf |       inf |             - |
+gpioB[28]          |   4.787 (r) | SLOW    |  -2.264 (r) | FAST    |       inf |       inf |             - |
+gpioB[29]          |   5.039 (r) | SLOW    |  -2.386 (r) | FAST    |       inf |       inf |             - |
+gpioB[30]          |   4.614 (r) | SLOW    |  -2.180 (r) | FAST    |       inf |       inf |             - |
+gpioB[31]          |   5.412 (r) | SLOW    |  -2.620 (r) | FAST    |       inf |       inf |             - |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+Worst Case Summary |   5.992 (r) | SLOW    |  -1.898 (r) | FAST    |       inf |       inf |             - |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+
+
+
+Setup / Hold times for input bus
+Clocked by: CLK100MHZ
+Worst Case Data Window: 3.186 ns
+Ideal Clock Offset to Actual Clock: -4.218 ns
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+                   |             | Process |             | Process | Setup     |  Hold     | Source Offset |
+Source             |   Setup(ns) | Corner  |    Hold(ns) | Corner  | Slack(ns) | Slack(ns) | to Center(ns) |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+qspi0_dq[0]        |   5.621 (r) | SLOW    |  -2.627 (r) | FAST    |       inf |       inf |             - |
+qspi0_dq[1]        |   5.721 (r) | SLOW    |  -2.625 (r) | FAST    |       inf |       inf |             - |
+qspi0_dq[2]        |   5.644 (r) | SLOW    |  -2.635 (r) | FAST    |       inf |       inf |             - |
+qspi0_dq[3]        |   5.810 (r) | SLOW    |  -2.687 (r) | FAST    |       inf |       inf |             - |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+Worst Case Summary |   5.810 (r) | SLOW    |  -2.625 (r) | FAST    |       inf |       inf |             - |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+
+
+
+Max / Min delays for output bus
+Clocked by: CLK100MHZ
+Bus Skew: 5.859 ns
+-------------------+--------------+---------+-------------+---------+----------+
+                   |      Max     | Process |     Min     | Process | Edge     |
+Pad                |    Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+--------------+---------+-------------+---------+----------+
+gpioA[0]           |   11.246 (r) | SLOW    |   2.929 (r) | FAST    |    5.124 |
+gpioA[1]           |   10.232 (r) | SLOW    |   3.156 (r) | FAST    |    4.110 |
+gpioA[2]           |   11.982 (r) | SLOW    |   3.323 (r) | FAST    |    5.859 |
+gpioA[3]           |    8.389 (r) | SLOW    |   2.235 (r) | FAST    |    2.266 |
+gpioA[4]           |    7.769 (r) | SLOW    |   1.973 (r) | FAST    |    1.647 |
+gpioA[5]           |    7.978 (r) | SLOW    |   2.131 (r) | FAST    |    1.856 |
+gpioA[6]           |    8.195 (r) | SLOW    |   2.271 (r) | FAST    |    2.072 |
+gpioA[7]           |    8.302 (r) | SLOW    |   1.845 (r) | FAST    |    2.179 |
+gpioA[8]           |    8.964 (r) | SLOW    |   3.017 (r) | FAST    |    2.842 |
+gpioA[9]           |    9.970 (r) | SLOW    |   2.877 (r) | FAST    |    3.848 |
+gpioA[10]          |   10.551 (r) | SLOW    |   2.817 (r) | FAST    |    4.429 |
+gpioA[11]          |    9.192 (r) | SLOW    |   2.809 (r) | FAST    |    3.070 |
+gpioA[12]          |    8.990 (r) | SLOW    |   2.807 (r) | FAST    |    2.867 |
+gpioA[13]          |    7.443 (r) | SLOW    |   2.319 (r) | FAST    |    1.321 |
+gpioA[14]          |    8.516 (r) | SLOW    |   2.000 (r) | FAST    |    2.393 |
+gpioA[15]          |    7.967 (r) | SLOW    |   2.190 (r) | FAST    |    1.844 |
+gpioA[16]          |    7.688 (r) | SLOW    |   2.093 (r) | FAST    |    1.565 |
+gpioA[17]          |    9.125 (r) | SLOW    |   1.931 (r) | FAST    |    3.002 |
+gpioA[18]          |   10.931 (r) | SLOW    |   3.353 (r) | FAST    |    4.808 |
+gpioA[19]          |    9.410 (r) | SLOW    |   2.027 (r) | FAST    |    3.287 |
+gpioA[20]          |    9.345 (r) | SLOW    |   3.228 (r) | FAST    |    3.222 |
+gpioA[21]          |    9.301 (r) | SLOW    |   2.777 (r) | FAST    |    3.178 |
+gpioA[22]          |   10.298 (r) | SLOW    |   3.673 (r) | FAST    |    4.175 |
+gpioA[23]          |   10.038 (r) | SLOW    |   2.978 (r) | FAST    |    3.916 |
+gpioA[24]          |    9.770 (r) | SLOW    |   3.388 (r) | FAST    |    3.647 |
+gpioA[25]          |    9.399 (r) | SLOW    |   3.028 (r) | FAST    |    3.277 |
+gpioA[26]          |    6.726 (r) | SLOW    |   1.842 (r) | FAST    |    0.604 |
+gpioA[27]          |    6.561 (r) | SLOW    |   1.720 (r) | FAST    |    0.438 |
+gpioA[28]          |    6.524 (r) | SLOW    |   1.774 (r) | FAST    |    0.437 |
+gpioA[29]          |    6.409 (r) | SLOW    |   1.337 (r) | FAST    |    0.287 |
+gpioA[30]          |    6.123 (r) | SLOW    |   1.774 (r) | FAST    |    0.437 |
+gpioA[31]          |    6.154 (r) | SLOW    |   1.380 (r) | FAST    |    0.043 |
+-------------------+--------------+---------+-------------+---------+----------+
+Worst Case Summary |   11.982 (r) | SLOW    |   1.337 (r) | FAST    |    5.859 |
+-------------------+--------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: CLK100MHZ
+Bus Skew: 2.644 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+gpioB[0]           |   8.817 (r) | SLOW    |   2.403 (r) | FAST    |    2.042 |
+gpioB[1]           |   9.088 (r) | SLOW    |   2.347 (r) | FAST    |    2.313 |
+gpioB[2]           |   9.052 (r) | SLOW    |   2.356 (r) | FAST    |    2.276 |
+gpioB[3]           |   8.589 (r) | SLOW    |   2.384 (r) | FAST    |    1.814 |
+gpioB[4]           |   8.501 (r) | SLOW    |   2.470 (r) | FAST    |    1.725 |
+gpioB[5]           |   8.999 (r) | SLOW    |   2.448 (r) | FAST    |    2.223 |
+gpioB[6]           |   8.176 (r) | SLOW    |   1.877 (r) | FAST    |    1.400 |
+gpioB[7]           |   8.786 (r) | SLOW    |   2.385 (r) | FAST    |    2.011 |
+gpioB[8]           |   7.952 (r) | SLOW    |   2.366 (r) | FAST    |    1.176 |
+gpioB[9]           |   8.662 (r) | SLOW    |   2.193 (r) | FAST    |    1.886 |
+gpioB[10]          |   9.420 (r) | SLOW    |   1.791 (r) | FAST    |    2.644 |
+gpioB[11]          |   7.877 (r) | SLOW    |   2.280 (r) | FAST    |    1.101 |
+gpioB[12]          |   8.043 (r) | SLOW    |   2.378 (r) | FAST    |    1.268 |
+gpioB[13]          |   8.001 (r) | SLOW    |   2.324 (r) | FAST    |    1.225 |
+gpioB[14]          |   9.096 (r) | SLOW    |   2.643 (r) | FAST    |    2.320 |
+gpioB[15]          |   9.221 (r) | SLOW    |   2.734 (r) | FAST    |    2.445 |
+gpioB[16]          |   7.459 (r) | SLOW    |   2.145 (r) | FAST    |    0.683 |
+gpioB[17]          |   7.900 (r) | SLOW    |   2.009 (r) | FAST    |    1.125 |
+gpioB[18]          |   7.761 (r) | SLOW    |   2.124 (r) | FAST    |    0.985 |
+gpioB[19]          |   7.566 (r) | SLOW    |   2.094 (r) | FAST    |    0.790 |
+gpioB[20]          |   7.687 (r) | SLOW    |   2.091 (r) | FAST    |    0.911 |
+gpioB[21]          |   7.725 (r) | SLOW    |   2.299 (r) | FAST    |    0.950 |
+gpioB[22]          |   7.415 (r) | SLOW    |   1.922 (r) | FAST    |    0.639 |
+gpioB[23]          |   7.457 (r) | SLOW    |   2.185 (r) | FAST    |    0.681 |
+gpioB[24]          |   6.776 (r) | SLOW    |   1.756 (r) | FAST    |    0.000 |
+gpioB[25]          |   6.840 (r) | SLOW    |   1.802 (r) | FAST    |    0.064 |
+gpioB[26]          |   7.042 (r) | SLOW    |   1.904 (r) | FAST    |    0.266 |
+gpioB[27]          |   7.160 (r) | SLOW    |   1.872 (r) | FAST    |    0.385 |
+gpioB[28]          |   7.217 (r) | SLOW    |   1.939 (r) | FAST    |    0.441 |
+gpioB[29]          |   6.965 (r) | SLOW    |   2.002 (r) | FAST    |    0.247 |
+gpioB[30]          |   7.585 (r) | SLOW    |   2.074 (r) | FAST    |    0.809 |
+gpioB[31]          |   7.389 (r) | SLOW    |   2.033 (r) | FAST    |    0.614 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   9.420 (r) | SLOW    |   1.756 (r) | FAST    |    2.644 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: CLK100MHZ
+Bus Skew: 0.145 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+qspi0_dq[0]        |   7.260 (r) | SLOW    |   1.775 (r) | FAST    |    0.094 |
+qspi0_dq[1]        |   7.165 (r) | SLOW    |   1.861 (r) | FAST    |    0.145 |
+qspi0_dq[2]        |   7.308 (r) | SLOW    |   1.716 (r) | FAST    |    0.142 |
+qspi0_dq[3]        |   7.171 (r) | SLOW    |   1.843 (r) | FAST    |    0.127 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   7.308 (r) | SLOW    |   1.716 (r) | FAST    |    0.145 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
