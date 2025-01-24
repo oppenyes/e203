@@ -1,24 +1,7 @@
-# 获取当前脚本所在的目录路径
-set scriptdir [file dirname [info script]]
+# 加载  config脚本
+source [file join $scriptdir vivado_script_config.tcl]
 
-# 获取当前脚本目录的父目录路径
-set commondir [file dirname $scriptdir]
-
-# 设置源文件目录路径（假定源代码存储在 src 子目录下）
-set srcdir [file join $commondir src]
-
-# 设置约束文件目录路径（假定约束文件存储在 constrs 子目录下）
-set constrsdir [file join $commondir constrs]
-
-# 设置工作目录路径（默认是当前工作目录的 obj 子目录）
-set wrkdir [file join [pwd] obj]
-
-# 设置 IP 核的目录路径
-set ipdir [file join $commondir ip]
-#
 source [file join $scriptdir create_ip_with_dir.tcl]
-# 定义顶层模块名称为 "system_top"
-#set top {system_top}
 
 # 创建项目
 # 改为在磁盘上创建项目，强制覆盖已存在的项目

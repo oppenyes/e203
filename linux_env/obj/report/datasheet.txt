@@ -1,13 +1,13 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Jan 23 23:46:53 2025
+| Date         : Sat Jan 25 01:59:39 2025
 | Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
-| Command      : report_datasheet -file /home/oppenyes/workspace/test_scripct/fpga/ddr200t/obj/report/datasheet.txt
+| Command      : report_datasheet -file /home/oppenyes/workspace/test_scripct/obj/report/datasheet.txt
 | Design       : system_top
 | Device       : 7a200t-fbg484
 | Speed File   : -2  PRODUCTION 1.23 2018-06-13
---------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 Data Sheet Report
 

@@ -1,13 +1,13 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Jan 23 23:46:54 2025
+| Date         : Sat Jan 25 01:59:41 2025
 | Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
-| Command      : report_utilization -hierarchical -file /home/oppenyes/workspace/test_scripct/fpga/ddr200t/obj/report/utilization.txt
+| Command      : report_utilization -hierarchical -file /home/oppenyes/workspace/test_scripct/obj/report/utilization.txt
 | Design       : system_top
 | Device       : 7a200tfbg484-2
 | Design State : Routed
---------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -776,16 +776,16 @@ Table of Contents
 
 
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Jan 23 23:46:56 2025
+| Date         : Sat Jan 25 01:59:43 2025
 | Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
-| Command      : report_clock_utilization -file /home/oppenyes/workspace/test_scripct/fpga/ddr200t/obj/report/utilization.txt -append
+| Command      : report_clock_utilization -file /home/oppenyes/workspace/test_scripct/obj/report/utilization.txt -append
 | Design       : system_top
 | Device       : 7a200t-fbg484
 | Speed File   : -2  PRODUCTION 1.23 2018-06-13
 | Design State : Routed
---------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 
 Clock Utilization Report
 
@@ -1092,15 +1092,15 @@ add_cells_to_pblock [get_pblocks  {CLKAG_CLK32768KHZ_IBUF_BUFG}] [get_cells -fil
 resize_pblock [get_pblocks {CLKAG_CLK32768KHZ_IBUF_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
 #endgroup
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Jan 23 23:46:57 2025
+| Date         : Sat Jan 25 01:59:44 2025
 | Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
-| Command      : report_ram_utilization -file /home/oppenyes/workspace/test_scripct/fpga/ddr200t/obj/report/utilization.txt -append -detail
+| Command      : report_ram_utilization -file /home/oppenyes/workspace/test_scripct/obj/report/utilization.txt -append -detail
 | Design       : system_top
 | Device       : xc7a200tfbg484-2
 | Speed File   : -2
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 RAM Usage Information
 

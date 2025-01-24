@@ -1,3 +1,5 @@
+# 加载  config脚本
+source [file join $scriptdir vivado_script_config.tcl]
 # 递归查找给定目录下匹配的文件
 proc recglob { basedir pattern } {
   # 获取所有子目录
@@ -31,6 +33,12 @@ proc findincludedir { basedir pattern } {
   return $uniquevhdirs
 }
 
+
+
+
+
+
+
 # 创建 IP 核目录（如果不存在）
 file mkdir $ipdir
 # 更新 IP 核目录中的所有 IP 核
@@ -55,6 +63,12 @@ set obj [current_fileset]
 # 获取 IP 核目录中包含 .vh 文件的子目录（有时候 create_ip 会漏掉某些子目录）
 # 获取当前 IP 核的 include_dirs 属性（路径列表）
 set property_include_dirs [get_property include_dirs $obj]
+
+
+
+
+
+
 # 将 .vh 文件所在的目录添加到 include_dirs 列表中
 set ip_include_dirs [concat $property_include_dirs [findincludedir $ipdir "*.vh"]]
 # 将 srcdir 目录中的 .h 和 .vh 文件所在的目录也添加到 include_dirs 列表中

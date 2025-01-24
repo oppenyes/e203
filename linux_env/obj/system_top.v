@@ -1,9 +1,9 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Thu Jan 23 23:46:50 2025
+// Date        : Sat Jan 25 01:59:36 2025
 // Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
-// Command     : write_verilog -mode timesim -force /home/oppenyes/workspace/test_scripct/fpga/ddr200t/obj/system_top.v
+// Command     : write_verilog -mode timesim -force /home/oppenyes/workspace/test_scripct/obj/system_top.v
 // Design      : system_top
 // Purpose     : This verilog netlist is a timing simulation representation of the design and should not be modified or
 //               synthesized. Please ensure that this netlist is used with the corresponding SDF file.

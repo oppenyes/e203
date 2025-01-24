@@ -1,8 +1,17 @@
+# 加载  config脚本
+source [file join $scriptdir vivado_script_config.tcl]
 set_param {messaging.defaultLimit} 1000000
 
 read_ip [glob -directory $ipdir [file join * {*.xci}]]
-#remode
-synth_design -include_dirs ${srcdir}/e203/core/ -top $top -flatten_hierarchy rebuilt
+# 获取所有子目录
+set include_dirs [exec find $srcdir -type d]
+
+# 打印找到的目录（用于调试）
+puts "Include directories: $include_dirs"
+
+# 一次性传入所有目录给 synth_design
+synth_design -include_dirs $include_dirs -top $top -flatten_hierarchy rebuilt
+
 write_checkpoint -force [file join $wrkdir post_synth]
 
 opt_design

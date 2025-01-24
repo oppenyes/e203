@@ -1,20 +1,5 @@
-# 获取当前脚本所在的目录路径
-set scriptdir [file dirname [info script]]
-
-# 获取公共目录（父目录）
-set commondir [file dirname $scriptdir]
-
-# 获取源文件目录
-set srcdir [file join $commondir src]
-
-# 获取约束文件目录
-set constrsdir [file join $commondir constrs]
-
-# 设置工作目录为当前路径下的 obj 文件夹
-set wrkdir [file join [pwd] obj]
-
-# 设置 IP 核目录
-set ipdir [file join $commondir ip]
+# 加载  config脚本
+source [file join $scriptdir vivado_script_config.tcl]
 #
 source [file join $scriptdir create_ip_with_dir.tcl]
 # 创建一个 Vivado 项目
@@ -88,9 +73,6 @@ set obj [current_fileset -simset]
 
 # 添加 Verilog 文件到仿真文件集
 add_files -norecurse -fileset $obj [glob -directory $srcdir {*.v}]
-
-# 设置仿真顶层模块为 tb（Testbench）
-#set_property TOP {tb} $obj
 
 # 如果没有找到名为 constrs_1 的约束文件集，则创建它
 if {[get_filesets -quiet constrs_1] eq ""} {

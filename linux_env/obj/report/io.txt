@@ -1,16 +1,16 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date                      : Thu Jan 23 23:47:04 2025
+| Date                      : Sat Jan 25 01:59:52 2025
 | Host                      : lab101 running 64-bit Ubuntu 22.04.5 LTS
-| Command                   : report_io -file /home/oppenyes/workspace/test_scripct/fpga/ddr200t/obj/report/io.txt
+| Command                   : report_io -file /home/oppenyes/workspace/test_scripct/obj/report/io.txt
 | Design                    : system_top
 | Device                    : xc7a200t
 | Speed File                : -2
 | Package                   : fbg484
 | Package Version           : FINAL 2012-11-08
 | Package Pin Delay Version : VERS. 2.0 2012-11-08
--------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 IO Information
 
