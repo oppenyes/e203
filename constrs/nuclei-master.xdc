@@ -12,7 +12,7 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 
 
 
-set_property -dict { PACKAGE_PIN W19    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; 
+set_property -dict { PACKAGE_PIN  W19    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; 
 create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {CLK100MHZ}];
 
 set_property -dict { PACKAGE_PIN Y18    IOSTANDARD LVCMOS33 } [get_ports { CLK32768KHZ }]; 
@@ -36,7 +36,6 @@ set_property PACKAGE_PIN T16 [get_ports {qspi0_dq[2]}]
 set_property PACKAGE_PIN T14 [get_ports {qspi0_dq[1]}]
 set_property PACKAGE_PIN T15 [get_ports {qspi0_dq[0]}]
 
-#####               MCU JTAG define           #####
 set_property PACKAGE_PIN N17 [get_ports mcu_TDO]
 set_property PACKAGE_PIN P15 [get_ports mcu_TCK]
 set_property PACKAGE_PIN T18 [get_ports mcu_TDI]
@@ -124,7 +123,7 @@ set_property PACKAGE_PIN D14  [get_ports {gpioA[1]}]
 set_property PACKAGE_PIN E13  [get_ports {gpioA[0]}]      
 
 
-#####                gpioB define 原理图中对应是MCU_GPIO  实际为LCD屏幕下的32个IO口  #####
+#####                gpioB define 原理图中对应是MCU_GPIO  实际为LCD屏幕下的32个IO�?  #####
 set_property PACKAGE_PIN W17  [get_ports {gpioB[31]}]
 set_property PACKAGE_PIN AA18 [get_ports {gpioB[30]}]
 set_property PACKAGE_PIN AB18 [get_ports {gpioB[29]}]

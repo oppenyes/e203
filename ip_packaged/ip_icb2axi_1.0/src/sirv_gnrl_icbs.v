@@ -1005,14 +1005,14 @@ endmodule
 // ===========================================================================
 
 module sirv_gnrl_icb2axi # (
-  parameter AXI_FIFO_DP = 2, // This is to optionally add the pipeline stage for AXI bus
+  parameter AXI_FIFO_DP = 0, // This is to optionally add the pipeline stage for AXI bus
                              //   if the depth is 0, then means pass through, not add pipeline
                              //   if the depth is 2, then means added one ping-pong buffer stage
   parameter AXI_FIFO_CUT_READY = 1, // This is to cut the back-pressure signal if you set as 1
   parameter AW = 32,
-  parameter FIFO_OUTS_NUM = 4,
-  parameter FIFO_CUT_READY = 1,
-  parameter DW = 32 // 64 or 32 bits
+  parameter FIFO_OUTS_NUM = 8,
+  parameter FIFO_CUT_READY = 0,
+  parameter DW = 64 // 64 or 32 bits
 ) (
   input              i_icb_cmd_valid, 
   output             i_icb_cmd_ready, 
