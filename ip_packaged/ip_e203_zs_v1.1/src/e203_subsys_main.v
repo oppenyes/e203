@@ -228,6 +228,9 @@ module e203_subsys_main(
   input                          sysmem_icb_rsp_err  ,
   input  [`E203_XLEN-1:0]        sysmem_icb_rsp_rdata,
   `endif//}
+
+  `ifdef 0
+  // 被条件控制的代码
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
   // AXI Read Address Channel
@@ -270,6 +273,10 @@ module e203_subsys_main(
     input                               expl_axi_bvalid               ,// AXI write response valid
     output                              expl_axi_bready               ,// AXI write response ready
     input              [   1: 0]        expl_axi_bresp                ,// AXI write response
+`endif
+
+
+
   input  test_mode,
 
   input  ls_clk,

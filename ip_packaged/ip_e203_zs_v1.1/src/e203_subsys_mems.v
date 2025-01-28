@@ -42,7 +42,7 @@ module e203_subsys_mems(
     output                              mem_icb_rsp_err               ,
     output             [`E203_XLEN-1: 0]mem_icb_rsp_rdata             ,
   
-  //////////////////////////////////////////////////////////
+  ////////////////////////-------------------ICB------------------//////////////////////////////////
     output                              sysmem_icb_cmd_valid          ,
     input                               sysmem_icb_cmd_ready          ,
     output             [`E203_ADDR_SIZE-1: 0]sysmem_icb_cmd_addr      ,
@@ -54,6 +54,7 @@ module e203_subsys_mems(
     output                              sysmem_icb_rsp_ready          ,
     input                               sysmem_icb_rsp_err            ,
     input              [`E203_XLEN-1: 0]sysmem_icb_rsp_rdata          ,
+  ////////////////////////-------------------ICB------------------//////////////////////////////////
 
     //////////////////////////////////////////////////////////
     output                              qspi0_ro_icb_cmd_valid        ,
@@ -84,45 +85,45 @@ module e203_subsys_mems(
 //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
   // AXI Read Address Channel
-    output                                   expl_axi_arvalid              ,// AXI address valid
-    input                                    expl_axi_arready              ,// AXI address ready
-    output             [`E203_ADDR_SIZE-1: 0]expl_axi_araddr               ,// AXI address
-    output             [   3: 0]             expl_axi_arcache              ,// AXI cache
-    output             [   2: 0]             expl_axi_arprot               ,// AXI protection
-    output             [   1: 0]             expl_axi_arlock               ,// AXI lock
-    output             [   1: 0]             expl_axi_arburst              ,// AXI burst type
-    output             [   3: 0]             expl_axi_arlen                ,// AXI burst length
-    output             [   2: 0]             expl_axi_arsize               ,// AXI burst size
+    // output                                   expl_axi_arvalid              ,// AXI address valid
+    // input                                    expl_axi_arready              ,// AXI address ready
+    // output             [`E203_ADDR_SIZE-1: 0]expl_axi_araddr               ,// AXI address
+    // output             [   3: 0]             expl_axi_arcache              ,// AXI cache
+    // output             [   2: 0]             expl_axi_arprot               ,// AXI protection
+    // output             [   1: 0]             expl_axi_arlock               ,// AXI lock
+    // output             [   1: 0]             expl_axi_arburst              ,// AXI burst type
+    // output             [   3: 0]             expl_axi_arlen                ,// AXI burst length
+    // output             [   2: 0]             expl_axi_arsize               ,// AXI burst size
     
-    // AXI Write Address Channel
-    output                                   expl_axi_awvalid              ,// AXI write address valid
-    input                                    expl_axi_awready              ,// AXI write address ready
-    output             [`E203_ADDR_SIZE-1: 0]expl_axi_awaddr               ,// AXI write address
-    output             [   3: 0]             expl_axi_awcache              ,// AXI write cache
-    output             [   2: 0]             expl_axi_awprot               ,// AXI write protection
-    output             [   1: 0]             expl_axi_awlock               ,// AXI write lock
-    output             [   1: 0]             expl_axi_awburst              ,// AXI write burst type
-    output             [   3: 0]             expl_axi_awlen                ,// AXI write burst length
-    output             [   2: 0]             expl_axi_awsize               ,// AXI write burst size
+    // // AXI Write Address Channel
+    // output                                   expl_axi_awvalid              ,// AXI write address valid
+    // input                                    expl_axi_awready              ,// AXI write address ready
+    // output             [`E203_ADDR_SIZE-1: 0]expl_axi_awaddr               ,// AXI write address
+    // output             [   3: 0]             expl_axi_awcache              ,// AXI write cache
+    // output             [   2: 0]             expl_axi_awprot               ,// AXI write protection
+    // output             [   1: 0]             expl_axi_awlock               ,// AXI write lock
+    // output             [   1: 0]             expl_axi_awburst              ,// AXI write burst type
+    // output             [   3: 0]             expl_axi_awlen                ,// AXI write burst length
+    // output             [   2: 0]             expl_axi_awsize               ,// AXI write burst size
 
-    // AXI Read Data Channel
-    input                                    expl_axi_rvalid               ,// AXI read valid
-    output                                   expl_axi_rready               ,// AXI read ready
-    input              [`E203_XLEN-1: 0]     expl_axi_rdata                ,// AXI read data
-    input              [   1: 0]             expl_axi_rresp                ,// AXI read response
-    input                                    expl_axi_rlast                ,// AXI read last
+    // // AXI Read Data Channel
+    // input                                    expl_axi_rvalid               ,// AXI read valid
+    // output                                   expl_axi_rready               ,// AXI read ready
+    // input              [`E203_XLEN-1: 0]     expl_axi_rdata                ,// AXI read data
+    // input              [   1: 0]             expl_axi_rresp                ,// AXI read response
+    // input                                    expl_axi_rlast                ,// AXI read last
 
-    // AXI Write Data Channel
-    output                                    expl_axi_wvalid               ,// AXI write valid
-    input                                   expl_axi_wready               ,// AXI write ready
-    output              [`E203_XLEN-1: 0]     expl_axi_wdata                ,// AXI write data
-    output              [(`E203_XLEN/8)-1: 0] expl_axi_wstrb                ,// AXI write strobe
-    output                                    expl_axi_wlast                ,// AXI write last
+    // // AXI Write Data Channel
+    // output                                    expl_axi_wvalid               ,// AXI write valid
+    // input                                   expl_axi_wready               ,// AXI write ready
+    // output              [`E203_XLEN-1: 0]     expl_axi_wdata                ,// AXI write data
+    // output              [(`E203_XLEN/8)-1: 0] expl_axi_wstrb                ,// AXI write strobe
+    // output                                    expl_axi_wlast                ,// AXI write last
 
-    // AXI Write Response Channel
-    input                                    expl_axi_bvalid               ,// AXI write response valid
-    output                                   expl_axi_bready               ,// AXI write response ready
-    input              [   1: 0]             expl_axi_bresp                ,// AXI write response
+    // // AXI Write Response Channel
+    // input                                    expl_axi_bvalid               ,// AXI write response valid
+    // output                                   expl_axi_bready               ,// AXI write response ready
+    // input              [   1: 0]             expl_axi_bresp                ,// AXI write response
 
     input                               clk                           ,
     input                               bus_rst_n                     ,
@@ -416,7 +417,7 @@ module e203_subsys_mems(
   );
  
       // * Here is an example AXI Peripheral 这里将其变为端口形式的
-/*
+/*   */
     wire                                expl_axi_arvalid              ;
     wire                                expl_axi_arready              ;
     wire               [`E203_ADDR_SIZE-1: 0]expl_axi_araddr          ;
@@ -452,7 +453,7 @@ module e203_subsys_mems(
     wire                                expl_axi_bvalid               ;
     wire                                expl_axi_bready               ;
     wire               [   1: 0]        expl_axi_bresp                ;
-   */
+
 sirv_gnrl_icb2axi # (
     .AXI_FIFO_DP                        (2                            ),// We just add ping-pong buffer here to avoid any potential timing loops
                     //   User can change it to 0 if dont care

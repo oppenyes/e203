@@ -20,48 +20,6 @@ module e203_zs
 
   //gpioB
     inout  wire        [  31: 0]             gpioB                         ,//GPIOB00~GPIOB31
-  //////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////
-  // AXI Read Address Channel
-    output                                   expl_axi_arvalid              ,// AXI address valid
-    input                                    expl_axi_arready              ,// AXI address ready
-    output             [`E203_ADDR_SIZE-1: 0]expl_axi_araddr               ,// AXI address
-    output             [   3: 0]             expl_axi_arcache              ,// AXI cache
-    output             [   2: 0]             expl_axi_arprot               ,// AXI protection
-    output             [   1: 0]             expl_axi_arlock               ,// AXI lock
-    output             [   1: 0]             expl_axi_arburst              ,// AXI burst type
-    output             [   3: 0]             expl_axi_arlen                ,// AXI burst length
-    output             [   2: 0]             expl_axi_arsize               ,// AXI burst size
-    
-    // AXI Write Address Channel
-    output                                   expl_axi_awvalid              ,// AXI write address valid
-    input                                    expl_axi_awready              ,// AXI write address ready
-    output             [`E203_ADDR_SIZE-1: 0]expl_axi_awaddr               ,// AXI write address
-    output             [   3: 0]             expl_axi_awcache              ,// AXI write cache
-    output             [   2: 0]             expl_axi_awprot               ,// AXI write protection
-    output             [   1: 0]             expl_axi_awlock               ,// AXI write lock
-    output             [   1: 0]             expl_axi_awburst              ,// AXI write burst type
-    output             [   3: 0]             expl_axi_awlen                ,// AXI write burst length
-    output             [   2: 0]             expl_axi_awsize               ,// AXI write burst size
-
-    // AXI Read Data Channel
-    input                                    expl_axi_rvalid               ,// AXI read valid
-    output                                   expl_axi_rready               ,// AXI read ready
-    input              [`E203_XLEN-1: 0]     expl_axi_rdata                ,// AXI read data
-    input              [   1: 0]             expl_axi_rresp                ,// AXI read response
-    input                                    expl_axi_rlast                ,// AXI read last
-
-    // AXI Write Data Channel
-    output                                   expl_axi_wvalid               ,// AXI write valid
-    input                                    expl_axi_wready               ,// AXI write ready
-    output             [`E203_XLEN-1: 0]     expl_axi_wdata                ,// AXI write data
-    output             [(`E203_XLEN/8)-1: 0] expl_axi_wstrb                ,// AXI write strobe
-    output                                   expl_axi_wlast                ,// AXI write last
-
-    // AXI Write Response Channel
-    input                                    expl_axi_bvalid               ,// AXI write response valid
-    output                                   expl_axi_bready               ,// AXI write response ready
-    input              [   1: 0]             expl_axi_bresp                ,// AXI write response
   // JD (used for JTAG connection)
     inout  wire                              mcu_TDO                       ,//MCU_TDO-N17
     inout  wire                              mcu_TCK                       ,//MCU_TCK-P15 
