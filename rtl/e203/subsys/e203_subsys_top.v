@@ -29,6 +29,46 @@
 `include "e203_defines.v"
 
 module e203_subsys_top(
+    // AXI Read Address Channel
+    output                                   expl_axi_arvalid              ,// AXI address valid
+    input                                    expl_axi_arready              ,// AXI address ready
+    output             [`E203_ADDR_SIZE-1: 0]expl_axi_araddr               ,// AXI address
+    output             [   3: 0]             expl_axi_arcache              ,// AXI cache
+    output             [   2: 0]             expl_axi_arprot               ,// AXI protection
+    output             [   1: 0]             expl_axi_arlock               ,// AXI lock
+    output             [   1: 0]             expl_axi_arburst              ,// AXI burst type
+    output             [   3: 0]             expl_axi_arlen                ,// AXI burst length
+    output             [   2: 0]             expl_axi_arsize               ,// AXI burst size
+    
+    // AXI Write Address Channel
+    output                                   expl_axi_awvalid              ,// AXI write address valid
+    input                                    expl_axi_awready              ,// AXI write address ready
+    output             [`E203_ADDR_SIZE-1: 0]expl_axi_awaddr               ,// AXI write address
+    output             [   3: 0]             expl_axi_awcache              ,// AXI write cache
+    output             [   2: 0]             expl_axi_awprot               ,// AXI write protection
+    output             [   1: 0]             expl_axi_awlock               ,// AXI write lock
+    output             [   1: 0]             expl_axi_awburst              ,// AXI write burst type
+    output             [   3: 0]             expl_axi_awlen                ,// AXI write burst length
+    output             [   2: 0]             expl_axi_awsize               ,// AXI write burst size
+
+    // AXI Read Data Channel
+    input                                    expl_axi_rvalid               ,// AXI read valid
+    output                                   expl_axi_rready               ,// AXI read ready
+    input              [`E203_XLEN-1: 0]     expl_axi_rdata                ,// AXI read data
+    input              [   1: 0]             expl_axi_rresp                ,// AXI read response
+    input                                    expl_axi_rlast                ,// AXI read last
+
+    // AXI Write Data Channel
+    output                                   expl_axi_wvalid               ,// AXI write valid
+    input                                    expl_axi_wready               ,// AXI write ready
+    output             [`E203_XLEN-1: 0]     expl_axi_wdata                ,// AXI write data
+    output             [(`E203_XLEN/8)-1: 0] expl_axi_wstrb                ,// AXI write strobe
+    output                                   expl_axi_wlast                ,// AXI write last
+
+    // AXI Write Response Channel
+    input                                    expl_axi_bvalid               ,// AXI write response valid
+    output                                   expl_axi_bready               ,// AXI write response ready
+    input              [   1: 0]             expl_axi_bresp                ,// AXI write response
   // This clock should comes from the crystal pad generated high speed clock (16MHz)
   input  hfextclk,
   output hfxoscen,// The signal to enable the crystal pad generated clock
@@ -312,6 +352,45 @@ module e203_subsys_top(
 
 
   e203_subsys_main  u_e203_subsys_main(
+ // AXI Read Address Channel
+    .expl_axi_arvalid                        (expl_axi_arvalid             ),// AXI address valid
+    .expl_axi_arready                        (expl_axi_arready             ),// AXI address ready
+    .expl_axi_araddr                         (expl_axi_araddr              ),// AXI address
+    .expl_axi_arcache                        (expl_axi_arcache             ),// AXI cache
+    .expl_axi_arprot                         (expl_axi_arprot              ),// AXI protection
+    .expl_axi_arlock                         (expl_axi_arlock              ),// AXI lock
+    .expl_axi_arburst                        (expl_axi_arburst             ),// AXI burst type
+    .expl_axi_arlen                          (expl_axi_arlen               ),// AXI burst length
+    .expl_axi_arsize                         (expl_axi_arsize              ),// AXI burst size
+    // AXI Write Address Channel
+    .expl_axi_awvalid                        (expl_axi_awvalid             ),// AXI write address valid
+    .expl_axi_awready                        (expl_axi_awready             ),// AXI write address ready
+    .expl_axi_awaddr                         (expl_axi_awaddr              ),// AXI write address
+    .expl_axi_awcache                        (expl_axi_awcache             ),// AXI write cache
+    .expl_axi_awprot                         (expl_axi_awprot              ),// AXI write protection
+    .expl_axi_awlock                         (expl_axi_awlock              ),// AXI write lock
+    .expl_axi_awburst                        (expl_axi_awburst             ),// AXI write burst type
+    .expl_axi_awlen                          (expl_axi_awlen               ),// AXI write burst length
+    .expl_axi_awsize                         (expl_axi_awsize              ),// AXI write burst size
+    // AXI Read Data Channel
+    .expl_axi_rvalid                         (expl_axi_rvalid              ),// AXI read valid
+    .expl_axi_rready                         (expl_axi_rready              ),// AXI read ready
+    .expl_axi_rdata                          (expl_axi_rdata               ),// AXI read data
+    .expl_axi_rresp                          (expl_axi_rresp               ),// AXI read response
+    .expl_axi_rlast                          (expl_axi_rlast               ),// AXI read last
+    // AXI Write Data Channel
+    .expl_axi_wvalid                         (expl_axi_wvalid              ),// AXI write valid
+    .expl_axi_wready                         (expl_axi_wready              ),// AXI write ready
+    .expl_axi_wdata                          (expl_axi_wdata               ),// AXI write data
+    .expl_axi_wstrb                          (expl_axi_wstrb               ),// AXI write strobe
+    .expl_axi_wlast                          (expl_axi_wlast               ),// AXI write last
+    // AXI Write Response Channel
+    .expl_axi_bvalid                         (expl_axi_bvalid              ),// AXI write response valid
+    .expl_axi_bready                         (expl_axi_bready              ),// AXI write response ready
+    .expl_axi_bresp                          (expl_axi_bresp               ),// AXI write response
+
+
+
     .pc_rtvec        (pc_rtvec),
 
     .inspect_mode    (inspect_mode    ), 

@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Feb  3 23:23:07 2025
+# Process ID: 32624
+# Current directory: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36840 C:\Users\Zhangshi\Desktop\my_git\e203_zs\prj\e203_with_eaxi_ports\e203_with_eaxi_ports.xpr
+# Log file: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/vivado.log
+# Journal file: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/system_top.v
+update_compile_order -fileset sources_1
+set_property top system_top [current_fileset]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+[Mon Feb  3 23:30:28 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.runs/synth_1/runme.log
+add_files -scan_for_includes {C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/mmcm/mmcm.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/wr_fifo/wr_fifo.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/clk_wiz_0/clk_wiz_0.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/reset_sys/reset_sys.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/mig_7series_0/mig_7series_0.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/rd_fifo/rd_fifo.xci}
+add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1398.605 ; gain = 259.547
+export_ip_user_files -of_objects  [get_files  {C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/mmcm/mmcm.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/wr_fifo/wr_fifo.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/clk_wiz_0/clk_wiz_0.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/reset_sys/reset_sys.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/mig_7series_0/mig_7series_0.xci C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/rd_fifo/rd_fifo.xci}] -lib_map_path [list {modelsim=C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.cache/compile_simlib/modelsim} {questa=C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.cache/compile_simlib/questa} {riviera=C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.cache/compile_simlib/riviera} {activehdl=C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'reset_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'reset_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mmcm'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mmcm'...
+[Mon Feb  3 23:37:02 2025] Launched reset_sys_synth_1, mmcm_synth_1, synth_1...
+Run output will be captured here:
+reset_sys_synth_1: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.runs/reset_sys_synth_1/runme.log
+mmcm_synth_1: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.runs/mmcm_synth_1/runme.log
+synth_1: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.runs/synth_1/runme.log
+[Mon Feb  3 23:37:02 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.runs/impl_1/runme.log
