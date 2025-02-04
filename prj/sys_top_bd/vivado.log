@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb  5 01:44:22 2025
+# Process ID: 4928
+# Current directory: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7808 C:\Users\Zhangshi\Desktop\my_git\e203_zs\prj\sys_top_bd\sys_top_bd.xpr
+# Log file: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/vivado.log
+# Journal file: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd\vivado.jou
+#-----------------------------------------------------------
+start_gui

@@ -1,0 +1,744 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8EBC50154C00757",
+      "device": "xc7a200tfbg484-2",
+      "gen_directory": "../../../../sys_top_bd.gen/sources_1/bd/system_top",
+      "name": "system_top",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "axi_interconnect_0": {
+        "s00_couplers": {
+          "auto_cc": "",
+          "auto_pc": ""
+        }
+      },
+      "clk_wiz_0": "",
+      "proc_sys_reset_1": "",
+      "proc_sys_reset_0": "",
+      "util_vector_logic_0": "",
+      "system_e203_0": "",
+      "mig_7series_0": ""
+    },
+    "interface_ports": {
+      "DDR3": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "ports": {
+      "CLK100MHZ": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "system_top_CLK100MHZ",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "fpga_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "CLK32768KHZ": {
+        "direction": "I"
+      },
+      "mcu_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "gpioA": {
+        "direction": "IO",
+        "left": "31",
+        "right": "0"
+      },
+      "gpioB": {
+        "direction": "IO",
+        "left": "31",
+        "right": "0"
+      },
+      "mcu_TCK": {
+        "direction": "IO"
+      },
+      "mcu_TDI": {
+        "direction": "IO"
+      },
+      "mcu_TDO": {
+        "direction": "IO"
+      },
+      "mcu_TMS": {
+        "direction": "IO"
+      },
+      "mcu_wakeup": {
+        "direction": "IO"
+      },
+      "pmu_paden": {
+        "direction": "IO"
+      },
+      "pmu_padrst": {
+        "direction": "IO"
+      },
+      "qspi0_cs": {
+        "direction": "O"
+      },
+      "qspi0_dq": {
+        "direction": "IO",
+        "left": "3",
+        "right": "0"
+      },
+      "qspi0_sck": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "axi_interconnect_0": {
+        "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
+        "xci_path": "ip\\system_top_axi_interconnect_0_0\\system_top_axi_interconnect_0_0.xci",
+        "inst_hier_path": "axi_interconnect_0",
+        "xci_name": "system_top_axi_interconnect_0_0",
+        "parameters": {
+          "ENABLE_ADVANCED_OPTIONS": {
+            "value": "0"
+          },
+          "NUM_MI": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "ARESETN"
+              }
+            }
+          },
+          "ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "S00_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "S00_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "S00_ARESETN"
+              }
+            }
+          },
+          "S00_ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "M00_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "M00_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "M00_ARESETN"
+              }
+            }
+          },
+          "M00_ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "s00_couplers": {
+            "interface_ports": {
+              "M_AXI": {
+                "mode": "Master",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "S_AXI": {
+                "mode": "Slave",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            },
+            "ports": {
+              "M_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "M_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "M_ARESETN"
+                  }
+                }
+              },
+              "M_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "S_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "S_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "S_ARESETN"
+                  }
+                }
+              },
+              "S_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              }
+            },
+            "components": {
+              "auto_cc": {
+                "vlnv": "xilinx.com:ip:axi_clock_converter:2.1",
+                "xci_name": "system_top_auto_cc_0",
+                "xci_path": "ip\\system_top_auto_cc_0\\system_top_auto_cc_0.xci",
+                "inst_hier_path": "axi_interconnect_0/s00_couplers/auto_cc",
+                "interface_ports": {
+                  "S_AXI": {
+                    "mode": "Slave",
+                    "bridges": [
+                      "M_AXI"
+                    ]
+                  }
+                }
+              },
+              "auto_pc": {
+                "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
+                "xci_name": "system_top_auto_pc_0",
+                "xci_path": "ip\\system_top_auto_pc_0\\system_top_auto_pc_0.xci",
+                "inst_hier_path": "axi_interconnect_0/s00_couplers/auto_pc",
+                "parameters": {
+                  "MI_PROTOCOL": {
+                    "value": "AXI4"
+                  },
+                  "SI_PROTOCOL": {
+                    "value": "AXI3"
+                  }
+                },
+                "interface_ports": {
+                  "S_AXI": {
+                    "mode": "Slave",
+                    "bridges": [
+                      "M_AXI"
+                    ]
+                  }
+                }
+              }
+            },
+            "interface_nets": {
+              "s00_couplers_to_auto_cc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_cc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
+                ]
+              },
+              "auto_cc_to_auto_pc": {
+                "interface_ports": [
+                  "auto_cc/M_AXI",
+                  "auto_pc/S_AXI"
+                ]
+              }
+            },
+            "nets": {
+              "M_ACLK_1": {
+                "ports": [
+                  "M_ACLK",
+                  "auto_cc/m_axi_aclk",
+                  "auto_pc/aclk"
+                ]
+              },
+              "S_ACLK_1": {
+                "ports": [
+                  "S_ACLK",
+                  "auto_cc/s_axi_aclk"
+                ]
+              },
+              "M_ARESETN_1": {
+                "ports": [
+                  "M_ARESETN",
+                  "auto_cc/m_axi_aresetn",
+                  "auto_pc/aresetn"
+                ]
+              },
+              "S_ARESETN_1": {
+                "ports": [
+                  "S_ARESETN",
+                  "auto_cc/s_axi_aresetn"
+                ]
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "s00_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "M00_AXI",
+              "s00_couplers/M_AXI"
+            ]
+          },
+          "axi_interconnect_0_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          }
+        },
+        "nets": {
+          "axi_interconnect_0_ACLK_net": {
+            "ports": [
+              "M00_ACLK",
+              "s00_couplers/M_ACLK"
+            ]
+          },
+          "axi_interconnect_0_ARESETN_net": {
+            "ports": [
+              "M00_ARESETN",
+              "s00_couplers/M_ARESETN"
+            ]
+          },
+          "S00_ACLK_1": {
+            "ports": [
+              "S00_ACLK",
+              "s00_couplers/S_ACLK"
+            ]
+          },
+          "S00_ARESETN_1": {
+            "ports": [
+              "S00_ARESETN",
+              "s00_couplers/S_ARESETN"
+            ]
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "system_top_clk_wiz_0_0",
+        "xci_path": "ip\\system_top_clk_wiz_0_0\\system_top_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "126.455"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "114.212"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "200.000"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "209.277"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "114.212"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "16.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "8.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "4.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "50"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "proc_sys_reset_1": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "system_top_proc_sys_reset_0_1",
+        "xci_path": "ip\\system_top_proc_sys_reset_0_1\\system_top_proc_sys_reset_0_1.xci",
+        "inst_hier_path": "proc_sys_reset_1"
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "system_top_proc_sys_reset_0_0",
+        "xci_path": "ip\\system_top_proc_sys_reset_0_0\\system_top_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0"
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "system_top_util_vector_logic_0_0",
+        "xci_path": "ip\\system_top_util_vector_logic_0_0\\system_top_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "system_e203_0": {
+        "vlnv": "xilinx.com:user:system_e203:2.1",
+        "xci_name": "system_top_system_e203_0_0",
+        "xci_path": "ip\\system_top_system_e203_0_0\\system_top_system_e203_0_0.xci",
+        "inst_hier_path": "system_e203_0",
+        "addressing": {
+          "address_spaces": {
+            "expl_axi": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        },
+        "interface_ports": {
+          "expl_axi": {
+            "mode": "Master",
+            "address_space_ref": "expl_axi",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        }
+      },
+      "mig_7series_0": {
+        "vlnv": "xilinx.com:ip:mig_7series:4.2",
+        "xci_name": "system_top_mig_7series_0_1",
+        "xci_path": "ip\\system_top_mig_7series_0_1\\system_top_mig_7series_0_1.xci",
+        "inst_hier_path": "mig_7series_0",
+        "parameters": {
+          "BOARD_MIG_PARAM": {
+            "value": "Custom"
+          },
+          "MIG_DONT_TOUCH_PARAM": {
+            "value": "Custom"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "XML_INPUT_FILE": {
+            "value": "mig_a.prj"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "system_e203_0_expl_axi": {
+        "interface_ports": [
+          "system_e203_0/expl_axi",
+          "axi_interconnect_0/S00_AXI"
+        ]
+      },
+      "mig_7series_0_DDR3": {
+        "interface_ports": [
+          "DDR3",
+          "mig_7series_0/DDR3"
+        ]
+      },
+      "axi_interconnect_0_M00_AXI": {
+        "interface_ports": [
+          "axi_interconnect_0/M00_AXI",
+          "mig_7series_0/S_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "clk_in1_0_1": {
+        "ports": [
+          "CLK100MHZ",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "mig_7series_0_ui_clk": {
+        "ports": [
+          "mig_7series_0/ui_clk",
+          "proc_sys_reset_1/slowest_sync_clk",
+          "axi_interconnect_0/M00_ACLK"
+        ]
+      },
+      "proc_sys_reset_1_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_1/peripheral_aresetn",
+          "axi_interconnect_0/M00_ARESETN",
+          "mig_7series_0/aresetn"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "proc_sys_reset_0/dcm_locked"
+        ]
+      },
+      "proc_sys_reset_0_interconnect_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/interconnect_aresetn",
+          "axi_interconnect_0/ARESETN",
+          "axi_interconnect_0/S00_ARESETN"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "axi_interconnect_0/S00_ACLK",
+          "axi_interconnect_0/ACLK",
+          "system_e203_0/clk_16M"
+        ]
+      },
+      "fpga_rst_1": {
+        "ports": [
+          "fpga_rst",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "mcu_rst_1": {
+        "ports": [
+          "mcu_rst",
+          "util_vector_logic_0/Op2"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "clk_wiz_0/resetn",
+          "proc_sys_reset_0/ext_reset_in",
+          "system_e203_0/ck_rst",
+          "mig_7series_0/sys_rst"
+        ]
+      },
+      "CLK32768KHZ_1": {
+        "ports": [
+          "CLK32768KHZ",
+          "system_e203_0/CLK32768KHZ"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "gpioA",
+          "system_e203_0/gpioA"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "gpioB",
+          "system_e203_0/gpioB"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "mcu_TCK",
+          "system_e203_0/mcu_TCK"
+        ]
+      },
+      "Net3": {
+        "ports": [
+          "mcu_TDI",
+          "system_e203_0/mcu_TDI"
+        ]
+      },
+      "Net4": {
+        "ports": [
+          "mcu_TDO",
+          "system_e203_0/mcu_TDO"
+        ]
+      },
+      "Net5": {
+        "ports": [
+          "mcu_TMS",
+          "system_e203_0/mcu_TMS"
+        ]
+      },
+      "Net6": {
+        "ports": [
+          "mcu_wakeup",
+          "system_e203_0/mcu_wakeup"
+        ]
+      },
+      "Net7": {
+        "ports": [
+          "pmu_paden",
+          "system_e203_0/pmu_paden"
+        ]
+      },
+      "Net8": {
+        "ports": [
+          "pmu_padrst",
+          "system_e203_0/pmu_padrst"
+        ]
+      },
+      "system_e203_0_qspi0_cs": {
+        "ports": [
+          "system_e203_0/qspi0_cs",
+          "qspi0_cs"
+        ]
+      },
+      "Net9": {
+        "ports": [
+          "qspi0_dq",
+          "system_e203_0/qspi0_dq"
+        ]
+      },
+      "system_e203_0_qspi0_sck": {
+        "ports": [
+          "system_e203_0/qspi0_sck",
+          "qspi0_sck"
+        ]
+      },
+      "mig_7series_0_ui_clk_sync_rst": {
+        "ports": [
+          "mig_7series_0/ui_clk_sync_rst",
+          "proc_sys_reset_1/ext_reset_in"
+        ]
+      },
+      "mig_7series_0_mmcm_locked": {
+        "ports": [
+          "mig_7series_0/mmcm_locked",
+          "proc_sys_reset_1/dcm_locked"
+        ]
+      },
+      "Net10": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "mig_7series_0/clk_ref_i",
+          "mig_7series_0/sys_clk_i"
+        ]
+      }
+    },
+    "addressing": {
+      "/system_e203_0": {
+        "address_spaces": {
+          "expl_axi": {
+            "segments": {
+              "SEG_mig_7series_0_memaddr": {
+                "address_block": "/mig_7series_0/memmap/memaddr",
+                "offset": "0x40000000",
+                "range": "256M"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
