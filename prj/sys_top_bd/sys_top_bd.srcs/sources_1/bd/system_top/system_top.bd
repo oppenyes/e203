@@ -22,7 +22,8 @@
       "proc_sys_reset_0": "",
       "util_vector_logic_0": "",
       "system_e203_0": "",
-      "mig_7series_0": ""
+      "mig_7series_0": "",
+      "util_vector_logic_1": ""
     },
     "interface_ports": {
       "DDR3": {
@@ -387,16 +388,16 @@
           }
         },
         "interface_nets": {
-          "s00_couplers_to_axi_interconnect_0": {
-            "interface_ports": [
-              "M00_AXI",
-              "s00_couplers/M_AXI"
-            ]
-          },
           "axi_interconnect_0_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
               "s00_couplers/S_AXI"
+            ]
+          },
+          "s00_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "M00_AXI",
+              "s00_couplers/M_AXI"
             ]
           }
         },
@@ -541,9 +542,29 @@
             "value": "mig_a.prj"
           }
         }
+      },
+      "util_vector_logic_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "system_top_util_vector_logic_1_0",
+        "xci_path": "ip\\system_top_util_vector_logic_1_0\\system_top_util_vector_logic_1_0.xci",
+        "inst_hier_path": "util_vector_logic_1",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
       }
     },
     "interface_nets": {
+      "axi_interconnect_0_M00_AXI": {
+        "interface_ports": [
+          "axi_interconnect_0/M00_AXI",
+          "mig_7series_0/S_AXI"
+        ]
+      },
       "system_e203_0_expl_axi": {
         "interface_ports": [
           "system_e203_0/expl_axi",
@@ -554,12 +575,6 @@
         "interface_ports": [
           "DDR3",
           "mig_7series_0/DDR3"
-        ]
-      },
-      "axi_interconnect_0_M00_AXI": {
-        "interface_ports": [
-          "axi_interconnect_0/M00_AXI",
-          "mig_7series_0/S_AXI"
         ]
       }
     },
@@ -623,7 +638,6 @@
           "util_vector_logic_0/Res",
           "clk_wiz_0/resetn",
           "proc_sys_reset_0/ext_reset_in",
-          "system_e203_0/ck_rst",
           "mig_7series_0/sys_rst"
         ]
       },
@@ -723,6 +737,18 @@
           "mig_7series_0/clk_ref_i",
           "mig_7series_0/sys_clk_i"
         ]
+      },
+      "proc_sys_reset_0_mb_reset": {
+        "ports": [
+          "proc_sys_reset_0/mb_reset",
+          "util_vector_logic_1/Op1"
+        ]
+      },
+      "util_vector_logic_1_Res": {
+        "ports": [
+          "util_vector_logic_1/Res",
+          "system_e203_0/ck_rst"
+        ]
       }
     },
     "addressing": {
@@ -732,8 +758,8 @@
             "segments": {
               "SEG_mig_7series_0_memaddr": {
                 "address_block": "/mig_7series_0/memmap/memaddr",
-                "offset": "0x40000000",
-                "range": "256M"
+                "offset": "0x42000000",
+                "range": "32M"
               }
             }
           }

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "E:/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.tcl"
+  variable script "C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -126,7 +126,7 @@ set rc [catch {
   set_param chipscope.maxJobs 4
   set_param xicom.use_bs_reader 1
   open_checkpoint system_top_wrapper_routed.dcp
-  set_property webtalk.parent_dir E:/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/wt [current_project]
 set_property TOP system_top_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

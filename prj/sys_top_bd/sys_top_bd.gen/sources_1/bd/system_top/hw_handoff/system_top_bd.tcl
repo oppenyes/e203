@@ -385,6 +385,14 @@ proc create_root_design { parentCell } {
    CONFIG.C_SIZE {1} \
  ] $util_vector_logic_0
 
+  # Create instance: util_vector_logic_1, and set properties
+  set util_vector_logic_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_1 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_1
+
   # Create interface connections
   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins mig_7series_0/S_AXI]
   connect_bd_intf_net -intf_net mig_7series_0_DDR3 [get_bd_intf_ports DDR3] [get_bd_intf_pins mig_7series_0/DDR3]
@@ -412,13 +420,15 @@ proc create_root_design { parentCell } {
   connect_bd_net -net mig_7series_0_ui_clk [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
   connect_bd_net -net mig_7series_0_ui_clk_sync_rst [get_bd_pins mig_7series_0/ui_clk_sync_rst] [get_bd_pins proc_sys_reset_1/ext_reset_in]
   connect_bd_net -net proc_sys_reset_0_interconnect_aresetn [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins proc_sys_reset_0/interconnect_aresetn]
+  connect_bd_net -net proc_sys_reset_0_mb_reset [get_bd_pins proc_sys_reset_0/mb_reset] [get_bd_pins util_vector_logic_1/Op1]
   connect_bd_net -net proc_sys_reset_1_peripheral_aresetn [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins mig_7series_0/aresetn] [get_bd_pins proc_sys_reset_1/peripheral_aresetn]
   connect_bd_net -net system_e203_0_qspi0_cs [get_bd_ports qspi0_cs] [get_bd_pins system_e203_0/qspi0_cs]
   connect_bd_net -net system_e203_0_qspi0_sck [get_bd_ports qspi0_sck] [get_bd_pins system_e203_0/qspi0_sck]
-  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins clk_wiz_0/resetn] [get_bd_pins mig_7series_0/sys_rst] [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins system_e203_0/ck_rst] [get_bd_pins util_vector_logic_0/Res]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins clk_wiz_0/resetn] [get_bd_pins mig_7series_0/sys_rst] [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins util_vector_logic_0/Res]
+  connect_bd_net -net util_vector_logic_1_Res [get_bd_pins system_e203_0/ck_rst] [get_bd_pins util_vector_logic_1/Res]
 
   # Create address segments
-  assign_bd_address -offset 0x40000000 -range 0x10000000 -target_address_space [get_bd_addr_spaces system_e203_0/expl_axi] [get_bd_addr_segs mig_7series_0/memmap/memaddr] -force
+  assign_bd_address -offset 0x42000000 -range 0x02000000 -target_address_space [get_bd_addr_spaces system_e203_0/expl_axi] [get_bd_addr_segs mig_7series_0/memmap/memaddr] -force
 
 
   # Restore current instance

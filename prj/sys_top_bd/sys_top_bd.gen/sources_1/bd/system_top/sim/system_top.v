@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Wed Feb  5 01:26:47 2025
+//Date        : Wed Feb  5 14:51:14 2025
 //Host        : Lab running 64-bit major release  (build 9200)
 //Command     : generate_target system_top.bd
 //Design      : system_top
@@ -459,7 +459,7 @@ module s00_couplers_imp_1U10WOS
         .s_axi_wvalid(auto_cc_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "system_top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system_top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_top.hwdef" *) 
+(* CORE_GENERATION_INFO = "system_top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system_top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_top.hwdef" *) 
 module system_top
    (CLK100MHZ,
     CLK32768KHZ,
@@ -593,6 +593,7 @@ module system_top
   wire mig_7series_0_ui_clk;
   wire mig_7series_0_ui_clk_sync_rst;
   wire [0:0]proc_sys_reset_0_interconnect_aresetn;
+  wire proc_sys_reset_0_mb_reset;
   wire [0:0]proc_sys_reset_1_peripheral_aresetn;
   wire [31:0]system_e203_0_expl_axi_ARADDR;
   wire [1:0]system_e203_0_expl_axi_ARBURST;
@@ -628,6 +629,7 @@ module system_top
   wire system_e203_0_qspi0_cs;
   wire system_e203_0_qspi0_sck;
   wire [0:0]util_vector_logic_0_Res;
+  wire [0:0]util_vector_logic_1_Res;
 
   assign CLK32768KHZ_1 = CLK32768KHZ;
   assign DDR3_addr[13:0] = mig_7series_0_DDR3_ADDR;
@@ -788,6 +790,7 @@ module system_top
         .ext_reset_in(util_vector_logic_0_Res),
         .interconnect_aresetn(proc_sys_reset_0_interconnect_aresetn),
         .mb_debug_sys_rst(1'b0),
+        .mb_reset(proc_sys_reset_0_mb_reset),
         .slowest_sync_clk(clk_wiz_0_clk_out2));
   system_top_proc_sys_reset_0_1 proc_sys_reset_1
        (.aux_reset_in(1'b1),
@@ -798,7 +801,7 @@ module system_top
         .slowest_sync_clk(mig_7series_0_ui_clk));
   system_top_system_e203_0_0 system_e203_0
        (.CLK32768KHZ(CLK32768KHZ_1),
-        .ck_rst(util_vector_logic_0_Res),
+        .ck_rst(util_vector_logic_1_Res),
         .clk_16M(clk_wiz_0_clk_out2),
         .expl_axi_araddr(system_e203_0_expl_axi_ARADDR),
         .expl_axi_arburst(system_e203_0_expl_axi_ARBURST),
@@ -847,6 +850,9 @@ module system_top
        (.Op1(fpga_rst_1),
         .Op2(mcu_rst_1),
         .Res(util_vector_logic_0_Res));
+  system_top_util_vector_logic_1_0 util_vector_logic_1
+       (.Op1(proc_sys_reset_0_mb_reset),
+        .Res(util_vector_logic_1_Res));
 endmodule
 
 module system_top_axi_interconnect_0_0

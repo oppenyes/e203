@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:E:/my_git/e203_zs/constrs/nuclei-master.xdc rfile:../../../../../constrs/nuclei-master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Zhangshi/Desktop/my_git/e203_zs/constrs/nuclei-master.xdc rfile:../../../../../constrs/nuclei-master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W19    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }];
 set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]

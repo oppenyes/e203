@@ -2,235 +2,39 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Feb  4 14:44:22 2025
-# Process ID: 684
+# Start of session at: Wed Feb  5 14:51:52 2025
+# Process ID: 25396
 # Current directory: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent44592 C:\Users\Zhangshi\Desktop\my_git\e203_zs\prj\e203_with_eaxi_ports\e203_with_eaxi_ports.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18860 C:\Users\Zhangshi\Desktop\my_git\e203_zs\prj\e203_with_eaxi_ports\e203_with_eaxi_ports.xpr
 # Log file: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/vivado.log
 # Journal file: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.xpr
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports'.
 WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/component.xml'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/e203'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1354.457 ; gain = 214.859
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1315.605 ; gain = 174.277
 update_compile_order -fileset sources_1
-ipx::package_project -root_dir C:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203 -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -archive_source_project true
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/clk_div.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/cmos_capture_data.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/ddr3_fifo_ctrl.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/ddr3_rw.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/ddr3_top.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/i2c_dri.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/i2c_ov5640_rgb565_cfg.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/lcd_driver.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/lcd_rgb_top.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/ov5640_dri.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/picture_size.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/rd_id.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/cam/ov5640_lcd.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/e203/general/sirv_gnrl_xchecker.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/rtl/e203/core/e203_extend_csr.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/wr_fifo/wr_fifo.xci'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/clk_wiz_0/clk_wiz_0.xci'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/mig_7series_0/mig_7series_0.xci'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/ip/rd_fifo/rd_fifo.xci'.
-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/i2c_master_defines.v" from the top-level HDL file.
-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/e203_defines.v" from the top-level HDL file.
-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/config.v" from the top-level HDL file.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'fpga_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
-INFO: [IP_Flow 19-5107] Inferred bus interface 'mcu_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
-INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/.Xil/Vivado-684-Lab' for archiving project
-WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.gen/sources_1'.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Coretcl 2-1211] Creating project copy for archival...
-INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
-Current project path is 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/.Xil/Vivado-684-Lab/PrjAr/_X_'.
-INFO: [Coretcl 2-1213] Including run results for 'synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'reset_sys_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'mmcm_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'impl_1'
-INFO: [Coretcl 2-133] re-setting run 'reset_sys_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'mmcm_impl_1'...
-INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'mmcm'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'reset_sys'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
-INFO: [Coretcl 2-1209] Adding archive summary file to the project...
-INFO: [Coretcl 2-1214] Preparing project files for archive...
-INFO: [Coretcl 2-1210] Compressing project files and data...
-INFO: [Coretcl 2-1215] Project archived (c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/ip_project_archive.zip)
-INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
-archive_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1550.879 ; gain = 108.898
-ipx::update_source_project_archive: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1550.879 ; gain = 108.898
-WARNING: [IP_Flow 19-991] Unrecognized or unsupported file 'src/mig_b.prj' found in file group 'Synthesis'.
-Resolution: Remove the file from the specified file group.
-INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
-INFO: [IP_Flow 19-2187] The Product Guide file is missing.
-ipx::package_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1550.879 ; gain = 108.898
-ipx::unload_core c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/component.xml
-ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203 c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1550.879 ; gain = 0.000
-current_project e203_with_eaxi_ports
-current_project tmp_edit_project
-export_ip_user_files -of_objects  [get_files c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/src/nuclei-master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/src/nuclei-master.xdc
-update_compile_order -fileset sources_1
-set_property top system [current_fileset]
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/src/system_top.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/src/reset_sys/reset_sys.xci'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/src/mmcm/mmcm.xci'.
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/component.xml' ignored by IP packager.
-WARNING: [IP_Flow 19-5898] Updating the required XPM macros from 'XPM_CDC' to ''
-current_project e203_with_eaxi_ports
-current_project tmp_edit_project
-ipx::merge_project_changes hdl_parameters [ipx::current_core]
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/src/system_top.v'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/src/reset_sys/reset_sys.xci'.
-WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/src/mmcm/mmcm.xci'.
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/component.xml' ignored by IP packager.
-INFO: [Ipptcl 7-560]  
-INFO: [Ipptcl 7-560]  
-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/i2c_master_defines.v" from the top-level HDL file.
-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/e203_defines.v" from the top-level HDL file.
-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/config.v" from the top-level HDL file.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'ck_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
-ipx::add_user_parameter aqaa [ipx::current_core]
-set_property value_resolve_type user [ipx::get_user_parameters aqaa -of_objects [ipx::current_core]]
-ipgui::add_param -name {aqaa} -component [ipx::current_core]
-ipx::remove_user_parameter aqaa [ipx::current_core]
-ipx::add_bus_interface eaxi [ipx::current_core]
-set_property abstraction_type_vlnv xilinx.com:interface:aximm_rtl:1.0 [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property bus_type_vlnv xilinx.com:interface:aximm:1.0 [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property interface_mode master [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property display_name eaxi [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::add_bus_parameter NUM_READ_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::add_bus_parameter NUM_WRITE_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::add_port_map WLAST [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_wlast [ipx::get_port_maps WLAST -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map BREADY [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_bready [ipx::get_port_maps BREADY -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWREADY [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awready [ipx::get_port_maps AWREADY -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWLEN [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awlen [ipx::get_port_maps AWLEN -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARBURST [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_arburst [ipx::get_port_maps ARBURST -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWPROT [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awprot [ipx::get_port_maps AWPROT -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map RRESP [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_rresp [ipx::get_port_maps RRESP -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARPROT [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_arprot [ipx::get_port_maps ARPROT -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map RVALID [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_rvalid [ipx::get_port_maps RVALID -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARLOCK [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_arlock [ipx::get_port_maps ARLOCK -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map RLAST [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_rlast [ipx::get_port_maps RLAST -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWCACHE [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awcache [ipx::get_port_maps AWCACHE -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map WREADY [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_wready [ipx::get_port_maps WREADY -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map WSTRB [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_wstrb [ipx::get_port_maps WSTRB -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map BRESP [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_bresp [ipx::get_port_maps BRESP -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARLEN [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_arlen [ipx::get_port_maps ARLEN -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map RDATA [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_rdata [ipx::get_port_maps RDATA -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARCACHE [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_arcache [ipx::get_port_maps ARCACHE -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map RREADY [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_rready [ipx::get_port_maps RREADY -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map BVALID [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_bvalid [ipx::get_port_maps BVALID -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWVALID [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awvalid [ipx::get_port_maps AWVALID -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARSIZE [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_arsize [ipx::get_port_maps ARSIZE -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map WDATA [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_wdata [ipx::get_port_maps WDATA -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWSIZE [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awsize [ipx::get_port_maps AWSIZE -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARADDR [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_araddr [ipx::get_port_maps ARADDR -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWADDR [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awaddr [ipx::get_port_maps AWADDR -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARREADY [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_arready [ipx::get_port_maps ARREADY -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map WVALID [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_wvalid [ipx::get_port_maps WVALID -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map ARVALID [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_arvalid [ipx::get_port_maps ARVALID -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWLOCK [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awlock [ipx::get_port_maps AWLOCK -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::add_port_map AWBURST [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property physical_name expl_axi_awburst [ipx::get_port_maps AWBURST -of_objects [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]]
-ipx::remove_bus_parameter NUM_READ_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::remove_bus_parameter NUM_WRITE_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::add_bus_parameter NUM_WRITE_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::add_bus_parameter NUM_READ_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::remove_bus_parameter NUM_WRITE_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::add_bus_parameter NUM_WRITE_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::remove_bus_parameter NUM_READ_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-ipx::add_bus_parameter NUM_READ_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
-set_property core_revision 2 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core] -include
-INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/.Xil/Vivado-684-Lab' for archiving project
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Coretcl 2-1211] Creating project copy for archival...
-INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
-Current project path is 'C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/.Xil/Vivado-684-Lab/PrjAr/_X_'.
-INFO: [Coretcl 2-1213] Including run results for 'synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'impl_1'
-INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
-INFO: [Coretcl 2-1209] Adding archive summary file to the project...
-INFO: [Coretcl 2-1214] Preparing project files for archive...
-INFO: [Coretcl 2-1210] Compressing project files and data...
-INFO: [Coretcl 2-1215] Project archived (c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/ip_project_archive.zip)
-INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-WARNING: [IP_Flow 19-3158] Bus Interface 'eaxi': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
-WARNING: [IP_Flow 19-991] Unrecognized or unsupported file 'src/mig_b.prj' found in file group 'Synthesis'.
-Resolution: Remove the file from the specified file group.
-INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
-INFO: [IP_Flow 19-2187] The Product Guide file is missing.
-INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project
-set_property  ip_repo_paths  {c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203 c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports} [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports'.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Wed Feb  5 14:52:38 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.runs/synth_1/runme.log
+[Wed Feb  5 14:52:38 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_with_eaxi_ports/e203_with_eaxi_ports.runs/synth_1
+
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Feb  4 15:19:49 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  5 15:19:55 2025...
