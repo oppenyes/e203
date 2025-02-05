@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00947A5B    Feb  5 15:41:02 2025    C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/e203_zs/e203_zs.runs/impl_1/system.bit
