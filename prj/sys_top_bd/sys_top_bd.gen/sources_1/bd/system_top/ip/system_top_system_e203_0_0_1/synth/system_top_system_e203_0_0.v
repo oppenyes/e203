@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:system_e203:2.1
+// IP VLNV: xilinx.com:user:system_e203:3.0
 // IP Revision: 1
 
 (* X_CORE_INFO = "system,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "system_top_system_e203_0_0,system,{}" *)
-(* CORE_GENERATION_INFO = "system_top_system_e203_0_0,system,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=system_e203,x_ipVersion=2.1,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "system_top_system_e203_0_0,system,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=system_e203,x_ipVersion=3.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_top_system_e203_0_0 (

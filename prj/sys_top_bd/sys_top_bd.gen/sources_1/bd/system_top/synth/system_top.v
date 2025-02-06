@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-//Date        : Thu Feb  6 01:37:45 2025
+//Date        : Thu Feb  6 22:00:30 2025
 //Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
 //Command     : generate_target system_top.bd
 //Design      : system_top
@@ -1111,7 +1111,7 @@ module s00_couplers_imp_1U10WOS
         .s_axi_wvalid(s00_couplers_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "system_top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system_top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_top.hwdef" *) 
+(* CORE_GENERATION_INFO = "system_top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system_top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_top.hwdef" *) 
 module system_top
    (CLK100MHZ,
     CLK32768KHZ,
@@ -1164,9 +1164,9 @@ module system_top
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3 RAS_N" *) output DDR3_ras_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3 RESET_N" *) output DDR3_reset_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3 WE_N" *) output DDR3_we_n;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 LED " *) input [1:0]LED_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 LED " *) output [1:0]LED_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 LED " *) output [1:0]LED_tri_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 LED TRI_I" *) input [1:0]LED_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 LED TRI_O" *) output [1:0]LED_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 LED TRI_T" *) output [1:0]LED_tri_t;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.FPGA_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.FPGA_RST, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input fpga_rst;
   inout [31:0]gpioA;
   inout [31:0]gpioB;

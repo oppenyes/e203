@@ -72,6 +72,7 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tfbg484-2
 
@@ -92,6 +93,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
 add_files /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd
+set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_xbar_0/system_top_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0_ooc.xdc]
@@ -103,7 +105,6 @@ set_property used_in_implementation false [get_files -all /home/oppenyes/workspa
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0_1/system_top_proc_sys_reset_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/user_design/constraints/system_top_mig_7series_0_1.xdc]
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/user_design/constraints/system_top_mig_7series_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_xbar_0/system_top_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0.xdc]

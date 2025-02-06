@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Wed Feb  5 17:08:11 2025
+-- Date        : Wed Feb  5 17:08:07 2025
 -- Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_top_mig_7series_0_1 -prefix
+--               system_top_mig_7series_0_1_ system_top_mig_7series_0_1_sim_netlist.vhdl
 -- Design      : system_top_mig_7series_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -31,8 +31,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_arb_select is
     \cmd_pipe_plus.mc_data_offset_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     \cmd_pipe_plus.mc_data_offset_1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_arb_select : entity is "mig_7series_v4_2_arb_select";
 end system_top_mig_7series_0_1_mig_7series_v4_2_arb_select;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_arb_select is
@@ -163,8 +161,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_arbiter is
     \RD_PRI_REG.wr_wait_limit_reg[4]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \RD_PRI_REG.rd_wait_limit_reg[4]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_arbiter : entity is "mig_7series_v4_2_axi_mc_cmd_arbiter";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_arbiter;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_arbiter is
@@ -972,8 +968,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_fsm is
     axqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \RD_PRI_REG.wr_cmd_hold_i_2_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_fsm : entity is "mig_7series_v4_2_axi_mc_cmd_fsm";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_fsm;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_fsm is
@@ -2296,8 +2290,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_fifo is
     s_axi_bready : in STD_LOGIC;
     s_axi_bvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_fifo : entity is "mig_7series_v4_2_axi_mc_fifo";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_fifo;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_fifo is
@@ -7705,8 +7697,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_incr_cmd is
     \axaddr_incr_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \axaddr_incr_reg[28]_1\ : in STD_LOGIC_VECTOR ( 28 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_incr_cmd : entity is "mig_7series_v4_2_axi_mc_incr_cmd";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_incr_cmd;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_incr_cmd is
@@ -8615,8 +8605,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_w_channel is
     wdata_d2 : in STD_LOGIC_VECTOR ( 255 downto 0 );
     wstrb_d2 : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_w_channel : entity is "mig_7series_v4_2_axi_mc_w_channel";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_w_channel;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_w_channel is
@@ -20315,8 +20303,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wr_cmd_fsm is
     axqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \RD_PRI_REG.rd_cmd_hold_i_2_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wr_cmd_fsm : entity is "mig_7series_v4_2_axi_mc_wr_cmd_fsm";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wr_cmd_fsm;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wr_cmd_fsm is
@@ -21730,8 +21716,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wrap_cmd is
     CLK : in STD_LOGIC;
     \axlen_cnt_reg[3]_3\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wrap_cmd : entity is "mig_7series_v4_2_axi_mc_wrap_cmd";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wrap_cmd;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wrap_cmd is
@@ -22064,8 +22048,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_bank_common is
     \grant_r[2]_i_2__1_0\ : in STD_LOGIC;
     \grant_r[3]_i_3_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_bank_common : entity is "mig_7series_v4_2_bank_common";
 end system_top_mig_7series_0_1_mig_7series_v4_2_bank_common;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_bank_common is
@@ -22756,8 +22738,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_bank_compare is
     \req_data_buf_addr_r_reg[3]_2\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \req_col_r_reg[9]_1\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_bank_compare : entity is "mig_7series_v4_2_bank_compare";
 end system_top_mig_7series_0_1_mig_7series_v4_2_bank_compare;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_bank_compare is
@@ -25006,8 +24986,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_bank_queue is
     \order_q_r_reg[1]_0\ : in STD_LOGIC;
     \order_q_r_reg[0]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_bank_queue : entity is "mig_7series_v4_2_bank_queue";
 end system_top_mig_7series_0_1_mig_7series_v4_2_bank_queue;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_bank_queue is
@@ -28740,8 +28718,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_bank_state is
     override_demand_r : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_bank_state : entity is "mig_7series_v4_2_bank_state";
 end system_top_mig_7series_0_1_mig_7series_v4_2_bank_state;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_bank_state is
@@ -31178,8 +31154,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_clk_ibuf is
     mmcm_clk : out STD_LOGIC;
     sys_clk_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_clk_ibuf : entity is "mig_7series_v4_2_clk_ibuf";
 end system_top_mig_7series_0_1_mig_7series_v4_2_clk_ibuf;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_clk_ibuf is
@@ -31217,8 +31191,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_col_mach is
     in0 : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_col_mach : entity is "mig_7series_v4_2_col_mach";
 end system_top_mig_7series_0_1_mig_7series_v4_2_col_mach;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_col_mach is
@@ -31640,8 +31612,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axic_register_slice is
     reset : in STD_LOGIC;
     \storage_data1_reg[62]_1\ : in STD_LOGIC_VECTOR ( 49 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axic_register_slice : entity is "mig_7series_v4_2_ddr_axic_register_slice";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axic_register_slice;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axic_register_slice is
@@ -43494,8 +43464,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_group_io is
     CTSBUS : in STD_LOGIC_VECTOR ( 0 to 0 );
     rst_r4 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_group_io : entity is "mig_7series_v4_2_ddr_byte_group_io";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_group_io;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_group_io is
@@ -51413,8 +51381,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_and is
     lopt : in STD_LOGIC;
     lopt_1 : out STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_and : entity is "mig_7series_v4_2_ddr_carry_and";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_and;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_and is
@@ -57905,8 +57871,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_and is
     wstrb_wrap_buffer_31 : in STD_LOGIC;
     \USE_FPGA.and2b1l_inst_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_and : entity is "mig_7series_v4_2_ddr_carry_latch_and";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_and;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_and is
@@ -58636,8 +58600,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_or is
     addr_3 : in STD_LOGIC;
     addr_4 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_or : entity is "mig_7series_v4_2_ddr_carry_latch_or";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_or;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_or is
@@ -58861,8 +58823,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_or is
     lopt : in STD_LOGIC;
     lopt_1 : out STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_or : entity is "mig_7series_v4_2_ddr_carry_or";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_or;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_or is
@@ -59070,8 +59030,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_if_post_fifo is
     if_empty_r_1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     \rd_ptr_reg[1]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_if_post_fifo : entity is "mig_7series_v4_2_ddr_if_post_fifo";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_if_post_fifo;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_if_post_fifo is
@@ -68554,8 +68512,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_of_pre_fifo is
     in0 : in STD_LOGIC;
     CLK : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_of_pre_fifo : entity is "mig_7series_v4_2_ddr_of_pre_fifo";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_of_pre_fifo;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_of_pre_fifo is
@@ -76514,8 +76470,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay is
     pi_fine_dly_dec_done : in STD_LOGIC;
     cmd_delay_start0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay : entity is "mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay is
@@ -77088,8 +77042,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_dqs_found_cal_hr is
     \calib_sel_reg[1]_3\ : in STD_LOGIC;
     \init_dec_cnt_reg[5]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_dqs_found_cal_hr : entity is "mig_7series_v4_2_ddr_phy_dqs_found_cal_hr";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_dqs_found_cal_hr;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_dqs_found_cal_hr is
@@ -81682,8 +81634,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_init is
     mem_reg_0_15_66_71 : in STD_LOGIC;
     mem_reg_0_15_42_47_1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_init : entity is "mig_7series_v4_2_ddr_phy_init";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_init;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_init is
@@ -102073,8 +102023,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_prbs_rdlvl is
     \gen_byte_sel_div2.byte_sel_cnt[2]_i_3_0\ : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_prbs_rdlvl : entity is "mig_7series_v4_2_ddr_phy_prbs_rdlvl";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_prbs_rdlvl;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_prbs_rdlvl is
@@ -112369,8 +112317,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_rdlvl is
     \cnt_shift_r_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \wait_cnt_r_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_rdlvl : entity is "mig_7series_v4_2_ddr_phy_rdlvl";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_rdlvl;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_rdlvl is
@@ -129695,8 +129641,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_tempmon is
     \device_temp_101_reg[11]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \neutral_min_limit_reg[11]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_tempmon : entity is "mig_7series_v4_2_ddr_phy_tempmon";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_tempmon;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_tempmon is
@@ -137510,8 +137454,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrcal is
     prech_done : in STD_LOGIC;
     \cal2_state_r_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrcal : entity is "mig_7series_v4_2_ddr_phy_wrcal";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrcal;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrcal is
@@ -142584,8 +142526,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrlvl is
     \gen_rd[3].rd_data_rise_wl_r_reg[3]_6\ : in STD_LOGIC;
     \gen_rd[3].rd_data_rise_wl_r_reg[3]_7\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrlvl : entity is "mig_7series_v4_2_ddr_phy_wrlvl";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrlvl;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrlvl is
@@ -150710,8 +150650,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_prbs_gen is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_prbs_gen : entity is "mig_7series_v4_2_ddr_prbs_gen";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_prbs_gen;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_prbs_gen is
@@ -153378,8 +153316,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_infrastructure is
     \en_cnt_div4.enable_wrlvl_cnt_reg[4]\ : in STD_LOGIC;
     prbs_rdlvl_done_pulse : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_infrastructure : entity is "mig_7series_v4_2_infrastructure";
 end system_top_mig_7series_0_1_mig_7series_v4_2_infrastructure;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_infrastructure is
@@ -154551,8 +154487,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_iodelay_ctrl is
     clk_ref_i : in STD_LOGIC;
     sys_rst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_iodelay_ctrl : entity is "mig_7series_v4_2_iodelay_ctrl";
 end system_top_mig_7series_0_1_mig_7series_v4_2_iodelay_ctrl;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_iodelay_ctrl is
@@ -154747,8 +154681,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_poc_pd is
     in_dqs_lpbk_to_iddr_0 : in STD_LOGIC;
     rst_sync_r1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_poc_pd : entity is "mig_7series_v4_2_poc_pd";
 end system_top_mig_7series_0_1_mig_7series_v4_2_poc_pd;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_poc_pd is
@@ -154937,8 +154869,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_rank_cntrl is
     periodic_rd_ack_r : in STD_LOGIC;
     \inhbt_act_faw.inhbt_act_faw_r_reg_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_rank_cntrl : entity is "mig_7series_v4_2_rank_cntrl";
 end system_top_mig_7series_0_1_mig_7series_v4_2_rank_cntrl;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_rank_cntrl is
@@ -155294,8 +155224,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_round_robin_arb is
     \maintenance_request.maint_zq_r_lcl_reg\ : in STD_LOGIC;
     \last_master_r_reg[1]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_round_robin_arb : entity is "mig_7series_v4_2_round_robin_arb";
 end system_top_mig_7series_0_1_mig_7series_v4_2_round_robin_arb;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_round_robin_arb is
@@ -158324,8 +158252,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_tempmon is
     in0 : in STD_LOGIC;
     \device_temp_r_reg[11]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_tempmon : entity is "mig_7series_v4_2_tempmon";
 end system_top_mig_7series_0_1_mig_7series_v4_2_tempmon;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_tempmon is
@@ -160330,8 +160256,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ui_cmd is
     \app_addr_r1_reg[3]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \app_addr_r1_reg[26]_1\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ui_cmd : entity is "mig_7series_v4_2_ui_cmd";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ui_cmd;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ui_cmd is
@@ -161603,8 +161527,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ui_rd_data is
     \strict_mode.rd_data_buf_addr_r_lcl_reg[1]_0\ : in STD_LOGIC;
     \strict_mode.rd_data_buf_addr_r_lcl_reg[0]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ui_rd_data : entity is "mig_7series_v4_2_ui_rd_data";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ui_rd_data;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ui_rd_data is
@@ -161920,8 +161842,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ui_wr_data is
     \wr_req_counter.wr_req_cnt_r_reg[4]_0\ : in STD_LOGIC;
     app_wdf_rdy_r_copy3_reg_0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ui_wr_data : entity is "mig_7series_v4_2_ui_wr_data";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ui_wr_data;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ui_wr_data is
@@ -172010,8 +171930,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_arb_row_col is
     \i___13_i_3_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \grant_r_reg[1]_7\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_arb_row_col : entity is "mig_7series_v4_2_arb_row_col";
 end system_top_mig_7series_0_1_mig_7series_v4_2_arb_row_col;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_arb_row_col is
@@ -172306,8 +172224,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_b_channel is
     \cnt_read_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_b_channel : entity is "mig_7series_v4_2_axi_mc_b_channel";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_b_channel;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_b_channel is
@@ -172403,8 +172319,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_translator is
     \int_addr_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \axlen_cnt_reg[3]_2\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_translator : entity is "mig_7series_v4_2_axi_mc_cmd_translator";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_translator;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_translator is
@@ -172536,8 +172450,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_r_channel is
     \cnt_read_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \cnt_read_reg[2]_rep__0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_r_channel : entity is "mig_7series_v4_2_axi_mc_r_channel";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_r_channel;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_r_channel is
@@ -172857,8 +172769,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_bank_cntrl is
     \order_q_r_reg[1]\ : in STD_LOGIC;
     \order_q_r_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_bank_cntrl : entity is "mig_7series_v4_2_bank_cntrl";
 end system_top_mig_7series_0_1_mig_7series_v4_2_bank_cntrl;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_bank_cntrl is
@@ -174552,8 +174462,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_register_slice is
     \storage_data1_reg[62]_0\ : in STD_LOGIC_VECTOR ( 49 downto 0 );
     \storage_data1_reg[62]_1\ : in STD_LOGIC_VECTOR ( 49 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_register_slice : entity is "mig_7series_v4_2_ddr_axi_register_slice";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_register_slice;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_register_slice is
@@ -175363,8 +175271,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_lane is
     my_empty : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_mux_rd_div4.gen_mux_rd[0].mux_rd_rise1_r_reg[0]_2\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_lane : entity is "mig_7series_v4_2_ddr_byte_lane";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_lane;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_lane is
@@ -181585,8 +181491,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_calib_top is
     \phy_ctl_wd_i1_reg[22]\ : in STD_LOGIC;
     mc_wrdata_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_calib_top : entity is "mig_7series_v4_2_ddr_calib_top";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_calib_top;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_calib_top is
@@ -183966,8 +183870,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_command_fifo is
     pre_next_word_i : in STD_LOGIC_VECTOR ( 4 downto 0 );
     next_word_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_command_fifo : entity is "mig_7series_v4_2_ddr_command_fifo";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_command_fifo;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_command_fifo is
@@ -190125,8 +190027,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel is
     lopt_7 : in STD_LOGIC;
     lopt_8 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel : entity is "mig_7series_v4_2_ddr_comparator_sel";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel is
@@ -190317,8 +190217,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel_static is
     lopt_1 : in STD_LOGIC;
     lopt_2 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel_static : entity is "mig_7series_v4_2_ddr_comparator_sel_static";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel_static;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel_static is
@@ -190670,8 +190568,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_rank_common is
     periodic_rd_ack_r : in STD_LOGIC;
     \periodic_rd_generation.periodic_rd_request_r\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_rank_common : entity is "mig_7series_v4_2_rank_common";
 end system_top_mig_7series_0_1_mig_7series_v4_2_rank_common;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_rank_common is
@@ -191721,8 +191617,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ui_top is
     \app_addr_r1_reg[3]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \app_addr_r1_reg[26]_0\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ui_top : entity is "mig_7series_v4_2_ui_top";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ui_top;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ui_top is
@@ -191955,8 +191849,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_arb_mux is
     \i___13_i_3_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \grant_r_reg[1]_7\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_arb_mux : entity is "mig_7series_v4_2_arb_mux";
 end system_top_mig_7series_0_1_mig_7series_v4_2_arb_mux;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_arb_mux is
@@ -192162,8 +192054,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_ar_channel is
     \int_addr_reg[3]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \axid_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_ar_channel : entity is "mig_7series_v4_2_axi_mc_ar_channel";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_ar_channel;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_ar_channel is
@@ -192768,8 +192658,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_aw_channel is
     \axlen_cnt_reg[7]_0\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     \axaddr_incr_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_aw_channel : entity is "mig_7series_v4_2_axi_mc_aw_channel";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_aw_channel;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_aw_channel is
@@ -193537,8 +193425,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_a_upsizer is
     \USE_REGISTER.M_AXI_AID_q_reg[3]_1\ : in STD_LOGIC_VECTOR ( 30 downto 0 );
     \USE_REGISTER.M_AXI_AADDR_q_reg[5]_1\ : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_a_upsizer : entity is "mig_7series_v4_2_ddr_a_upsizer";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_a_upsizer;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_a_upsizer is
@@ -197512,8 +197398,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_4lanes is
     mux_wrdata_mask : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \gen_mux_rd_div4.gen_mux_rd[0].mux_rd_rise1_r_reg[0]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_4lanes : entity is "mig_7series_v4_2_ddr_phy_4lanes";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_4lanes;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_4lanes is
@@ -200486,8 +200370,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_r_upsizer is
     \pre_next_word_1_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \pre_next_word_1_reg[4]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_r_upsizer : entity is "mig_7series_v4_2_ddr_r_upsizer";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_r_upsizer;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_r_upsizer is
@@ -205030,8 +204912,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_w_upsizer is
     D : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \USE_RTL_CURR_WORD.pre_next_word_q_reg[4]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_w_upsizer : entity is "mig_7series_v4_2_ddr_w_upsizer";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_w_upsizer;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_w_upsizer is
@@ -220194,8 +220074,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_rank_mach is
     periodic_rd_ack_r : in STD_LOGIC;
     \inhbt_act_faw.inhbt_act_faw_r_reg\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_rank_mach : entity is "mig_7series_v4_2_rank_mach";
 end system_top_mig_7series_0_1_mig_7series_v4_2_rank_mach;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_rank_mach is
@@ -220437,8 +220315,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_bank_mach is
     \req_data_buf_addr_r_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \req_col_r_reg[9]\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_bank_mach : entity is "mig_7series_v4_2_bank_mach";
 end system_top_mig_7series_0_1_mig_7series_v4_2_bank_mach;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_bank_mach is
@@ -221567,8 +221443,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_upsizer is
     \storage_data1_reg[62]_0\ : in STD_LOGIC_VECTOR ( 49 downto 0 );
     \storage_data2_reg[262]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_upsizer : entity is "mig_7series_v4_2_ddr_axi_upsizer";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_upsizer;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_upsizer is
@@ -223411,8 +223285,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy is
     \out_fifo_i_35__0\ : in STD_LOGIC_VECTOR ( 33 downto 0 );
     out_fifo_2 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy : entity is "mig_7series_v4_2_ddr_mc_phy";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy is
@@ -224329,8 +224201,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc is
     mc_init_complete : in STD_LOGIC;
     s_axi_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc : entity is "mig_7series_v4_2_axi_mc";
 end system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc is
@@ -225756,8 +225626,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy_wrapper is
     \out_fifo_i_35__0\ : in STD_LOGIC_VECTOR ( 33 downto 0 );
     out_fifo_1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy_wrapper : entity is "mig_7series_v4_2_ddr_mc_phy_wrapper";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy_wrapper;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy_wrapper is
@@ -227715,8 +227583,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_mc is
     \cmd_pipe_plus.mc_data_offset_reg[0]_1\ : in STD_LOGIC;
     \cmd_pipe_plus.mc_data_offset_1_reg[0]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_mc : entity is "mig_7series_v4_2_mc";
 end system_top_mig_7series_0_1_mig_7series_v4_2_mc;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_mc is
@@ -229700,8 +229566,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_top is
     \phy_ctl_wd_i1_reg[22]\ : in STD_LOGIC;
     mc_wrdata_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_top : entity is "mig_7series_v4_2_ddr_phy_top";
 end system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_top;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_top is
@@ -232997,8 +232861,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_mem_intfc is
     \en_cnt_div4.enable_wrlvl_cnt_reg[4]\ : in STD_LOGIC;
     \device_temp_101_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_mem_intfc : entity is "mig_7series_v4_2_mem_intfc";
 end system_top_mig_7series_0_1_mig_7series_v4_2_mem_intfc;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_mem_intfc is
@@ -233671,8 +233533,6 @@ entity system_top_mig_7series_0_1_mig_7series_v4_2_memc_ui_top_axi is
     aresetn : in STD_LOGIC;
     s_axi_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_mig_7series_v4_2_memc_ui_top_axi : entity is "mig_7series_v4_2_memc_ui_top_axi";
 end system_top_mig_7series_0_1_mig_7series_v4_2_memc_ui_top_axi;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_mig_7series_v4_2_memc_ui_top_axi is
@@ -234782,8 +234642,6 @@ entity system_top_mig_7series_0_1_system_top_mig_7series_0_1_mig is
     aresetn : in STD_LOGIC;
     s_axi_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_mig_7series_0_1_system_top_mig_7series_0_1_mig : entity is "system_top_mig_7series_0_1_mig";
 end system_top_mig_7series_0_1_system_top_mig_7series_0_1_mig;
 
 architecture STRUCTURE of system_top_mig_7series_0_1_system_top_mig_7series_0_1_mig is

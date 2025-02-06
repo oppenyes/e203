@@ -7,7 +7,7 @@
   <spirit:componentInstances>
     <spirit:componentInstance>
       <spirit:instanceName>system_top_system_e203_0_0</spirit:instanceName>
-      <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="user" spirit:name="system_e203" spirit:version="2.1"/>
+      <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="user" spirit:name="system_e203" spirit:version="3.0"/>
       <spirit:configurableElementValues>
         <spirit:configurableElementValue spirit:referenceId="ADDRSPACE_RANGE.expl_axi">4294967296</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="ADDRSPACE_WIDTH.expl_axi">32</spirit:configurableElementValue>

@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Wed Feb  5 17:08:10 2025
+// Date        : Wed Feb  5 17:08:06 2025
 // Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top system_top_mig_7series_0_1 -prefix
+//               system_top_mig_7series_0_1_ system_top_mig_7series_0_1_sim_netlist.v
 // Design      : system_top_mig_7series_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,270 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* NotValidForBitStream *)
-module system_top_mig_7series_0_1
-   (ddr3_dq,
-    ddr3_dqs_n,
-    ddr3_dqs_p,
-    ddr3_addr,
-    ddr3_ba,
-    ddr3_ras_n,
-    ddr3_cas_n,
-    ddr3_we_n,
-    ddr3_reset_n,
-    ddr3_ck_p,
-    ddr3_ck_n,
-    ddr3_cke,
-    ddr3_cs_n,
-    ddr3_dm,
-    ddr3_odt,
-    sys_clk_i,
-    clk_ref_i,
-    ui_clk,
-    ui_clk_sync_rst,
-    mmcm_locked,
-    aresetn,
-    app_sr_active,
-    app_ref_ack,
-    app_zq_ack,
-    s_axi_awid,
-    s_axi_awaddr,
-    s_axi_awlen,
-    s_axi_awsize,
-    s_axi_awburst,
-    s_axi_awlock,
-    s_axi_awcache,
-    s_axi_awprot,
-    s_axi_awqos,
-    s_axi_awvalid,
-    s_axi_awready,
-    s_axi_wdata,
-    s_axi_wstrb,
-    s_axi_wlast,
-    s_axi_wvalid,
-    s_axi_wready,
-    s_axi_bready,
-    s_axi_bid,
-    s_axi_bresp,
-    s_axi_bvalid,
-    s_axi_arid,
-    s_axi_araddr,
-    s_axi_arlen,
-    s_axi_arsize,
-    s_axi_arburst,
-    s_axi_arlock,
-    s_axi_arcache,
-    s_axi_arprot,
-    s_axi_arqos,
-    s_axi_arvalid,
-    s_axi_arready,
-    s_axi_rready,
-    s_axi_rid,
-    s_axi_rdata,
-    s_axi_rresp,
-    s_axi_rlast,
-    s_axi_rvalid,
-    init_calib_complete,
-    device_temp,
-    sys_rst);
-  inout [31:0]ddr3_dq;
-  inout [3:0]ddr3_dqs_n;
-  inout [3:0]ddr3_dqs_p;
-  output [13:0]ddr3_addr;
-  output [2:0]ddr3_ba;
-  output ddr3_ras_n;
-  output ddr3_cas_n;
-  output ddr3_we_n;
-  output ddr3_reset_n;
-  output [0:0]ddr3_ck_p;
-  output [0:0]ddr3_ck_n;
-  output [0:0]ddr3_cke;
-  output [0:0]ddr3_cs_n;
-  output [3:0]ddr3_dm;
-  output [0:0]ddr3_odt;
-  input sys_clk_i;
-  input clk_ref_i;
-  output ui_clk;
-  output ui_clk_sync_rst;
-  output mmcm_locked;
-  input aresetn;
-  output app_sr_active;
-  output app_ref_ack;
-  output app_zq_ack;
-  input [3:0]s_axi_awid;
-  input [28:0]s_axi_awaddr;
-  input [7:0]s_axi_awlen;
-  input [2:0]s_axi_awsize;
-  input [1:0]s_axi_awburst;
-  input [0:0]s_axi_awlock;
-  input [3:0]s_axi_awcache;
-  input [2:0]s_axi_awprot;
-  input [3:0]s_axi_awqos;
-  input s_axi_awvalid;
-  output s_axi_awready;
-  input [31:0]s_axi_wdata;
-  input [3:0]s_axi_wstrb;
-  input s_axi_wlast;
-  input s_axi_wvalid;
-  output s_axi_wready;
-  input s_axi_bready;
-  output [3:0]s_axi_bid;
-  output [1:0]s_axi_bresp;
-  output s_axi_bvalid;
-  input [3:0]s_axi_arid;
-  input [28:0]s_axi_araddr;
-  input [7:0]s_axi_arlen;
-  input [2:0]s_axi_arsize;
-  input [1:0]s_axi_arburst;
-  input [0:0]s_axi_arlock;
-  input [3:0]s_axi_arcache;
-  input [2:0]s_axi_arprot;
-  input [3:0]s_axi_arqos;
-  input s_axi_arvalid;
-  output s_axi_arready;
-  input s_axi_rready;
-  output [3:0]s_axi_rid;
-  output [31:0]s_axi_rdata;
-  output [1:0]s_axi_rresp;
-  output s_axi_rlast;
-  output s_axi_rvalid;
-  output init_calib_complete;
-  output [11:0]device_temp;
-  input sys_rst;
-
-  wire \<const0> ;
-  wire app_sr_active;
-  wire aresetn;
-  wire clk_ref_i;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [13:0]ddr3_addr;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [2:0]ddr3_ba;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire ddr3_cas_n;
-  (* SLEW = "SLOW" *) wire [0:0]ddr3_ck_n;
-  (* SLEW = "SLOW" *) wire [0:0]ddr3_ck_p;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [0:0]ddr3_cke;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [0:0]ddr3_cs_n;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [3:0]ddr3_dm;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR = 0 *) (* SLEW = "SLOW" *) wire [31:0]ddr3_dq;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR = 0 *) wire [3:0]ddr3_dqs_n;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR = 0 *) wire [3:0]ddr3_dqs_p;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [0:0]ddr3_odt;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire ddr3_ras_n;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire ddr3_reset_n;
-  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire ddr3_we_n;
-  wire [11:0]device_temp;
-  (* MAX_FANOUT = "50" *) (* RTL_MAX_FANOUT = "found" *) (* syn_maxfan = "10" *) wire init_calib_complete;
-  wire mmcm_locked;
-  wire [28:0]s_axi_araddr;
-  wire [1:0]s_axi_arburst;
-  wire [3:0]s_axi_arid;
-  wire [7:0]s_axi_arlen;
-  wire [3:0]s_axi_arqos;
-  wire s_axi_arready;
-  wire [2:0]s_axi_arsize;
-  wire s_axi_arvalid;
-  wire [28:0]s_axi_awaddr;
-  wire [1:0]s_axi_awburst;
-  wire [3:0]s_axi_awid;
-  wire [7:0]s_axi_awlen;
-  wire [3:0]s_axi_awqos;
-  wire s_axi_awready;
-  wire [2:0]s_axi_awsize;
-  wire s_axi_awvalid;
-  wire [3:0]s_axi_bid;
-  wire s_axi_bready;
-  wire s_axi_bvalid;
-  wire [31:0]s_axi_rdata;
-  wire [3:0]s_axi_rid;
-  wire s_axi_rlast;
-  wire s_axi_rready;
-  wire s_axi_rvalid;
-  wire [31:0]s_axi_wdata;
-  wire s_axi_wlast;
-  wire s_axi_wready;
-  wire [3:0]s_axi_wstrb;
-  wire s_axi_wvalid;
-  wire sys_clk_i;
-  wire sys_rst;
-  wire \u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk ;
-  wire \u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk ;
-  wire \u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk ;
-  wire \u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk ;
-  wire ui_clk;
-  wire ui_clk_sync_rst;
-
-  assign app_ref_ack = \<const0> ;
-  assign app_zq_ack = \<const0> ;
-  assign s_axi_bresp[1] = \<const0> ;
-  assign s_axi_bresp[0] = \<const0> ;
-  assign s_axi_rresp[1] = \<const0> ;
-  assign s_axi_rresp[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  system_top_mig_7series_0_1_system_top_mig_7series_0_1_mig u_system_top_mig_7series_0_1_mig
-       (.CLKB0(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk ),
-        .CLKB0_3(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk ),
-        .CLKB0_4(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk ),
-        .CLKB0_5(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk ),
-        .SR(ui_clk_sync_rst),
-        .app_sr_active(app_sr_active),
-        .aresetn(aresetn),
-        .clk_ref_i(clk_ref_i),
-        .ddr3_addr(ddr3_addr),
-        .ddr3_ba(ddr3_ba),
-        .ddr3_cas_n(ddr3_cas_n),
-        .ddr3_cke(ddr3_cke),
-        .ddr3_cs_n(ddr3_cs_n),
-        .ddr3_dm(ddr3_dm),
-        .ddr3_dq(ddr3_dq),
-        .ddr3_dqs_n(ddr3_dqs_n),
-        .ddr3_dqs_p(ddr3_dqs_p),
-        .ddr3_odt(ddr3_odt),
-        .ddr3_ras_n(ddr3_ras_n),
-        .ddr3_reset_n(ddr3_reset_n),
-        .ddr3_we_n(ddr3_we_n),
-        .ddr_ck_out({ddr3_ck_n,ddr3_ck_p}),
-        .\gen_mmcm.mmcm_i (ui_clk),
-        .init_calib_complete(init_calib_complete),
-        .iserdes_clk(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk ),
-        .iserdes_clk_0(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk ),
-        .iserdes_clk_1(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk ),
-        .iserdes_clk_2(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk ),
-        .mmcm_locked(mmcm_locked),
-        .out(device_temp),
-        .s_axi_araddr(s_axi_araddr),
-        .s_axi_arburst(s_axi_arburst),
-        .s_axi_arid(s_axi_arid),
-        .s_axi_arlen(s_axi_arlen),
-        .s_axi_arqos(s_axi_arqos),
-        .s_axi_arready(s_axi_arready),
-        .s_axi_arsize(s_axi_arsize),
-        .s_axi_arvalid(s_axi_arvalid),
-        .s_axi_awaddr(s_axi_awaddr),
-        .s_axi_awburst(s_axi_awburst),
-        .s_axi_awid(s_axi_awid),
-        .s_axi_awlen(s_axi_awlen),
-        .s_axi_awqos(s_axi_awqos),
-        .s_axi_awready(s_axi_awready),
-        .s_axi_awsize(s_axi_awsize),
-        .s_axi_awvalid(s_axi_awvalid),
-        .s_axi_bid(s_axi_bid),
-        .s_axi_bready(s_axi_bready),
-        .s_axi_bvalid(s_axi_bvalid),
-        .s_axi_rdata(s_axi_rdata),
-        .s_axi_rid(s_axi_rid),
-        .s_axi_rlast(s_axi_rlast),
-        .s_axi_rready(s_axi_rready),
-        .s_axi_rvalid(s_axi_rvalid),
-        .s_axi_wdata(s_axi_wdata),
-        .s_axi_wlast(s_axi_wlast),
-        .s_axi_wready(s_axi_wready),
-        .s_axi_wstrb(s_axi_wstrb),
-        .s_axi_wvalid(s_axi_wvalid),
-        .sys_clk_i(sys_clk_i),
-        .sys_rst(sys_rst));
-endmodule
-
-(* ORIG_REF_NAME = "mig_7series_v4_2_arb_mux" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_arb_mux
    (rnk_config_valid_r,
     granted_col_r_reg,
@@ -767,7 +503,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_arb_mux
         .\rank_final_loop[0].bank_final_loop[1].final_data_offset_mc_reg[0][11] (\rank_final_loop[0].bank_final_loop[1].final_data_offset_mc_reg[0][11] ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_arb_row_col" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_arb_row_col
    (rnk_config_valid_r_lcl_reg_0,
     granted_col_r_reg_0,
@@ -1337,7 +1072,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_arb_row_col
         .sent_row(sent_row));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_arb_select" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_arb_select
    (\col_mux.col_periodic_rd_r ,
     col_rd_wr_r,
@@ -1449,7 +1183,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_arb_select
         .S({1'b0,1'b0,1'b0,\cmd_pipe_plus.mc_data_offset_1_reg[5] [5]}));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc
    (w_cmd_rdy,
     app_cmd,
@@ -2136,7 +1869,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_ar_channel" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_ar_channel
    (arready_d3,
     r_push,
@@ -2690,7 +2422,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_ar_channel
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_aw_channel" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_aw_channel
    (awready_d3,
     axvalid,
@@ -3220,7 +2951,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_aw_channel
         .R(axvalid_reg_1));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_b_channel" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_b_channel
    (s_axi_bvalid,
     s_axi_bid,
@@ -3300,7 +3030,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_b_channel
         .R(SR));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_cmd_arbiter" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_arbiter
    (\RD_PRI_REG.wr_cmd_hold_reg_0 ,
     SS,
@@ -3928,7 +3657,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_arbiter
         .O(next));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_cmd_fsm" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_fsm
    (E,
     \axburst_reg[1] ,
@@ -5045,7 +4773,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_fsm
         .O(\axburst_reg[1]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_cmd_translator" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_translator
    (out,
     wr_cmd_byte_addr,
@@ -5261,7 +4988,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_cmd_translator__parame
         .\int_addr_reg[3]_1 (\int_addr_reg[3]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_fifo" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_fifo
    (bhandshake,
     out,
@@ -9131,7 +8857,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_fifo__parameterized1
         .O(D[4]));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_incr_cmd" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_incr_cmd
    (out,
     \axlen_cnt_reg[7]_0 ,
@@ -9828,7 +9553,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_incr_cmd__parameterize
         .R(\axaddr_incr_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_r_channel" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_r_channel
    (s_ready_i_reg,
     rvalid_d3,
@@ -9992,7 +9716,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_r_channel
         .\trans_buf_out_r_reg[2] (rvalid_d3));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_w_channel" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_w_channel
    (wready_d3,
     mc_app_wdf_wren_reg,
@@ -18798,7 +18521,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_w_channel
         .R(wready_reg_1));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_wr_cmd_fsm" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wr_cmd_fsm
    (axready_reg_0,
     E,
@@ -19994,7 +19716,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wr_cmd_fsm
         .O(in[3]));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_axi_mc_wrap_cmd" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wrap_cmd
    (wr_cmd_byte_addr,
     Q,
@@ -20256,7 +19977,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_axi_mc_wrap_cmd__parameterize
         .R(\axlen_cnt_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_bank_cntrl" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_bank_cntrl
    (E,
     req_periodic_rd_r,
@@ -22937,7 +22657,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_bank_cntrl__parameterized2
         .wr_this_rank_r(wr_this_rank_r));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_bank_common" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_bank_common
    (accept_internal_r,
     periodic_rd_ack_r_lcl_reg_0,
@@ -23616,7 +23335,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_bank_common
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_bank_compare" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_bank_compare
    (req_periodic_rd_r,
     rd_wr_r_lcl_reg_0,
@@ -25500,7 +25218,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_bank_compare_78
         .O(start_wtp_timer0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_bank_mach" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_bank_mach
    (sent_col,
     insert_maint_r1,
@@ -26860,7 +26577,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_bank_mach
         .was_wr_reg_0(was_wr_reg));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_bank_queue" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_bank_queue
    (idle_r_lcl_reg_0,
     E,
@@ -30650,7 +30366,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_bank_queue__parameterized2
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_bank_state" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_bank_state
    (bm_end_r1,
     act_wait_r_lcl_reg_0,
@@ -33064,7 +32779,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_bank_state__parameterized2
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_clk_ibuf" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_clk_ibuf
    (mmcm_clk,
     sys_clk_i);
@@ -33077,7 +32791,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_clk_ibuf
   assign sys_clk_ibufg = sys_clk_i;
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_col_mach" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_col_mach
    (col_rd_wr_r1,
     col_rd_wr_r2,
@@ -33396,7 +33109,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_col_mach
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_a_upsizer" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_a_upsizer
    (data_Exists_I,
     \USE_WRITE.wr_cmd_length ,
@@ -36862,7 +36574,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_a_upsizer__parameterized0
         .O(r_rlast_i_3_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_axi_register_slice" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_register_slice
    (E,
     s_axi_awready,
@@ -37616,7 +37327,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_register_slice__param
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_axi_upsizer" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_upsizer
    (wdata_d2,
     wstrb_d2,
@@ -39060,7 +38770,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axi_upsizer
         .\storage_data1_reg[62]_1 (\storage_data1_reg[62]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_axic_register_slice" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axic_register_slice
    (E,
     s_axi_arready,
@@ -48313,7 +48022,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_axic_register_slice__para
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_byte_group_io" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_group_io
    (D0,
     D1,
@@ -56017,7 +55725,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_group_io__parameteri
         .TQ(\NLW_output_[9].oserdes_dq_.sdr.oserdes_dq_i_TQ_UNCONNECTED ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_byte_lane" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_lane
    (A_rst_primitives_reg,
     mem_dq_out,
@@ -63374,7 +63081,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_byte_lane__parameterized5
         .SYSCLK(CLK));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_calib_top" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_calib_top
    (po_cnt_dec_reg,
     fine_adjust_reg,
@@ -66629,7 +66335,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_calib_top
         .\wrdq_div1_4to1_wrcal_first.phy_wrdata_reg[255]_0 (\ddr_phy_rdlvl_gen.u_ddr_phy_rdlvl_n_9 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_carry_and" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_and
    (last_word,
     \USE_WRITE.wr_cmd_modified ,
@@ -72584,7 +72289,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_and_9
         .O(wrap_buffer_available_reg));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_carry_latch_and" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_and
    (wrap_qualifier_0,
     wrap_qualifier_1,
@@ -73327,7 +73031,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_and_67
         .SRI(\USE_FPGA.I_n_3 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_carry_latch_or" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_or
    (\USE_FPGA_VALID_WRITE.sel_new_write ,
     hsum_A_0,
@@ -73561,7 +73264,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_latch_or_69
         .O(hsum_A_4));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_carry_or" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_or
    (word_complete_rest,
     \USE_FPGA.S_n ,
@@ -73671,7 +73373,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_carry_or_47
         .S({\NLW_USE_FPGA.and_inst_CARRY4_S_UNCONNECTED [3],lopt_6,\^lopt_3 ,\USE_FPGA_WORD_COMPLETED.sel_word_complete_next_wrap0 }));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_command_fifo" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_command_fifo
    (data_Exists_I_reg_0,
     \USE_WRITE.wr_cmd_length ,
@@ -78805,7 +78506,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_command_fifo_62
         .O(\USE_FPGA_VALID_WRITE.FDRE_I1_1 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_comparator_sel" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel
    (\USE_FPGA_LAST_WORD.last_beat_curr_word ,
     sel_0_0,
@@ -79018,7 +78718,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel_40
         .lopt_1(lopt_7));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_comparator_sel_static" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel_static
    (\USE_FPGA_WORD_COMPLETED.next_word_wrap ,
     sel_0,
@@ -79354,7 +79053,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_comparator_sel_static__pa
         .wrap_buffer_available_reg_0(wrap_buffer_available_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_if_post_fifo" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_if_post_fifo
    (phy_rddata_en,
     mux_rd_valid_r0,
@@ -88106,7 +87804,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_if_post_fifo_92
         .R(ififo_rst));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_mc_phy" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy
    (A_rst_primitives_reg,
     mem_dq_out,
@@ -90919,7 +90616,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy
         .O(rst_primitives_i_1_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_mc_phy_wrapper" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy_wrapper
    (A_rst_primitives_reg,
     A_rst_primitives_reg_0,
@@ -94509,7 +94205,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_mc_phy_wrapper
         .O(ddr3_we_n));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_of_pre_fifo" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_of_pre_fifo
    (in0,
     CLK);
@@ -100273,7 +99968,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_of_pre_fifo__parameterize
         .R(ofifo_rst));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_4lanes" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_4lanes
    (A_rst_primitives_reg_0,
     mem_dq_out,
@@ -104121,7 +103815,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_4lanes__parameterized
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay
    (ck_addr_cmd_delay_done,
     cmd_po_en_stg2_f,
@@ -104556,7 +104249,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay
         .S(\wait_cnt_r[3]_i_1_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_dqs_found_cal_hr" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_dqs_found_cal_hr
    (init_dqsfound_done_r2,
     pi_dqs_found_rank_done,
@@ -108042,7 +107734,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_dqs_found_cal_hr
         .R(\init_dec_cnt_reg[5]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_init" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_init
    (prech_done,
     out,
@@ -124116,7 +123807,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_init
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_prbs_rdlvl" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_prbs_rdlvl
    (complex_victim_inc_reg_0,
     prbs_rdlvl_prech_req_reg_0,
@@ -132144,7 +131834,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_prbs_rdlvl
         .R(\wait_state_cnt_r[3]_i_1_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_rdlvl" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_rdlvl
    (new_cnt_cpt_r_reg_0,
     samp_edge_cnt0_en_r,
@@ -145735,7 +145424,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_rdlvl
         .O(rdlvl_stg1_done_int_reg_1));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_tempmon" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_tempmon
    (tempmon_pi_f_inc,
     tempmon_sel_pi_incdec,
@@ -151201,7 +150889,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_tempmon
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_top" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_top
    (A_rst_primitives_reg,
     A_rst_primitives_reg_0,
@@ -154124,7 +153811,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_top
         .sync_pulse(sync_pulse));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_wrcal" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrcal
    (wrcal_resume_w,
     E,
@@ -158230,7 +157916,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrcal
         .O(early1_data_reg_1));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_phy_wrlvl" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrlvl
    (wrlvl_byte_redo_r,
     dqs_po_dec_done,
@@ -164768,7 +164453,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_phy_wrlvl
         .R(SR[0]));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_prbs_gen" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_prbs_gen
    (phy_if_empty_r_reg_0,
     first_wrcal_pat_r_reg,
@@ -166925,7 +166609,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_prbs_gen
         .O(rdlvl_stg1_done_int_reg_5));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_r_upsizer" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_r_upsizer
    (word_complete_next_wrap_ready,
     \USE_FF_OUT.USE_FPGA_OUTPUT_PIPELINE.DATA_GEN[25].FDRE_inst ,
@@ -170509,7 +170192,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_r_upsizer
         .R(ARESET));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ddr_w_upsizer" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_w_upsizer
    (word_complete_next_wrap_last,
     word_complete_rest_last,
@@ -183065,7 +182747,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ddr_w_upsizer
         .R(ARESET));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_infrastructure" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_infrastructure
    (\gen_mmcm.mmcm_i_i_1_0 ,
     CLK,
@@ -184126,7 +183807,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_infrastructure
         .O(pi_cnt_dec_reg));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_iodelay_ctrl" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_iodelay_ctrl
    (iodelay_ctrl_rdy,
     out,
@@ -184281,7 +183961,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_iodelay_ctrl
         .RST(rst_ref));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_mc" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_mc
    (\generate_maint_cmds.insert_maint_r_lcl_reg ,
     bm_end_r1,
@@ -185734,7 +185413,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_mc
         .S({rank_mach0_n_30,rank_mach0_n_31,rank_mach0_n_32,rank_mach0_n_33}));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_mem_intfc" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_mem_intfc
    (\generate_maint_cmds.insert_maint_r_lcl_reg ,
     bm_end_r1,
@@ -187340,7 +187018,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_mem_intfc
         .\wtr_timer.wtr_cnt_r_reg[1] (\wtr_timer.wtr_cnt_r_reg[1] ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_memc_ui_top_axi" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_memc_ui_top_axi
    (insert_maint_r,
     bm_end_r1,
@@ -188418,7 +188095,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_memc_ui_top_axi
         .\wr_req_counter.wr_req_cnt_r_reg[0] (reset_reg_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_poc_pd" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_poc_pd
    (mmcm_ps_clk,
     in_dqs_lpbk_to_iddr_0,
@@ -188554,7 +188230,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_poc_pd_83
         .S(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_rank_cntrl" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_rank_cntrl
    (\periodic_rd_generation.read_this_rank_r ,
     inhbt_act_faw_r,
@@ -188891,7 +188566,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_rank_cntrl
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_rank_common" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_rank_common
    (maint_prescaler_tick_r,
     \maintenance_request.maint_sre_r_lcl_reg_0 ,
@@ -189742,7 +189416,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_rank_common
         .R(\zq_cntrl.zq_timer.zq_timer_r_reg[1]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_rank_mach" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_rank_mach
    (\periodic_rd_generation.read_this_rank_r ,
     inhbt_act_faw_r,
@@ -190000,7 +189673,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_rank_mach
         .\zq_cntrl.zq_timer.zq_timer_r_reg[7]_1 (\zq_cntrl.zq_timer.zq_timer_r_reg[7]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_round_robin_arb" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_round_robin_arb
    (\grant_r_reg[1]_0 ,
     CLK,
@@ -192597,7 +192269,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_round_robin_arb__parameterize
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_tempmon" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_tempmon
    (out,
     D,
@@ -194119,7 +193790,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_tempmon
         .R(\xadc_supplied_temperature.rst_r2 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ui_cmd" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ui_cmd
    (E,
     app_en_r1,
@@ -195147,7 +194817,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ui_cmd
         .O(\read_data_indx.rd_data_upd_indx_r_reg ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ui_rd_data" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ui_rd_data
    (\rd_buf_indx.ram_init_done_r_lcl_reg_inv_0 ,
     \strict_mode.rd_data_buf_addr_r_lcl ,
@@ -195393,7 +195062,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ui_rd_data
         .R(\strict_mode.rd_data_buf_addr_r_lcl_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ui_top" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ui_top
    (app_rdy,
     app_en_r1,
@@ -195595,7 +195263,6 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ui_top
         .\write_buffer.wr_buf_out_data_reg[287]_0 (Q));
 endmodule
 
-(* ORIG_REF_NAME = "mig_7series_v4_2_ui_wr_data" *) 
 module system_top_mig_7series_0_1_mig_7series_v4_2_ui_wr_data
    (wr_data_buf_addr,
     p_0_in,
@@ -203027,7 +202694,269 @@ module system_top_mig_7series_0_1_mig_7series_v4_2_ui_wr_data
         .R(\wr_req_counter.wr_req_cnt_r_reg[0]_1 ));
 endmodule
 
-(* ORIG_REF_NAME = "system_top_mig_7series_0_1_mig" *) 
+(* NotValidForBitStream *)
+module system_top_mig_7series_0_1
+   (ddr3_dq,
+    ddr3_dqs_n,
+    ddr3_dqs_p,
+    ddr3_addr,
+    ddr3_ba,
+    ddr3_ras_n,
+    ddr3_cas_n,
+    ddr3_we_n,
+    ddr3_reset_n,
+    ddr3_ck_p,
+    ddr3_ck_n,
+    ddr3_cke,
+    ddr3_cs_n,
+    ddr3_dm,
+    ddr3_odt,
+    sys_clk_i,
+    clk_ref_i,
+    ui_clk,
+    ui_clk_sync_rst,
+    mmcm_locked,
+    aresetn,
+    app_sr_active,
+    app_ref_ack,
+    app_zq_ack,
+    s_axi_awid,
+    s_axi_awaddr,
+    s_axi_awlen,
+    s_axi_awsize,
+    s_axi_awburst,
+    s_axi_awlock,
+    s_axi_awcache,
+    s_axi_awprot,
+    s_axi_awqos,
+    s_axi_awvalid,
+    s_axi_awready,
+    s_axi_wdata,
+    s_axi_wstrb,
+    s_axi_wlast,
+    s_axi_wvalid,
+    s_axi_wready,
+    s_axi_bready,
+    s_axi_bid,
+    s_axi_bresp,
+    s_axi_bvalid,
+    s_axi_arid,
+    s_axi_araddr,
+    s_axi_arlen,
+    s_axi_arsize,
+    s_axi_arburst,
+    s_axi_arlock,
+    s_axi_arcache,
+    s_axi_arprot,
+    s_axi_arqos,
+    s_axi_arvalid,
+    s_axi_arready,
+    s_axi_rready,
+    s_axi_rid,
+    s_axi_rdata,
+    s_axi_rresp,
+    s_axi_rlast,
+    s_axi_rvalid,
+    init_calib_complete,
+    device_temp,
+    sys_rst);
+  inout [31:0]ddr3_dq;
+  inout [3:0]ddr3_dqs_n;
+  inout [3:0]ddr3_dqs_p;
+  output [13:0]ddr3_addr;
+  output [2:0]ddr3_ba;
+  output ddr3_ras_n;
+  output ddr3_cas_n;
+  output ddr3_we_n;
+  output ddr3_reset_n;
+  output [0:0]ddr3_ck_p;
+  output [0:0]ddr3_ck_n;
+  output [0:0]ddr3_cke;
+  output [0:0]ddr3_cs_n;
+  output [3:0]ddr3_dm;
+  output [0:0]ddr3_odt;
+  input sys_clk_i;
+  input clk_ref_i;
+  output ui_clk;
+  output ui_clk_sync_rst;
+  output mmcm_locked;
+  input aresetn;
+  output app_sr_active;
+  output app_ref_ack;
+  output app_zq_ack;
+  input [3:0]s_axi_awid;
+  input [28:0]s_axi_awaddr;
+  input [7:0]s_axi_awlen;
+  input [2:0]s_axi_awsize;
+  input [1:0]s_axi_awburst;
+  input [0:0]s_axi_awlock;
+  input [3:0]s_axi_awcache;
+  input [2:0]s_axi_awprot;
+  input [3:0]s_axi_awqos;
+  input s_axi_awvalid;
+  output s_axi_awready;
+  input [31:0]s_axi_wdata;
+  input [3:0]s_axi_wstrb;
+  input s_axi_wlast;
+  input s_axi_wvalid;
+  output s_axi_wready;
+  input s_axi_bready;
+  output [3:0]s_axi_bid;
+  output [1:0]s_axi_bresp;
+  output s_axi_bvalid;
+  input [3:0]s_axi_arid;
+  input [28:0]s_axi_araddr;
+  input [7:0]s_axi_arlen;
+  input [2:0]s_axi_arsize;
+  input [1:0]s_axi_arburst;
+  input [0:0]s_axi_arlock;
+  input [3:0]s_axi_arcache;
+  input [2:0]s_axi_arprot;
+  input [3:0]s_axi_arqos;
+  input s_axi_arvalid;
+  output s_axi_arready;
+  input s_axi_rready;
+  output [3:0]s_axi_rid;
+  output [31:0]s_axi_rdata;
+  output [1:0]s_axi_rresp;
+  output s_axi_rlast;
+  output s_axi_rvalid;
+  output init_calib_complete;
+  output [11:0]device_temp;
+  input sys_rst;
+
+  wire \<const0> ;
+  wire app_sr_active;
+  wire aresetn;
+  wire clk_ref_i;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [13:0]ddr3_addr;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [2:0]ddr3_ba;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire ddr3_cas_n;
+  (* SLEW = "SLOW" *) wire [0:0]ddr3_ck_n;
+  (* SLEW = "SLOW" *) wire [0:0]ddr3_ck_p;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [0:0]ddr3_cke;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [0:0]ddr3_cs_n;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [3:0]ddr3_dm;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR = 0 *) (* SLEW = "SLOW" *) wire [31:0]ddr3_dq;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR = 0 *) wire [3:0]ddr3_dqs_n;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR = 0 *) wire [3:0]ddr3_dqs_p;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire [0:0]ddr3_odt;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire ddr3_ras_n;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire ddr3_reset_n;
+  (* DRIVE = "12" *) (* SLEW = "SLOW" *) wire ddr3_we_n;
+  wire [11:0]device_temp;
+  (* MAX_FANOUT = "50" *) (* RTL_MAX_FANOUT = "found" *) (* syn_maxfan = "10" *) wire init_calib_complete;
+  wire mmcm_locked;
+  wire [28:0]s_axi_araddr;
+  wire [1:0]s_axi_arburst;
+  wire [3:0]s_axi_arid;
+  wire [7:0]s_axi_arlen;
+  wire [3:0]s_axi_arqos;
+  wire s_axi_arready;
+  wire [2:0]s_axi_arsize;
+  wire s_axi_arvalid;
+  wire [28:0]s_axi_awaddr;
+  wire [1:0]s_axi_awburst;
+  wire [3:0]s_axi_awid;
+  wire [7:0]s_axi_awlen;
+  wire [3:0]s_axi_awqos;
+  wire s_axi_awready;
+  wire [2:0]s_axi_awsize;
+  wire s_axi_awvalid;
+  wire [3:0]s_axi_bid;
+  wire s_axi_bready;
+  wire s_axi_bvalid;
+  wire [31:0]s_axi_rdata;
+  wire [3:0]s_axi_rid;
+  wire s_axi_rlast;
+  wire s_axi_rready;
+  wire s_axi_rvalid;
+  wire [31:0]s_axi_wdata;
+  wire s_axi_wlast;
+  wire s_axi_wready;
+  wire [3:0]s_axi_wstrb;
+  wire s_axi_wvalid;
+  wire sys_clk_i;
+  wire sys_rst;
+  wire \u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk ;
+  wire \u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk ;
+  wire \u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk ;
+  wire \u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk ;
+  wire ui_clk;
+  wire ui_clk_sync_rst;
+
+  assign app_ref_ack = \<const0> ;
+  assign app_zq_ack = \<const0> ;
+  assign s_axi_bresp[1] = \<const0> ;
+  assign s_axi_bresp[0] = \<const0> ;
+  assign s_axi_rresp[1] = \<const0> ;
+  assign s_axi_rresp[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  system_top_mig_7series_0_1_system_top_mig_7series_0_1_mig u_system_top_mig_7series_0_1_mig
+       (.CLKB0(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk ),
+        .CLKB0_3(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk ),
+        .CLKB0_4(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk ),
+        .CLKB0_5(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk ),
+        .SR(ui_clk_sync_rst),
+        .app_sr_active(app_sr_active),
+        .aresetn(aresetn),
+        .clk_ref_i(clk_ref_i),
+        .ddr3_addr(ddr3_addr),
+        .ddr3_ba(ddr3_ba),
+        .ddr3_cas_n(ddr3_cas_n),
+        .ddr3_cke(ddr3_cke),
+        .ddr3_cs_n(ddr3_cs_n),
+        .ddr3_dm(ddr3_dm),
+        .ddr3_dq(ddr3_dq),
+        .ddr3_dqs_n(ddr3_dqs_n),
+        .ddr3_dqs_p(ddr3_dqs_p),
+        .ddr3_odt(ddr3_odt),
+        .ddr3_ras_n(ddr3_ras_n),
+        .ddr3_reset_n(ddr3_reset_n),
+        .ddr3_we_n(ddr3_we_n),
+        .ddr_ck_out({ddr3_ck_n,ddr3_ck_p}),
+        .\gen_mmcm.mmcm_i (ui_clk),
+        .init_calib_complete(init_calib_complete),
+        .iserdes_clk(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk ),
+        .iserdes_clk_0(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk ),
+        .iserdes_clk_1(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk ),
+        .iserdes_clk_2(\u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk ),
+        .mmcm_locked(mmcm_locked),
+        .out(device_temp),
+        .s_axi_araddr(s_axi_araddr),
+        .s_axi_arburst(s_axi_arburst),
+        .s_axi_arid(s_axi_arid),
+        .s_axi_arlen(s_axi_arlen),
+        .s_axi_arqos(s_axi_arqos),
+        .s_axi_arready(s_axi_arready),
+        .s_axi_arsize(s_axi_arsize),
+        .s_axi_arvalid(s_axi_arvalid),
+        .s_axi_awaddr(s_axi_awaddr),
+        .s_axi_awburst(s_axi_awburst),
+        .s_axi_awid(s_axi_awid),
+        .s_axi_awlen(s_axi_awlen),
+        .s_axi_awqos(s_axi_awqos),
+        .s_axi_awready(s_axi_awready),
+        .s_axi_awsize(s_axi_awsize),
+        .s_axi_awvalid(s_axi_awvalid),
+        .s_axi_bid(s_axi_bid),
+        .s_axi_bready(s_axi_bready),
+        .s_axi_bvalid(s_axi_bvalid),
+        .s_axi_rdata(s_axi_rdata),
+        .s_axi_rid(s_axi_rid),
+        .s_axi_rlast(s_axi_rlast),
+        .s_axi_rready(s_axi_rready),
+        .s_axi_rvalid(s_axi_rvalid),
+        .s_axi_wdata(s_axi_wdata),
+        .s_axi_wlast(s_axi_wlast),
+        .s_axi_wready(s_axi_wready),
+        .s_axi_wstrb(s_axi_wstrb),
+        .s_axi_wvalid(s_axi_wvalid),
+        .sys_clk_i(sys_clk_i),
+        .sys_rst(sys_rst));
+endmodule
+
 module system_top_mig_7series_0_1_system_top_mig_7series_0_1_mig
    (\gen_mmcm.mmcm_i ,
     SR,

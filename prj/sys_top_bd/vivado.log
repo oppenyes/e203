@@ -2,39 +2,31 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Feb  6 13:18:50 2025
-# Process ID: 3242
-# Current directory: /home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd
+# Start of session at: Thu Feb  6 14:04:10 2025
+# Process ID: 4504
+# Current directory: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd
 # Command line: vivado
-# Log file: /home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/vivado.log
-# Journal file: /home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/vivado.jou
+# Log file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/vivado.log
+# Journal file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/vivado.jou
 #-----------------------------------------------------------
 Sourcing tcl script '/tools/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
 start_gui
-open_project /home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr
-INFO: [Project 1-313] Project file moved from '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd' since last save.
-WARNING: [BD 41-2576] File '/home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1.xci' referenced by design 'system_top' could not be found.
-WARNING: [BD 41-2576] File '/home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0.xci' referenced by design 'system_top' could not be found.
-WARNING: [BD 41-2576] File '/home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1.xci' referenced by design 'system_top' could not be found.
-WARNING: [BD 41-2576] File '/home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0.xci' referenced by design 'system_top' could not be found.
+open_project /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/vmshare/my_git/e203_zs/user_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
 INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 7300.094 ; gain = 67.023 ; free physical = 11298 ; free virtual = 17670
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 7308.059 ; gain = 60.023 ; free physical = 10478 ; free virtual = 17613
 update_compile_order -fileset sources_1
-open_bd_design {/home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
-Reading block design file </home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd>...
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd>...
 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
 Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-INFO: [BD 41-434] Could not find an IP with XCI file by name: system_top_auto_pc_1 
 Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
-INFO: [BD 41-434] Could not find an IP with XCI file by name: system_top_auto_cc_0 
 Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
-INFO: [BD 41-434] Could not find an IP with XCI file by name: system_top_auto_cc_1 
 Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
@@ -45,12 +37,1082 @@ Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
 Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_1
 Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_200M
-Successfully read diagram <system_top> from block design file </home/oppenyes/vmshare/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd>
-INFO: [BD 41-433] 
-Design successfully migrated to use XCI files...
-set_property location {3 925 211} [get_bd_cells proc_sys_reset_0]
-set_property location {3 939 441} [get_bd_cells rst_clk_wiz_0_200M]
-set_property location {3 925 622} [get_bd_cells proc_sys_reset_1]
-set_property location {3 943 243} [get_bd_cells proc_sys_reset_0]
+Successfully read diagram <system_top> from block design file </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd>
+ipx::edit_ip_in_project -upgrade true -name system_e203_v2_1_project -directory /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.tmp/system_e203_v2_1_project /home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 8710.367 ; gain = 0.000 ; free physical = 10332 ; free virtual = 17466
+update_compile_order -fileset sources_1
+ipx::add_user_parameter EAXI_BASE_ADDR [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters EAXI_BASE_ADDR -of_objects [ipx::current_core]]
+ipgui::add_param -name {EAXI_BASE_ADDR} -component [ipx::current_core]
+set_property display_name {Eaxi Base Addr} [ipgui::get_guiparamspec -name "EAXI_BASE_ADDR" -component [ipx::current_core] ]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "EAXI_BASE_ADDR" -component [ipx::current_core] ]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "EAXI_BASE_ADDR" -component [ipx::current_core] ]
+ipx::remove_user_parameter EAXI_BASE_ADDR [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml' ignored by IP packager.
+set_property previous_version_for_upgrade {xilinx.com:user:sirv_gnrl_icb2ahbl:1.0 xilinx.com:user:system_e203:1.0 xilinx.com:user:system_e203:2.1} [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "akintex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "qartix7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "qkintex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "qkintex7l"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "qvirtex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "qzynq"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "versal"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "virtex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.2 (system_e203)': Unrecognized Family "virtexu"
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'ck_rst' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-7067] Note that bus interface 'clk_16M' has a fixed FREQ_HZ of '16000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/oppenyes/workspace/my_git/e203_zs/user_ip
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:system_e203:2.2 [get_ips  system_top_system_e203_0_0] -log ip_upgrade.log
+Upgrading '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_top_system_e203_0_0 from system_e203 2.1 to system_e203 2.2
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_top_system_e203_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+reset_run system_top_mig_7series_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_e203_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_mig_7series_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_e203_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 109.640 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 109.640 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 109.640 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 109.640 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_mig_7series_0_1, cache-ID = 8b0ad44fcfa13ff4; cache size = 109.640 MB.
+[Thu Feb  6 15:08:27 2025] Launched system_top_system_e203_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_system_e203_0_0_synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/runme.log
+synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 15:08:27 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 9151.887 ; gain = 169.617 ; free physical = 9702 ; free virtual = 16774
+report_ip_status -name ip_status 
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 09:50:49
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 10354.133 ; gain = 0.000 ; free physical = 8101 ; free virtual = 15377
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property offset 0xA0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_axi_gpio_0_Reg}]
+set_property offset 0xA1000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 135.504 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 135.504 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 135.504 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 135.504 MB.
+[Thu Feb  6 16:14:48 2025] Launched system_top_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_xbar_0_synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_xbar_0_synth_1/runme.log
+synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 16:14:48 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 10705.273 ; gain = 61.875 ; free physical = 8107 ; free virtual = 15352
+INFO: [Coretcl 2-12] '/system_e203_0/expl_axi' selected.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 10732.344 ; gain = 0.000 ; free physical = 8092 ; free virtual = 15364
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property offset 0xA1000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0xB0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 256M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 136.396 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 136.396 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 136.396 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 136.396 MB.
+[Thu Feb  6 16:59:17 2025] Launched system_top_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_xbar_0_synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_xbar_0_synth_1/runme.log
+synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 16:59:17 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 10869.383 ; gain = 124.031 ; free physical = 8083 ; free virtual = 15332
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Feb  6 17:05:54 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 10869.438 ; gain = 0.000 ; free physical = 8093 ; free virtual = 15358
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property offset 0xC0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 137.297 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 137.297 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 137.297 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 137.297 MB.
+[Thu Feb  6 17:24:51 2025] Launched system_top_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_xbar_0_synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_xbar_0_synth_1/runme.log
+synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 17:24:51 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 10969.402 ; gain = 51.996 ; free physical = 7965 ; free virtual = 15215
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 10995.414 ; gain = 0.000 ; free physical = 7999 ; free virtual = 15281
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+INFO: [Coretcl 2-12] '/mig_7series_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/mig_7series_0/S_AXI' selected.
+ipx::edit_ip_in_project -upgrade true -name system_e203_v2_2_project -directory /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.tmp/system_e203_v2_2_project /home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 10995.414 ; gain = 0.000 ; free physical = 7927 ; free virtual = 15194
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 10995.414 ; gain = 0.000 ; free physical = 7943 ; free virtual = 15208
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml' ignored by IP packager.
+set_property previous_version_for_upgrade {xilinx.com:user:sirv_gnrl_icb2ahbl:1.0 xilinx.com:user:system_e203:1.0 xilinx.com:user:system_e203:2.1 xilinx.com:user:system_e203:2.2} [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "akintex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "qartix7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "qkintex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "qkintex7l"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "qvirtex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "qzynq"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "versal"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "virtex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:2.3 (system_e203)': Unrecognized Family "virtexu"
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'ck_rst' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-7067] Note that bus interface 'clk_16M' has a fixed FREQ_HZ of '16000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/oppenyes/workspace/my_git/e203_zs/user_ip
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:system_e203:2.3 [get_ips  system_top_system_e203_0_0] -log ip_upgrade.log
+Upgrading '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_top_system_e203_0_0 from system_e203 2.2 to system_e203 2.3
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_top_system_e203_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_e203_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_e203_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 138.197 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 138.197 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 138.197 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 138.197 MB.
+[Thu Feb  6 18:26:09 2025] Launched system_top_system_e203_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_system_e203_0_0_synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/runme.log
+synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 18:26:09 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 11158.262 ; gain = 162.848 ; free physical = 7955 ; free virtual = 15204
+report_ip_status -name ip_status 
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 11158.262 ; gain = 0.000 ; free physical = 7948 ; free virtual = 15255
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+ipx::edit_ip_in_project -upgrade true -name system_e203_v2_3_project -directory /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.tmp/system_e203_v2_3_project /home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 11158.262 ; gain = 0.000 ; free physical = 7885 ; free virtual = 15174
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml' ignored by IP packager.
+set_property previous_version_for_upgrade {xilinx.com:user:sirv_gnrl_icb2ahbl:1.0 xilinx.com:user:system_e203:1.0 xilinx.com:user:system_e203:2.1 xilinx.com:user:system_e203:2.2 xilinx.com:user:system_e203:2.3} [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "akintex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qartix7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qkintex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qkintex7l"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qvirtex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qzynq"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "versal"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "virtex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "virtexu"
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'ck_rst' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-7067] Note that bus interface 'clk_16M' has a fixed FREQ_HZ of '16000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml' ignored by IP packager.
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "akintex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qartix7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qkintex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qkintex7l"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qvirtex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "qzynq"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "versal"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "virtex7"
+WARNING: [IP_Flow 19-2403] Component Definition 'xilinx.com:user:system_e203:3.0 (system_e203)': Unrecognized Family "virtexu"
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'ck_rst' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-7067] Note that bus interface 'clk_16M' has a fixed FREQ_HZ of '16000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/oppenyes/workspace/my_git/e203_zs/user_ip
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:system_e203:3.0 [get_ips  system_top_system_e203_0_0] -log ip_upgrade.log
+Upgrading '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_top_system_e203_0_0 from system_e203 2.3 to system_e203 3.0
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_top_system_e203_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_e203_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_e203_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 164.050 MB.
+[Thu Feb  6 18:47:36 2025] Launched system_top_system_e203_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_system_e203_0_0_synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/runme.log
+synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 18:47:36 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 11293.230 ; gain = 134.969 ; free physical = 7896 ; free virtual = 15165
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 11293.230 ; gain = 0.000 ; free physical = 7869 ; free virtual = 15197
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+report_ip_status -name ip_status
+set_property offset 0xC0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+upgrade_ip -vlnv xilinx.com:user:system_e203:3.0 [get_ips  system_top_system_e203_0_0] -log ip_upgrade.log
+Upgrading '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_top_system_e203_0_0 from system_e203 3.0 to system_e203 3.0
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_top_system_e203_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_e203_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_e203_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 189.949 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 189.949 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 189.949 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 189.949 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_system_e203_0_0, cache-ID = 31e607fe90590220; cache size = 189.949 MB.
+[Thu Feb  6 19:04:02 2025] Launched synth_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 19:04:02 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 11415.266 ; gain = 122.035 ; free physical = 7865 ; free virtual = 15153
+report_ip_status -name ip_status 
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 11434.277 ; gain = 0.000 ; free physical = 7860 ; free virtual = 15181
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+ipx::edit_ip_in_project -upgrade true -name system_e203_v3_0_project -directory /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.tmp/system_e203_v3_0_project /home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 11434.277 ; gain = 0.000 ; free physical = 7809 ; free virtual = 15114
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 11434.277 ; gain = 0.000 ; free physical = 7820 ; free virtual = 15123
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/home/oppenyes/workspace/my_git/e203_zs/user_ip/xilinx.com_user_system_e203_1.0/component.xml' ignored by IP packager.
+close_project
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:system_e203:3.0 [get_ips  system_top_system_e203_0_0] -log ip_upgrade.log
+Upgrading '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_top_system_e203_0_0 from system_e203 3.0 to system_e203 3.0
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_top_system_e203_0_0] -no_script -sync -force -quiet
+set_property offset 0xB0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+reset_run synth_1
+save_bd_design
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+launch_runs impl_1 -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_e203_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_e203_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_xbar_0, cache-ID = 455f786c9abffa3f; cache size = 164.050 MB.
+[Thu Feb  6 19:15:20 2025] Launched system_top_system_e203_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_system_e203_0_0_synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/runme.log
+synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 19:15:20 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 11545.254 ; gain = 9.930 ; free physical = 7818 ; free virtual = 15091
+report_ip_status -name ip_status 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Feb  6 19:28:29 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 11548.258 ; gain = 0.000 ; free physical = 7822 ; free virtual = 15128
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property offset 0xC0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 512M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 256M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 189.927 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 189.927 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 189.927 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 189.927 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_xbar_0, cache-ID = 18b1cfac0d487e3c; cache size = 189.927 MB.
+[Thu Feb  6 19:51:55 2025] Launched synth_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 19:51:55 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 11659.230 ; gain = 17.984 ; free physical = 7763 ; free virtual = 15062
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:system_e203:3.0 [get_ips  system_top_system_e203_0_0] -log ip_upgrade.log
+Upgrading '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_top_system_e203_0_0 from system_e203 3.0 to system_e203 3.0
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_top_system_e203_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd]
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_e203_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 11731.320 ; gain = 0.000 ; free physical = 7757 ; free virtual = 15054
+catch { config_ip_cache -export [get_ips -all system_top_system_e203_0_0] }
+catch { config_ip_cache -export [get_ips -all system_top_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 164.050 MB.
+catch { config_ip_cache -export [get_ips -all system_top_auto_cc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 164.050 MB.
+catch { config_ip_cache -export [get_ips -all system_top_auto_cc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 164.050 MB.
+catch { config_ip_cache -export [get_ips -all system_top_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 164.050 MB.
+export_ip_user_files -of_objects [get_files /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd]
+launch_runs system_top_system_e203_0_0_synth_1 -jobs 8
+[Thu Feb  6 19:58:58 2025] Launched system_top_system_e203_0_0_synth_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd] -directory /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.ip_user_files/sim_scripts -ip_user_files_dir /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.ip_user_files -ipstatic_source_dir /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/modelsim} {questa=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/questa} {ies=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/ies} {xcelium=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/xcelium} {vcs=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/vcs} {riviera=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Feb  6 20:07:43 2025] Launched synth_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 20:07:43 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 11775.258 ; gain = 0.000 ; free physical = 7756 ; free virtual = 15094
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+INFO: [Coretcl 2-12] '/axi_gpio_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/mig_7series_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/axi_gpio_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/axi_gpio_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/mig_7series_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/mig_7series_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/axi_gpio_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/axi_gpio_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/mig_7series_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/axi_gpio_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/mig_7series_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/axi_gpio_0/S_AXI' selected.
+INFO: [Coretcl 2-12] '/mig_7series_0/S_AXI' selected.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:system_e203:3.0 [get_ips  system_top_system_e203_0_0] -log ip_upgrade.log
+Upgrading '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_top_system_e203_0_0 from system_e203 3.0 to system_e203 3.0
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_top_system_e203_0_0] -no_script -sync -force -quiet
+set_property range 1G [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 512M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 256M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_e203_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_e203_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 189.929 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 189.929 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 189.929 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 189.929 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_system_e203_0_0, cache-ID = 31e607fe90590220; cache size = 189.929 MB.
+[Thu Feb  6 20:56:57 2025] Launched synth_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 20:56:57 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 11873.344 ; gain = 3.871 ; free physical = 7685 ; free virtual = 14976
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 11881.348 ; gain = 0.000 ; free physical = 7719 ; free virtual = 15041
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:system_e203:3.0 [get_ips  system_top_system_e203_0_0] -log ip_upgrade.log
+Upgrading '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_top_system_e203_0_0 from system_e203 3.0 to system_e203 3.0
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_top_system_e203_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_e203_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_e203_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 164.050 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 164.050 MB.
+[Thu Feb  6 21:23:10 2025] Launched system_top_system_e203_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_system_e203_0_0_synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/runme.log
+synth_1: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 21:23:10 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 11982.375 ; gain = 101.027 ; free physical = 7697 ; free virtual = 14963
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+write_cfgmem  -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit" } -file "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.mcs"
+Command: write_cfgmem -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit" } -file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit
+Writing file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.mcs
+Writing log file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00947A5B    Feb  6 21:34:20 2025    /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+set_property PROGRAM.FILES "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.mcs" [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+report_ip_status -name ip_status 
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.FILES [list "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a200t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.
+Program/Verify Operation failed.
+
+ERROR: [Labtools 27-3161] Flash Programming Unsuccessful
+program_hw_cfgmem: Time (s): cpu = 00:00:04 ; elapsed = 00:03:03 . Memory (MB): peak = 11993.438 ; gain = 0.000 ; free physical = 7660 ; free virtual = 14996
+INFO: [Common 17-344] 'program_hw_cfgmem' was cancelled
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 11993.438 ; gain = 0.000 ; free physical = 7610 ; free virtual = 14947
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [get_hw_devices xc7a200t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.FILES [list "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a200t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:05 ; elapsed = 00:03:52 . Memory (MB): peak = 11993.438 ; gain = 0.000 ; free physical = 7637 ; free virtual = 14975
+endgroup
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property offset 0xB0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+set_property offset 0xA0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_axi_gpio_0_Reg}]
+save_bd_design
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 4371307b86152534; cache size = 189.927 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19c2eae62a88a723; cache size = 189.927 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = d7994702b1cfb63e; cache size = 189.927 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 6899be0996a73f82; cache size = 189.927 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_xbar_0, cache-ID = 455f786c9abffa3f; cache size = 189.927 MB.
+[Thu Feb  6 22:00:37 2025] Launched synth_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Thu Feb  6 22:00:37 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 12259.980 ; gain = 30.824 ; free physical = 7600 ; free virtual = 14923
+report_ip_status -name ip_status 
+write_cfgmem  -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit" } -file "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.mcs"
+Command: write_cfgmem -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit" } -file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.mcs
+Creating config memory files...
+ERROR: [Writecfgmem 68-5] Cannot overwrite file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3.prm. Use "-force" flag.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit" } -file "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3_finished.mcs"
+Command: write_cfgmem -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit" } -file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3_finished.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit
+Writing file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3_finished.mcs
+Writing log file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3_finished.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00947A5B    Feb  6 22:06:11 2025    /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.FILES [list "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/gpio_ddr3_finished.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a200t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:05 ; elapsed = 00:03:50 . Memory (MB): peak = 12303.059 ; gain = 0.000 ; free physical = 7598 ; free virtual = 14952
+endgroup
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Feb  6 13:20:03 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  6 22:33:51 2025...

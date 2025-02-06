@@ -6,6 +6,9 @@
 # Block Designs: bd/system_top/system_top.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top || ORIG_REF_NAME==system_top} -quiet] -quiet
 
+# IP: bd/system_top/ip/system_top_xbar_0/system_top_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_xbar_0 || ORIG_REF_NAME==system_top_xbar_0} -quiet] -quiet
+
 # IP: bd/system_top/ip/system_top_axi_interconnect_0_0_1/system_top_axi_interconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_axi_interconnect_0_0 || ORIG_REF_NAME==system_top_axi_interconnect_0_0} -quiet] -quiet
 
@@ -29,9 +32,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_
 
 # IP: bd/system_top/ip/system_top_util_vector_logic_1_0/system_top_util_vector_logic_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_util_vector_logic_1_0 || ORIG_REF_NAME==system_top_util_vector_logic_1_0} -quiet] -quiet
-
-# IP: bd/system_top/ip/system_top_xbar_0/system_top_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_xbar_0 || ORIG_REF_NAME==system_top_xbar_0} -quiet] -quiet
 
 # IP: bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_axi_gpio_0_0 || ORIG_REF_NAME==system_top_axi_gpio_0_0} -quiet] -quiet
