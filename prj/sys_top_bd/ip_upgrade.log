@@ -1,0 +1,16 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Feb  4 22:29:22 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_system_e203_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_top_system_e203_0_0 from xilinx.com:user:system_e203:1.0 (Rev. 1) to xilinx.com:user:system_e203:2.1 (Rev. 1)
+

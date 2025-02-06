@@ -10,7 +10,8 @@ set_property CFGBVS VCCO [current_design]
 set_property CONFIG_VOLTAGE 3.3 [current_design]
 
 #####               create clock              #####
-
+set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports {LED_tri_io[0]}] 
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {LED_tri_io[1]}] 
 
 
 set_property -dict { PACKAGE_PIN W19    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; 
@@ -20,9 +21,10 @@ set_property -dict { PACKAGE_PIN Y18    IOSTANDARD LVCMOS33 } [get_ports { CLK32
 create_clock -add -name sys_clk_pin -period 30517.58 -waveform {0 15258.79} [get_ports {CLK32768KHZ}];
 
 
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets dut_io_pads_jtag_TCK_i_ival]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IOBUF_jtag_TCK/O]
-
+# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets dut_io_pads_jtag_TCK_i_ival]
+# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IOBUF_jtag_TCK/O]
+ set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets system_top_i/system_e203_0/inst/dut_io_pads_jtag_TCK_i_ival]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets system_top_i/system_e203_0/inst/IOBUF_jtag_TCK/O]
 
 #####            rst define           #####
 
@@ -125,7 +127,7 @@ set_property PACKAGE_PIN D14  [get_ports {gpioA[1]}]
 set_property PACKAGE_PIN E13  [get_ports {gpioA[0]}]      
 
 
-#####                gpioB define 原理图中对应是MCU_GPIO  实际为LCD屏幕下的32个IO口  #####
+#####                gpioB define 原理图中对应是MCU_GPIO  实际为LCD屏幕下的32个IO�?  #####
 set_property PACKAGE_PIN W17  [get_ports {gpioB[31]}]
 set_property PACKAGE_PIN AA18 [get_ports {gpioB[30]}]
 set_property PACKAGE_PIN AB18 [get_ports {gpioB[29]}]

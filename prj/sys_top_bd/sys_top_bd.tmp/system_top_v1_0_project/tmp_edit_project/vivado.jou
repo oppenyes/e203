@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb  4 14:30:41 2025
+# Process ID: 3008
+# Current directory: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34220 C:\Users\Zhangshi\Desktop\my_git\e203_zs\prj\sys_top_bd\sys_top_bd.xpr
+# Log file: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/vivado.log
+# Journal file: C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property CONFIG.FREQ_HZ 16000000 [get_bd_intf_pins /e203_system_top_0/eaxi]
+ipx::edit_ip_in_project -upgrade true -name temp -directory C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.tmp/temp -use_archived_source_project true c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports/component.xml
+update_compile_order -fileset sources_1
+ipx::remove_bus_parameter NUM_READ_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
+ipx::remove_bus_parameter NUM_WRITE_OUTSTANDING [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core] -include
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {c:\users\zhangshi\desktop\my_git\e203_zs\prj\sys_top_bd\sys_top_bd.tmp\temp\e203_with_eaxi_ports\e203_with_eaxi_ports.srcs\sources_1\xilinx.com_user_e203_system_top_1.0.zip} [ipx::current_core]
+close_project
+report_ip_status -name ip_status 
+set_property -dict [list CONFIG.FREQ_HZ {16000000}] [get_bd_intf_pins e203_system_top_0/eaxi]
+delete_bd_objs [get_bd_intf_nets e203_system_top_0_eaxi] [get_bd_nets CLK32768KHZ_0_1] [get_bd_nets fpga_rst_0_1] [get_bd_nets mcu_rst_0_1] [get_bd_cells e203_system_top_0]
+undo
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_intf_nets e203_system_top_0_eaxi] [get_bd_nets CLK32768KHZ_0_1] [get_bd_nets fpga_rst_0_1] [get_bd_nets mcu_rst_0_1] [get_bd_cells e203_system_top_0]
+report_ip_status -name ip_status 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:e203_system_top:1.0 e203_system_top_0
+endgroup
+set_property location {3 133 41} [get_bd_cells e203_system_top_0]
+connect_bd_intf_net [get_bd_intf_pins e203_system_top_0/eaxi] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins e203_system_top_0/clk_16M]
+connect_bd_net [get_bd_ports fpga_rst] [get_bd_pins e203_system_top_0/fpga_rst]
+connect_bd_net [get_bd_ports mcu_rst] [get_bd_pins e203_system_top_0/mcu_rst]
+connect_bd_net [get_bd_ports CLK32768KHZ] [get_bd_pins e203_system_top_0/CLK32768KHZ]
+connect_bd_net [get_bd_pins e203_system_top_0/ck_rst] [get_bd_pins clk_wiz_0/resetn]
+validate_bd_design
+set_property CONFIG.FREQ_HZ 16000000 [get_bd_intf_pins /e203_system_top_0/eaxi]
+report_ip_status -name ip_status 
+assign_bd_address -target_address_space /e203_system_top_0/eaxi [get_bd_addr_segs mig_7series_0/memmap/memaddr] -force
+set_property range 1G [get_bd_addr_segs {e203_system_top_0/eaxi/SEG_mig_7series_0_memaddr}]
+set_property range 2G [get_bd_addr_segs {e203_system_top_0/eaxi/SEG_mig_7series_0_memaddr}]
+ipx::edit_ip_in_project -upgrade true -name e203_system_top_v1_0_project -directory C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.tmp/e203_system_top_v1_0_project -use_archived_source_project true c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203_with_eaxi_ports/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+save_bd_design
+set_property CONFIG.FREQ_HZ 16000000 [get_bd_intf_pins /e203_system_top_0/eaxi]
+set_property -dict [list CONFIG.NUM_WRITE_OUTSTANDING {16} CONFIG.NUM_READ_OUTSTANDING {16}] [get_bd_intf_pins e203_system_top_0/eaxi]
+validate_bd_design
+set_property CONFIG.FREQ_HZ 16000000 [get_bd_intf_pins /e203_system_top_0/eaxi]
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:system_top:1.0 system_top_0
+endgroup
+set_property location {1 -241 6} [get_bd_cells system_top_0]
+delete_bd_objs [get_bd_intf_nets e203_system_top_0_eaxi] [get_bd_nets fpga_rst_1] [get_bd_nets mcu_rst_1] [get_bd_nets CLK32768KHZ_1] [get_bd_cells e203_system_top_0]
+set_property location {1 -233 242} [get_bd_cells system_top_0]
+connect_bd_net [get_bd_ports fpga_rst] [get_bd_pins system_top_0/fpga_rst]
+set_property location {-599 332} [get_bd_ports mcu_rst]
+connect_bd_net [get_bd_ports mcu_rst] [get_bd_pins system_top_0/mcu_rst]
+connect_bd_net [get_bd_ports CLK32768KHZ] [get_bd_pins system_top_0/clk_16M]
+set_property -dict [list CONFIG.FREQ_HZ {16000000}] [get_bd_intf_pins system_top_0/eaxi]
+set_property -dict [list CONFIG.NUM_WRITE_OUTSTANDING {16} CONFIG.NUM_READ_OUTSTANDING {16}] [get_bd_intf_pins system_top_0/eaxi]
+set_property CONFIG.FREQ_HZ 16000000 [get_bd_intf_pins /system_top_0/eaxi]
+set_property -dict [list CONFIG.FREQ_HZ {16000000}] [get_bd_intf_pins system_top_0/eaxi]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins system_top_0/eaxi]
+validate_bd_design
+set_property CONFIG.FREQ_HZ 16000000 [get_bd_intf_pins /system_top_0/eaxi]
+ipx::edit_ip_in_project -upgrade true -name system_top_v1_0_project -directory C:/Users/Zhangshi/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.tmp/system_top_v1_0_project -use_archived_source_project true c:/Users/Zhangshi/Desktop/my_git/e203_zs/user_ip/e203/component.xml
+update_compile_order -fileset sources_1
+ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces eaxi -of_objects [ipx::current_core]]
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core] -include

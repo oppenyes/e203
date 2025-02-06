@@ -1,0 +1,220 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb  5 16:37:56 2025
+# Process ID: 12836
+# Current directory: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd
+# Command line: vivado
+# Log file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/vivado.log
+# Journal file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_1
+endgroup
+delete_bd_objs [get_bd_cells mig_7series_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_0
+endgroup
+delete_bd_objs [get_bd_cells mig_7series_1]
+set_property -name {CONFIG.XML_INPUT_FILE} -value  {mig_a.prj} -objects [get_bd_cells mig_7series_0]
+set_property -name {CONFIG.RESET_BOARD_INTERFACE} -value  {Custom} -objects [get_bd_cells mig_7series_0]
+set_property -name {CONFIG.MIG_DONT_TOUCH_PARAM} -value  {Custom} -objects [get_bd_cells mig_7series_0]
+set_property -name {CONFIG.BOARD_MIG_PARAM} -value  {Custom} -objects [get_bd_cells mig_7series_0]
+set_property location {4 1646 527} [get_bd_cells mig_7series_0]
+connect_bd_intf_net [get_bd_intf_ports DDR3] [get_bd_intf_pins mig_7series_0/DDR3]
+connect_bd_net [get_bd_pins mig_7series_0/clk_ref_i] [get_bd_pins mig_7series_0/sys_clk_i]
+connect_bd_net [get_bd_pins mig_7series_0/clk_ref_i] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
+connect_bd_net [get_bd_pins mig_7series_0/ui_clk_sync_rst] [get_bd_pins proc_sys_reset_1/ext_reset_in]
+connect_bd_net [get_bd_pins mig_7series_0/mmcm_locked] [get_bd_pins proc_sys_reset_1/dcm_locked]
+connect_bd_net [get_bd_pins mig_7series_0/sys_rst] [get_bd_pins util_vector_logic_0/Res]
+connect_bd_net [get_bd_pins mig_7series_0/aresetn] [get_bd_pins proc_sys_reset_1/peripheral_aresetn]
+save_bd_design
+connect_bd_intf_net [get_bd_intf_pins mig_7series_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI]
+assign_bd_address -target_address_space /system_e203_0/expl_axi [get_bd_addr_segs mig_7series_0/memmap/memaddr] -force
+set_property offset 0x80000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x00000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 4G [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x00000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 4K [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property offset 0x00000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x00000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x00000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x00000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 4G [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x00000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 2G [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x00000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 256M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 2G [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 4G [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 2G [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 512M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 2G [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property range 256M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x80000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+disconnect_bd_net /util_vector_logic_0_Res [get_bd_pins system_e203_0/ck_rst]
+connect_bd_net [get_bd_pins system_e203_0/ck_rst] [get_bd_pins proc_sys_reset_0/mb_reset]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_1
+endgroup
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_1]
+delete_bd_objs [get_bd_nets proc_sys_reset_0_mb_reset]
+connect_bd_net [get_bd_pins proc_sys_reset_0/mb_reset] [get_bd_pins util_vector_logic_1/Op1]
+connect_bd_net [get_bd_pins util_vector_logic_1/Res] [get_bd_pins system_e203_0/ck_rst]
+regenerate_bd_layout -routing
+set_property location {1 209 562} [get_bd_cells util_vector_logic_1]
+regenerate_bd_layout -routing
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property offset 0x80000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells axi_interconnect_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {5.5 2087 232} [get_bd_cells axi_gpio_0]
+set_property location {4.5 1965 286} [get_bd_cells axi_gpio_0]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {4} CONFIG.C_IS_DUAL {0}] [get_bd_cells axi_gpio_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins axi_gpio_0/S_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_0/clk_out1 (200 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_gpio_0/s_axi_aclk]
+endgroup
+set_property name LED [get_bd_intf_ports gpio_rtl_0]
+validate_bd_design
+assign_bd_address -target_address_space /system_e203_0/expl_axi [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
+validate_bd_design
+generate_target all [get_files  /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd]
+catch { config_ip_cache -export [get_ips -all system_top_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_top_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all system_top_auto_cc_0] }
+catch { config_ip_cache -export [get_ips -all system_top_auto_cc_1] }
+catch { config_ip_cache -export [get_ips -all system_top_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all system_top_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all system_top_rst_clk_wiz_0_200M_0] }
+export_ip_user_files -of_objects [get_files /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd]
+launch_runs system_top_xbar_0_synth_1 system_top_auto_pc_1_synth_1 system_top_auto_cc_0_synth_1 system_top_auto_cc_1_synth_1 system_top_auto_pc_0_synth_1 system_top_axi_gpio_0_0_synth_1 system_top_rst_clk_wiz_0_200M_0_synth_1 -jobs 8
+wait_on_run system_top_xbar_0_synth_1
+wait_on_run system_top_auto_pc_1_synth_1
+wait_on_run system_top_auto_cc_0_synth_1
+wait_on_run system_top_auto_cc_1_synth_1
+wait_on_run system_top_auto_pc_0_synth_1
+wait_on_run system_top_axi_gpio_0_0_synth_1
+wait_on_run system_top_rst_clk_wiz_0_200M_0_synth_1
+export_simulation -of_objects [get_files /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd] -directory /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.ip_user_files/sim_scripts -ip_user_files_dir /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.ip_user_files -ipstatic_source_dir /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/modelsim} {questa=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/questa} {ies=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/ies} {xcelium=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/xcelium} {vcs=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/vcs} {riviera=/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {2}] [get_bd_cells axi_gpio_0]
+endgroup
+save_bd_design
+reset_run system_top_axi_gpio_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property offset 0xA0000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+set_property range 128M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+set_property range 16M [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+set_property offset 0x41000000 [get_bd_addr_segs {system_e203_0/expl_axi/SEG_mig_7series_0_memaddr}]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
