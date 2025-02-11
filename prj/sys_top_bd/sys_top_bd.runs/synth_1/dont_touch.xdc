@@ -24,9 +24,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_
 # IP: bd/system_top/ip/system_top_util_vector_logic_0_0_1/system_top_util_vector_logic_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_util_vector_logic_0_0 || ORIG_REF_NAME==system_top_util_vector_logic_0_0} -quiet] -quiet
 
-# IP: bd/system_top/ip/system_top_system_e203_0_0_1/system_top_system_e203_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_system_e203_0_0 || ORIG_REF_NAME==system_top_system_e203_0_0} -quiet] -quiet
-
 # IP: bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_mig_7series_0_1 || ORIG_REF_NAME==system_top_mig_7series_0_1} -quiet] -quiet
 
@@ -38,6 +35,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_
 
 # IP: bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_rst_clk_wiz_0_200M_0 || ORIG_REF_NAME==system_top_rst_clk_wiz_0_200M_0} -quiet] -quiet
+
+# IP: bd/system_top/ip/system_top_system_e203_0_0_1/system_top_system_e203_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_system_e203_0_0 || ORIG_REF_NAME==system_top_system_e203_0_0} -quiet] -quiet
 
 # IP: bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_auto_pc_1 || ORIG_REF_NAME==system_top_auto_pc_1} -quiet] -quiet

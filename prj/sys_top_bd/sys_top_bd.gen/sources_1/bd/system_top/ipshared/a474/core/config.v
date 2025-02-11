@@ -69,12 +69,8 @@
 //
 
 
-//  * AXI    : 0xA000 0000 -- 0xcFFF FFFF
 
-`define EAXI_ADDR_BASE   32'hA000_0000
-`define EAXI_BASE_REGION_LSB   29 
-`define SYSMEM_ADDR_BASE   32'h8000_0000
-`define SYSMEM_BASE_REGION_LSB   29 
+//确实是对的
 
 //
 `define E203_CFG_ITCM_ADDR_BASE   `E203_CFG_ADDR_SIZE'h8000_0000 

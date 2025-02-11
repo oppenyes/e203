@@ -20,9 +20,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 200951
+INFO: [Synth 8-7075] Helper process launched with PID 261917
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2295.926 ; gain = 0.000 ; free physical = 5830 ; free virtual = 13150
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2297.828 ; gain = 0.000 ; free physical = 5890 ; free virtual = 13245
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system_top_wrapper' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
@@ -32,39 +32,39 @@ INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2020.2/sc
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
 INFO: [Synth 8-6157] synthesizing module 'system_top' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1115]
-INFO: [Synth 8-6157] synthesizing module 'system_top_axi_gpio_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_gpio_0_0' (2#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_gpio_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_gpio_0_0' (2#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_axi_gpio_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'system_top_axi_interconnect_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1589]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_13VSFJX' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:12]
-INFO: [Synth 8-6157] synthesizing module 'system_top_auto_cc_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_auto_cc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_cc_0' (3#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_auto_cc_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_cc_0' (3#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_auto_cc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'system_top_auto_cc_0' is unconnected for instance 'auto_cc' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:303]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'system_top_auto_cc_0' is unconnected for instance 'auto_cc' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:303]
 WARNING: [Synth 8-7023] instance 'auto_cc' of module 'system_top_auto_cc_0' has 74 connections declared, but only 72 given [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:303]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_13VSFJX' (4#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:12]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1T5VXFF' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:378]
-INFO: [Synth 8-6157] synthesizing module 'system_top_auto_cc_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_auto_cc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_cc_1' (5#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_auto_cc_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_0' (6#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_auto_cc_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_cc_1' (5#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_0' (6#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_auto_pc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'system_top_auto_pc_0' is unconnected for instance 'auto_pc' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:715]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'system_top_auto_pc_0' is unconnected for instance 'auto_pc' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:715]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'system_top_auto_pc_0' has 56 connections declared, but only 54 given [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:715]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1T5VXFF' (7#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:378]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1U10WOS' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:772]
-INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_1' (8#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_1' (8#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_auto_pc_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'system_top_auto_pc_1' is unconnected for instance 'auto_pc' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1043]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'system_top_auto_pc_1' is unconnected for instance 'auto_pc' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1043]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'system_top_auto_pc_1' has 70 connections declared, but only 68 given [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1043]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1U10WOS' (9#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:772]
-INFO: [Synth 8-6157] synthesizing module 'system_top_xbar_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_xbar_0' (10#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_xbar_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_xbar_0' (10#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_xbar_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_interconnect_0_0' (11#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1589]
-INFO: [Synth 8-6157] synthesizing module 'system_top_clk_wiz_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_clk_wiz_0_0' (12#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'system_top_mig_7series_0_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_mig_7series_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_mig_7series_0_1' (13#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_mig_7series_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'system_top_clk_wiz_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_clk_wiz_0_0' (12#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'system_top_mig_7series_0_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_mig_7series_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_mig_7series_0_1' (13#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_mig_7series_0_1_stub.v:5]
 WARNING: [Synth 8-7071] port 'app_sr_active' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1453]
 WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1453]
 WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1453]
@@ -73,47 +73,47 @@ WARNING: [Synth 8-7071] port 's_axi_rid' of module 'system_top_mig_7series_0_1' 
 WARNING: [Synth 8-7071] port 'init_calib_complete' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1453]
 WARNING: [Synth 8-7071] port 'device_temp' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1453]
 WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'system_top_mig_7series_0_1' has 64 connections declared, but only 57 given [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1453]
-INFO: [Synth 8-6157] synthesizing module 'system_top_proc_sys_reset_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_proc_sys_reset_0_0' (14#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_proc_sys_reset_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_proc_sys_reset_0_0' (14#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_proc_sys_reset_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1511]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1511]
 WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'system_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1511]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'system_top_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1511]
-INFO: [Synth 8-6157] synthesizing module 'system_top_proc_sys_reset_1_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_proc_sys_reset_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_proc_sys_reset_1_0' (15#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_proc_sys_reset_1_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_proc_sys_reset_1_0' (15#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_proc_sys_reset_1_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1519]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1519]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1519]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1519]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_1' of module 'system_top_proc_sys_reset_1_0' has 10 connections declared, but only 6 given [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1519]
-INFO: [Synth 8-6157] synthesizing module 'system_top_rst_clk_wiz_0_200M_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_rst_clk_wiz_0_200M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_rst_clk_wiz_0_200M_0' (16#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_rst_clk_wiz_0_200M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_rst_clk_wiz_0_200M_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_rst_clk_wiz_0_200M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_rst_clk_wiz_0_200M_0' (16#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_rst_clk_wiz_0_200M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1526]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1526]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1526]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1526]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_200M' of module 'system_top_rst_clk_wiz_0_200M_0' has 10 connections declared, but only 6 given [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1526]
-INFO: [Synth 8-6157] synthesizing module 'system_top_system_e203_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_system_e203_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_system_e203_0_0' (17#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_system_e203_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_top_util_vector_logic_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_util_vector_logic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_util_vector_logic_0_0' (18#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_util_vector_logic_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_top_util_vector_logic_1_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_util_vector_logic_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_util_vector_logic_1_0' (19#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-200901-lab101/realtime/system_top_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_system_e203_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_system_e203_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_system_e203_0_0' (17#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_system_e203_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_util_vector_logic_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_util_vector_logic_0_0' (18#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_util_vector_logic_1_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_util_vector_logic_1_0' (19#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-261895-lab101/realtime/system_top_util_vector_logic_1_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'system_top' (20#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1115]
 INFO: [Synth 8-6155] done synthesizing module 'system_top_wrapper' (21#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2295.926 ; gain = 0.000 ; free physical = 6439 ; free virtual = 13759
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2297.828 ; gain = 0.000 ; free physical = 6422 ; free virtual = 13777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2295.926 ; gain = 0.000 ; free physical = 6442 ; free virtual = 13762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2297.828 ; gain = 0.000 ; free physical = 6445 ; free virtual = 13801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2295.926 ; gain = 0.000 ; free physical = 6442 ; free virtual = 13762
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2297.828 ; gain = 0.000 ; free physical = 6445 ; free virtual = 13801
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2295.926 ; gain = 0.000 ; free physical = 6442 ; free virtual = 13763
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2297.828 ; gain = 0.000 ; free physical = 6445 ; free virtual = 13801
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -159,22 +159,22 @@ Parsing XDC File [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top
 Finished Parsing XDC File [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2357.980 ; gain = 0.000 ; free physical = 6441 ; free virtual = 13762
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.883 ; gain = 0.000 ; free physical = 6460 ; free virtual = 13816
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2357.980 ; gain = 0.000 ; free physical = 6441 ; free virtual = 13762
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2359.883 ; gain = 0.000 ; free physical = 6460 ; free virtual = 13816
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_top_i/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6459 ; free virtual = 13779
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6411 ; free virtual = 13767
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6459 ; free virtual = 13779
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6411 ; free virtual = 13767
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -484,10 +484,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for system_top_i/axi_gpio_0. (constra
 Applied set_property KEEP_HIERARCHY = SOFT for system_top_i/rst_clk_wiz_0_200M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for system_top_i/system_e203_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6459 ; free virtual = 13779
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6446 ; free virtual = 13802
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6485 ; free virtual = 13805
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6448 ; free virtual = 13804
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -509,26 +509,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6486 ; free virtual = 13810
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6466 ; free virtual = 13825
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6480 ; free virtual = 13803
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6419 ; free virtual = 13778
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6480 ; free virtual = 13803
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6419 ; free virtual = 13778
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6464 ; free virtual = 13788
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6404 ; free virtual = 13763
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -546,37 +546,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6489 ; free virtual = 13813
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6429 ; free virtual = 13788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6491 ; free virtual = 13815
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6429 ; free virtual = 13788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6491 ; free virtual = 13815
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6429 ; free virtual = 13788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6491 ; free virtual = 13815
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6429 ; free virtual = 13788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6491 ; free virtual = 13815
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6429 ; free virtual = 13788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6491 ; free virtual = 13815
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6429 ; free virtual = 13788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -623,18 +623,18 @@ Report Cell Usage:
 |17    |OBUF                           |     2|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6491 ; free virtual = 13815
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6429 ; free virtual = 13788
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2357.980 ; gain = 0.000 ; free physical = 6491 ; free virtual = 13815
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6492 ; free virtual = 13816
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2359.883 ; gain = 0.000 ; free physical = 6429 ; free virtual = 13788
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6429 ; free virtual = 13788
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2357.980 ; gain = 0.000 ; free physical = 6592 ; free virtual = 13915
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2359.883 ; gain = 0.000 ; free physical = 6528 ; free virtual = 13887
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2357.980 ; gain = 0.000 ; free physical = 6594 ; free virtual = 13917
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.883 ; gain = 0.000 ; free physical = 6538 ; free virtual = 13898
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
@@ -642,7 +642,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 62 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2357.980 ; gain = 62.055 ; free physical = 6663 ; free virtual = 13987
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2359.883 ; gain = 62.055 ; free physical = 6596 ; free virtual = 13955
 INFO: [Common 17-1381] The checkpoint '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/system_top_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_top_wrapper_utilization_synth.rpt -pb system_top_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Feb  6 22:01:12 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Feb  7 11:39:38 2025...

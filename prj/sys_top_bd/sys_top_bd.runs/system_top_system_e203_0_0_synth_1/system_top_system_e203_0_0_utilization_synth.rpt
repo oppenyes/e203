@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Feb  6 21:28:45 2025
+| Date         : Fri Feb  7 11:38:41 2025
 | Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_utilization -file system_top_system_e203_0_0_utilization_synth.rpt -pb system_top_system_e203_0_0_utilization_synth.pb
 | Design       : system_top_system_e203_0_0
@@ -153,16 +153,16 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDCE     | 8107 |        Flop & Latch |
-| LUT6     | 6114 |                 LUT |
+| LUT6     | 6115 |                 LUT |
 | FDRE     | 2974 |        Flop & Latch |
-| LUT5     | 2590 |                 LUT |
-| LUT4     | 1728 |                 LUT |
-| LUT3     | 1318 |                 LUT |
-| LUT2     |  963 |                 LUT |
+| LUT5     | 2588 |                 LUT |
+| LUT4     | 1723 |                 LUT |
+| LUT3     | 1317 |                 LUT |
+| LUT2     |  964 |                 LUT |
 | MUXF7    |  529 |               MuxFx |
 | FDPE     |  427 |        Flop & Latch |
 | CARRY4   |  393 |          CarryLogic |
-| LUT1     |  306 |                 LUT |
+| LUT1     |  307 |                 LUT |
 | MUXF8    |  119 |               MuxFx |
 | OBUFT    |   73 |                  IO |
 | IBUF     |   73 |                  IO |

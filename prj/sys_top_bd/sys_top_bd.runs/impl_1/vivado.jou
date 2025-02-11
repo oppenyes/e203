@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Feb  6 22:01:16 2025
-# Process ID: 201082
+# Start of session at: Fri Feb  7 11:39:42 2025
+# Process ID: 262038
 # Current directory: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1
 # Command line: vivado -log system_top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_top_wrapper.tcl -notrace
 # Log file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.vdi
