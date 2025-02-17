@@ -1,6 +1,40 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Feb 11 15:10:24 2025
+| Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_system_e203_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_top_system_e203_0_0 from xilinx.com:user:system_e203:3.0 (Rev. 1) to xilinx.com:user:system_e203:4.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_top_system_e203_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'user_irq_0'
+
+-Upgrade has added port 'user_irq_1'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 | Date         : Fri Feb  7 11:32:46 2025
 | Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip

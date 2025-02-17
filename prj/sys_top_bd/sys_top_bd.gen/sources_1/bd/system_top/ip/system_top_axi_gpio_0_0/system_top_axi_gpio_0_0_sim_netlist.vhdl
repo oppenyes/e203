@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Thu Feb  6 01:06:49 2025
+-- Date        : Thu Feb 13 01:25:46 2025
 -- Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_sim_netlist.vhdl
@@ -471,7 +471,7 @@ entity system_top_axi_gpio_0_0_GPIO_Core is
     bus2ip_rnw : in STD_LOGIC;
     bus2ip_cs : in STD_LOGIC;
     gpio_io_i : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \Not_Dual.gpio_Data_Out_reg[0]_0\ : in STD_LOGIC;
     \Not_Dual.gpio_OE_reg[0]_1\ : in STD_LOGIC
   );
@@ -622,22 +622,21 @@ begin
       I0 => s_axi_wdata(1),
       I1 => bus2ip_cs,
       I2 => Q(1),
-      I3 => s_axi_wdata(3),
+      I3 => s_axi_wdata(0),
       I4 => \Not_Dual.gpio_Data_Out_reg[0]_0\,
       I5 => \^gpio_io_o\(1),
       O => \Not_Dual.gpio_Data_Out[0]_i_1_n_0\
     );
-\Not_Dual.gpio_Data_Out[1]_i_1\: unisim.vcomponents.LUT6
+\Not_Dual.gpio_Data_Out[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FB08FFFFFB080000"
+      INIT => X"40FF4000"
     )
         port map (
-      I0 => s_axi_wdata(0),
+      I0 => Q(1),
       I1 => bus2ip_cs,
-      I2 => Q(1),
-      I3 => s_axi_wdata(2),
-      I4 => \Not_Dual.gpio_Data_Out_reg[0]_0\,
-      I5 => \^gpio_io_o\(0),
+      I2 => s_axi_wdata(0),
+      I3 => \Not_Dual.gpio_Data_Out_reg[0]_0\,
+      I4 => \^gpio_io_o\(0),
       O => \Not_Dual.gpio_Data_Out[1]_i_1_n_0\
     );
 \Not_Dual.gpio_Data_Out_reg[0]\: unisim.vcomponents.FDRE
@@ -670,22 +669,21 @@ begin
       I0 => s_axi_wdata(1),
       I1 => bus2ip_cs,
       I2 => Q(1),
-      I3 => s_axi_wdata(3),
+      I3 => s_axi_wdata(0),
       I4 => \Not_Dual.gpio_OE_reg[0]_1\,
       I5 => \^not_dual.gpio_oe_reg[0]_0\,
       O => \Not_Dual.gpio_OE[0]_i_1_n_0\
     );
-\Not_Dual.gpio_OE[1]_i_1\: unisim.vcomponents.LUT6
+\Not_Dual.gpio_OE[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FB08FFFFFB080000"
+      INIT => X"40FF4000"
     )
         port map (
-      I0 => s_axi_wdata(0),
+      I0 => Q(1),
       I1 => bus2ip_cs,
-      I2 => Q(1),
-      I3 => s_axi_wdata(2),
-      I4 => \Not_Dual.gpio_OE_reg[0]_1\,
-      I5 => \^not_dual.gpio_oe_reg[1]_0\,
+      I2 => s_axi_wdata(0),
+      I3 => \Not_Dual.gpio_OE_reg[0]_1\,
+      I4 => \^not_dual.gpio_oe_reg[1]_0\,
       O => \Not_Dual.gpio_OE[1]_i_1_n_0\
     );
 \Not_Dual.gpio_OE_reg[0]\: unisim.vcomponents.FDSE
@@ -1502,9 +1500,9 @@ entity system_top_axi_gpio_0_0_axi_gpio is
     gpio_io_i : in STD_LOGIC_VECTOR ( 1 downto 0 );
     gpio_io_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
     gpio_io_t : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    gpio2_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    gpio2_io_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    gpio2_io_t : out STD_LOGIC_VECTOR ( 31 downto 0 )
+    gpio2_io_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    gpio2_io_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    gpio2_io_t : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute C_ALL_INPUTS : integer;
   attribute C_ALL_INPUTS of system_top_axi_gpio_0_0_axi_gpio : entity is 0;
@@ -1521,7 +1519,7 @@ entity system_top_axi_gpio_0_0_axi_gpio is
   attribute C_FAMILY : string;
   attribute C_FAMILY of system_top_axi_gpio_0_0_axi_gpio : entity is "artix7";
   attribute C_GPIO2_WIDTH : integer;
-  attribute C_GPIO2_WIDTH of system_top_axi_gpio_0_0_axi_gpio : entity is 32;
+  attribute C_GPIO2_WIDTH of system_top_axi_gpio_0_0_axi_gpio : entity is 1;
   attribute C_GPIO_WIDTH : integer;
   attribute C_GPIO_WIDTH of system_top_axi_gpio_0_0_axi_gpio : entity is 2;
   attribute C_INTERRUPT_PRESENT : integer;
@@ -1571,69 +1569,7 @@ architecture STRUCTURE of system_top_axi_gpio_0_0_axi_gpio is
   attribute sigis of s_axi_aclk : signal is "Clk";
   attribute sigis of s_axi_aresetn : signal is "Rst";
 begin
-  gpio2_io_o(31) <= \<const0>\;
-  gpio2_io_o(30) <= \<const0>\;
-  gpio2_io_o(29) <= \<const0>\;
-  gpio2_io_o(28) <= \<const0>\;
-  gpio2_io_o(27) <= \<const0>\;
-  gpio2_io_o(26) <= \<const0>\;
-  gpio2_io_o(25) <= \<const0>\;
-  gpio2_io_o(24) <= \<const0>\;
-  gpio2_io_o(23) <= \<const0>\;
-  gpio2_io_o(22) <= \<const0>\;
-  gpio2_io_o(21) <= \<const0>\;
-  gpio2_io_o(20) <= \<const0>\;
-  gpio2_io_o(19) <= \<const0>\;
-  gpio2_io_o(18) <= \<const0>\;
-  gpio2_io_o(17) <= \<const0>\;
-  gpio2_io_o(16) <= \<const0>\;
-  gpio2_io_o(15) <= \<const0>\;
-  gpio2_io_o(14) <= \<const0>\;
-  gpio2_io_o(13) <= \<const0>\;
-  gpio2_io_o(12) <= \<const0>\;
-  gpio2_io_o(11) <= \<const0>\;
-  gpio2_io_o(10) <= \<const0>\;
-  gpio2_io_o(9) <= \<const0>\;
-  gpio2_io_o(8) <= \<const0>\;
-  gpio2_io_o(7) <= \<const0>\;
-  gpio2_io_o(6) <= \<const0>\;
-  gpio2_io_o(5) <= \<const0>\;
-  gpio2_io_o(4) <= \<const0>\;
-  gpio2_io_o(3) <= \<const0>\;
-  gpio2_io_o(2) <= \<const0>\;
-  gpio2_io_o(1) <= \<const0>\;
   gpio2_io_o(0) <= \<const0>\;
-  gpio2_io_t(31) <= \<const0>\;
-  gpio2_io_t(30) <= \<const0>\;
-  gpio2_io_t(29) <= \<const0>\;
-  gpio2_io_t(28) <= \<const0>\;
-  gpio2_io_t(27) <= \<const0>\;
-  gpio2_io_t(26) <= \<const0>\;
-  gpio2_io_t(25) <= \<const0>\;
-  gpio2_io_t(24) <= \<const0>\;
-  gpio2_io_t(23) <= \<const0>\;
-  gpio2_io_t(22) <= \<const0>\;
-  gpio2_io_t(21) <= \<const0>\;
-  gpio2_io_t(20) <= \<const0>\;
-  gpio2_io_t(19) <= \<const0>\;
-  gpio2_io_t(18) <= \<const0>\;
-  gpio2_io_t(17) <= \<const0>\;
-  gpio2_io_t(16) <= \<const0>\;
-  gpio2_io_t(15) <= \<const0>\;
-  gpio2_io_t(14) <= \<const0>\;
-  gpio2_io_t(13) <= \<const0>\;
-  gpio2_io_t(12) <= \<const0>\;
-  gpio2_io_t(11) <= \<const0>\;
-  gpio2_io_t(10) <= \<const0>\;
-  gpio2_io_t(9) <= \<const0>\;
-  gpio2_io_t(8) <= \<const0>\;
-  gpio2_io_t(7) <= \<const0>\;
-  gpio2_io_t(6) <= \<const0>\;
-  gpio2_io_t(5) <= \<const0>\;
-  gpio2_io_t(4) <= \<const0>\;
-  gpio2_io_t(3) <= \<const0>\;
-  gpio2_io_t(2) <= \<const0>\;
-  gpio2_io_t(1) <= \<const0>\;
   gpio2_io_t(0) <= \<const0>\;
   ip2intc_irpt <= \<const0>\;
   s_axi_awready <= \^s_axi_wready\;
@@ -1744,7 +1680,6 @@ gpio_core_1: entity work.system_top_axi_gpio_0_0_GPIO_Core
       reg2(1) => reg2(30),
       reg2(0) => reg2(31),
       s_axi_aclk => s_axi_aclk,
-      s_axi_wdata(3 downto 2) => s_axi_wdata(31 downto 30),
       s_axi_wdata(1 downto 0) => s_axi_wdata(1 downto 0)
     );
 \ip2bus_data_i_D1_reg[0]\: unisim.vcomponents.FDRE
@@ -1830,8 +1765,8 @@ end system_top_axi_gpio_0_0;
 architecture STRUCTURE of system_top_axi_gpio_0_0 is
   signal \<const0>\ : STD_LOGIC;
   signal NLW_U0_ip2intc_irpt_UNCONNECTED : STD_LOGIC;
-  signal NLW_U0_gpio2_io_o_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_U0_gpio2_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_U0_gpio2_io_o_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_U0_gpio2_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_U0_s_axi_bresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_U0_s_axi_rresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute C_ALL_INPUTS : integer;
@@ -1849,7 +1784,7 @@ architecture STRUCTURE of system_top_axi_gpio_0_0 is
   attribute C_FAMILY : string;
   attribute C_FAMILY of U0 : label is "artix7";
   attribute C_GPIO2_WIDTH : integer;
-  attribute C_GPIO2_WIDTH of U0 : label is 32;
+  attribute C_GPIO2_WIDTH of U0 : label is 1;
   attribute C_GPIO_WIDTH : integer;
   attribute C_GPIO_WIDTH of U0 : label is 2;
   attribute C_INTERRUPT_PRESENT : integer;
@@ -1870,7 +1805,7 @@ architecture STRUCTURE of system_top_axi_gpio_0_0 is
   attribute x_interface_info : string;
   attribute x_interface_info of s_axi_aclk : signal is "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 16000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST";
   attribute x_interface_parameter of s_axi_aresetn : signal is "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s_axi_arready : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARREADY";
@@ -1889,7 +1824,7 @@ architecture STRUCTURE of system_top_axi_gpio_0_0 is
   attribute x_interface_info of gpio_io_t : signal is "xilinx.com:interface:gpio:1.0 GPIO TRI_T";
   attribute x_interface_info of s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARADDR";
   attribute x_interface_info of s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
-  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 200000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 16000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI BRESP";
   attribute x_interface_info of s_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI RDATA";
   attribute x_interface_info of s_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI RRESP";
@@ -1906,9 +1841,9 @@ GND: unisim.vcomponents.GND
     );
 U0: entity work.system_top_axi_gpio_0_0_axi_gpio
      port map (
-      gpio2_io_i(31 downto 0) => B"00000000000000000000000000000000",
-      gpio2_io_o(31 downto 0) => NLW_U0_gpio2_io_o_UNCONNECTED(31 downto 0),
-      gpio2_io_t(31 downto 0) => NLW_U0_gpio2_io_t_UNCONNECTED(31 downto 0),
+      gpio2_io_i(0) => '0',
+      gpio2_io_o(0) => NLW_U0_gpio2_io_o_UNCONNECTED(0),
+      gpio2_io_t(0) => NLW_U0_gpio2_io_t_UNCONNECTED(0),
       gpio_io_i(1 downto 0) => gpio_io_i(1 downto 0),
       gpio_io_o(1 downto 0) => gpio_io_o(1 downto 0),
       gpio_io_t(1 downto 0) => gpio_io_t(1 downto 0),
@@ -1934,8 +1869,7 @@ U0: entity work.system_top_axi_gpio_0_0_axi_gpio
       s_axi_rready => s_axi_rready,
       s_axi_rresp(1 downto 0) => NLW_U0_s_axi_rresp_UNCONNECTED(1 downto 0),
       s_axi_rvalid => s_axi_rvalid,
-      s_axi_wdata(31 downto 30) => s_axi_wdata(31 downto 30),
-      s_axi_wdata(29 downto 2) => B"0000000000000000000000000000",
+      s_axi_wdata(31 downto 2) => B"000000000000000000000000000000",
       s_axi_wdata(1 downto 0) => s_axi_wdata(1 downto 0),
       s_axi_wready => s_axi_wready,
       s_axi_wstrb(3 downto 0) => B"0000",

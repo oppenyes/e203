@@ -1,0 +1,313 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb 12 16:03:43 2025
+# Process ID: 450198
+# Current directory: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd
+# Command line: vivado
+# Log file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/vivado.log
+# Journal file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/tools/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
+start_gui
+open_hw_manager
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8172.777 ; gain = 8.004 ; free physical = 3439 ; free virtual = 12295
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 17:22:27
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 17:22:50
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes system_top_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 17:22:59
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 17:23:04
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes system_top_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 17:23:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 17:23:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes system_top_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 17:23:31
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 17:23:35
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 18:05:09
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_i_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_o_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_t_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 18:08:13
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 18:08:14
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 18:08:25
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 21:58:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 21:58:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 21:58:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 21:58:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 21:58:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 21:58:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 21:58:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 21:58:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 21:58:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 21:58:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 21:58:25
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 21:58:38
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8252.816 ; gain = 0.000 ; free physical = 3377 ; free virtual = 12236
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 21:59:01
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 21:59:07
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:14:25
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 22:17:14
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:17:28
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 22:32:02
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:32:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 22:32:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:32:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 22:32:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:32:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 22:32:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:32:29
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 22:32:38
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:32:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 22:32:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:32:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 22:32:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 22:32:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 22:32:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 23:04:09
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-12 23:04:16
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 23:04:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 23:04:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 23:04:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 23:04:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 23:04:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 23:04:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-12 23:04:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-12 23:04:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+set_property PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/23_hdmi_colorbar/prj/hdmi_color.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8252.816 ; gain = 0.000 ; free physical = 5089 ; free virtual = 13959
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+save_wave_config {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/23_hdmi_colorbar/prj/hdmi_color.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8252.816 ; gain = 0.000 ; free physical = 5037 ; free virtual = 13909
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/23_hdmi_colorbar/prj/hdmi_color.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8252.816 ; gain = 0.000 ; free physical = 4883 ; free virtual = 13770
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8252.816 ; gain = 0.000 ; free physical = 5230 ; free virtual = 13453
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_i_1} {system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_o_1} {system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_t_1} {system_top_i/system_ila_0/inst/probe0_1} }
+set_property NAME.CUSTOM axi_gpio_1_ip2intc_irpt [get_hw_probes system_top_i/system_ila_0/inst/probe0_1] 
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_i_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_o_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_top_i/system_ila_0/inst/SLOT_0_GPIO_tri_t_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-13 01:39:19
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-13 01:39:21
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-13 01:39:22
+save_wave_config {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8252.816 ; gain = 0.000 ; free physical = 5230 ; free virtual = 13454
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-13 01:39:57
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-13 01:39:59
+set_property PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8252.816 ; gain = 0.000 ; free physical = 5189 ; free virtual = 13434
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-13 01:54:17
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-13 01:54:32
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-13 01:54:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Feb-13 01:54:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/.Xil/Vivado-450198-lab101/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Feb-13 01:54:49
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"system_top_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Feb-13 01:54:59
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.

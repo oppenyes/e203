@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-//Date        : Fri Feb  7 11:33:03 2025
+//Date        : Thu Feb 13 01:40:40 2025
 //Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
 //Command     : generate_target system_top_wrapper.bd
 //Design      : system_top_wrapper
@@ -10,7 +10,8 @@
 `timescale 1 ps / 1 ps
 
 module system_top_wrapper
-   (CLK100MHZ,
+   (BTN1_1_C_AA6_tri_io,
+    CLK100MHZ,
     CLK32768KHZ,
     DDR3_addr,
     DDR3_ba,
@@ -42,6 +43,7 @@ module system_top_wrapper
     qspi0_cs,
     qspi0_dq,
     qspi0_sck);
+  inout [0:0]BTN1_1_C_AA6_tri_io;
   input CLK100MHZ;
   input CLK32768KHZ;
   output [13:0]DDR3_addr;
@@ -75,6 +77,10 @@ module system_top_wrapper
   inout [3:0]qspi0_dq;
   output qspi0_sck;
 
+  wire [0:0]BTN1_1_C_AA6_tri_i_0;
+  wire [0:0]BTN1_1_C_AA6_tri_io_0;
+  wire [0:0]BTN1_1_C_AA6_tri_o_0;
+  wire [0:0]BTN1_1_C_AA6_tri_t_0;
   wire CLK100MHZ;
   wire CLK32768KHZ;
   wire [13:0]DDR3_addr;
@@ -115,6 +121,11 @@ module system_top_wrapper
   wire [3:0]qspi0_dq;
   wire qspi0_sck;
 
+  IOBUF BTN1_1_C_AA6_tri_iobuf_0
+       (.I(BTN1_1_C_AA6_tri_o_0),
+        .IO(BTN1_1_C_AA6_tri_io[0]),
+        .O(BTN1_1_C_AA6_tri_i_0),
+        .T(BTN1_1_C_AA6_tri_t_0));
   IOBUF LED_tri_iobuf_0
        (.I(LED_tri_o_0),
         .IO(LED_tri_io[0]),
@@ -126,7 +137,10 @@ module system_top_wrapper
         .O(LED_tri_i_1),
         .T(LED_tri_t_1));
   system_top system_top_i
-       (.CLK100MHZ(CLK100MHZ),
+       (.BTN1_1_C_AA6_tri_i(BTN1_1_C_AA6_tri_i_0),
+        .BTN1_1_C_AA6_tri_o(BTN1_1_C_AA6_tri_o_0),
+        .BTN1_1_C_AA6_tri_t(BTN1_1_C_AA6_tri_t_0),
+        .CLK100MHZ(CLK100MHZ),
         .CLK32768KHZ(CLK32768KHZ),
         .DDR3_addr(DDR3_addr),
         .DDR3_ba(DDR3_ba),

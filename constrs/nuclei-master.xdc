@@ -107,10 +107,10 @@ set_property PACKAGE_PIN M16  [get_ports {gpioA[8]}]
 #---------------------------------------------------------------
 
 
-
+set_property -dict {PACKAGE_PIN AA6 IOSTANDARD LVCMOS15} [get_ports {BTN1_1_C_AA6_tri_io}] 
 
 ## key_in C
-set_property PACKAGE_PIN AA6  [get_ports {gpioA[7]}]
+set_property PACKAGE_PIN F4  [get_ports {gpioA[7]}]
 ## key_in R
 set_property PACKAGE_PIN W7   [get_ports {gpioA[6]}]
 ## key_in L

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Feb  6 01:06:49 2025
+| Date         : Thu Feb 13 01:25:45 2025
 | Host         : lab101 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_utilization -file system_top_axi_gpio_0_0_utilization_synth.rpt -pb system_top_axi_gpio_0_0_utilization_synth.pb
 | Design       : system_top_axi_gpio_0_0
@@ -150,10 +150,10 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |   51 |        Flop & Latch |
-| LUT6     |   20 |                 LUT |
+| LUT6     |   18 |                 LUT |
 | LUT2     |   11 |                 LUT |
+| LUT5     |   10 |                 LUT |
 | LUT3     |   10 |                 LUT |
-| LUT5     |    8 |                 LUT |
 | LUT4     |    4 |                 LUT |
 | FDSE     |    3 |        Flop & Latch |
 | LUT1     |    2 |                 LUT |

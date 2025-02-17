@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Fri Feb  7 11:38:42 2025
+// Date        : Tue Feb 11 15:56:55 2025
 // Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_e203_0_0_1/system_top_system_e203_0_0_stub.v
@@ -14,16 +14,18 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "system,Vivado 2020.2" *)
-module system_top_system_e203_0_0(clk_16M, CLK32768KHZ, ck_rst, qspi0_cs, 
-  qspi0_sck, qspi0_dq, gpioA, gpioB, expl_axi_arvalid, expl_axi_arready, expl_axi_araddr, 
-  expl_axi_arcache, expl_axi_arprot, expl_axi_arlock, expl_axi_arburst, expl_axi_arlen, 
-  expl_axi_arsize, expl_axi_awvalid, expl_axi_awready, expl_axi_awaddr, expl_axi_awcache, 
-  expl_axi_awprot, expl_axi_awlock, expl_axi_awburst, expl_axi_awlen, expl_axi_awsize, 
-  expl_axi_rvalid, expl_axi_rready, expl_axi_rdata, expl_axi_rresp, expl_axi_rlast, 
-  expl_axi_wvalid, expl_axi_wready, expl_axi_wdata, expl_axi_wstrb, expl_axi_wlast, 
-  expl_axi_bvalid, expl_axi_bready, expl_axi_bresp, mcu_TDO, mcu_TCK, mcu_TDI, mcu_TMS, 
-  pmu_paden, pmu_padrst, mcu_wakeup)
-/* synthesis syn_black_box black_box_pad_pin="clk_16M,CLK32768KHZ,ck_rst,qspi0_cs,qspi0_sck,qspi0_dq[3:0],gpioA[31:0],gpioB[31:0],expl_axi_arvalid,expl_axi_arready,expl_axi_araddr[31:0],expl_axi_arcache[3:0],expl_axi_arprot[2:0],expl_axi_arlock[1:0],expl_axi_arburst[1:0],expl_axi_arlen[3:0],expl_axi_arsize[2:0],expl_axi_awvalid,expl_axi_awready,expl_axi_awaddr[31:0],expl_axi_awcache[3:0],expl_axi_awprot[2:0],expl_axi_awlock[1:0],expl_axi_awburst[1:0],expl_axi_awlen[3:0],expl_axi_awsize[2:0],expl_axi_rvalid,expl_axi_rready,expl_axi_rdata[31:0],expl_axi_rresp[1:0],expl_axi_rlast,expl_axi_wvalid,expl_axi_wready,expl_axi_wdata[31:0],expl_axi_wstrb[3:0],expl_axi_wlast,expl_axi_bvalid,expl_axi_bready,expl_axi_bresp[1:0],mcu_TDO,mcu_TCK,mcu_TDI,mcu_TMS,pmu_paden,pmu_padrst,mcu_wakeup" */;
+module system_top_system_e203_0_0(user_irq_1, user_irq_0, clk_16M, CLK32768KHZ, 
+  ck_rst, qspi0_cs, qspi0_sck, qspi0_dq, gpioA, gpioB, expl_axi_arvalid, expl_axi_arready, 
+  expl_axi_araddr, expl_axi_arcache, expl_axi_arprot, expl_axi_arlock, expl_axi_arburst, 
+  expl_axi_arlen, expl_axi_arsize, expl_axi_awvalid, expl_axi_awready, expl_axi_awaddr, 
+  expl_axi_awcache, expl_axi_awprot, expl_axi_awlock, expl_axi_awburst, expl_axi_awlen, 
+  expl_axi_awsize, expl_axi_rvalid, expl_axi_rready, expl_axi_rdata, expl_axi_rresp, 
+  expl_axi_rlast, expl_axi_wvalid, expl_axi_wready, expl_axi_wdata, expl_axi_wstrb, 
+  expl_axi_wlast, expl_axi_bvalid, expl_axi_bready, expl_axi_bresp, mcu_TDO, mcu_TCK, mcu_TDI, 
+  mcu_TMS, pmu_paden, pmu_padrst, mcu_wakeup)
+/* synthesis syn_black_box black_box_pad_pin="user_irq_1,user_irq_0,clk_16M,CLK32768KHZ,ck_rst,qspi0_cs,qspi0_sck,qspi0_dq[3:0],gpioA[31:0],gpioB[31:0],expl_axi_arvalid,expl_axi_arready,expl_axi_araddr[31:0],expl_axi_arcache[3:0],expl_axi_arprot[2:0],expl_axi_arlock[1:0],expl_axi_arburst[1:0],expl_axi_arlen[3:0],expl_axi_arsize[2:0],expl_axi_awvalid,expl_axi_awready,expl_axi_awaddr[31:0],expl_axi_awcache[3:0],expl_axi_awprot[2:0],expl_axi_awlock[1:0],expl_axi_awburst[1:0],expl_axi_awlen[3:0],expl_axi_awsize[2:0],expl_axi_rvalid,expl_axi_rready,expl_axi_rdata[31:0],expl_axi_rresp[1:0],expl_axi_rlast,expl_axi_wvalid,expl_axi_wready,expl_axi_wdata[31:0],expl_axi_wstrb[3:0],expl_axi_wlast,expl_axi_bvalid,expl_axi_bready,expl_axi_bresp[1:0],mcu_TDO,mcu_TCK,mcu_TDI,mcu_TMS,pmu_paden,pmu_padrst,mcu_wakeup" */;
+  input user_irq_1;
+  input user_irq_0;
   input clk_16M;
   input CLK32768KHZ;
   input ck_rst;

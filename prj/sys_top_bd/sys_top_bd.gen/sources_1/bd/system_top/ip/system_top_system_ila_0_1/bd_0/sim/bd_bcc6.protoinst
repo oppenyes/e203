@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_bcc6": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -351,6 +351,8 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
+  set BTN1_1_C_AA6 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 BTN1_1_C_AA6 ]
+
   set DDR3 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR3 ]
 
   set LED [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 LED ]
@@ -377,15 +379,31 @@ proc create_root_design { parentCell } {
   # Create instance: axi_gpio_0, and set properties
   set axi_gpio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 ]
   set_property -dict [ list \
+   CONFIG.C_ALL_INPUTS_2 {0} \
+   CONFIG.C_ALL_OUTPUTS {0} \
+   CONFIG.C_GPIO2_WIDTH {1} \
    CONFIG.C_GPIO_WIDTH {2} \
+   CONFIG.C_INTERRUPT_PRESENT {0} \
    CONFIG.C_IS_DUAL {0} \
  ] $axi_gpio_0
+
+  # Create instance: axi_gpio_1, and set properties
+  set axi_gpio_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1 ]
+  set_property -dict [ list \
+   CONFIG.C_ALL_INPUTS_2 {0} \
+   CONFIG.C_ALL_OUTPUTS {0} \
+   CONFIG.C_GPIO2_WIDTH {1} \
+   CONFIG.C_GPIO_WIDTH {1} \
+   CONFIG.C_INTERRUPT_PRESENT {1} \
+   CONFIG.C_IS_DUAL {0} \
+ ] $axi_gpio_1
 
   # Create instance: axi_interconnect_0, and set properties
   set axi_interconnect_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 ]
   set_property -dict [ list \
    CONFIG.ENABLE_ADVANCED_OPTIONS {0} \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {3} \
+   CONFIG.NUM_SI {1} \
  ] $axi_interconnect_0
 
   # Create instance: clk_wiz_0, and set properties
@@ -423,17 +441,25 @@ proc create_root_design { parentCell } {
    CONFIG.XML_INPUT_FILE {mig_a.prj} \
  ] $mig_7series_0
 
-  # Create instance: proc_sys_reset_0, and set properties
-  set proc_sys_reset_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 ]
+  # Create instance: proc_sys_reset_100M, and set properties
+  set proc_sys_reset_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_100M ]
 
-  # Create instance: proc_sys_reset_1, and set properties
-  set proc_sys_reset_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_1 ]
-
-  # Create instance: rst_clk_wiz_0_200M, and set properties
-  set rst_clk_wiz_0_200M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_clk_wiz_0_200M ]
+  # Create instance: proc_sys_reset_16M, and set properties
+  set proc_sys_reset_16M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_16M ]
 
   # Create instance: system_e203_0, and set properties
-  set system_e203_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:system_e203:3.0 system_e203_0 ]
+  set system_e203_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:system_e203:4.0 system_e203_0 ]
+
+  # Create instance: system_ila_0, and set properties
+  set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
+  set_property -dict [ list \
+   CONFIG.C_MON_TYPE {MIX} \
+   CONFIG.C_NUM_MONITOR_SLOTS {1} \
+   CONFIG.C_NUM_OF_PROBES {1} \
+   CONFIG.C_PROBE0_TYPE {0} \
+   CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:gpio_rtl:1.0} \
+   CONFIG.C_SLOT_0_TYPE {0} \
+ ] $system_ila_0
 
   # Create instance: util_vector_logic_0, and set properties
   set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
@@ -451,8 +477,12 @@ proc create_root_design { parentCell } {
 
   # Create interface connections
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports LED] [get_bd_intf_pins axi_gpio_0/GPIO]
+  connect_bd_intf_net -intf_net axi_gpio_1_GPIO [get_bd_intf_ports BTN1_1_C_AA6] [get_bd_intf_pins axi_gpio_1/GPIO]
+connect_bd_intf_net -intf_net [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports BTN1_1_C_AA6] [get_bd_intf_pins system_ila_0/SLOT_0_GPIO]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets axi_gpio_1_GPIO]
   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins mig_7series_0/S_AXI]
   connect_bd_intf_net -intf_net axi_interconnect_0_M01_AXI [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+  connect_bd_intf_net -intf_net axi_interconnect_0_M02_AXI [get_bd_intf_pins axi_gpio_1/S_AXI] [get_bd_intf_pins axi_interconnect_0/M02_AXI]
   connect_bd_intf_net -intf_net mig_7series_0_DDR3 [get_bd_intf_ports DDR3] [get_bd_intf_pins mig_7series_0/DDR3]
   connect_bd_intf_net -intf_net system_e203_0_expl_axi [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins system_e203_0/expl_axi]
 
@@ -468,26 +498,29 @@ proc create_root_design { parentCell } {
   connect_bd_net -net Net7 [get_bd_ports pmu_paden] [get_bd_pins system_e203_0/pmu_paden]
   connect_bd_net -net Net8 [get_bd_ports pmu_padrst] [get_bd_pins system_e203_0/pmu_padrst]
   connect_bd_net -net Net9 [get_bd_ports qspi0_dq] [get_bd_pins system_e203_0/qspi0_dq]
-  connect_bd_net -net Net10 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mig_7series_0/clk_ref_i] [get_bd_pins mig_7series_0/sys_clk_i] [get_bd_pins rst_clk_wiz_0_200M/slowest_sync_clk]
+  connect_bd_net -net Net10 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mig_7series_0/clk_ref_i] [get_bd_pins mig_7series_0/sys_clk_i] [get_bd_pins system_ila_0/clk]
+  connect_bd_net -net axi_gpio_1_ip2intc_irpt [get_bd_pins axi_gpio_1/ip2intc_irpt] [get_bd_pins system_e203_0/user_irq_0] [get_bd_pins system_ila_0/probe0]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets axi_gpio_1_ip2intc_irpt]
   connect_bd_net -net clk_in1_0_1 [get_bd_ports CLK100MHZ] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins system_e203_0/clk_16M]
-  connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/dcm_locked] [get_bd_pins rst_clk_wiz_0_200M/dcm_locked]
+  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins proc_sys_reset_16M/slowest_sync_clk] [get_bd_pins system_e203_0/clk_16M]
+  connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_16M/dcm_locked]
   connect_bd_net -net fpga_rst_1 [get_bd_ports fpga_rst] [get_bd_pins util_vector_logic_0/Op1]
   connect_bd_net -net mcu_rst_1 [get_bd_ports mcu_rst] [get_bd_pins util_vector_logic_0/Op2]
-  connect_bd_net -net mig_7series_0_mmcm_locked [get_bd_pins mig_7series_0/mmcm_locked] [get_bd_pins proc_sys_reset_1/dcm_locked]
-  connect_bd_net -net mig_7series_0_ui_clk [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
-  connect_bd_net -net mig_7series_0_ui_clk_sync_rst [get_bd_pins mig_7series_0/ui_clk_sync_rst] [get_bd_pins proc_sys_reset_1/ext_reset_in]
-  connect_bd_net -net proc_sys_reset_0_interconnect_aresetn [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins proc_sys_reset_0/interconnect_aresetn]
-  connect_bd_net -net proc_sys_reset_0_mb_reset [get_bd_pins proc_sys_reset_0/mb_reset] [get_bd_pins util_vector_logic_1/Op1]
-  connect_bd_net -net proc_sys_reset_1_peripheral_aresetn [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins mig_7series_0/aresetn] [get_bd_pins proc_sys_reset_1/peripheral_aresetn]
-  connect_bd_net -net rst_clk_wiz_0_200M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins rst_clk_wiz_0_200M/peripheral_aresetn]
+  connect_bd_net -net mig_7series_0_mmcm_locked [get_bd_pins mig_7series_0/mmcm_locked] [get_bd_pins proc_sys_reset_100M/dcm_locked]
+  connect_bd_net -net mig_7series_0_ui_clk [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins proc_sys_reset_100M/slowest_sync_clk]
+  connect_bd_net -net mig_7series_0_ui_clk_sync_rst [get_bd_pins mig_7series_0/ui_clk_sync_rst] [get_bd_pins proc_sys_reset_100M/ext_reset_in]
+  connect_bd_net -net proc_sys_reset_0_interconnect_aresetn [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins proc_sys_reset_16M/interconnect_aresetn]
+  connect_bd_net -net proc_sys_reset_0_mb_reset [get_bd_pins proc_sys_reset_16M/mb_reset] [get_bd_pins util_vector_logic_1/Op1]
+  connect_bd_net -net proc_sys_reset_1_peripheral_aresetn [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins mig_7series_0/aresetn] [get_bd_pins proc_sys_reset_100M/peripheral_aresetn]
+  connect_bd_net -net rst_clk_wiz_0_200M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins proc_sys_reset_16M/peripheral_aresetn]
   connect_bd_net -net system_e203_0_qspi0_cs [get_bd_ports qspi0_cs] [get_bd_pins system_e203_0/qspi0_cs]
   connect_bd_net -net system_e203_0_qspi0_sck [get_bd_ports qspi0_sck] [get_bd_pins system_e203_0/qspi0_sck]
-  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins clk_wiz_0/resetn] [get_bd_pins mig_7series_0/sys_rst] [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins rst_clk_wiz_0_200M/ext_reset_in] [get_bd_pins util_vector_logic_0/Res]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins clk_wiz_0/resetn] [get_bd_pins mig_7series_0/sys_rst] [get_bd_pins proc_sys_reset_16M/ext_reset_in] [get_bd_pins util_vector_logic_0/Res]
   connect_bd_net -net util_vector_logic_1_Res [get_bd_pins system_e203_0/ck_rst] [get_bd_pins util_vector_logic_1/Res]
 
   # Create address segments
   assign_bd_address -offset 0x40000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces system_e203_0/expl_axi] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
+  assign_bd_address -offset 0x40010000 -range 0x00010000 -target_address_space [get_bd_addr_spaces system_e203_0/expl_axi] [get_bd_addr_segs axi_gpio_1/S_AXI/Reg] -force
   assign_bd_address -offset 0x60000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces system_e203_0/expl_axi] [get_bd_addr_segs mig_7series_0/memmap/memaddr] -force
 
 

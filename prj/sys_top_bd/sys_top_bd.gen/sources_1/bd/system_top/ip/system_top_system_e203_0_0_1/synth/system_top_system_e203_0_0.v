@@ -47,15 +47,17 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:system_e203:3.0
+// IP VLNV: xilinx.com:user:system_e203:4.0
 // IP Revision: 1
 
 (* X_CORE_INFO = "system,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "system_top_system_e203_0_0,system,{}" *)
-(* CORE_GENERATION_INFO = "system_top_system_e203_0_0,system,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=system_e203,x_ipVersion=3.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "system_top_system_e203_0_0,system,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=system_e203,x_ipVersion=4.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_top_system_e203_0_0 (
+  user_irq_1,
+  user_irq_0,
   clk_16M,
   CLK32768KHZ,
   ck_rst,
@@ -104,6 +106,8 @@ module system_top_system_e203_0_0 (
   mcu_wakeup
 );
 
+input wire user_irq_1;
+input wire user_irq_0;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk_16M, FREQ_HZ 16000000, ASSOCIATED_BUSIF expl_axi, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk_16M CLK" *)
 input wire clk_16M;
@@ -189,6 +193,8 @@ inout wire pmu_padrst;
 inout wire mcu_wakeup;
 
   system inst (
+    .user_irq_1(user_irq_1),
+    .user_irq_0(user_irq_0),
     .clk_16M(clk_16M),
     .CLK32768KHZ(CLK32768KHZ),
     .ck_rst(ck_rst),

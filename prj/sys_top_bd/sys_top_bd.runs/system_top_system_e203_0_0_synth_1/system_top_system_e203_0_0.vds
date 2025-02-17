@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Feb  7 11:33:17 2025
-# Process ID: 261196
+# Start of session at: Tue Feb 11 15:48:51 2025
+# Process ID: 322320
 # Current directory: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1
 # Command line: vivado -log system_top_system_e203_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_system_e203_0_0.tcl
 # Log file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/system_top_system_e203_0_0.vds
@@ -21,15 +21,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 261253
-WARNING: [Synth 8-2507] parameter declaration becomes local in apb_uart_sv with formal parameter declaration list [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_uart/apb_uart.v:36]
-WARNING: [Synth 8-2507] parameter declaration becomes local in apb_uart_sv with formal parameter declaration list [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_uart/apb_uart.v:38]
-WARNING: [Synth 8-2507] parameter declaration becomes local in apb_uart_sv with formal parameter declaration list [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_uart/apb_uart.v:39]
+INFO: [Synth 8-7075] Helper process launched with PID 322417
+WARNING: [Synth 8-2507] parameter declaration becomes local in apb_uart_sv with formal parameter declaration list [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_uart/apb_uart.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in apb_uart_sv with formal parameter declaration list [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_uart/apb_uart.v:38]
+WARNING: [Synth 8-2507] parameter declaration becomes local in apb_uart_sv with formal parameter declaration list [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_uart/apb_uart.v:39]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2295.863 ; gain = 0.000 ; free physical = 6199 ; free virtual = 13550
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2296.926 ; gain = 0.000 ; free physical = 6352 ; free virtual = 13999
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system_top_system_e203_0_0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_e203_0_0_1/synth/system_top_system_e203_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'system' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/system.v:3]
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/system.v:3]
 INFO: [Synth 8-6157] synthesizing module 'PULLUP' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:69810]
 INFO: [Synth 8-6155] done synthesizing module 'PULLUP' (1#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:69810]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
@@ -44,55 +44,55 @@ INFO: [Synth 8-6157] synthesizing module 'IOBUF__parameterized0' [/tools/Xilinx/
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF__parameterized0' (2#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
-INFO: [Synth 8-6157] synthesizing module 'e203_soc_top' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/soc/e203_soc_top.v:19]
-INFO: [Synth 8-6157] synthesizing module 'e203_subsys_top' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_top.v:31]
-INFO: [Synth 8-6157] synthesizing module 'e203_subsys_main' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_main.v:32]
-INFO: [Synth 8-6157] synthesizing module 'sirv_ResetCatchAndSync_2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/sirv_ResetCatchAndSync_2.v:19]
-INFO: [Synth 8-6157] synthesizing module 'sirv_AsyncResetRegVec_129' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/sirv_AsyncResetRegVec_129.v:19]
-INFO: [Synth 8-6157] synthesizing module 'sirv_AsyncResetReg' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/sirv_AsyncResetReg.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_AsyncResetReg' (3#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/sirv_AsyncResetReg.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_AsyncResetRegVec_129' (4#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/sirv_AsyncResetRegVec_129.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_ResetCatchAndSync_2' (5#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/sirv_ResetCatchAndSync_2.v:19]
-INFO: [Synth 8-6157] synthesizing module 'e203_subsys_hclkgen' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_hclkgen.v:31]
-INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pll' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_pll.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pll' (6#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_pll.v:31]
-INFO: [Synth 8-6157] synthesizing module 'e203_subsys_hclkgen_rstsync' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_hclkgen_rstsync.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_soc_top' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/soc/e203_soc_top.v:20]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_top' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_top.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_main' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_main.v:32]
+INFO: [Synth 8-6157] synthesizing module 'sirv_ResetCatchAndSync_2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/sirv_ResetCatchAndSync_2.v:19]
+INFO: [Synth 8-6157] synthesizing module 'sirv_AsyncResetRegVec_129' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/sirv_AsyncResetRegVec_129.v:19]
+INFO: [Synth 8-6157] synthesizing module 'sirv_AsyncResetReg' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/sirv_AsyncResetReg.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_AsyncResetReg' (3#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/sirv_AsyncResetReg.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_AsyncResetRegVec_129' (4#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/sirv_AsyncResetRegVec_129.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_ResetCatchAndSync_2' (5#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/sirv_ResetCatchAndSync_2.v:19]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_hclkgen' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_hclkgen.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pll' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_pll.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pll' (6#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_pll.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_hclkgen_rstsync' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_hclkgen_rstsync.v:29]
 	Parameter RST_SYNC_LEVEL bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen_rstsync' (7#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_hclkgen_rstsync.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pllclkdiv' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_pllclkdiv.v:31]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen_rstsync' (7#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_hclkgen_rstsync.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pllclkdiv' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_pllclkdiv.v:31]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
 	Parameter DW bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr' (8#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr' (8#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized0' (8#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
-INFO: [Synth 8-6157] synthesizing module 'e203_clkgate' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_clkgate.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'e203_clkgate' (9#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_clkgate.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pllclkdiv' (10#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_pllclkdiv.v:31]
-INFO: [Synth 8-6157] synthesizing module 'e203_subsys_gfcm' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_gfcm.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized0' (8#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'e203_clkgate' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_clkgate.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_clkgate' (9#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_clkgate.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pllclkdiv' (10#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_pllclkdiv.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_gfcm' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_gfcm.v:31]
 	Parameter SYNC_LEVEL bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_gfcm' (11#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_gfcm.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen' (12#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_hclkgen.v:31]
-INFO: [Synth 8-6157] synthesizing module 'e203_cpu_top' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_cpu_top.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_cpu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_cpu.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_gfcm' (11#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_gfcm.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen' (12#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_hclkgen.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_cpu_top' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_cpu_top.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_cpu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_cpu.v:30]
 	Parameter MASTER bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'e203_reset_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_reset_ctrl.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_reset_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_reset_ctrl.v:29]
 	Parameter MASTER bound to: 1 - type: integer 
 	Parameter RST_SYNC_LEVEL bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'e203_reset_ctrl' (13#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_reset_ctrl.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_clk_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_clk_ctrl.v:30]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffr' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:209]
+INFO: [Synth 8-6155] done synthesizing module 'e203_reset_ctrl' (13#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_reset_ctrl.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_clk_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_clk_ctrl.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffr' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:209]
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffr' (14#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:209]
-INFO: [Synth 8-6155] done synthesizing module 'e203_clk_ctrl' (15#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_clk_ctrl.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_irq_sync' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_irq_sync.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffr' (14#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:209]
+INFO: [Synth 8-6155] done synthesizing module 'e203_clk_ctrl' (15#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_clk_ctrl.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_irq_sync' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_irq_sync.v:29]
 	Parameter MASTER bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_sync' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:99]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_sync' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:99]
 	Parameter DP bound to: 2 - type: integer 
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_sync' (16#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:99]
-INFO: [Synth 8-6155] done synthesizing module 'e203_irq_sync' (17#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_irq_sync.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_subsys_nice_core' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_nice_core.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_sync' (16#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'e203_irq_sync' (17#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_irq_sync.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_nice_core' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_nice_core.v:28]
 	Parameter ROWBUF_DP bound to: 4 - type: integer 
 	Parameter ROWBUF_IDX_W bound to: 2 - type: integer 
 	Parameter ROW_IDX_W bound to: 2 - type: integer 
@@ -103,98 +103,98 @@ INFO: [Synth 8-6157] synthesizing module 'e203_subsys_nice_core' [/home/oppenyes
 	Parameter LBUF bound to: 2'b01 
 	Parameter SBUF bound to: 2'b10 
 	Parameter ROWSUM bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
 	Parameter DW bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized1' (17#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized1' (17#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
 	Parameter DW bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized2' (17#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
-INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_nice_core' (18#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/subsys/e203_subsys_nice_core.v:28]
-INFO: [Synth 8-6157] synthesizing module 'e203_core' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_core.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_ifu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_ifu_ifetch' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu_ifetch.v:29]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffrs' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized2' (17#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_nice_core' (18#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/subsys/e203_subsys_nice_core.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_core' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_core.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_ifetch' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu_ifetch.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffrs' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:177]
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffrs' (19#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:177]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized3' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffrs' (19#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:177]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized3' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
 	Parameter DW bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized3' (19#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized4' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized3' (19#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized4' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
 	Parameter DW bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized4' (19#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
-INFO: [Synth 8-6157] synthesizing module 'e203_ifu_minidec' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu_minidec.v:28]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_decode' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_decode.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_decode' (20#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_decode.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_minidec' (21#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu_minidec.v:28]
-INFO: [Synth 8-6157] synthesizing module 'e203_ifu_litebpu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu_litebpu.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_litebpu' (22#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu_litebpu.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_ifetch' (23#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu_ifetch.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_ifu_ift2icb' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu_ift2icb.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized4' (19#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_minidec' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu_minidec.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_decode' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_decode.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_decode' (20#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_decode.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_minidec' (21#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu_minidec.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_litebpu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu_litebpu.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_litebpu' (22#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu_litebpu.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_ifetch' (23#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu_ifetch.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_ift2icb' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu_ift2icb.v:30]
 	Parameter ICB_STATE_WIDTH bound to: 2 - type: integer 
 	Parameter ICB_STATE_IDLE bound to: 2'b00 
 	Parameter ICB_STATE_1ST bound to: 2'b01 
 	Parameter ICB_STATE_WAIT2ND bound to: 2'b10 
 	Parameter ICB_STATE_2ND bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:306]
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 33 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
 	Parameter CUT_READY bound to: 1 - type: integer 
 	Parameter MSKO bound to: 0 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 33 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 33 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl' (24#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflrs' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl' (24#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflrs' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:40]
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflrs' (25#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo' (26#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf' (27#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:306]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflrs' (25#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo' (26#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf' (27#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized0' (27#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized0' (27#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized1' (27#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_ift2icb' (28#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu_ift2icb.v:30]
-INFO: [Synth 8-6155] done synthesizing module 'e203_ifu' (29#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_ifu.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_regfile' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_regfile.v:28]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized1' (27#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_ift2icb' (28#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu_ift2icb.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu' (29#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_ifu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_regfile' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_regfile.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized2' (29#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_regfile' (30#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_regfile.v:28]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_disp' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_disp.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_disp' (31#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_disp.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_oitf' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_oitf.v:29]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized3' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized2' (29#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_regfile' (30#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_regfile.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_disp' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_disp.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_disp' (31#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_disp.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_oitf' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_oitf.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized3' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized3' (31#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized4' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized3' (31#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized4' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized4' (31#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_oitf' (32#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_oitf.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu.v:32]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_nice' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_nice.v:30]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized4' (31#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_oitf' (32#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_oitf.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_nice' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_nice.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
 	Parameter CUT_READY bound to: 1 - type: integer 
 	Parameter MSKO bound to: 0 - type: integer 
 	Parameter DP bound to: 4 - type: integer 
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized5' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized5' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
 	Parameter DW bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized5' (32#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized6' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized5' (32#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized6' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
 	Parameter DW bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized6' (32#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:87]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized0' (32#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_nice' (33#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_nice.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_csrctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_csrctrl.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_csrctrl' (34#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_csrctrl.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_bjp' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_bjp.v:32]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_bjp' (35#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_bjp.v:32]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_lsuagu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_lsuagu.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized6' (32#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized0' (32#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_nice' (33#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_nice.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_csrctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_csrctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_csrctrl' (34#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_csrctrl.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_bjp' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_bjp.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_bjp' (35#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_bjp.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_lsuagu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_lsuagu.v:32]
 	Parameter ICB_STATE_WIDTH bound to: 4 - type: integer 
 	Parameter ICB_STATE_IDLE bound to: 4'b0000 
 	Parameter ICB_STATE_1ST bound to: 4'b0001 
@@ -203,10 +203,10 @@ INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_lsuagu' [/home/oppenyes/w
 	Parameter ICB_STATE_AMOALU bound to: 4'b0100 
 	Parameter ICB_STATE_AMORDY bound to: 4'b0101 
 	Parameter ICB_STATE_WBCK bound to: 4'b0110 
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_lsuagu' (36#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_lsuagu.v:32]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_rglr' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_rglr.v:30]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_rglr' (37#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_rglr.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_muldiv' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_muldiv.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_lsuagu' (36#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_lsuagu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_rglr' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_rglr.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_rglr' (37#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_rglr.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_muldiv' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_muldiv.v:32]
 	Parameter MULDIV_STATE_WIDTH bound to: 3 - type: integer 
 	Parameter MULDIV_STATE_0TH bound to: 3'b000 
 	Parameter MULDIV_STATE_EXEC bound to: 3'b001 
@@ -217,35 +217,35 @@ INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_muldiv' [/home/oppenyes/w
 	Parameter EXEC_CNT_1 bound to: 6'b000001 
 	Parameter EXEC_CNT_16 bound to: 6'b010000 
 	Parameter EXEC_CNT_32 bound to: 6'b100000 
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_muldiv' (38#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_muldiv.v:32]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_dpath' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_dpath.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_muldiv' (38#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_muldiv.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_dpath' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_dpath.v:29]
 	Parameter DPATH_MUX_WIDTH bound to: 85 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_dpath' (39#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu_dpath.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu' (40#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_alu.v:32]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_longpwbck' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_longpwbck.v:30]
-WARNING: [Synth 8-693] zero replication count - replication ignored [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_longpwbck.v:141]
-WARNING: [Synth 8-693] zero replication count - replication ignored [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_longpwbck.v:144]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_longpwbck' (41#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_longpwbck.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_wbck' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_wbck.v:30]
-WARNING: [Synth 8-693] zero replication count - replication ignored [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_wbck.v:93]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_wbck' (42#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_wbck.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_commit' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_commit.v:31]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_branchslv' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_branchslv.v:30]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_branchslv' (43#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_branchslv.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_excp' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_excp.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_excp' (44#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_excp.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_commit' (45#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_commit.v:31]
-INFO: [Synth 8-6157] synthesizing module 'e203_exu_csr' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_csr.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu_csr' (46#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu_csr.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_exu' (47#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_exu.v:29]
-INFO: [Synth 8-6157] synthesizing module 'e203_lsu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_lsu.v:28]
-INFO: [Synth 8-6157] synthesizing module 'e203_lsu_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_lsu_ctrl.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_dpath' (39#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu_dpath.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu' (40#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_alu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_longpwbck' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_longpwbck.v:30]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_longpwbck.v:141]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_longpwbck.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_longpwbck' (41#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_longpwbck.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_wbck' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_wbck.v:30]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_wbck.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_wbck' (42#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_wbck.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_commit' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_commit.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_branchslv' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_branchslv.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_branchslv' (43#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_branchslv.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_excp' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_excp.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_excp' (44#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_excp.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_commit' (45#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_commit.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_csr' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_csr.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_csr' (46#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu_csr.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu' (47#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_exu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_lsu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_lsu.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_lsu_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_lsu_ctrl.v:28]
 	Parameter LSU_ARBT_I_PTR_W bound to: 1 - type: integer 
 	Parameter LSU_ARBT_I_NUM bound to: 2 - type: integer 
 	Parameter USR_W bound to: 39 - type: integer 
 	Parameter USR_PACK_EXCL bound to: 0 - type: integer 
 	Parameter SPLT_FIFO_W bound to: 44 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:37]
 	Parameter AW bound to: 32 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter USR_W bound to: 39 - type: integer 
@@ -255,30 +255,30 @@ INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt' [/home/oppenyes/wo
 	Parameter ARBT_NUM bound to: 2 - type: integer 
 	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
 	Parameter ARBT_PTR_W bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
 	Parameter CUT_READY bound to: 0 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage' (48#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt' (49#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:37]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage' (48#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt' (49#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
 	Parameter CUT_READY bound to: 0 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 44 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized5' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized5' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 44 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized5' (49#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' (49#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'e203_lsu_ctrl' (50#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_lsu_ctrl.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'e203_lsu' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_lsu.v:28]
-INFO: [Synth 8-6157] synthesizing module 'e203_biu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_biu.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized5' (49#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' (49#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_lsu_ctrl' (50#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_lsu_ctrl.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_lsu' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_lsu.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_biu' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_biu.v:29]
 	Parameter BIU_ARBT_I_NUM bound to: 2 - type: integer 
 	Parameter BIU_ARBT_I_PTR_W bound to: 1 - type: integer 
 	Parameter BIU_SPLT_I_NUM_0 bound to: 4 - type: integer 
 	Parameter BIU_SPLT_I_NUM_1 bound to: 5 - type: integer 
 	Parameter BIU_SPLT_I_NUM_2 bound to: 6 - type: integer 
 	Parameter BIU_SPLT_I_NUM bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:37]
 	Parameter AW bound to: 32 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter USR_W bound to: 1 - type: integer 
@@ -288,13 +288,13 @@ INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' [/
 	Parameter ARBT_NUM bound to: 2 - type: integer 
 	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
 	Parameter ARBT_PTR_W bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
 	Parameter CUT_READY bound to: 1 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:37]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_buffer' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:351]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_buffer' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:351]
 	Parameter OUTS_CNT_W bound to: 1 - type: integer 
 	Parameter AW bound to: 32 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
@@ -305,26 +305,26 @@ INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_buffer' [/home/oppenyes/
 	Parameter USR_W bound to: 1 - type: integer 
 	Parameter CMD_PACK_W bound to: 78 - type: integer 
 	Parameter RSP_PACK_W bound to: 35 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
 	Parameter CUT_READY bound to: 1 - type: integer 
 	Parameter MSKO bound to: 0 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 78 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized6' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized6' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 78 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized6' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized1' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized6' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized1' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
 	Parameter CUT_READY bound to: 1 - type: integer 
 	Parameter MSKO bound to: 0 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 35 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized7' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized7' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 35 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized7' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized2' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_buffer' (52#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:351]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_splt' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:648]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized7' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized2' (51#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_buffer' (52#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:351]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_splt' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:648]
 	Parameter AW bound to: 32 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
@@ -336,29 +336,29 @@ INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_splt' [/home/oppenyes/wo
 	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
 	Parameter VLD_MSK_PAYLOAD bound to: 0 - type: integer 
 	Parameter USR_W bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
 	Parameter CUT_READY bound to: 1 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized8' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized8' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized8' (52#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' (52#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_splt' (53#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:648]
-INFO: [Synth 8-6155] done synthesizing module 'e203_biu' (54#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_biu.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_core' (55#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_core.v:30]
-INFO: [Synth 8-6157] synthesizing module 'e203_itcm_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_itcm_ctrl.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized8' (52#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' (52#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_splt' (53#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:648]
+INFO: [Synth 8-6155] done synthesizing module 'e203_biu' (54#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_biu.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_core' (55#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_core.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_itcm_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_itcm_ctrl.v:31]
 	Parameter ITCM_ARBT_I_NUM bound to: 2 - type: integer 
 	Parameter ITCM_ARBT_I_PTR_W bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_n2w' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:503]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_n2w' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:503]
 	Parameter AW bound to: 16 - type: integer 
 	Parameter USR_W bound to: 1 - type: integer 
 	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
 	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
 	Parameter X_W bound to: 32 - type: integer 
 	Parameter Y_W bound to: 64 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_n2w' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:503]
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_n2w' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:503]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:37]
 	Parameter AW bound to: 16 - type: integer 
 	Parameter DW bound to: 64 - type: integer 
 	Parameter USR_W bound to: 1 - type: integer 
@@ -368,45 +368,45 @@ INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' [/
 	Parameter ARBT_NUM bound to: 2 - type: integer 
 	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
 	Parameter ARBT_PTR_W bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:37]
-INFO: [Synth 8-6157] synthesizing module 'sirv_sram_icb_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_sram_icb_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_sram_icb_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_sram_icb_ctrl.v:29]
 	Parameter DW bound to: 64 - type: integer 
 	Parameter MW bound to: 8 - type: integer 
 	Parameter AW bound to: 16 - type: integer 
 	Parameter AW_LSB bound to: 3 - type: integer 
 	Parameter USR_W bound to: 2 - type: integer 
 	Parameter BUF_CMD_PACK_W bound to: 91 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:306]
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 91 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized3' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized3' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
 	Parameter CUT_READY bound to: 1 - type: integer 
 	Parameter MSKO bound to: 0 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 91 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized9' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized9' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
 	Parameter DW bound to: 91 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized9' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized3' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized0' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:306]
-INFO: [Synth 8-6157] synthesizing module 'sirv_1cyc_sram_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_1cyc_sram_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized9' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized3' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized0' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6157] synthesizing module 'sirv_1cyc_sram_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_1cyc_sram_ctrl.v:29]
 	Parameter DW bound to: 64 - type: integer 
 	Parameter MW bound to: 8 - type: integer 
 	Parameter AW bound to: 16 - type: integer 
 	Parameter AW_LSB bound to: 3 - type: integer 
 	Parameter USR_W bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized3' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized3' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
 	Parameter CUT_READY bound to: 0 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized3' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_1cyc_sram_ctrl' (57#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_1cyc_sram_ctrl.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_sram_icb_ctrl' (58#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_sram_icb_ctrl.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_itcm_ctrl' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_itcm_ctrl.v:31]
-INFO: [Synth 8-6157] synthesizing module 'e203_dtcm_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_dtcm_ctrl.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized3' (56#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_1cyc_sram_ctrl' (57#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_1cyc_sram_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_sram_icb_ctrl' (58#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_sram_icb_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_itcm_ctrl' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_itcm_ctrl.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_dtcm_ctrl' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_dtcm_ctrl.v:31]
 	Parameter DTCM_ARBT_I_NUM bound to: 2 - type: integer 
 	Parameter DTCM_ARBT_I_PTR_W bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized2' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:37]
 	Parameter AW bound to: 16 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter USR_W bound to: 1 - type: integer 
@@ -416,36 +416,36 @@ INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized2' [/
 	Parameter ARBT_NUM bound to: 2 - type: integer 
 	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
 	Parameter ARBT_PTR_W bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized2' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_icbs.v:37]
-INFO: [Synth 8-6157] synthesizing module 'sirv_sram_icb_ctrl__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_sram_icb_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized2' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_sram_icb_ctrl__parameterized0' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_sram_icb_ctrl.v:29]
 	Parameter DW bound to: 32 - type: integer 
 	Parameter MW bound to: 4 - type: integer 
 	Parameter AW bound to: 16 - type: integer 
 	Parameter AW_LSB bound to: 2 - type: integer 
 	Parameter USR_W bound to: 1 - type: integer 
 	Parameter BUF_CMD_PACK_W bound to: 54 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf__parameterized1' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:306]
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 54 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized4' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized4' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter CUT_READY bound to: 1 - type: integer 
 	Parameter MSKO bound to: 0 - type: integer 
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 54 - type: integer 
 	Parameter DW bound to: 54 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized10' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_dffs.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized4' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:381]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized1' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized10' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized4' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized1' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_bufs.v:306]
 	Parameter DW bound to: 32 - type: integer 
 	Parameter MW bound to: 4 - type: integer 
 	Parameter AW bound to: 16 - type: integer 
 	Parameter AW_LSB bound to: 2 - type: integer 
 	Parameter USR_W bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_1cyc_sram_ctrl__parameterized0' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_1cyc_sram_ctrl.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_sram_icb_ctrl__parameterized0' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_sram_icb_ctrl.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'e203_dtcm_ctrl' (60#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_dtcm_ctrl.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'e203_cpu' (61#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_cpu.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_1cyc_sram_ctrl__parameterized0' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_1cyc_sram_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_sram_icb_ctrl__parameterized0' (59#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_sram_icb_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_dtcm_ctrl' (60#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_dtcm_ctrl.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_cpu' (61#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_cpu.v:30]
 	Parameter DP bound to: 8192 - type: integer 
 	Parameter DW bound to: 64 - type: integer 
 	Parameter FORCE_X2ZERO bound to: 0 - type: integer 
@@ -456,9 +456,9 @@ INFO: [Synth 8-6155] done synthesizing module 'e203_cpu' (61#1) [/home/oppenyes/
 	Parameter DW bound to: 64 - type: integer 
 	Parameter MW bound to: 8 - type: integer 
 	Parameter AW bound to: 13 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_sim_ram' (62#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_sim_ram.v:27]
-INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_ram' (63#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_gnrl_ram.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'e203_itcm_ram' (64#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/core/e203_itcm_ram.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_sim_ram' (62#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_sim_ram.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_ram' (63#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_gnrl_ram.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_itcm_ram' (64#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/core/e203_itcm_ram.v:30]
 	Parameter DP bound to: 16384 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter FORCE_X2ZERO bound to: 1 - type: integer 
@@ -469,17 +469,17 @@ INFO: [Synth 8-6155] done synthesizing module 'e203_itcm_ram' (64#1) [/home/oppe
 	Parameter DW bound to: 32 - type: integer 
 	Parameter MW bound to: 4 - type: integer 
 	Parameter AW bound to: 14 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sirv_sim_ram__parameterized0' (64#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/general/sirv_sim_ram.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_sim_ram__parameterized0' (64#1) [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/general/sirv_sim_ram.v:27]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-	Parameter PLIC_IRQ_NUM bound to: 17 - type: integer 
+	Parameter PLIC_IRQ_NUM bound to: 19 - type: integer 
 	Parameter PLIC_PRIO_WIDTH bound to: 3 - type: integer 
-	Parameter PLIC_IRQ_NUM bound to: 17 - type: integer 
+	Parameter PLIC_IRQ_NUM bound to: 19 - type: integer 
 	Parameter PLIC_IRQ_NUM_LOG2 bound to: 6 - type: integer 
 	Parameter PLIC_ICB_RSP_FLOP bound to: 1 - type: integer 
 	Parameter PLIC_IRQ_I_FLOP bound to: 1 - type: integer 
 	Parameter PLIC_IRQ_O_FLOP bound to: 1 - type: integer 
 	Parameter PLIC_PEND_ARRAY bound to: 1 - type: integer 
-	Parameter DW bound to: 17 - type: integer 
+	Parameter DW bound to: 19 - type: integer 
 	Parameter DW bound to: 6 - type: integer 
 	Parameter DW bound to: 3 - type: integer 
 	Parameter CUT_READY bound to: 1 - type: integer 
@@ -575,8 +575,8 @@ INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instan
 	Parameter DP bound to: 1 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_gpio/apb_gpio.v:132]
-INFO: [Synth 8-226] default block is never used [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_gpio/apb_gpio.v:193]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_gpio/apb_gpio.v:132]
+INFO: [Synth 8-226] default block is never used [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_gpio/apb_gpio.v:193]
 	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter RBR bound to: 3'b000 
 	Parameter THR bound to: 3'b000 
@@ -612,16 +612,16 @@ INFO: [Synth 8-226] default block is never used [/home/oppenyes/workspace/my_git
 	Parameter LOG_BUFFER_DEPTH bound to: 4 - type: integer 
 	Parameter TX_FIFO_DEPTH bound to: 16 - type: integer 
 	Parameter RX_FIFO_DEPTH bound to: 16 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_uart/apb_uart.v:181]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_uart/apb_uart.v:181]
 	Parameter BUFFER_DEPTH bound to: 10 - type: integer 
 	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter LOG_BUFFER_DEPTH bound to: 4 - type: integer 
 	Parameter FILL_BITS bound to: 3 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_spi_master/apb_spi_master.v:124]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_spi_master/apb_spi_master.v:124]
 	Parameter BUFFER_DEPTH bound to: 10 - type: integer 
 	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter LOG_BUFFER_DEPTH bound to: 4 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_spi_master/spi_master_apb_if.v:109]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_spi_master/spi_master_apb_if.v:109]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter BUFFER_DEPTH bound to: 10 - type: integer 
 	Parameter LOG_BUFFER_DEPTH bound to: 4 - type: integer 
@@ -644,10 +644,10 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenye
 	Parameter RECEIVE bound to: 2'b01 
 	Parameter WAIT_FIFO bound to: 2'b10 
 	Parameter WAIT_FIFO_DONE bound to: 2'b11 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_spi_master/spi_master_controller.v:172]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_spi_master/spi_master_controller.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_spi_master/spi_master_controller.v:172]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_spi_master/spi_master_controller.v:215]
 	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_i2c/apb_i2c.v:96]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_i2c/apb_i2c.v:96]
 	Parameter ST_IDLE bound to: 5'b00000 
 	Parameter ST_START bound to: 5'b00001 
 	Parameter ST_READ bound to: 5'b00010 
@@ -677,7 +677,7 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenye
 	Parameter TIMER_NBITS bound to: 16 - type: integer 
 	Parameter N_TIMEREXTSIG bound to: 48 - type: integer 
 	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_adv_timer/adv_timer_apb_if.v:626]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_adv_timer/adv_timer_apb_if.v:626]
 	Parameter NUM_BITS bound to: 16 - type: integer 
 	Parameter N_EXTSIG bound to: 48 - type: integer 
 	Parameter EXTSIG_NUM bound to: 48 - type: integer 
@@ -812,9 +812,9 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenye
 	Parameter DBUS_REQ_BITS bound to: 41 - type: integer 
 	Parameter DBUS_RESP_BITS bound to: 36 - type: integer 
 	Parameter SHIFT_REG_BITS bound to: 41 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/debug/sirv_jtag_dtm.v:237]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/debug/sirv_jtag_dtm.v:295]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/debug/sirv_jtag_dtm.v:308]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/debug/sirv_jtag_dtm.v:237]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/debug/sirv_jtag_dtm.v:295]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/debug/sirv_jtag_dtm.v:308]
 	Parameter DW bound to: 41 - type: integer 
 	Parameter SYNC_DP bound to: 2 - type: integer 
 	Parameter DW bound to: 41 - type: integer 
@@ -900,18 +900,18 @@ Reason is one or more of the following :
 	2: Only 1 word in RAM 
 RAM "ram_extra_reg" dissolved into registers
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2353.457 ; gain = 57.594 ; free physical = 6342 ; free virtual = 13694
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2353.520 ; gain = 56.594 ; free physical = 6352 ; free virtual = 14003
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2368.301 ; gain = 72.438 ; free physical = 6339 ; free virtual = 13695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2368.363 ; gain = 71.438 ; free physical = 6449 ; free virtual = 14104
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2368.301 ; gain = 72.438 ; free physical = 6339 ; free virtual = 13695
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2368.363 ; gain = 71.438 ; free physical = 6449 ; free virtual = 14104
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2374.238 ; gain = 0.000 ; free physical = 6368 ; free virtual = 13724
+Netlist sorting complete. Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.72 . Memory (MB): peak = 2374.301 ; gain = 0.000 ; free physical = 6413 ; free virtual = 14068
 INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -920,27 +920,27 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2538.082 ; gain = 0.000 ; free physical = 6339 ; free virtual = 13694
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2539.145 ; gain = 0.000 ; free physical = 6508 ; free virtual = 14158
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 73 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 73 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2548.988 ; gain = 10.906 ; free physical = 6340 ; free virtual = 13696
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2550.051 ; gain = 10.906 ; free physical = 6517 ; free virtual = 14167
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2548.988 ; gain = 253.125 ; free physical = 6513 ; free virtual = 13868
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2550.051 ; gain = 253.125 ; free physical = 7462 ; free virtual = 15113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2548.988 ; gain = 253.125 ; free physical = 6513 ; free virtual = 13868
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2550.051 ; gain = 253.125 ; free physical = 7462 ; free virtual = 15113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2548.988 ; gain = 253.125 ; free physical = 6513 ; free virtual = 13868
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2550.051 ; gain = 253.125 ; free physical = 7462 ; free virtual = 15112
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'uart_rx'
 INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'uart_tx'
@@ -975,7 +975,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'se
            STOP_BIT_LAST |                              101 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'uart_tx'
-WARNING: [Synth 8-327] inferring latch for variable 'fifo_tx_data_reg' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/a474/perips/apb_uart/apb_uart.v:138]
+WARNING: [Synth 8-327] inferring latch for variable 'fifo_tx_data_reg' [/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/7450/perips/apb_uart/apb_uart.v:138]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1053,7 +1053,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encodin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'jtagStateReg_reg' using encoding 'one-hot' in module 'sirv_jtag_dtm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2548.988 ; gain = 253.125 ; free physical = 6558 ; free virtual = 13914
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 2550.051 ; gain = 253.125 ; free physical = 7489 ; free virtual = 15140
 ---------------------------------------------------------------------------------
 RAM Pipeline Warning: Read Address Register Found For RAM mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
@@ -1103,7 +1103,8 @@ Detailed RTL Component Info :
 	               30 Bit    Registers := 3     
 	               26 Bit    Registers := 1     
 	               24 Bit    Registers := 1     
-	               17 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 84    
 	               14 Bit    Registers := 3     
 	               13 Bit    Registers := 1     
@@ -1115,9 +1116,9 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 10    
 	                5 Bit    Registers := 22    
 	                4 Bit    Registers := 48    
-	                3 Bit    Registers := 97    
+	                3 Bit    Registers := 99    
 	                2 Bit    Registers := 72    
-	                1 Bit    Registers := 692   
+	                1 Bit    Registers := 696   
 +---RAMs : 
 	             512K Bit	(8192 X 64 bit)          RAMs := 1     
 	             512K Bit	(16384 X 32 bit)          RAMs := 1     
@@ -1162,15 +1163,16 @@ Detailed RTL Component Info :
 	   2 Input    7 Bit        Muxes := 1     
 	   7 Input    7 Bit        Muxes := 2     
 	   2 Input    6 Bit        Muxes := 5     
-	   2 Input    5 Bit        Muxes := 46    
+	   2 Input    5 Bit        Muxes := 45    
 	   7 Input    5 Bit        Muxes := 4     
 	  14 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 75    
 	   6 Input    4 Bit        Muxes := 2     
 	   4 Input    4 Bit        Muxes := 4     
 	   8 Input    4 Bit        Muxes := 3     
 	   3 Input    4 Bit        Muxes := 3     
-	   2 Input    3 Bit        Muxes := 127   
+	   2 Input    3 Bit        Muxes := 130   
 	   4 Input    3 Bit        Muxes := 4     
 	   7 Input    3 Bit        Muxes := 2     
 	  32 Input    3 Bit        Muxes := 2     
@@ -1184,7 +1186,7 @@ Detailed RTL Component Info :
 	   4 Input    2 Bit        Muxes := 3     
 	   7 Input    2 Bit        Muxes := 2     
 	   5 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 990   
+	   2 Input    1 Bit        Muxes := 995   
 	   4 Input    1 Bit        Muxes := 35    
 	  32 Input    1 Bit        Muxes := 1     
 	  15 Input    1 Bit        Muxes := 12    
@@ -1223,7 +1225,7 @@ WARNING: [Synth 8-6841] Block RAM (u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl
 RAM Pipeline Warning: Read Address Register Found For RAM u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:16 ; elapsed = 00:04:41 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6409 ; free virtual = 13796
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:40 ; elapsed = 00:07:02 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7385 ; free virtual = 15068
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1264,13 +1266,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:19 ; elapsed = 00:04:45 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6318 ; free virtual = 13705
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:46 ; elapsed = 00:07:09 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7288 ; free virtual = 14971
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:19 ; elapsed = 00:04:45 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6318 ; free virtual = 13705
+Finished Timing Optimization : Time (s): cpu = 00:06:46 ; elapsed = 00:07:09 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7288 ; free virtual = 14971
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1332,7 +1334,7 @@ INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e2
 INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:25 ; elapsed = 00:04:50 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6212 ; free virtual = 13599
+Finished Technology Mapping : Time (s): cpu = 00:06:56 ; elapsed = 00:07:19 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7233 ; free virtual = 14916
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1350,37 +1352,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:27 ; elapsed = 00:04:53 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6246 ; free virtual = 13633
+Finished IO Insertion : Time (s): cpu = 00:07:02 ; elapsed = 00:07:25 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7274 ; free virtual = 14957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:27 ; elapsed = 00:04:53 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6246 ; free virtual = 13633
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:02 ; elapsed = 00:07:25 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7272 ; free virtual = 14955
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:30 ; elapsed = 00:04:56 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6263 ; free virtual = 13650
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:06 ; elapsed = 00:07:29 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7289 ; free virtual = 14971
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:30 ; elapsed = 00:04:56 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6270 ; free virtual = 13657
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:06 ; elapsed = 00:07:29 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7290 ; free virtual = 14972
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:30 ; elapsed = 00:04:56 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6270 ; free virtual = 13657
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:07 ; elapsed = 00:07:30 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7289 ; free virtual = 14972
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:30 ; elapsed = 00:04:56 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6270 ; free virtual = 13657
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:07 ; elapsed = 00:07:30 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7292 ; free virtual = 14975
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1398,17 +1400,17 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |   393|
 |2     |LUT1     |   307|
-|3     |LUT2     |   964|
-|4     |LUT3     |  1317|
-|5     |LUT4     |  1723|
-|6     |LUT5     |  2588|
-|7     |LUT6     |  6115|
-|8     |MUXF7    |   529|
+|3     |LUT2     |   968|
+|4     |LUT3     |  1329|
+|5     |LUT4     |  1727|
+|6     |LUT5     |  2594|
+|7     |LUT6     |  6129|
+|8     |MUXF7    |   531|
 |9     |MUXF8    |   119|
 |10    |PULLUP   |     7|
 |11    |RAM32M   |     4|
 |12    |RAMB36E1 |    32|
-|14    |FDCE     |  8107|
+|14    |FDCE     |  8119|
 |15    |FDPE     |   427|
 |16    |FDRE     |  2974|
 |17    |FDSE     |    51|
@@ -1416,18 +1418,18 @@ Report Cell Usage:
 |19    |IOBUF    |    73|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:30 ; elapsed = 00:04:56 . Memory (MB): peak = 3314.652 ; gain = 1018.789 ; free physical = 6270 ; free virtual = 13657
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:07 ; elapsed = 00:07:30 . Memory (MB): peak = 3321.660 ; gain = 1024.734 ; free physical = 7292 ; free virtual = 14975
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:25 ; elapsed = 00:04:52 . Memory (MB): peak = 3314.652 ; gain = 838.102 ; free physical = 6300 ; free virtual = 13687
-Synthesis Optimization Complete : Time (s): cpu = 00:04:31 ; elapsed = 00:04:57 . Memory (MB): peak = 3314.660 ; gain = 1018.789 ; free physical = 6301 ; free virtual = 13688
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:59 ; elapsed = 00:07:23 . Memory (MB): peak = 3321.660 ; gain = 843.047 ; free physical = 7344 ; free virtual = 15027
+Synthesis Optimization Complete : Time (s): cpu = 00:07:07 ; elapsed = 00:07:30 . Memory (MB): peak = 3321.668 ; gain = 1024.734 ; free physical = 7344 ; free virtual = 15027
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3314.660 ; gain = 0.000 ; free physical = 6413 ; free virtual = 13800
-INFO: [Netlist 29-17] Analyzing 1174 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.52 . Memory (MB): peak = 3321.668 ; gain = 0.000 ; free physical = 7446 ; free virtual = 15128
+INFO: [Netlist 29-17] Analyzing 1176 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3346.668 ; gain = 0.000 ; free physical = 6381 ; free virtual = 13768
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3353.676 ; gain = 0.000 ; free physical = 7392 ; free virtual = 15075
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 101 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 73 instances
@@ -1437,11 +1439,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 279 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:39 ; elapsed = 00:05:03 . Memory (MB): peak = 3346.668 ; gain = 1050.805 ; free physical = 6492 ; free virtual = 13879
+synth_design: Time (s): cpu = 00:07:20 ; elapsed = 00:07:41 . Memory (MB): peak = 3353.676 ; gain = 1056.750 ; free physical = 7511 ; free virtual = 15194
 INFO: [Common 17-1381] The checkpoint '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/system_top_system_e203_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_top_system_e203_0_0, cache-ID = 31e607fe90590220
-INFO: [Coretcl 2-1174] Renamed 768 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_top_system_e203_0_0, cache-ID = 17f6eec318b913c9
+INFO: [Coretcl 2-1174] Renamed 774 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_system_e203_0_0_synth_1/system_top_system_e203_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_top_system_e203_0_0_utilization_synth.rpt -pb system_top_system_e203_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb  7 11:38:46 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 11 15:57:00 2025...
