@@ -1,0 +1,90 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/modeltech64_2020.4/examples
+T_opt
+!s110 1743669846
+VDIX;4_9lfkSW<E6GifW=c3
+04 17 4 work axi_snake_ctrl_tb fast 0
+=1-04421ad1488c-67ee4a55-346-94bc
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vaxi_snake_ctrl_tb
+Z1 !s110 1743669836
+!i10b 1
+!s100 Cn5BeQ_[FF0adfedE;6_S2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA?UCJ@<QPNZ;kfk3LlPkI1
+Z3 dE:/Desktop/my_git/e203_zs/for_sim/axi_slave
+w1743669832
+8E:/Desktop/my_git/e203_zs/for_sim/axi_slave/tb.v
+FE:/Desktop/my_git/e203_zs/for_sim/axi_slave/tb.v
+!i122 13
+L0 3 139
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1743669836.000000
+!s107 E:/Desktop/my_git/e203_zs/for_sim/axi_slave/tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Desktop/my_git/e203_zs/for_sim/axi_slave/tb.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+vaxi_snake_ctrl_v1_0
+R1
+!i10b 1
+!s100 XDeR1kWD8^S?:C:;iQ_1k0
+R2
+ImTTLJozFZI^idAd6eE]QO3
+R3
+w1743651583
+8E:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0.v
+FE:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0.v
+!i122 11
+L0 4 75
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0.v|
+!i113 0
+R7
+R0
+vaxi_snake_ctrl_v1_0_S00_AXI
+R1
+!i10b 1
+!s100 IHVNN:B=KLeColR^5g>O81
+R2
+I5=<gENbSIdNFM4?TV67oo0
+R3
+w1743651632
+8E:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0_S00_AXI.v
+FE:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0_S00_AXI.v
+!i122 12
+L0 3 123
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0_S00_AXI.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0_S00_AXI.v|
+!i113 0
+R7
+R0
+naxi_snake_ctrl_v1_0_@s00_@a@x@i

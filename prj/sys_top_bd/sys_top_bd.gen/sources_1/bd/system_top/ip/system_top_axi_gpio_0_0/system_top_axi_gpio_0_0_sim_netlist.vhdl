@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Thu Feb 13 01:25:46 2025
+-- Date        : Thu Feb 13 01:25:44 2025
 -- Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_top_axi_gpio_0_0 -prefix
+--               system_top_axi_gpio_0_0_ system_top_axi_gpio_0_0_sim_netlist.vhdl
 -- Design      : system_top_axi_gpio_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -40,8 +40,6 @@ entity system_top_axi_gpio_0_0_address_decoder is
     reg2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     reg1 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_axi_gpio_0_0_address_decoder : entity is "address_decoder";
 end system_top_axi_gpio_0_0_address_decoder;
 
 architecture STRUCTURE of system_top_axi_gpio_0_0_address_decoder is
@@ -320,8 +318,6 @@ entity system_top_axi_gpio_0_0_cdc_sync is
     gpio_io_i : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_axi_gpio_0_0_cdc_sync : entity is "cdc_sync";
 end system_top_axi_gpio_0_0_cdc_sync;
 
 architecture STRUCTURE of system_top_axi_gpio_0_0_cdc_sync is
@@ -475,8 +471,6 @@ entity system_top_axi_gpio_0_0_GPIO_Core is
     \Not_Dual.gpio_Data_Out_reg[0]_0\ : in STD_LOGIC;
     \Not_Dual.gpio_OE_reg[0]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_axi_gpio_0_0_GPIO_Core : entity is "GPIO_Core";
 end system_top_axi_gpio_0_0_GPIO_Core;
 
 architecture STRUCTURE of system_top_axi_gpio_0_0_GPIO_Core is
@@ -790,8 +784,6 @@ entity system_top_axi_gpio_0_0_slave_attachment is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_axi_gpio_0_0_slave_attachment : entity is "slave_attachment";
 end system_top_axi_gpio_0_0_slave_attachment;
 
 architecture STRUCTURE of system_top_axi_gpio_0_0_slave_attachment is
@@ -1431,8 +1423,6 @@ entity system_top_axi_gpio_0_0_axi_lite_ipif is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_axi_gpio_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end system_top_axi_gpio_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of system_top_axi_gpio_0_0_axi_lite_ipif is
@@ -1534,8 +1524,6 @@ entity system_top_axi_gpio_0_0_axi_gpio is
   attribute C_TRI_DEFAULT of system_top_axi_gpio_0_0_axi_gpio : entity is -1;
   attribute C_TRI_DEFAULT_2 : integer;
   attribute C_TRI_DEFAULT_2 of system_top_axi_gpio_0_0_axi_gpio : entity is -1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_axi_gpio_0_0_axi_gpio : entity is "axi_gpio";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_top_axi_gpio_0_0_axi_gpio : entity is "yes";
   attribute ip_group : string;

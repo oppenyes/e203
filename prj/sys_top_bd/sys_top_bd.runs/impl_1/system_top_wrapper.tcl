@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.tcl"
+  variable script "E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,29 +122,32 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 4
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a200tfbg484-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/wt [current_project]
-  set_property parent.project_path /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr [current_project]
-  set_property ip_repo_paths /home/oppenyes/workspace/my_git/e203_zs/user_ip [current_project]
+  set_property webtalk.parent_dir E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/wt [current_project]
+  set_property parent.project_path E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr [current_project]
+  set_property ip_repo_paths {
+  E:/Desktop/my_git/e203_zs/prj/ip_repo/axi_snake_ctrl_1.0
+  E:/Desktop/my_git/e203_zs/user_ip
+} [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/ip [current_project]
+  set_property ip_output_repo E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/system_top_wrapper.dcp
+  add_files -quiet E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/system_top_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd
+  add_files E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/oppenyes/workspace/my_git/e203_zs/constrs/nuclei-master.xdc
+  read_xdc E:/Desktop/my_git/e203_zs/constrs/nuclei-master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

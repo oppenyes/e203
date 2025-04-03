@@ -1,0 +1,15 @@
+E:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0_S00_AXI.v {1 {vlog -work work -vopt -stats=none E:/Desktop/my_git/e203_zs/for_sim/axi_slave/axi_snake_ctrl_v1_0_S00_AXI.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module axi_snake_ctrl_v1_0_S00_AXI
+
+Top level modules:
+	axi_snake_ctrl_v1_0_S00_AXI
+
+} {} {}} E:/Desktop/my_git/e203_zs/for_sim/axi_slave/tb.v {1 {vlog -work work -vopt -stats=none E:/Desktop/my_git/e203_zs/for_sim/axi_slave/tb.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module axi_snake_ctrl_tb
+
+Top level modules:
+	axi_snake_ctrl_tb
+
+} {} {}}

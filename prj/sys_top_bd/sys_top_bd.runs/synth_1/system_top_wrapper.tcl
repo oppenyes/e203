@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/system_top_wrapper.tcl"
+  variable script "E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/system_top_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tfbg484-2
 
@@ -78,50 +77,44 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/wt [current_project]
-set_property parent.project_path /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr [current_project]
+set_property webtalk.parent_dir E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/wt [current_project]
+set_property parent.project_path E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths /home/oppenyes/workspace/my_git/e203_zs/user_ip [current_project]
+set_property ip_repo_paths {
+  e:/Desktop/my_git/e203_zs/prj/ip_repo/axi_snake_ctrl_1.0
+  e:/Desktop/my_git/e203_zs/user_ip
+} [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/ip [current_project]
+set_property ip_output_repo e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
-add_files /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_xbar_0/system_top_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0_1/system_top_proc_sys_reset_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0_1/system_top_proc_sys_reset_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0_1/system_top_proc_sys_reset_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/user_design/constraints/system_top_mig_7series_0_1.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/user_design/constraints/system_top_mig_7series_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_1/system_top_axi_gpio_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_1/system_top_axi_gpio_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_1/system_top_axi_gpio_0_1.xdc]
-set_property used_in_synthesis false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/ip/ip_0/bd_bcc6_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/bd_bcc6_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/system_top_system_ila_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/system_top_ooc.xdc]
+read_verilog -library xil_defaultlib E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+add_files E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_xbar_0/system_top_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0_1/system_top_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0_1/system_top_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0_1/system_top_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/user_design/constraints/system_top_mig_7series_0_1.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/user_design/constraints/system_top_mig_7series_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/system_top_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -132,8 +125,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/oppenyes/workspace/my_git/e203_zs/constrs/nuclei-master.xdc
-set_property used_in_implementation false [get_files /home/oppenyes/workspace/my_git/e203_zs/constrs/nuclei-master.xdc]
+read_xdc E:/Desktop/my_git/e203_zs/constrs/nuclei-master.xdc
+set_property used_in_implementation false [get_files E:/Desktop/my_git/e203_zs/constrs/nuclei-master.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

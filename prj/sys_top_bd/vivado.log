@@ -2,41 +2,46 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Feb 18 23:37:25 2025
-# Process ID: 160711
+# Start of session at: Fri Feb 21 18:14:39 2025
+# Process ID: 35240
 # Current directory: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd
-# Command line: vivado
+# Command line: vivado -mode gui -source ./sys_top_bd.xpr
 # Log file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/vivado.log
 # Journal file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/vivado.jou
 #-----------------------------------------------------------
 Sourcing tcl script '/tools/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
 start_gui
-open_hw_manager
+open_project ./sys_top_bd.xpr
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/oppenyes/workspace/my_git/e203_zs/user_ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3414] Connected to existing cs_server.
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856397
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_for_davinci/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {/home/oppenyes/workspace/my_git/e203_for_davinci/prj/sys_top_bd/sys_top_bd.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 00:05:21 2025...
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 7301.660 ; gain = 83.066 ; free physical = 9750 ; free virtual = 17078
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+open_bd_design {/home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_16M
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:user:system_e203:4.0 - system_e203_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Successfully read diagram <system_top> from block design file </home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/system_top.bd>
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Feb 21 18:16:57 2025] Launched synth_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/runme.log
+[Fri Feb 21 18:16:57 2025] Launched impl_1...
+Run output will be captured here: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/impl_1/runme.log

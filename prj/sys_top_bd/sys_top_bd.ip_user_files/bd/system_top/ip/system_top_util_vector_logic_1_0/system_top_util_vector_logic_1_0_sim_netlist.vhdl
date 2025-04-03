@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 -- Date        : Wed Feb  5 23:17:45 2025
 -- Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_util_vector_logic_1_0/system_top_util_vector_logic_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_top_util_vector_logic_1_0 -prefix
+--               system_top_util_vector_logic_1_0_ system_top_util_vector_logic_1_0_sim_netlist.vhdl
 -- Design      : system_top_util_vector_logic_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

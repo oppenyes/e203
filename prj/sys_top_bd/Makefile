@@ -13,3 +13,5 @@ clean:
 # 保证即使有名为 clean 的文件时，也能正常执行
 .PHONY: clean
 
+vop:
+	vivado -mode gui -source ./*.xpr

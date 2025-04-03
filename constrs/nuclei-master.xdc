@@ -21,15 +21,18 @@ set_property -dict { PACKAGE_PIN Y18    IOSTANDARD LVCMOS33 } [get_ports { CLK32
 create_clock -add -name sys_clk_pin -period 30517.58 -waveform {0 15258.79} [get_ports {CLK32768KHZ}];
 
 
-# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets dut_io_pads_jtag_TCK_i_ival]
-# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IOBUF_jtag_TCK/O]
- set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets system_top_i/system_e203_0/inst/dut_io_pads_jtag_TCK_i_ival]
+
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets system_top_i/system_e203_0/inst/dut_io_pads_jtag_TCK_i_ival]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets system_top_i/system_e203_0/inst/IOBUF_jtag_TCK/O]
 
 #####            rst define           #####
 
 set_property PACKAGE_PIN T6  [get_ports fpga_rst  ]
 set_property PACKAGE_PIN P20 [get_ports mcu_rst   ]
+#####            clock & rst define           #####
+
+set_property IOSTANDARD LVCMOS15 [get_ports fpga_rst  ]
+set_property IOSTANDARD LVCMOS33 [get_ports mcu_rst   ]
 
 #####                spi0 define               #####
 set_property PACKAGE_PIN W16 [get_ports  qspi0_cs    ]
@@ -108,7 +111,7 @@ set_property PACKAGE_PIN M16  [get_ports {gpioA[8]}]
 #---------------------------------------------------------------
 
 
-set_property -dict {PACKAGE_PIN AA6 IOSTANDARD LVCMOS15} [get_ports {BTN1_1_C_AA6_tri_io}] 
+#set_property -dict {PACKAGE_PIN AA6 IOSTANDARD LVCMOS15} [get_ports {BTN1_1_C_AA6_tri_io}] 
 
 ## key_in C
 set_property PACKAGE_PIN F4  [get_ports {gpioA[7]}]
@@ -162,10 +165,6 @@ set_property PACKAGE_PIN AA21 [get_ports {gpioB[2]}]
 set_property PACKAGE_PIN AA20 [get_ports {gpioB[1]}]
 set_property PACKAGE_PIN W22  [get_ports {gpioB[0]}]
 
-#####            clock & rst define           #####
-
-set_property IOSTANDARD LVCMOS15 [get_ports fpga_rst  ]
-set_property IOSTANDARD LVCMOS33 [get_ports mcu_rst   ]
 
 
 #####                spi0 define               #####
