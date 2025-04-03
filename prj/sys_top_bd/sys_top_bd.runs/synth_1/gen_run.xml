@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1738899545">
-  <File Type="VDS-TIMING-PB" Name="system_top_wrapper_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="system_top_wrapper_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="system_top_wrapper.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="system_top_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="system_top_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="system_top_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="system_top_wrapper.vds"/>
-  <File Type="REPORTS-TCL" Name="system_top_wrapper_reports.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1743695958">
   <File Type="PA-TCL" Name="system_top_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="system_top_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="system_top_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="system_top_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="system_top_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="system_top_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="system_top_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="system_top_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="system_top_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/system_top/system_top.bd">
@@ -65,9 +65,9 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="system_top_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_top_system_e203_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_top_rst_clk_wiz_0_200M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_top_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_top_util_vector_logic_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_top_rst_clk_wiz_0_200M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_top_xbar_0"/>
 </GenRun>

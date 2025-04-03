@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Feb  7 11:39:06 2025
-# Process ID: 261895
-# Current directory: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1
-# Command line: vivado -log system_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_wrapper.tcl
-# Log file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/system_top_wrapper.vds
-# Journal file: /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/vivado.jou
+# Start of session at: Thu Apr  3 23:59:21 2025
+# Process ID: 30552
+# Current directory: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1
+# Command line: vivado.exe -log system_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_wrapper.tcl
+# Log file: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/system_top_wrapper.vds
+# Journal file: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_top_wrapper.tcl -notrace
