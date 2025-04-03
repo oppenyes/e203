@@ -44,6 +44,8 @@
 		input wire  s00_axi_rready
 	);
 	// 顶层模块中定义常量信号
+wire [3:0] direction_cmd;
+
 wire [7:0] fixed_snake_x = 8'd12;
 wire [7:0] fixed_snake_y = 8'd34;
 wire [7:0] fixed_food_x  = 8'd56;
@@ -56,7 +58,7 @@ wire [7:0] fixed_food_y  = 8'd78;
 		.S_AXI_ACLK(s00_axi_aclk),
 		.S_AXI_ARESETN(s00_axi_aresetn),
 		.S_AXI_AWADDR(s00_axi_awaddr),
-		.S_AXI_AWPROT(s00_axi_awprot),
+
 		.S_AXI_AWVALID(s00_axi_awvalid),
 		.S_AXI_AWREADY(s00_axi_awready),
 		.S_AXI_WDATA(s00_axi_wdata),
@@ -67,7 +69,7 @@ wire [7:0] fixed_food_y  = 8'd78;
 		.S_AXI_BVALID(s00_axi_bvalid),
 		.S_AXI_BREADY(s00_axi_bready),
 		.S_AXI_ARADDR(s00_axi_araddr),
-		.S_AXI_ARPROT(s00_axi_arprot),
+
 		.S_AXI_ARVALID(s00_axi_arvalid),
 		.S_AXI_ARREADY(s00_axi_arready),
 		.S_AXI_RDATA(s00_axi_rdata),
@@ -80,10 +82,6 @@ wire [7:0] fixed_food_y  = 8'd78;
     .snake_y                            (fixed_snake_y                   ),// 当前蛇头y坐标
     .food_x                             (fixed_food_x                    ),// 当前食物x坐标
     .food_y                             (fixed_food_y                    )// 当前食物y坐标
-
-
-	// Add user logic here
-
-	// User logic ends
+	);
 
 	endmodule

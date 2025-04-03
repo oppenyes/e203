@@ -184,7 +184,7 @@ module e203_subsys_mems(
   .O4_BASE_REGION_LSB (29),
 //  * AXI    : 0x4000 0000 -- 0x7FFF FFFF
       // * Here is an example  Peripheral
-        //  * AXI    : config.v
+        //  * AXI    : config.v?
   .O5_BASE_ADDR       (32'h4000_0000),       
   .O5_BASE_REGION_LSB (30),
   

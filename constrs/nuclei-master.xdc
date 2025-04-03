@@ -37,7 +37,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports mcu_rst   ]
 #####                spi0 define               #####
 set_property PACKAGE_PIN W16 [get_ports  qspi0_cs    ]
 set_property PACKAGE_PIN W15 [get_ports  qspi0_sck   ]
-#ctrl
 set_property PACKAGE_PIN U16 [get_ports {qspi0_dq[3]}]
 set_property PACKAGE_PIN T16 [get_ports {qspi0_dq[2]}]
 set_property PACKAGE_PIN T14 [get_ports {qspi0_dq[1]}]
