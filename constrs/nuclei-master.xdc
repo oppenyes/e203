@@ -10,8 +10,8 @@ set_property CFGBVS VCCO [current_design]
 set_property CONFIG_VOLTAGE 3.3 [current_design]
 
 #####               create clock              #####
-set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports {LED_tri_io[0]}] 
-set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {LED_tri_io[1]}] 
+set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports {LED_tri_o[0]}] 
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {LED_tri_o[1]}] 
 
 
 set_property -dict { PACKAGE_PIN W19    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; 
@@ -127,7 +127,7 @@ set_property PACKAGE_PIN D14  [get_ports {gpioA[1]}]
 set_property PACKAGE_PIN E13  [get_ports {gpioA[0]}]      
 
 
-#####                gpioB define 原理图中对应是MCU_GPIO  实际为LCD屏幕下的32个IO�?  #####
+#####                gpioB define 原理图中对应是MCU_GPIO  实际为LCD屏幕下的32个IO�??  #####
 set_property PACKAGE_PIN W17  [get_ports {gpioB[31]}]
 set_property PACKAGE_PIN AA18 [get_ports {gpioB[30]}]
 set_property PACKAGE_PIN AB18 [get_ports {gpioB[29]}]

@@ -1,8 +1,8 @@
 set_property SRC_FILE_INFO {cfile:E:/Desktop/my_git/e203_zs/constrs/nuclei-master.xdc rfile:../../../../../constrs/nuclei-master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports {LED_tri_io[0]}]
+set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports {LED_tri_o[0]}]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {LED_tri_io[1]}]
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {LED_tri_o[1]}]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W19    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }];
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]

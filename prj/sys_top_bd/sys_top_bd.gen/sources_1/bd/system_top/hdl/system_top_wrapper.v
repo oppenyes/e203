@@ -1,8 +1,8 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-//Date        : Fri Feb  7 11:33:03 2025
-//Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
+//Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+//Date        : Fri Apr  4 11:29:42 2025
+//Host        : Lab running 64-bit major release  (build 9200)
 //Command     : generate_target system_top_wrapper.bd
 //Design      : system_top_wrapper
 //Purpose     : IP block netlist
@@ -27,7 +27,7 @@ module system_top_wrapper
     DDR3_ras_n,
     DDR3_reset_n,
     DDR3_we_n,
-    LED_tri_io,
+    LED_tri_o,
     fpga_rst,
     gpioA,
     gpioB,
@@ -59,7 +59,7 @@ module system_top_wrapper
   output DDR3_ras_n;
   output DDR3_reset_n;
   output DDR3_we_n;
-  inout [1:0]LED_tri_io;
+  output [1:0]LED_tri_o;
   input fpga_rst;
   inout [31:0]gpioA;
   inout [31:0]gpioB;
@@ -92,14 +92,7 @@ module system_top_wrapper
   wire DDR3_ras_n;
   wire DDR3_reset_n;
   wire DDR3_we_n;
-  wire [0:0]LED_tri_i_0;
-  wire [1:1]LED_tri_i_1;
-  wire [0:0]LED_tri_io_0;
-  wire [1:1]LED_tri_io_1;
-  wire [0:0]LED_tri_o_0;
-  wire [1:1]LED_tri_o_1;
-  wire [0:0]LED_tri_t_0;
-  wire [1:1]LED_tri_t_1;
+  wire [1:0]LED_tri_o;
   wire fpga_rst;
   wire [31:0]gpioA;
   wire [31:0]gpioB;
@@ -115,16 +108,6 @@ module system_top_wrapper
   wire [3:0]qspi0_dq;
   wire qspi0_sck;
 
-  IOBUF LED_tri_iobuf_0
-       (.I(LED_tri_o_0),
-        .IO(LED_tri_io[0]),
-        .O(LED_tri_i_0),
-        .T(LED_tri_t_0));
-  IOBUF LED_tri_iobuf_1
-       (.I(LED_tri_o_1),
-        .IO(LED_tri_io[1]),
-        .O(LED_tri_i_1),
-        .T(LED_tri_t_1));
   system_top system_top_i
        (.CLK100MHZ(CLK100MHZ),
         .CLK32768KHZ(CLK32768KHZ),
@@ -143,9 +126,7 @@ module system_top_wrapper
         .DDR3_ras_n(DDR3_ras_n),
         .DDR3_reset_n(DDR3_reset_n),
         .DDR3_we_n(DDR3_we_n),
-        .LED_tri_i({LED_tri_i_1,LED_tri_i_0}),
-        .LED_tri_o({LED_tri_o_1,LED_tri_o_0}),
-        .LED_tri_t({LED_tri_t_1,LED_tri_t_0}),
+        .LED_tri_o(LED_tri_o),
         .fpga_rst(fpga_rst),
         .gpioA(gpioA),
         .gpioB(gpioB),
