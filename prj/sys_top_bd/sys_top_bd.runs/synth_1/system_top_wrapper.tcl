@@ -83,7 +83,11 @@ set_property parent.project_path E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_to
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths e:/Desktop/my_git/e203_zs/user_ip [current_project]
+set_property ip_repo_paths {
+  e:/Desktop/my_git/e203_zs/prj/ip_repo/axi_lite_for_snake_1.0
+  e:/Desktop/my_git/e203_zs/prj/ip_repo/axi_lite_1.0
+  e:/Desktop/my_git/e203_zs/user_ip
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -109,11 +113,12 @@ set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0_board.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2_ooc.xdc]
 set_property used_in_synthesis false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/system_top_ooc.xdc]
 
 OPTRACE "Adding files" END { }

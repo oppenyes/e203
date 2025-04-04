@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Apr  4 11:30:58 2025
+| Date         : Sat Apr  5 00:36:16 2025
 | Host         : Lab running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_top_wrapper_utilization_synth.rpt -pb system_top_wrapper_utilization_synth.pb
 | Design       : system_top_wrapper
@@ -157,23 +157,25 @@ Table of Contents
 8. Black Boxes
 --------------
 
-+----------------------------------+------+
-|             Ref Name             | Used |
-+----------------------------------+------+
-| system_top_xbar_0                |    1 |
-| system_top_util_vector_logic_1_0 |    1 |
-| system_top_util_vector_logic_0_0 |    1 |
-| system_top_system_e203_0_0       |    1 |
-| system_top_rst_clk_wiz_0_200M_0  |    1 |
-| system_top_proc_sys_reset_1_0    |    1 |
-| system_top_proc_sys_reset_0_0    |    1 |
-| system_top_mig_7series_0_1       |    1 |
-| system_top_clk_wiz_0_0           |    1 |
-| system_top_axi_gpio_0_0          |    1 |
-| system_top_auto_pc_1             |    1 |
-| system_top_auto_pc_0             |    1 |
-| system_top_auto_cc_0             |    1 |
-+----------------------------------+------+
++-----------------------------------+------+
+|              Ref Name             | Used |
++-----------------------------------+------+
+| system_top_xbar_0                 |    1 |
+| system_top_util_vector_logic_1_0  |    1 |
+| system_top_util_vector_logic_0_0  |    1 |
+| system_top_system_e203_0_0        |    1 |
+| system_top_rst_clk_wiz_0_200M_0   |    1 |
+| system_top_proc_sys_reset_1_0     |    1 |
+| system_top_proc_sys_reset_0_0     |    1 |
+| system_top_mig_7series_0_1        |    1 |
+| system_top_clk_wiz_0_0            |    1 |
+| system_top_axi_lite_for_snake_0_0 |    1 |
+| system_top_axi_gpio_0_0           |    1 |
+| system_top_auto_pc_2              |    1 |
+| system_top_auto_pc_1              |    1 |
+| system_top_auto_pc_0              |    1 |
+| system_top_auto_cc_0              |    1 |
++-----------------------------------+------+
 
 
 9. Instantiated Netlists

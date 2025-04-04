@@ -131,7 +131,11 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/wt [current_project]
   set_property parent.project_path E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.xpr [current_project]
-  set_property ip_repo_paths E:/Desktop/my_git/e203_zs/user_ip [current_project]
+  set_property ip_repo_paths {
+  E:/Desktop/my_git/e203_zs/prj/ip_repo/axi_lite_for_snake_1.0
+  E:/Desktop/my_git/e203_zs/prj/ip_repo/axi_lite_1.0
+  E:/Desktop/my_git/e203_zs/user_ip
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

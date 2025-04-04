@@ -365,8 +365,11 @@ proc create_root_design { parentCell } {
   set axi_interconnect_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 ]
   set_property -dict [ list \
    CONFIG.ENABLE_ADVANCED_OPTIONS {0} \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {3} \
  ] $axi_interconnect_0
+
+  # Create instance: axi_lite_for_snake_0, and set properties
+  set axi_lite_for_snake_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:axi_lite_for_snake:1.0 axi_lite_for_snake_0 ]
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
@@ -433,12 +436,13 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports LED] [get_bd_intf_pins axi_gpio_0/GPIO]
   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins mig_7series_0/S_AXI]
   connect_bd_intf_net -intf_net axi_interconnect_0_M01_AXI [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+  connect_bd_intf_net -intf_net axi_interconnect_0_M02_AXI [get_bd_intf_pins axi_interconnect_0/M02_AXI] [get_bd_intf_pins axi_lite_for_snake_0/S00_AXI]
   connect_bd_intf_net -intf_net mig_7series_0_DDR3 [get_bd_intf_ports DDR3] [get_bd_intf_pins mig_7series_0/DDR3]
   connect_bd_intf_net -intf_net system_e203_0_expl_axi [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins system_e203_0/expl_axi]
 
   # Create port connections
   connect_bd_net -net CLK32768KHZ_1 [get_bd_ports CLK32768KHZ] [get_bd_pins system_e203_0/CLK32768KHZ]
-  connect_bd_net -net M01_ARESETN_1 [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+  connect_bd_net -net M01_ARESETN_1 [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_lite_for_snake_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
   connect_bd_net -net Net [get_bd_ports gpioA] [get_bd_pins system_e203_0/gpioA]
   connect_bd_net -net Net1 [get_bd_ports gpioB] [get_bd_pins system_e203_0/gpioB]
   connect_bd_net -net Net2 [get_bd_ports mcu_TCK] [get_bd_pins system_e203_0/mcu_TCK]
@@ -451,7 +455,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net Net9 [get_bd_ports qspi0_dq] [get_bd_pins system_e203_0/qspi0_dq]
   connect_bd_net -net Net10 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mig_7series_0/clk_ref_i] [get_bd_pins mig_7series_0/sys_clk_i] [get_bd_pins rst_clk_wiz_0_200M/slowest_sync_clk]
   connect_bd_net -net clk_in1_0_1 [get_bd_ports CLK100MHZ] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins system_e203_0/clk_16M]
+  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins axi_lite_for_snake_0/s00_axi_aclk] [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins system_e203_0/clk_16M]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/dcm_locked] [get_bd_pins rst_clk_wiz_0_200M/dcm_locked]
   connect_bd_net -net fpga_rst_1 [get_bd_ports fpga_rst] [get_bd_pins util_vector_logic_0/Op1]
   connect_bd_net -net mcu_rst_1 [get_bd_ports mcu_rst] [get_bd_pins util_vector_logic_0/Op2]
@@ -468,6 +472,7 @@ proc create_root_design { parentCell } {
 
   # Create address segments
   assign_bd_address -offset 0x40000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces system_e203_0/expl_axi] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
+  assign_bd_address -offset 0x40010000 -range 0x00010000 -target_address_space [get_bd_addr_spaces system_e203_0/expl_axi] [get_bd_addr_segs axi_lite_for_snake_0/S00_AXI/S00_AXI_reg] -force
   assign_bd_address -offset 0x60000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces system_e203_0/expl_axi] [get_bd_addr_segs mig_7series_0/memmap/memaddr] -force
 
 

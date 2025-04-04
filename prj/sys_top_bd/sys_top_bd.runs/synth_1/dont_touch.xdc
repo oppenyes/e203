@@ -39,13 +39,19 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_
 # IP: bd/system_top/ip/system_top_system_e203_0_0_1/system_top_system_e203_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_system_e203_0_0 || ORIG_REF_NAME==system_top_system_e203_0_0} -quiet] -quiet
 
-# IP: bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_auto_pc_1 || ORIG_REF_NAME==system_top_auto_pc_1} -quiet] -quiet
+# IP: bd/system_top/ip/system_top_axi_lite_for_snake_0_0/system_top_axi_lite_for_snake_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_axi_lite_for_snake_0_0 || ORIG_REF_NAME==system_top_axi_lite_for_snake_0_0} -quiet] -quiet
+
+# IP: bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_auto_pc_2 || ORIG_REF_NAME==system_top_auto_pc_2} -quiet] -quiet
 
 # IP: bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_auto_cc_0 || ORIG_REF_NAME==system_top_auto_cc_0} -quiet] -quiet
 
 # IP: bd/system_top/ip/system_top_auto_pc_0_1/system_top_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_auto_pc_0 || ORIG_REF_NAME==system_top_auto_pc_0} -quiet] -quiet
+
+# IP: bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_auto_pc_1 || ORIG_REF_NAME==system_top_auto_pc_1} -quiet] -quiet
 
 # XDC: e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/system_top_ooc.xdc
