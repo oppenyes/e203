@@ -1,0 +1,430 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr  5 01:03:48 2025
+# Process ID: 18796
+# Current directory: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1
+# Command line: vivado.exe -log system_top_axi_lite_for_snake_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_axi_lite_for_snake_0_0.tcl
+# Log file: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1/system_top_axi_lite_for_snake_0_0.vds
+# Journal file: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_top_axi_lite_for_snake_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/my_git/e203_zs/prj/ip_repo/axi_lite_for_snake_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/my_git/e203_zs/prj/ip_repo/axi_lite_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/my_git/e203_zs/user_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top system_top_axi_lite_for_snake_0_0 -part xc7a200tfbg484-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31368
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1189.754 ; gain = 49.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_lite_for_snake_0_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_lite_for_snake_0_0/synth/system_top_axi_lite_for_snake_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_lite_for_snake_v1_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_lite_for_snake_v1_0_S00_AXI' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'axi_lite_for_snake_v1_0_S00_AXI' (1#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'axi_lite_for_snake_v1_0' (2#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_lite_for_snake_0_0' (3#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_lite_for_snake_0_0/synth/system_top_axi_lite_for_snake_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1248.020 ; gain = 107.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1248.020 ; gain = 107.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1248.020 ; gain = 107.855
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1248.020 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1353.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1353.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1353.145 ; gain = 212.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1353.145 ; gain = 212.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1353.145 ; gain = 212.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1353.145 ; gain = 212.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[31]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[30]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[29]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[28]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[27]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[26]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[25]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[24]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[23]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[22]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[21]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[20]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[19]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[18]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[17]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[16]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[15]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[14]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[13]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[12]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[11]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[10]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[9]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[8]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[7]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[6]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[5]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[4]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[3]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[2]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[1]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg1_reg[0]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[31]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[30]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[29]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[28]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[27]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[26]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[25]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[24]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[23]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[22]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[21]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[20]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[19]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[18]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[17]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[16]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[15]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/axi_lite_for_snake_v1_0_S00_AXI_inst/slv_reg2_reg[14]__0/Q' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:237]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:238]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:238]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:238]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/2619/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:238]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1353.145 ; gain = 212.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1353.145 ; gain = 212.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1353.145 ; gain = 212.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1353.145 ; gain = 212.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1358.266 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1358.266 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1358.266 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1358.266 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1358.266 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1358.266 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     1|
+|4     |LUT4 |     7|
+|5     |LUT5 |    80|
+|6     |LUT6 |     5|
+|7     |FDRE |   171|
+|8     |FDSE |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1358.266 ; gain = 218.102
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 384 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1358.266 ; gain = 112.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1358.266 ; gain = 218.102
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1370.320 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1381.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 0 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.109 ; gain = 240.945
+INFO: [Common 17-1381] The checkpoint 'E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1/system_top_axi_lite_for_snake_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1/system_top_axi_lite_for_snake_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_top_axi_lite_for_snake_0_0_utilization_synth.rpt -pb system_top_axi_lite_for_snake_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  5 01:04:20 2025...

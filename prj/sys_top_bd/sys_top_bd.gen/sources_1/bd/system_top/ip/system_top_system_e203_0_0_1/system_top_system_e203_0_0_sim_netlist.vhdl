@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Fri Feb  7 11:38:44 2025
+-- Date        : Fri Feb  7 11:38:35 2025
 -- Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_e203_0_0_1/system_top_system_e203_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_top_system_e203_0_0 -prefix
+--               system_top_system_e203_0_0_ system_top_system_e203_0_0_sim_netlist.vhdl
 -- Design      : system_top_system_e203_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -389,8 +389,6 @@ entity system_top_system_e203_0_0_adv_timer_apb_if is
     \r_event_en_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \r_clk_en_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_adv_timer_apb_if : entity is "adv_timer_apb_if";
 end system_top_system_e203_0_0_adv_timer_apb_if;
 
 architecture STRUCTURE of system_top_system_e203_0_0_adv_timer_apb_if is
@@ -10878,8 +10876,6 @@ entity system_top_system_e203_0_0_apb_gpio is
     \r_iofcfg_reg[31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gpio_padcfg_reg[168]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_apb_gpio : entity is "apb_gpio";
 end system_top_system_e203_0_0_apb_gpio;
 
 architecture STRUCTURE of system_top_system_e203_0_0_apb_gpio is
@@ -27628,8 +27624,6 @@ entity system_top_system_e203_0_0_comparator is
     \r_comp_op_reg[2]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     r_value_reg_1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_comparator : entity is "comparator";
 end system_top_system_e203_0_0_comparator;
 
 architecture STRUCTURE of system_top_system_e203_0_0_comparator is
@@ -35128,8 +35122,6 @@ entity system_top_system_e203_0_0_e203_exu_alu_rglr is
     \qout_r[25]_i_11__0\ : in STD_LOGIC;
     \qout_r[5]_i_12__1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_alu_rglr : entity is "e203_exu_alu_rglr";
 end system_top_system_e203_0_0_e203_exu_alu_rglr;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_alu_rglr is
@@ -35558,8 +35550,6 @@ entity system_top_system_e203_0_0_e203_exu_branchslv is
     \qout_r[25]_i_3__6\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \qout_r[29]_i_3__8\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_branchslv : entity is "e203_exu_branchslv";
 end system_top_system_e203_0_0_e203_exu_branchslv;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_branchslv is
@@ -35716,8 +35706,6 @@ entity system_top_system_e203_0_0_e203_reset_ctrl is
     clk_16M : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_reset_ctrl : entity is "e203_reset_ctrl";
 end system_top_system_e203_0_0_e203_reset_ctrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_reset_ctrl is
@@ -35804,8 +35792,6 @@ entity system_top_system_e203_0_0_i2c_master_bit_ctrl is
     cmd_stop_reg_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \sr_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_i2c_master_bit_ctrl : entity is "i2c_master_bit_ctrl";
 end system_top_system_e203_0_0_i2c_master_bit_ctrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_i2c_master_bit_ctrl is
@@ -41009,8 +40995,6 @@ entity system_top_system_e203_0_0_input_stage is
     r_event : in STD_LOGIC;
     \r_mode_reg[2]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_input_stage : entity is "input_stage";
 end system_top_system_e203_0_0_input_stage;
 
 architecture STRUCTURE of system_top_system_e203_0_0_input_stage is
@@ -42213,8 +42197,6 @@ entity system_top_system_e203_0_0_io_generic_fifo is
     \buffer_reg[15][8]_0\ : in STD_LOGIC_VECTOR ( 8 downto 0 );
     \elements_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_io_generic_fifo : entity is "io_generic_fifo";
 end system_top_system_e203_0_0_io_generic_fifo;
 
 architecture STRUCTURE of system_top_system_e203_0_0_io_generic_fifo is
@@ -57068,8 +57050,6 @@ entity system_top_system_e203_0_0_prescaler is
     \r_presc_reg[7]_1\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \r_counter_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_prescaler : entity is "prescaler";
 end system_top_system_e203_0_0_prescaler;
 
 architecture STRUCTURE of system_top_system_e203_0_0_prescaler is
@@ -58506,8 +58486,6 @@ entity system_top_system_e203_0_0_sirv_AsyncResetReg is
     CLK : in STD_LOGIC;
     corerst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_AsyncResetReg : entity is "sirv_AsyncResetReg";
 end system_top_system_e203_0_0_sirv_AsyncResetReg;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_AsyncResetReg is
@@ -60984,8 +60962,6 @@ entity system_top_system_e203_0_0_sirv_DeglitchShiftRegister is
     CLK32768KHZ : in STD_LOGIC;
     pmu_io_regs_ie_read : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_DeglitchShiftRegister : entity is "sirv_DeglitchShiftRegister";
 end system_top_system_e203_0_0_sirv_DeglitchShiftRegister;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_DeglitchShiftRegister is
@@ -61050,8 +61026,6 @@ entity system_top_system_e203_0_0_sirv_LevelGateway is
     clk_16M : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_LevelGateway : entity is "sirv_LevelGateway";
 end system_top_system_e203_0_0_sirv_LevelGateway;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_LevelGateway is
@@ -61478,8 +61452,6 @@ entity system_top_system_e203_0_0_sirv_clint is
     \time_1_reg[31]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \time_1_reg[31]_2\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_clint : entity is "sirv_clint";
 end system_top_system_e203_0_0_sirv_clint;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_clint is
@@ -63833,8 +63805,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_dffl is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     clk_16M : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_dffl : entity is "sirv_gnrl_dffl";
 end system_top_system_e203_0_0_sirv_gnrl_dffl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_dffl is
@@ -126406,8 +126376,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_dfflr is
     clk_16M : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_dfflr : entity is "sirv_gnrl_dfflr";
 end system_top_system_e203_0_0_sirv_gnrl_dfflr;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_dfflr is
@@ -200675,8 +200643,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_dfflrs is
     CLK32768KHZ : in STD_LOGIC;
     aon_reset : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_dfflrs : entity is "sirv_gnrl_dfflrs";
 end system_top_system_e203_0_0_sirv_gnrl_dfflrs;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_dfflrs is
@@ -204514,8 +204480,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_dffr is
     clk_16M : in STD_LOGIC;
     reset0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_dffr : entity is "sirv_gnrl_dffr";
 end system_top_system_e203_0_0_sirv_gnrl_dffr;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_dffr is
@@ -206100,8 +206064,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_dffrs is
     \qout_r_reg[0]_9\ : in STD_LOGIC;
     \qout_r_reg[0]_10\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_dffrs : entity is "sirv_gnrl_dffrs";
 end system_top_system_e203_0_0_sirv_gnrl_dffrs;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_dffrs is
@@ -206161,8 +206123,6 @@ entity system_top_system_e203_0_0_sirv_mrom is
     \qout_r[18]_i_4_3\ : in STD_LOGIC;
     \qout_r[18]_i_4_4\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_mrom : entity is "sirv_mrom";
 end system_top_system_e203_0_0_sirv_mrom;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_mrom is
@@ -206268,8 +206228,6 @@ entity system_top_system_e203_0_0_sirv_pmu_core is
     \wakeupProgram_7_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \wakeupCause_reg[0]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_pmu_core : entity is "sirv_pmu_core";
 end system_top_system_e203_0_0_sirv_pmu_core;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_pmu_core is
@@ -209433,8 +209391,6 @@ entity system_top_system_e203_0_0_sirv_qspi_arbiter is
     cs_set_0 : in STD_LOGIC;
     cs_set : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_qspi_arbiter : entity is "sirv_qspi_arbiter";
 end system_top_system_e203_0_0_sirv_qspi_arbiter;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_qspi_arbiter is
@@ -209727,8 +209683,6 @@ entity system_top_system_e203_0_0_sirv_qspi_flashmap is
     AS : in STD_LOGIC_VECTOR ( 0 to 0 );
     \state_reg[0]_5\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_qspi_flashmap : entity is "sirv_qspi_flashmap";
 end system_top_system_e203_0_0_sirv_qspi_flashmap;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_qspi_flashmap is
@@ -211219,8 +211173,6 @@ entity system_top_system_e203_0_0_sirv_qspi_physical is
     \ctrl_sck_div_reg[11]_2\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \ctrl_fmt_proto_reg[1]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_qspi_physical : entity is "sirv_qspi_physical";
 end system_top_system_e203_0_0_sirv_qspi_physical;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_qspi_physical is
@@ -214273,8 +214225,6 @@ entity system_top_system_e203_0_0_sirv_queue is
     \qout_r[31]_i_6__14_15\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \qout_r[0]_i_2__105_3\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_queue : entity is "sirv_queue";
 end system_top_system_e203_0_0_sirv_queue;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_queue is
@@ -220846,8 +220796,6 @@ entity system_top_system_e203_0_0_sirv_queue_1 is
     maybe_full_reg_0 : in STD_LOGIC;
     io_enq_bits : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_queue_1 : entity is "sirv_queue_1";
 end system_top_system_e203_0_0_sirv_queue_1;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_queue_1 is
@@ -221662,8 +221610,6 @@ entity system_top_system_e203_0_0_sirv_repeater_6 is
     \saved_address_reg[28]_1\ : in STD_LOGIC_VECTOR ( 26 downto 0 );
     addr : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_repeater_6 : entity is "sirv_repeater_6";
 end system_top_system_e203_0_0_sirv_repeater_6;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_repeater_6 is
@@ -222498,8 +222444,6 @@ entity system_top_system_e203_0_0_sirv_sim_ram is
     \qout_r_reg[10]_0\ : in STD_LOGIC;
     icb_cmd2itcm_r : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_sim_ram : entity is "sirv_sim_ram";
 end system_top_system_e203_0_0_sirv_sim_ram;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_sim_ram is
@@ -225548,8 +225492,6 @@ entity system_top_system_e203_0_0_sirv_tlwidthwidget_qspi is
     clk_16M : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_tlwidthwidget_qspi : entity is "sirv_tlwidthwidget_qspi";
 end system_top_system_e203_0_0_sirv_tlwidthwidget_qspi;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_tlwidthwidget_qspi is
@@ -226163,8 +226105,6 @@ entity system_top_system_e203_0_0_spi_master_apb_if is
     \spi_data_len_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \spi_dummy_wr_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_spi_master_apb_if : entity is "spi_master_apb_if";
 end system_top_system_e203_0_0_spi_master_apb_if;
 
 architecture STRUCTURE of system_top_system_e203_0_0_spi_master_apb_if is
@@ -235028,8 +234968,6 @@ entity system_top_system_e203_0_0_spi_master_clkgen is
     spi_clk_reg_5 : in STD_LOGIC;
     spi_clk_reg_6 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_spi_master_clkgen : entity is "spi_master_clkgen";
 end system_top_system_e203_0_0_spi_master_clkgen;
 
 architecture STRUCTURE of system_top_system_e203_0_0_spi_master_clkgen is
@@ -236602,8 +236540,6 @@ entity system_top_system_e203_0_0_spi_master_fifo is
     \elements_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \elements_reg[0]_2\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_spi_master_fifo : entity is "spi_master_fifo";
 end system_top_system_e203_0_0_spi_master_fifo;
 
 architecture STRUCTURE of system_top_system_e203_0_0_spi_master_fifo is
@@ -255638,8 +255574,6 @@ entity system_top_system_e203_0_0_spi_master_rx is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \counter_trgt_reg[15]_1\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_spi_master_rx : entity is "spi_master_rx";
 end system_top_system_e203_0_0_spi_master_rx;
 
 architecture STRUCTURE of system_top_system_e203_0_0_spi_master_rx is
@@ -259837,8 +259771,6 @@ entity system_top_system_e203_0_0_spi_master_tx is
     \counter_trgt_reg[15]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \data_int_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_spi_master_tx : entity is "spi_master_tx";
 end system_top_system_e203_0_0_spi_master_tx;
 
 architecture STRUCTURE of system_top_system_e203_0_0_spi_master_tx is
@@ -265343,8 +265275,6 @@ entity system_top_system_e203_0_0_timer_cntrl is
     \r_counter_reg[7]_0\ : in STD_LOGIC;
     \r_counter_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_timer_cntrl : entity is "timer_cntrl";
 end system_top_system_e203_0_0_timer_cntrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_timer_cntrl is
@@ -265672,8 +265602,6 @@ entity system_top_system_e203_0_0_uart_interrupt is
     \qout_r_reg[2]\ : in STD_LOGIC;
     \qout_r_reg[2]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_uart_interrupt : entity is "uart_interrupt";
 end system_top_system_e203_0_0_uart_interrupt;
 
 architecture STRUCTURE of system_top_system_e203_0_0_uart_interrupt is
@@ -265932,8 +265860,6 @@ entity system_top_system_e203_0_0_uart_rx is
     \reg_rx_sync_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     err_o_reg_2 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_uart_rx : entity is "uart_rx";
 end system_top_system_e203_0_0_uart_rx;
 
 architecture STRUCTURE of system_top_system_e203_0_0_uart_rx is
@@ -269521,8 +269447,6 @@ entity system_top_system_e203_0_0_uart_tx is
     \FSM_sequential_CS_reg[2]_1\ : in STD_LOGIC;
     \FSM_sequential_CS_reg[2]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_uart_tx : entity is "uart_tx";
 end system_top_system_e203_0_0_uart_tx;
 
 architecture STRUCTURE of system_top_system_e203_0_0_uart_tx is
@@ -272781,8 +272705,6 @@ entity system_top_system_e203_0_0_up_down_counter is
     \r_end_reg[0]_0\ : in STD_LOGIC;
     s_timer3_apb_update : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_up_down_counter : entity is "up_down_counter";
 end system_top_system_e203_0_0_up_down_counter;
 
 architecture STRUCTURE of system_top_system_e203_0_0_up_down_counter is
@@ -280713,8 +280635,6 @@ entity system_top_system_e203_0_0_apb_uart_sv is
     \regs_q_reg[31]_4\ : in STD_LOGIC;
     \regs_q_reg[15]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_apb_uart_sv : entity is "apb_uart_sv";
 end system_top_system_e203_0_0_apb_uart_sv;
 
 architecture STRUCTURE of system_top_system_e203_0_0_apb_uart_sv is
@@ -283151,8 +283071,6 @@ entity system_top_system_e203_0_0_e203_exu_alu_dpath is
     \qout_r_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[32]_2\ : in STD_LOGIC_VECTOR ( 32 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_alu_dpath : entity is "e203_exu_alu_dpath";
 end system_top_system_e203_0_0_e203_exu_alu_dpath;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_alu_dpath is
@@ -283399,8 +283317,6 @@ entity system_top_system_e203_0_0_e203_exu_alu_lsuagu is
     arbt_icb_rsp_biu : in STD_LOGIC;
     \qout_r_reg[0]_19\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_alu_lsuagu : entity is "e203_exu_alu_lsuagu";
 end system_top_system_e203_0_0_e203_exu_alu_lsuagu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_alu_lsuagu is
@@ -283694,8 +283610,6 @@ entity system_top_system_e203_0_0_e203_exu_alu_muldiv is
     mdv_nob2b : in STD_LOGIC;
     \qout_r[1]_i_4__10\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_alu_muldiv : entity is "e203_exu_alu_muldiv";
 end system_top_system_e203_0_0_e203_exu_alu_muldiv;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_alu_muldiv is
@@ -284051,8 +283965,6 @@ entity system_top_system_e203_0_0_e203_exu_csr is
     \qout_r_reg[0]_13\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[31]_11\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_csr : entity is "e203_exu_csr";
 end system_top_system_e203_0_0_e203_exu_csr;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_csr is
@@ -284397,8 +284309,6 @@ entity system_top_system_e203_0_0_e203_exu_excp is
     alu_cmt_valid : in STD_LOGIC;
     dbg_irq_r : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_excp : entity is "e203_exu_excp";
 end system_top_system_e203_0_0_e203_exu_excp;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_excp is
@@ -284544,8 +284454,6 @@ entity system_top_system_e203_0_0_e203_exu_oitf is
     \qout_r_reg[0]_27\ : in STD_LOGIC;
     flushed_r : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_oitf : entity is "e203_exu_oitf";
 end system_top_system_e203_0_0_e203_exu_oitf;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_oitf is
@@ -284986,8 +284894,6 @@ entity system_top_system_e203_0_0_e203_exu_regfile is
     \qout_r_reg[10]_i_20\ : in STD_LOGIC;
     \qout_r_reg[10]_i_20_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_regfile : entity is "e203_exu_regfile";
 end system_top_system_e203_0_0_e203_exu_regfile;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_regfile is
@@ -288659,8 +288565,6 @@ entity system_top_system_e203_0_0_e203_ifu_litebpu is
     clk_16M : in STD_LOGIC;
     \qout_r_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_ifu_litebpu : entity is "e203_ifu_litebpu";
 end system_top_system_e203_0_0_e203_ifu_litebpu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_ifu_litebpu is
@@ -288739,8 +288643,6 @@ entity system_top_system_e203_0_0_e203_subsys_nice_core is
     \qout_r_reg[1]_4\ : in STD_LOGIC;
     \qout_r_reg[0]_9\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_subsys_nice_core : entity is "e203_subsys_nice_core";
 end system_top_system_e203_0_0_e203_subsys_nice_core;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_subsys_nice_core is
@@ -290215,8 +290117,6 @@ entity system_top_system_e203_0_0_i2c_master_byte_ctrl is
     irq_flag : in STD_LOGIC;
     al : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_i2c_master_byte_ctrl : entity is "i2c_master_byte_ctrl";
 end system_top_system_e203_0_0_i2c_master_byte_ctrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_i2c_master_byte_ctrl is
@@ -291327,8 +291227,6 @@ entity system_top_system_e203_0_0_sirv_AsyncResetRegVec is
     CLK32768KHZ : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_AsyncResetRegVec : entity is "sirv_AsyncResetRegVec";
 end system_top_system_e203_0_0_sirv_AsyncResetRegVec;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_AsyncResetRegVec is
@@ -291366,8 +291264,6 @@ entity system_top_system_e203_0_0_sirv_AsyncResetRegVec_1 is
     aon_icb_cmd_valid : in STD_LOGIC;
     aon_icb_rsp_ready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_AsyncResetRegVec_1 : entity is "sirv_AsyncResetRegVec_1";
 end system_top_system_e203_0_0_sirv_AsyncResetRegVec_1;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_AsyncResetRegVec_1 is
@@ -291414,8 +291310,6 @@ entity system_top_system_e203_0_0_sirv_AsyncResetRegVec_129 is
     clk_16M : in STD_LOGIC;
     corerst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_AsyncResetRegVec_129 : entity is "sirv_AsyncResetRegVec_129";
 end system_top_system_e203_0_0_sirv_AsyncResetRegVec_129;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_AsyncResetRegVec_129 is
@@ -291589,8 +291483,6 @@ entity system_top_system_e203_0_0_sirv_AsyncResetRegVec_36 is
     CLK : in STD_LOGIC;
     corerst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_AsyncResetRegVec_36 : entity is "sirv_AsyncResetRegVec_36";
 end system_top_system_e203_0_0_sirv_AsyncResetRegVec_36;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_AsyncResetRegVec_36 is
@@ -291930,8 +291822,6 @@ entity system_top_system_e203_0_0_sirv_aon_lclkgen_regs is
     CLK32768KHZ : in STD_LOGIC;
     aon_reset : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_aon_lclkgen_regs : entity is "sirv_aon_lclkgen_regs";
 end system_top_system_e203_0_0_sirv_aon_lclkgen_regs;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_aon_lclkgen_regs is
@@ -291969,8 +291859,6 @@ entity system_top_system_e203_0_0_sirv_clint_top is
     \time_1_reg[31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \time_1_reg[31]_1\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_clint_top : entity is "sirv_clint_top";
 end system_top_system_e203_0_0_sirv_clint_top;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_clint_top is
@@ -292051,8 +291939,6 @@ entity system_top_system_e203_0_0_sirv_debug_csr is
     cmt_dcause_ena : in STD_LOGIC;
     \qout_r_reg[2]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_debug_csr : entity is "sirv_debug_csr";
 end system_top_system_e203_0_0_sirv_debug_csr;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_debug_csr is
@@ -292175,8 +292061,6 @@ entity system_top_system_e203_0_0_sirv_debug_ram is
     \qout_r_reg[0]_3\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[0]_4\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_debug_ram : entity is "sirv_debug_ram";
 end system_top_system_e203_0_0_sirv_debug_ram;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_debug_ram is
@@ -292889,8 +292773,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_fifo is
     \qout_r[32]_i_6__0\ : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_fifo : entity is "sirv_gnrl_fifo";
 end system_top_system_e203_0_0_sirv_gnrl_fifo;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_fifo is
@@ -301503,8 +301385,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_pipe_stage is
     \qout_r_reg[0]_4\ : in STD_LOGIC;
     \qout_r_reg[0]_5\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_pipe_stage : entity is "sirv_gnrl_pipe_stage";
 end system_top_system_e203_0_0_sirv_gnrl_pipe_stage;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_pipe_stage is
@@ -303156,8 +303036,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_ram is
     \qout_r_reg[10]_0\ : in STD_LOGIC;
     icb_cmd2itcm_r : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_ram : entity is "sirv_gnrl_ram";
 end system_top_system_e203_0_0_sirv_gnrl_ram;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_ram is
@@ -303269,8 +303147,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_sync is
     \dtm_req_sel_dbgram__0\ : in STD_LOGIC;
     \icb_access_dbgram_ena__0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_sync : entity is "sirv_gnrl_sync";
 end system_top_system_e203_0_0_sirv_gnrl_sync;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_sync is
@@ -303837,8 +303713,6 @@ entity system_top_system_e203_0_0_sirv_hclkgen_regs is
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_hclkgen_regs : entity is "sirv_hclkgen_regs";
 end system_top_system_e203_0_0_sirv_hclkgen_regs;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_hclkgen_regs is
@@ -304012,8 +303886,6 @@ entity system_top_system_e203_0_0_sirv_mrom_top is
     \qout_r[18]_i_4_2\ : in STD_LOGIC;
     \qout_r[18]_i_4_3\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_mrom_top : entity is "sirv_mrom_top";
 end system_top_system_e203_0_0_sirv_mrom_top;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_mrom_top is
@@ -304090,8 +303962,6 @@ entity system_top_system_e203_0_0_sirv_qspi_fifo is
     p_0_in2_out : in STD_LOGIC;
     qspi0_icb_cmd_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_qspi_fifo : entity is "sirv_qspi_fifo";
 end system_top_system_e203_0_0_sirv_qspi_fifo;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_qspi_fifo is
@@ -304274,8 +304144,6 @@ entity system_top_system_e203_0_0_sirv_qspi_media is
     \ctrl_sck_div_reg[11]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \ctrl_fmt_proto_reg[1]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_qspi_media : entity is "sirv_qspi_media";
 end system_top_system_e203_0_0_sirv_qspi_media;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_qspi_media is
@@ -304652,8 +304520,6 @@ entity system_top_system_e203_0_0_sirv_tlfragmenter_qspi_1 is
     addr : in STD_LOGIC_VECTOR ( 23 downto 0 );
     \dOrig_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_tlfragmenter_qspi_1 : entity is "sirv_tlfragmenter_qspi_1";
 end system_top_system_e203_0_0_sirv_tlfragmenter_qspi_1;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_tlfragmenter_qspi_1 is
@@ -305179,8 +305045,6 @@ entity system_top_system_e203_0_0_spi_master_controller is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \counter_trgt_reg[7]\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_spi_master_controller : entity is "spi_master_controller";
 end system_top_system_e203_0_0_spi_master_controller;
 
 architecture STRUCTURE of system_top_system_e203_0_0_spi_master_controller is
@@ -306450,8 +306314,6 @@ entity system_top_system_e203_0_0_timer_module is
     \r_comp_reg[15]_2\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     \r_comp_op_reg[2]_2\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_timer_module : entity is "timer_module";
 end system_top_system_e203_0_0_timer_module;
 
 architecture STRUCTURE of system_top_system_e203_0_0_timer_module is
@@ -307805,8 +307667,6 @@ entity system_top_system_e203_0_0_apb_adv_timer is
     \r_event_en_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \r_clk_en_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_apb_adv_timer : entity is "apb_adv_timer";
 end system_top_system_e203_0_0_apb_adv_timer;
 
 architecture STRUCTURE of system_top_system_e203_0_0_apb_adv_timer is
@@ -308776,8 +308636,6 @@ entity system_top_system_e203_0_0_apb_i2c is
     \r_cmd_reg[7]_2\ : in STD_LOGIC_VECTOR ( 6 downto 0 );
     i2c0_apb_paddr : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_apb_i2c : entity is "apb_i2c";
 end system_top_system_e203_0_0_apb_i2c;
 
 architecture STRUCTURE of system_top_system_e203_0_0_apb_i2c is
@@ -309849,8 +309707,6 @@ entity system_top_system_e203_0_0_apb_spi_master is
     \spi_data_len_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \spi_dummy_wr_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_apb_spi_master : entity is "apb_spi_master";
 end system_top_system_e203_0_0_apb_spi_master;
 
 architecture STRUCTURE of system_top_system_e203_0_0_apb_spi_master is
@@ -311601,8 +311457,6 @@ entity system_top_system_e203_0_0_e203_dtcm_ram is
     \mem[1].non_last.mem_r_reg_2_0_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \mem[1].non_last.mem_r_reg_3_0_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_dtcm_ram : entity is "e203_dtcm_ram";
 end system_top_system_e203_0_0_e203_dtcm_ram;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_dtcm_ram is
@@ -311666,8 +311520,6 @@ entity system_top_system_e203_0_0_e203_exu_commit is
     alu_cmt_valid : in STD_LOGIC;
     dbg_irq_r : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_commit : entity is "e203_exu_commit";
 end system_top_system_e203_0_0_e203_exu_commit;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_commit is
@@ -311735,8 +311587,6 @@ entity system_top_system_e203_0_0_e203_exu_nice is
     \qout_r[31]_i_15__0_1\ : in STD_LOGIC;
     oitf_ret_ptr : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_nice : entity is "e203_exu_nice";
 end system_top_system_e203_0_0_e203_exu_nice;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_nice is
@@ -312533,8 +312383,6 @@ entity system_top_system_e203_0_0_e203_ifu_ifetch is
     \qout_r_reg[4]_22\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \qout_r_reg[1]_rep_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_ifu_ifetch : entity is "e203_ifu_ifetch";
 end system_top_system_e203_0_0_e203_ifu_ifetch;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_ifu_ifetch is
@@ -313991,8 +313839,6 @@ entity system_top_system_e203_0_0_e203_irq_sync is
     msie_r : in STD_LOGIC;
     mtie_r : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_irq_sync : entity is "e203_irq_sync";
 end system_top_system_e203_0_0_e203_irq_sync;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_irq_sync is
@@ -314062,8 +313908,6 @@ entity system_top_system_e203_0_0_e203_itcm_ram is
     \qout_r_reg[10]_0\ : in STD_LOGIC;
     icb_cmd2itcm_r : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_itcm_ram : entity is "e203_itcm_ram";
 end system_top_system_e203_0_0_e203_itcm_ram;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_itcm_ram is
@@ -314118,8 +313962,6 @@ entity system_top_system_e203_0_0_e203_subsys_clint is
     \time_1_reg[31]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \time_1_reg[31]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_subsys_clint : entity is "e203_subsys_clint";
 end system_top_system_e203_0_0_e203_subsys_clint;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_subsys_clint is
@@ -314184,8 +314026,6 @@ entity system_top_system_e203_0_0_sirv_1cyc_sram_ctrl is
     \qout_r_reg[1]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[1]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_1cyc_sram_ctrl : entity is "sirv_1cyc_sram_ctrl";
 end system_top_system_e203_0_0_sirv_1cyc_sram_ctrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_1cyc_sram_ctrl is
@@ -314256,8 +314096,6 @@ entity system_top_system_e203_0_0_sirv_ResetCatchAndSync is
     CLK : in STD_LOGIC;
     corerst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_ResetCatchAndSync : entity is "sirv_ResetCatchAndSync";
 end system_top_system_e203_0_0_sirv_ResetCatchAndSync;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_ResetCatchAndSync is
@@ -314279,8 +314117,6 @@ entity system_top_system_e203_0_0_sirv_ResetCatchAndSync_2 is
     clk_16M : in STD_LOGIC;
     corerst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_ResetCatchAndSync_2 : entity is "sirv_ResetCatchAndSync_2";
 end system_top_system_e203_0_0_sirv_ResetCatchAndSync_2;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_ResetCatchAndSync_2 is
@@ -314456,8 +314292,6 @@ entity system_top_system_e203_0_0_sirv_flash_qspi is
     \ctrl_dla_intercs_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     p_0_in2_out : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_flash_qspi : entity is "sirv_flash_qspi";
 end system_top_system_e203_0_0_sirv_flash_qspi;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_flash_qspi is
@@ -316172,8 +316006,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_axi_buffer is
     \qout_r_reg[0]_2\ : in STD_LOGIC;
     expl_axi_icb_cmd_valid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_axi_buffer : entity is "sirv_gnrl_axi_buffer";
 end system_top_system_e203_0_0_sirv_gnrl_axi_buffer;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_axi_buffer is
@@ -316727,8 +316559,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_bypbuf is
     \qout_r[32]_i_6__0\ : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_bypbuf : entity is "sirv_gnrl_bypbuf";
 end system_top_system_e203_0_0_sirv_gnrl_bypbuf;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_bypbuf is
@@ -317037,8 +316867,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_cdc_rx is
     i_aon_icb_rsp_ready : in STD_LOGIC;
     \qout_r_reg[31]\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_cdc_rx : entity is "sirv_gnrl_cdc_rx";
 end system_top_system_e203_0_0_sirv_gnrl_cdc_rx;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_cdc_rx is
@@ -317537,8 +317365,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_cdc_tx is
     \qout_r[0]_i_3__0_0\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 47 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_cdc_tx : entity is "sirv_gnrl_cdc_tx";
 end system_top_system_e203_0_0_sirv_gnrl_cdc_tx;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_cdc_tx is
@@ -317867,8 +317693,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_icb2apb is
     \dp_gt0.vec_r\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_icb2apb : entity is "sirv_gnrl_icb2apb";
 end system_top_system_e203_0_0_sirv_gnrl_icb2apb;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_icb2apb is
@@ -318506,8 +318330,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_icb_arbt is
     \qout_r_reg[1]\ : in STD_LOGIC;
     state_r : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_icb_arbt : entity is "sirv_gnrl_icb_arbt";
 end system_top_system_e203_0_0_sirv_gnrl_icb_arbt;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_icb_arbt is
@@ -318847,8 +318669,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_icb_buffer is
     \qout_r_reg[12]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \qout_r_reg[34]_0\ : in STD_LOGIC_VECTOR ( 32 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_icb_buffer : entity is "sirv_gnrl_icb_buffer";
 end system_top_system_e203_0_0_sirv_gnrl_icb_buffer;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_icb_buffer is
@@ -321237,8 +321057,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_icb_n2w is
     \qout_r_reg[0]_4\ : in STD_LOGIC;
     \qout_r_reg[0]_5\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_icb_n2w : entity is "sirv_gnrl_icb_n2w";
 end system_top_system_e203_0_0_sirv_gnrl_icb_n2w;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_icb_n2w is
@@ -321323,8 +321141,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_icb_splt is
     CO : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_icb_splt : entity is "sirv_gnrl_icb_splt";
 end system_top_system_e203_0_0_sirv_gnrl_icb_splt;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_icb_splt is
@@ -322059,8 +321875,6 @@ entity system_top_system_e203_0_0_sirv_plic_man is
     \qout_r_reg[17]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[17]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_plic_man : entity is "sirv_plic_man";
 end system_top_system_e203_0_0_sirv_plic_man;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_plic_man is
@@ -323037,8 +322851,6 @@ entity system_top_system_e203_0_0_sirv_pmu is
     \wakeupProgram_7_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \wakeupCause_reg[0]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_pmu : entity is "sirv_pmu";
 end system_top_system_e203_0_0_sirv_pmu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_pmu is
@@ -323334,8 +323146,6 @@ entity system_top_system_e203_0_0_sirv_rtc is
     \T_148_reg[41]_1\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \T_148_reg[41]_2\ : in STD_LOGIC_VECTOR ( 41 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_rtc : entity is "sirv_rtc";
 end system_top_system_e203_0_0_sirv_rtc;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_rtc is
@@ -325570,8 +325380,6 @@ entity system_top_system_e203_0_0_sirv_wdog is
     \T_167_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \T_167_reg[25]_1\ : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_wdog : entity is "sirv_wdog";
 end system_top_system_e203_0_0_sirv_wdog;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_wdog is
@@ -326787,8 +326595,6 @@ entity system_top_system_e203_0_0_e203_biu is
     \qout_r_reg[12]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \qout_r_reg[32]\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_biu : entity is "e203_biu";
 end system_top_system_e203_0_0_e203_biu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_biu is
@@ -327414,8 +327220,6 @@ entity system_top_system_e203_0_0_e203_exu_alu is
     \qout_r[25]_i_11__0\ : in STD_LOGIC;
     \qout_r[5]_i_12__1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu_alu : entity is "e203_exu_alu";
 end system_top_system_e203_0_0_e203_exu_alu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu_alu is
@@ -327967,8 +327771,6 @@ entity system_top_system_e203_0_0_e203_ifu_ift2icb is
     \qout_r_reg[1]_6\ : in STD_LOGIC;
     \qout_r_reg[0]_17\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_ifu_ift2icb : entity is "e203_ifu_ift2icb";
 end system_top_system_e203_0_0_e203_ifu_ift2icb;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_ifu_ift2icb is
@@ -328592,8 +328394,6 @@ entity system_top_system_e203_0_0_e203_lsu_ctrl is
     agu_icb_cmd_itag : in STD_LOGIC;
     \qout_r_reg[0]_18\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_lsu_ctrl : entity is "e203_lsu_ctrl";
 end system_top_system_e203_0_0_e203_lsu_ctrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_lsu_ctrl is
@@ -328946,8 +328746,6 @@ entity system_top_system_e203_0_0_e203_srams is
     \qout_r_reg[10]_0\ : in STD_LOGIC;
     icb_cmd2itcm_r : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_srams : entity is "e203_srams";
 end system_top_system_e203_0_0_e203_srams;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_srams is
@@ -329044,8 +328842,6 @@ entity system_top_system_e203_0_0_sirv_aon is
     \qout_r_reg[30]\ : in STD_LOGIC;
     \wakeupCause_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_aon : entity is "sirv_aon";
 end system_top_system_e203_0_0_sirv_aon;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_aon is
@@ -333975,8 +333771,6 @@ entity system_top_system_e203_0_0_sirv_flash_qspi_top is
     \ctrl_dla_intercs_reg[7]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     p_0_in2_out : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_flash_qspi_top : entity is "sirv_flash_qspi_top";
 end system_top_system_e203_0_0_sirv_flash_qspi_top;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_flash_qspi_top is
@@ -334214,8 +334008,6 @@ entity system_top_system_e203_0_0_sirv_gnrl_icb2axi is
     expl_axi_icb_rsp_ready : in STD_LOGIC;
     expl_axi_icb_cmd_valid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_gnrl_icb2axi : entity is "sirv_gnrl_icb2axi";
 end system_top_system_e203_0_0_sirv_gnrl_icb2axi;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_gnrl_icb2axi is
@@ -335376,8 +335168,6 @@ entity system_top_system_e203_0_0_sirv_icb1to16_bus is
     spi_csreg_15 : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[77]_5\ : in STD_LOGIC_VECTOR ( 64 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_icb1to16_bus : entity is "sirv_icb1to16_bus";
 end system_top_system_e203_0_0_sirv_icb1to16_bus;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_icb1to16_bus is
@@ -336585,8 +336375,6 @@ entity system_top_system_e203_0_0_sirv_icb1to2_bus is
     \qout_r_reg[1]_0\ : in STD_LOGIC;
     \qout_r_reg[0]_8\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_icb1to2_bus : entity is "sirv_icb1to2_bus";
 end system_top_system_e203_0_0_sirv_icb1to2_bus;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_icb1to2_bus is
@@ -336835,8 +336623,6 @@ entity system_top_system_e203_0_0_sirv_icb1to8_bus is
     \qout_r_reg[0]_73\ : in STD_LOGIC;
     \qout_r_reg[77]\ : in STD_LOGIC_VECTOR ( 68 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_icb1to8_bus : entity is "sirv_icb1to8_bus";
 end system_top_system_e203_0_0_sirv_icb1to8_bus;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_icb1to8_bus is
@@ -337231,8 +337017,6 @@ entity system_top_system_e203_0_0_sirv_jtag_dtm is
     dut_io_pads_jtag_TDI_i_ival : in STD_LOGIC;
     dut_io_pads_jtag_TMS_i_ival : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_jtag_dtm : entity is "sirv_jtag_dtm";
 end system_top_system_e203_0_0_sirv_jtag_dtm;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_jtag_dtm is
@@ -338925,8 +338709,6 @@ entity system_top_system_e203_0_0_sirv_plic_top is
     \qout_r_reg[17]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[17]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_plic_top : entity is "sirv_plic_top";
 end system_top_system_e203_0_0_sirv_plic_top;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_plic_top is
@@ -339139,8 +338921,6 @@ entity system_top_system_e203_0_0_sirv_sram_icb_ctrl is
     rspid_fifo_i_ready : in STD_LOGIC;
     \qout_r[0]_i_4__17_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_sram_icb_ctrl : entity is "sirv_sram_icb_ctrl";
 end system_top_system_e203_0_0_sirv_sram_icb_ctrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_sram_icb_ctrl is
@@ -339378,8 +339158,6 @@ entity system_top_system_e203_0_0_e203_dtcm_ctrl is
     \mem[1].non_last.mem_r_reg_0_0_i_34__0\ : in STD_LOGIC;
     arbt_icb_cmd_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_dtcm_ctrl : entity is "e203_dtcm_ctrl";
 end system_top_system_e203_0_0_e203_dtcm_ctrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_dtcm_ctrl is
@@ -339995,8 +339773,6 @@ entity system_top_system_e203_0_0_e203_exu is
     \qout_r[25]_i_11__0\ : in STD_LOGIC;
     \qout_r[5]_i_12__1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_exu : entity is "e203_exu";
 end system_top_system_e203_0_0_e203_exu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_exu is
@@ -341462,8 +341238,6 @@ entity system_top_system_e203_0_0_e203_ifu is
     \qout_r[0]_i_31__0_0\ : in STD_LOGIC;
     \qout_r[1]_i_5__9\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_ifu : entity is "e203_ifu";
 end system_top_system_e203_0_0_e203_ifu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_ifu is
@@ -342720,8 +342494,6 @@ entity system_top_system_e203_0_0_e203_itcm_ctrl is
     arbt_icb_cmd_valid : in STD_LOGIC;
     rspid_fifo_i_ready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_itcm_ctrl : entity is "e203_itcm_ctrl";
 end system_top_system_e203_0_0_e203_itcm_ctrl;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_itcm_ctrl is
@@ -342986,8 +342758,6 @@ entity system_top_system_e203_0_0_e203_lsu is
     agu_icb_cmd_itag : in STD_LOGIC;
     \qout_r_reg[0]_18\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_lsu : entity is "e203_lsu";
 end system_top_system_e203_0_0_e203_lsu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_lsu is
@@ -343243,8 +343013,6 @@ entity system_top_system_e203_0_0_e203_subsys_mems is
     \qout_r_reg[34]\ : in STD_LOGIC_VECTOR ( 32 downto 0 );
     expl_axi_bresp : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_subsys_mems : entity is "e203_subsys_mems";
 end system_top_system_e203_0_0_e203_subsys_mems;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_subsys_mems is
@@ -343834,8 +343602,6 @@ entity system_top_system_e203_0_0_e203_subsys_perips is
     qspi0_ro_icb_rsp_ready : in STD_LOGIC;
     O : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_subsys_perips : entity is "e203_subsys_perips";
 end system_top_system_e203_0_0_e203_subsys_perips;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_subsys_perips is
@@ -347040,8 +346806,6 @@ entity system_top_system_e203_0_0_e203_subsys_plic is
     \qout_r_reg[17]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \qout_r_reg[17]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_subsys_plic : entity is "e203_subsys_plic";
 end system_top_system_e203_0_0_e203_subsys_plic;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_subsys_plic is
@@ -347238,8 +347002,6 @@ entity system_top_system_e203_0_0_sirv_aon_wrapper is
     \qout_r_reg[8]\ : in STD_LOGIC;
     \qout_r_reg[30]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_aon_wrapper : entity is "sirv_aon_wrapper";
 end system_top_system_e203_0_0_sirv_aon_wrapper;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_aon_wrapper is
@@ -347384,8 +347146,6 @@ entity system_top_system_e203_0_0_sirv_debug_module is
     dut_io_pads_jtag_TDI_i_ival : in STD_LOGIC;
     dut_io_pads_jtag_TMS_i_ival : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_debug_module : entity is "sirv_debug_module";
 end system_top_system_e203_0_0_sirv_debug_module;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_debug_module is
@@ -348225,8 +347985,6 @@ entity system_top_system_e203_0_0_e203_core is
     \qout_r_reg[0]_47\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     wbck_i_wdat0 : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_core : entity is "e203_core";
 end system_top_system_e203_0_0_e203_core;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_core is
@@ -351198,8 +350956,6 @@ entity system_top_system_e203_0_0_sirv_aon_top is
     aon_icb_cmd_valid : in STD_LOGIC;
     aon_icb_rsp_ready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_sirv_aon_top : entity is "sirv_aon_top";
 end system_top_system_e203_0_0_sirv_aon_top;
 
 architecture STRUCTURE of system_top_system_e203_0_0_sirv_aon_top is
@@ -351837,8 +351593,6 @@ entity system_top_system_e203_0_0_e203_cpu is
     \qout_r_reg[29]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \qout_r_reg[31]_3\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_cpu : entity is "e203_cpu";
 end system_top_system_e203_0_0_e203_cpu;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_cpu is
@@ -352949,8 +352703,6 @@ entity system_top_system_e203_0_0_e203_cpu_top is
     tmr_irq_a : in STD_LOGIC;
     \qout_r_reg[32]\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_cpu_top : entity is "e203_cpu_top";
 end system_top_system_e203_0_0_e203_cpu_top;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_cpu_top is
@@ -353648,8 +353400,6 @@ entity system_top_system_e203_0_0_e203_subsys_main is
     aon_icb_rsp_valid : in STD_LOGIC;
     \qout_r_reg[31]_1\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_subsys_main : entity is "e203_subsys_main";
 end system_top_system_e203_0_0_e203_subsys_main;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_subsys_main is
@@ -354582,8 +354332,6 @@ entity system_top_system_e203_0_0_e203_subsys_top is
     \r_gpio_sync0_reg[31]\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \r_gpio_sync0_reg[31]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_subsys_top : entity is "e203_subsys_top";
 end system_top_system_e203_0_0_e203_subsys_top;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_subsys_top is
@@ -355047,8 +354795,6 @@ entity system_top_system_e203_0_0_e203_soc_top is
     \r_gpio_sync0_reg[31]\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \r_gpio_sync0_reg[31]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_e203_soc_top : entity is "e203_soc_top";
 end system_top_system_e203_0_0_e203_soc_top;
 
 architecture STRUCTURE of system_top_system_e203_0_0_e203_soc_top is
@@ -355201,8 +354947,6 @@ entity system_top_system_e203_0_0_system is
     D : in STD_LOGIC_VECTOR ( 32 downto 0 );
     expl_axi_bresp : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_system_e203_0_0_system : entity is "system";
 end system_top_system_e203_0_0_system;
 
 architecture STRUCTURE of system_top_system_e203_0_0_system is

@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 -- Date        : Thu Feb  6 00:14:56 2025
 -- Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top system_top_rst_clk_wiz_0_200M_0 -prefix
+--               system_top_rst_clk_wiz_0_200M_0_ system_top_rst_clk_wiz_0_200M_0_stub.vhdl
 -- Design      : system_top_rst_clk_wiz_0_200M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a200tfbg484-2

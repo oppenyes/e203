@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Fri Feb  7 11:38:42 2025
+// Date        : Fri Feb  7 11:38:33 2025
 // Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_system_e203_0_0_1/system_top_system_e203_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top system_top_system_e203_0_0 -prefix
+//               system_top_system_e203_0_0_ system_top_system_e203_0_0_sim_netlist.v
 // Design      : system_top_system_e203_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,444 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_top_system_e203_0_0,system,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
-(* X_CORE_INFO = "system,Vivado 2020.2" *) 
-(* NotValidForBitStream *)
-module system_top_system_e203_0_0
-   (clk_16M,
-    CLK32768KHZ,
-    ck_rst,
-    qspi0_cs,
-    qspi0_sck,
-    qspi0_dq,
-    gpioA,
-    gpioB,
-    expl_axi_arvalid,
-    expl_axi_arready,
-    expl_axi_araddr,
-    expl_axi_arcache,
-    expl_axi_arprot,
-    expl_axi_arlock,
-    expl_axi_arburst,
-    expl_axi_arlen,
-    expl_axi_arsize,
-    expl_axi_awvalid,
-    expl_axi_awready,
-    expl_axi_awaddr,
-    expl_axi_awcache,
-    expl_axi_awprot,
-    expl_axi_awlock,
-    expl_axi_awburst,
-    expl_axi_awlen,
-    expl_axi_awsize,
-    expl_axi_rvalid,
-    expl_axi_rready,
-    expl_axi_rdata,
-    expl_axi_rresp,
-    expl_axi_rlast,
-    expl_axi_wvalid,
-    expl_axi_wready,
-    expl_axi_wdata,
-    expl_axi_wstrb,
-    expl_axi_wlast,
-    expl_axi_bvalid,
-    expl_axi_bready,
-    expl_axi_bresp,
-    mcu_TDO,
-    mcu_TCK,
-    mcu_TDI,
-    mcu_TMS,
-    pmu_paden,
-    pmu_padrst,
-    mcu_wakeup);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk_16M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk_16M, FREQ_HZ 16000000, ASSOCIATED_BUSIF expl_axi, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk_16M;
-  input CLK32768KHZ;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ck_rst;
-  output qspi0_cs;
-  output qspi0_sck;
-  inout [3:0]qspi0_dq;
-  inout [31:0]gpioA;
-  inout [31:0]gpioB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARVALID" *) output expl_axi_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARREADY" *) input expl_axi_arready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARADDR" *) output [31:0]expl_axi_araddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARCACHE" *) output [3:0]expl_axi_arcache;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARPROT" *) output [2:0]expl_axi_arprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARLOCK" *) output [1:0]expl_axi_arlock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARBURST" *) output [1:0]expl_axi_arburst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARLEN" *) output [3:0]expl_axi_arlen;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARSIZE" *) output [2:0]expl_axi_arsize;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWVALID" *) output expl_axi_awvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWREADY" *) input expl_axi_awready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWADDR" *) output [31:0]expl_axi_awaddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWCACHE" *) output [3:0]expl_axi_awcache;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWPROT" *) output [2:0]expl_axi_awprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWLOCK" *) output [1:0]expl_axi_awlock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWBURST" *) output [1:0]expl_axi_awburst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWLEN" *) output [3:0]expl_axi_awlen;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWSIZE" *) output [2:0]expl_axi_awsize;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RVALID" *) input expl_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RREADY" *) output expl_axi_rready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RDATA" *) input [31:0]expl_axi_rdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RRESP" *) input [1:0]expl_axi_rresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RLAST" *) input expl_axi_rlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WVALID" *) output expl_axi_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WREADY" *) input expl_axi_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WDATA" *) output [31:0]expl_axi_wdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WSTRB" *) output [3:0]expl_axi_wstrb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WLAST" *) output expl_axi_wlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi BVALID" *) input expl_axi_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi BREADY" *) output expl_axi_bready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi BRESP" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME expl_axi, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 16000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [1:0]expl_axi_bresp;
-  inout mcu_TDO;
-  inout mcu_TCK;
-  inout mcu_TDI;
-  inout mcu_TMS;
-  inout pmu_paden;
-  inout pmu_padrst;
-  inout mcu_wakeup;
-
-  wire \<const0> ;
-  wire CLK32768KHZ;
-  wire ck_rst;
-  wire clk_16M;
-  wire [13:0]\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr ;
-  wire [12:0]\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr ;
-  wire \dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ;
-  wire \dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ;
-  wire [30:0]\^expl_axi_araddr ;
-  wire expl_axi_arready;
-  wire [1:1]\^expl_axi_arsize ;
-  wire expl_axi_arvalid;
-  wire [30:0]\^expl_axi_awaddr ;
-  wire expl_axi_awready;
-  wire [1:1]\^expl_axi_awsize ;
-  wire expl_axi_awvalid;
-  wire expl_axi_bready;
-  wire [1:0]expl_axi_bresp;
-  wire expl_axi_bvalid;
-  wire [31:0]expl_axi_rdata;
-  wire expl_axi_rready;
-  wire [1:0]expl_axi_rresp;
-  wire expl_axi_rvalid;
-  wire [31:0]expl_axi_wdata;
-  wire expl_axi_wlast;
-  wire expl_axi_wready;
-  wire [3:0]expl_axi_wstrb;
-  wire expl_axi_wvalid;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire [31:0]gpioA;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire [31:0]gpioB;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_TCK;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_TDI;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_TDO;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_TMS;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_wakeup;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_33_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_34__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_34_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_35__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_35_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_36__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_36_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_37__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_37_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_38__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_38_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_39__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_39_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_40__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_40_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_41__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_41_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_42__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_42_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_43__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_43_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_44__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_44_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_45__0_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_45_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_46_n_0 ;
-  wire \mem[1].non_last.mem_r_reg_0_0_i_47_n_0 ;
-  wire pmu_paden;
-  wire pmu_padrst;
-  wire qspi0_cs;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire [3:0]qspi0_dq;
-  wire qspi0_sck;
-
-  assign expl_axi_araddr[31] = \<const0> ;
-  assign expl_axi_araddr[30:0] = \^expl_axi_araddr [30:0];
-  assign expl_axi_arburst[1] = \<const0> ;
-  assign expl_axi_arburst[0] = \<const0> ;
-  assign expl_axi_arcache[3] = \<const0> ;
-  assign expl_axi_arcache[2] = \<const0> ;
-  assign expl_axi_arcache[1] = \<const0> ;
-  assign expl_axi_arcache[0] = \<const0> ;
-  assign expl_axi_arlen[3] = \<const0> ;
-  assign expl_axi_arlen[2] = \<const0> ;
-  assign expl_axi_arlen[1] = \<const0> ;
-  assign expl_axi_arlen[0] = \<const0> ;
-  assign expl_axi_arlock[1] = \<const0> ;
-  assign expl_axi_arlock[0] = \<const0> ;
-  assign expl_axi_arprot[2] = \<const0> ;
-  assign expl_axi_arprot[1] = \<const0> ;
-  assign expl_axi_arprot[0] = \<const0> ;
-  assign expl_axi_arsize[2] = \<const0> ;
-  assign expl_axi_arsize[1] = \^expl_axi_arsize [1];
-  assign expl_axi_arsize[0] = \<const0> ;
-  assign expl_axi_awaddr[31] = \<const0> ;
-  assign expl_axi_awaddr[30:0] = \^expl_axi_awaddr [30:0];
-  assign expl_axi_awburst[1] = \<const0> ;
-  assign expl_axi_awburst[0] = \<const0> ;
-  assign expl_axi_awcache[3] = \<const0> ;
-  assign expl_axi_awcache[2] = \<const0> ;
-  assign expl_axi_awcache[1] = \<const0> ;
-  assign expl_axi_awcache[0] = \<const0> ;
-  assign expl_axi_awlen[3] = \<const0> ;
-  assign expl_axi_awlen[2] = \<const0> ;
-  assign expl_axi_awlen[1] = \<const0> ;
-  assign expl_axi_awlen[0] = \<const0> ;
-  assign expl_axi_awlock[1] = \<const0> ;
-  assign expl_axi_awlock[0] = \<const0> ;
-  assign expl_axi_awprot[2] = \<const0> ;
-  assign expl_axi_awprot[1] = \<const0> ;
-  assign expl_axi_awprot[0] = \<const0> ;
-  assign expl_axi_awsize[2] = \<const0> ;
-  assign expl_axi_awsize[1] = \^expl_axi_awsize [1];
-  assign expl_axi_awsize[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  system_top_system_e203_0_0_system inst
-       (.ADDRARDADDR(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr ),
-        .CLK32768KHZ(CLK32768KHZ),
-        .D({expl_axi_rdata,expl_axi_rresp[1]}),
-        .ck_rst(ck_rst),
-        .clk_16M(clk_16M),
-        .expl_axi_araddr(\^expl_axi_araddr ),
-        .expl_axi_arready(expl_axi_arready),
-        .expl_axi_arsize(\^expl_axi_arsize ),
-        .expl_axi_arvalid(expl_axi_arvalid),
-        .expl_axi_awaddr(\^expl_axi_awaddr ),
-        .expl_axi_awready(expl_axi_awready),
-        .expl_axi_awsize(\^expl_axi_awsize ),
-        .expl_axi_awvalid(expl_axi_awvalid),
-        .expl_axi_bready(expl_axi_bready),
-        .expl_axi_bresp(expl_axi_bresp[1]),
-        .expl_axi_bvalid(expl_axi_bvalid),
-        .expl_axi_rready(expl_axi_rready),
-        .expl_axi_rvalid(expl_axi_rvalid),
-        .expl_axi_wdata(expl_axi_wdata),
-        .expl_axi_wlast(expl_axi_wlast),
-        .expl_axi_wready(expl_axi_wready),
-        .expl_axi_wstrb(expl_axi_wstrb),
-        .expl_axi_wvalid(expl_axi_wvalid),
-        .gpioA(gpioA),
-        .gpioB(gpioB),
-        .mcu_TCK(mcu_TCK),
-        .mcu_TDI(mcu_TDI),
-        .mcu_TDO(mcu_TDO),
-        .mcu_TMS(mcu_TMS),
-        .mcu_wakeup(mcu_wakeup),
-        .\mem[1].non_last.mem_r_reg_0_0 (\mem[1].non_last.mem_r_reg_0_0_i_33_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_0 (\mem[1].non_last.mem_r_reg_0_0_i_34_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_1 (\mem[1].non_last.mem_r_reg_0_0_i_35_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_10 (\mem[1].non_last.mem_r_reg_0_0_i_44_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_11 (\mem[1].non_last.mem_r_reg_0_0_i_45_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_12 (\mem[1].non_last.mem_r_reg_0_0_i_34__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_13 (\mem[1].non_last.mem_r_reg_0_0_i_35__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_14 (\mem[1].non_last.mem_r_reg_0_0_i_36__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_15 (\mem[1].non_last.mem_r_reg_0_0_i_37__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_16 (\mem[1].non_last.mem_r_reg_0_0_i_38__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_17 (\mem[1].non_last.mem_r_reg_0_0_i_39__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_18 (\mem[1].non_last.mem_r_reg_0_0_i_40__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_19 (\mem[1].non_last.mem_r_reg_0_0_i_41__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_2 (\mem[1].non_last.mem_r_reg_0_0_i_36_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_20 (\mem[1].non_last.mem_r_reg_0_0_i_42__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_21 (\mem[1].non_last.mem_r_reg_0_0_i_43__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_22 (\mem[1].non_last.mem_r_reg_0_0_i_44__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_23 (\mem[1].non_last.mem_r_reg_0_0_i_45__0_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_24 (\mem[1].non_last.mem_r_reg_0_0_i_46_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_25 (\mem[1].non_last.mem_r_reg_0_0_i_47_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_3 (\mem[1].non_last.mem_r_reg_0_0_i_37_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_4 (\mem[1].non_last.mem_r_reg_0_0_i_38_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_5 (\mem[1].non_last.mem_r_reg_0_0_i_39_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_6 (\mem[1].non_last.mem_r_reg_0_0_i_40_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_7 (\mem[1].non_last.mem_r_reg_0_0_i_41_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_8 (\mem[1].non_last.mem_r_reg_0_0_i_42_n_0 ),
-        .\mem[1].non_last.mem_r_reg_0_0_9 (\mem[1].non_last.mem_r_reg_0_0_i_43_n_0 ),
-        .pmu_paden(pmu_paden),
-        .pmu_padrst(pmu_padrst),
-        .\qout_r_reg[52] (\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr ),
-        .qspi0_cs(qspi0_cs),
-        .qspi0_dq(qspi0_dq),
-        .qspi0_sck(qspi0_sck),
-        .ren(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .ren_0(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_33 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [12]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_33_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_34 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [11]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_34_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_34__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [13]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_34__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_35 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [10]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_35_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_35__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [12]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_35__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_36 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [9]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_36_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_36__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [11]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_36__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_37 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [8]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_37_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_37__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [10]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_37__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_38 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [7]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_38_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_38__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [9]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_38__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_39 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [6]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_39_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_39__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [8]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_39__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_40 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [5]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_40_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_40__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [7]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_40__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_41 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [4]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_41_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_41__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [6]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_41__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_42 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [3]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_42_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_42__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [5]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_42__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_43 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [2]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_43_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_43__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [4]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_43__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_44 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [1]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_44_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_44__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [3]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_44__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_45 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [0]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_45_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_45__0 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [2]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_45__0_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_46 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [1]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_46_n_0 ),
-        .R(1'b0));
-  FDRE \mem[1].non_last.mem_r_reg_0_0_i_47 
-       (.C(clk_16M),
-        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
-        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [0]),
-        .Q(\mem[1].non_last.mem_r_reg_0_0_i_47_n_0 ),
-        .R(1'b0));
-endmodule
-
-(* ORIG_REF_NAME = "adv_timer_apb_if" *) 
 module system_top_system_e203_0_0_adv_timer_apb_if
    (s_timer0_apb_in_clk,
     s_timer0_apb_saw,
@@ -9405,7 +8967,6 @@ module system_top_system_e203_0_0_adv_timer_apb_if
         .O(r_timer3_start_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "apb_adv_timer" *) 
 module system_top_system_e203_0_0_apb_adv_timer
    (\r_timer3_th_reg[3] ,
     \r_timer3_th_reg[2] ,
@@ -11073,7 +10634,6 @@ module system_top_system_e203_0_0_apb_adv_timer
         .s_timer3_apb_update(s_timer3_apb_update));
 endmodule
 
-(* ORIG_REF_NAME = "apb_gpio" *) 
 module system_top_system_e203_0_0_apb_gpio
    (\r_gpio_in_reg[15]_0 ,
     Q,
@@ -24088,7 +23648,6 @@ module system_top_system_e203_0_0_apb_gpio_160
         .Q(r_status[9]));
 endmodule
 
-(* ORIG_REF_NAME = "apb_i2c" *) 
 module system_top_system_e203_0_0_apb_i2c
    (io_pads_i2c0_scl_o_oen,
     irq_flag,
@@ -24978,7 +24537,6 @@ module system_top_system_e203_0_0_apb_i2c_161
         .Q(tip));
 endmodule
 
-(* ORIG_REF_NAME = "apb_spi_master" *) 
 module system_top_system_e203_0_0_apb_spi_master
    (spi_csreg,
     \spi_mode_reg[0] ,
@@ -26971,7 +26529,6 @@ module system_top_system_e203_0_0_apb_spi_master_162
         .spi_swrst(spi_swrst));
 endmodule
 
-(* ORIG_REF_NAME = "apb_uart_sv" *) 
 module system_top_system_e203_0_0_apb_uart_sv
    (trigger_level_q,
     Q,
@@ -29173,7 +28730,6 @@ module system_top_system_e203_0_0_apb_uart_sv_164
         .uart2_txd(uart2_txd));
 endmodule
 
-(* ORIG_REF_NAME = "comparator" *) 
 module system_top_system_e203_0_0_comparator
    (r_value_reg_0,
     Q,
@@ -35370,7 +34926,6 @@ module system_top_system_e203_0_0_comparator_276
         .O(s_match0_carry_i_4__2_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "e203_biu" *) 
 module system_top_system_e203_0_0_e203_biu
    (buf_icb_cmd_valid_0,
     \qout_r_reg[0] ,
@@ -36337,7 +35892,6 @@ module system_top_system_e203_0_0_e203_biu
         .\timecmp_0_1_reg[31] (u_biu_icb_splt_n_5));
 endmodule
 
-(* ORIG_REF_NAME = "e203_core" *) 
 module system_top_system_e203_0_0_e203_core
    (qout_r_reg_0_sp_1,
     \qout_r_reg[0]_0 ,
@@ -39851,7 +39405,6 @@ module system_top_system_e203_0_0_e203_core
         .wbck_i_wdat00_out(\u_e203_exu_longpwbck/wbck_i_wdat00_out ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_cpu" *) 
 module system_top_system_e203_0_0_e203_cpu
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -41586,7 +41139,6 @@ module system_top_system_e203_0_0_e203_cpu
         .\master_gen.rst_sync_r_reg[1]_0 (u_e203_reset_ctrl_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "e203_cpu_top" *) 
 module system_top_system_e203_0_0_e203_cpu_top
    (ADDRARDADDR,
     \qout_r_reg[52] ,
@@ -42945,7 +42497,6 @@ module system_top_system_e203_0_0_e203_cpu_top
         .\qout_r_reg[10]_0 (u_e203_cpu_n_58));
 endmodule
 
-(* ORIG_REF_NAME = "e203_dtcm_ctrl" *) 
 module system_top_system_e203_0_0_e203_dtcm_ctrl
    (fifo_o_vld,
     arbt_icb_rsp_valid,
@@ -43095,7 +42646,6 @@ module system_top_system_e203_0_0_e203_dtcm_ctrl
         .\qout_r_reg[52] (\qout_r_reg[52] ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_dtcm_ram" *) 
 module system_top_system_e203_0_0_e203_dtcm_ram
    (DOBDO,
     \mem[1].non_last.mem_r_reg_0_1 ,
@@ -43198,7 +42748,6 @@ module system_top_system_e203_0_0_e203_dtcm_ram
         .\mem[1].non_last.mem_r_reg_3_3 (\mem[1].non_last.mem_r_reg_3_3 ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu" *) 
 module system_top_system_e203_0_0_e203_exu
    (wfi_halt_exu_req,
     \qout_r_reg[0] ,
@@ -45575,7 +45124,6 @@ module system_top_system_e203_0_0_e203_exu
         .x1_r(\qout_r_reg[31]_2 ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_alu" *) 
 module system_top_system_e203_0_0_e203_exu_alu
    (flushed_r,
     \qout_r_reg[0] ,
@@ -46885,7 +46433,6 @@ module system_top_system_e203_0_0_e203_exu_alu
         .wbck_i_valid06_out(wbck_i_valid06_out));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_alu_dpath" *) 
 module system_top_system_e203_0_0_e203_exu_alu_dpath
    (\qout_r_reg[31] ,
     Q,
@@ -47132,7 +46679,6 @@ module system_top_system_e203_0_0_e203_exu_alu_dpath
         .\qout_r_reg[6]_0 (\qout_r_reg[6] ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_alu_lsuagu" *) 
 module system_top_system_e203_0_0_e203_exu_alu_lsuagu
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -47737,7 +47283,6 @@ module system_top_system_e203_0_0_e203_exu_alu_lsuagu
         .rspid_fifo_i_ready(rspid_fifo_i_ready));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_alu_muldiv" *) 
 module system_top_system_e203_0_0_e203_exu_alu_muldiv
    (flushed_r,
     \qout_r_reg[0] ,
@@ -48265,7 +47810,6 @@ module system_top_system_e203_0_0_e203_exu_alu_muldiv
         .\qout_r_reg[0]_1 (\qout_r_reg[0]_9 ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_alu_rglr" *) 
 module system_top_system_e203_0_0_e203_exu_alu_rglr
    (alu_o_wbck_err,
     alu_req_alu_op1,
@@ -48704,7 +48248,6 @@ module system_top_system_e203_0_0_e203_exu_alu_rglr
         .O(alu_req_alu_op1[7]));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_branchslv" *) 
 module system_top_system_e203_0_0_e203_exu_branchslv
    (brchmis_flush_pc1,
     Q,
@@ -48837,7 +48380,6 @@ module system_top_system_e203_0_0_e203_exu_branchslv
         .S({1'b0,\qout_r[29]_i_3__8 }));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_commit" *) 
 module system_top_system_e203_0_0_e203_exu_commit
    (wfi_halt_exu_req,
     \qout_r_reg[0] ,
@@ -48941,7 +48483,6 @@ module system_top_system_e203_0_0_e203_exu_commit
         .wfi_halt_exu_req(wfi_halt_exu_req));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_csr" *) 
 module system_top_system_e203_0_0_e203_exu_csr
    (mtip_r,
     meip_r,
@@ -49620,7 +49161,6 @@ module system_top_system_e203_0_0_e203_exu_csr
         .status_mpie_r(status_mpie_r));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_excp" *) 
 module system_top_system_e203_0_0_e203_exu_excp
    (wfi_halt_exu_req,
     \qout_r_reg[0] ,
@@ -49686,7 +49226,6 @@ module system_top_system_e203_0_0_e203_exu_excp
         .wfi_halt_exu_req(wfi_halt_exu_req));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_nice" *) 
 module system_top_system_e203_0_0_e203_exu_nice
    (\qout_r_reg[0] ,
     \qout_r_reg[3] ,
@@ -49793,7 +49332,6 @@ module system_top_system_e203_0_0_e203_exu_nice
         .wbck_i_valid06_out(wbck_i_valid06_out));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_oitf" *) 
 module system_top_system_e203_0_0_e203_exu_oitf
    (\qout_r_reg[0] ,
     oitf_ret_ptr,
@@ -50368,7 +49906,6 @@ module system_top_system_e203_0_0_e203_exu_oitf
         .vld_r_1(vld_r_1));
 endmodule
 
-(* ORIG_REF_NAME = "e203_exu_regfile" *) 
 module system_top_system_e203_0_0_e203_exu_regfile
    (\qout_r_reg[4] ,
     \qout_r_reg[4]_0 ,
@@ -52927,7 +52464,6 @@ module system_top_system_e203_0_0_e203_exu_regfile
         .\qout_r_reg[31]_1 (\qout_r_reg[31]_2 ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_ifu" *) 
 module system_top_system_e203_0_0_e203_ifu
    (ifu_o_valid,
     ifu_o_pc_vld,
@@ -55886,7 +55422,6 @@ module system_top_system_e203_0_0_e203_ifu
         .sram_icb_rsp_valid(sram_icb_rsp_valid));
 endmodule
 
-(* ORIG_REF_NAME = "e203_ifu_ifetch" *) 
 module system_top_system_e203_0_0_e203_ifu_ifetch
    (qout_r_reg_0_sp_1,
     ifu_o_pc_vld,
@@ -59401,7 +58936,6 @@ module system_top_system_e203_0_0_e203_ifu_ifetch
         .rs1xn_rdrf_r(rs1xn_rdrf_r));
 endmodule
 
-(* ORIG_REF_NAME = "e203_ifu_ift2icb" *) 
 module system_top_system_e203_0_0_e203_ifu_ift2icb
    (req_lane_cross_r,
     CO,
@@ -60032,7 +59566,6 @@ module system_top_system_e203_0_0_e203_ifu_ift2icb
         .rf2ifu_rs1(rf2ifu_rs1));
 endmodule
 
-(* ORIG_REF_NAME = "e203_ifu_litebpu" *) 
 module system_top_system_e203_0_0_e203_ifu_litebpu
    (rs1xn_rdrf_r,
     \qout_r_reg[0] ,
@@ -60055,7 +59588,6 @@ module system_top_system_e203_0_0_e203_ifu_litebpu
         .rs1xn_rdrf_r(rs1xn_rdrf_r));
 endmodule
 
-(* ORIG_REF_NAME = "e203_irq_sync" *) 
 module system_top_system_e203_0_0_e203_irq_sync
    (dbg_irq_r,
     ext_irq_r,
@@ -60136,7 +59668,6 @@ module system_top_system_e203_0_0_e203_irq_sync
         .tmr_irq_r(tmr_irq_r));
 endmodule
 
-(* ORIG_REF_NAME = "e203_itcm_ctrl" *) 
 module system_top_system_e203_0_0_e203_itcm_ctrl
    (\qout_r_reg[0] ,
     fifo_o_vld,
@@ -60428,7 +59959,6 @@ module system_top_system_e203_0_0_e203_itcm_ctrl
         .splt_fifo_o_valid(splt_fifo_o_valid));
 endmodule
 
-(* ORIG_REF_NAME = "e203_itcm_ram" *) 
 module system_top_system_e203_0_0_e203_itcm_ram
    (itcm_ram_dout,
     \mem[1].non_last.mem_r_reg_3_1 ,
@@ -60515,7 +60045,6 @@ module system_top_system_e203_0_0_e203_itcm_ram
         .\qout_r_reg[10]_0 (\qout_r_reg[10]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_lsu" *) 
 module system_top_system_e203_0_0_e203_lsu
    (\qout_r_reg[0] ,
     excl_flg_r,
@@ -61085,7 +60614,6 @@ module system_top_system_e203_0_0_e203_lsu
         .wbck_i_wdat00_out(wbck_i_wdat00_out));
 endmodule
 
-(* ORIG_REF_NAME = "e203_lsu_ctrl" *) 
 module system_top_system_e203_0_0_e203_lsu_ctrl
    (\qout_r_reg[0] ,
     excl_flg_r,
@@ -61788,7 +61316,6 @@ module system_top_system_e203_0_0_e203_lsu_ctrl
         .state_r(state_r));
 endmodule
 
-(* ORIG_REF_NAME = "e203_reset_ctrl" *) 
 module system_top_system_e203_0_0_e203_reset_ctrl
    (\master_gen.rst_sync_r_reg[1]_0 ,
     clk_16M,
@@ -61822,7 +61349,6 @@ module system_top_system_e203_0_0_e203_reset_ctrl
         .O(\master_gen.rst_sync_r_reg[1]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_soc_top" *) 
 module system_top_system_e203_0_0_e203_soc_top
    (ADDRARDADDR,
     \qout_r_reg[52] ,
@@ -62117,7 +61643,6 @@ module system_top_system_e203_0_0_e203_soc_top
         .\txd_reg[3] (\txd_reg[3] ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_srams" *) 
 module system_top_system_e203_0_0_e203_srams
    (itcm_ram_dout,
     DOBDO,
@@ -62298,7 +61823,6 @@ module system_top_system_e203_0_0_e203_srams
         .\qout_r_reg[10]_0 (\qout_r_reg[10]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "e203_subsys_clint" *) 
 module system_top_system_e203_0_0_e203_subsys_clint
    (io_rtcToggle_r,
     aon_rtcToggle_r,
@@ -62388,7 +61912,6 @@ module system_top_system_e203_0_0_e203_subsys_clint
         .tmr_irq_a(tmr_irq_a));
 endmodule
 
-(* ORIG_REF_NAME = "e203_subsys_main" *) 
 module system_top_system_e203_0_0_e203_subsys_main
    (ADDRARDADDR,
     \qout_r_reg[52] ,
@@ -63562,7 +63085,6 @@ module system_top_system_e203_0_0_e203_subsys_main
         .corerst(corerst));
 endmodule
 
-(* ORIG_REF_NAME = "e203_subsys_mems" *) 
 module system_top_system_e203_0_0_e203_subsys_mems
    (\qout_r_reg[1] ,
     buf_icb_cmd_valid,
@@ -64361,7 +63883,6 @@ module system_top_system_e203_0_0_e203_subsys_mems
         .\qout_r_reg[54] (u_sirv_mrom_top_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "e203_subsys_nice_core" *) 
 module system_top_system_e203_0_0_e203_subsys_nice_core
    (qout_r_reg,
     qout_r_reg_0_sp_1,
@@ -65315,7 +64836,6 @@ module system_top_system_e203_0_0_e203_subsys_nice_core
         .wbck_i_wdat0(wbck_i_wdat0));
 endmodule
 
-(* ORIG_REF_NAME = "e203_subsys_perips" *) 
 module system_top_system_e203_0_0_e203_subsys_perips
    (\qout_r_reg[1] ,
     D,
@@ -68144,7 +67664,6 @@ module system_top_system_e203_0_0_e203_subsys_perips
         .uart2_apb_penable(uart2_apb_penable));
 endmodule
 
-(* ORIG_REF_NAME = "e203_subsys_plic" *) 
 module system_top_system_e203_0_0_e203_subsys_plic
    (ext_irq_a,
     \irq_prio_r[1]_3 ,
@@ -68683,7 +68202,6 @@ module system_top_system_e203_0_0_e203_subsys_plic
         .wdg_irq_a(wdg_irq_a));
 endmodule
 
-(* ORIG_REF_NAME = "e203_subsys_top" *) 
 module system_top_system_e203_0_0_e203_subsys_top
    (ADDRARDADDR,
     \qout_r_reg[52] ,
@@ -69202,7 +68720,6 @@ module system_top_system_e203_0_0_e203_subsys_top
         .step_req_r(\u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_commit/u_e203_exu_excp/step_req_r ));
 endmodule
 
-(* ORIG_REF_NAME = "i2c_master_bit_ctrl" *) 
 module system_top_system_e203_0_0_i2c_master_bit_ctrl
    (scl_oen_reg_0,
     i2c_al,
@@ -73254,7 +72771,6 @@ module system_top_system_e203_0_0_i2c_master_bit_ctrl_282
         .Q(sto_condition));
 endmodule
 
-(* ORIG_REF_NAME = "i2c_master_byte_ctrl" *) 
 module system_top_system_e203_0_0_i2c_master_byte_ctrl
    (scl_oen_reg,
     al_reg,
@@ -74242,7 +73758,6 @@ module system_top_system_e203_0_0_i2c_master_byte_ctrl_281
         .O(tip0));
 endmodule
 
-(* ORIG_REF_NAME = "input_stage" *) 
 module system_top_system_e203_0_0_input_stage
    (\r_ls_clk_sync_reg[1]_0 ,
     \r_ls_clk_sync_reg[2]_0 ,
@@ -75344,7 +74859,6 @@ module system_top_system_e203_0_0_input_stage_279
         .Q(p_0_in_0[0]));
 endmodule
 
-(* ORIG_REF_NAME = "io_generic_fifo" *) 
 module system_top_system_e203_0_0_io_generic_fifo
    (Q,
     \regs_q_reg[65] ,
@@ -87110,7 +86624,6 @@ module system_top_system_e203_0_0_io_generic_fifo__parameterized0_241
         .O(regs_n__0));
 endmodule
 
-(* ORIG_REF_NAME = "prescaler" *) 
 module system_top_system_e203_0_0_prescaler
    (s_presc_evt,
     Q,
@@ -88294,7 +87807,6 @@ module system_top_system_e203_0_0_prescaler_280
         .Q(r_presc[7]));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_1cyc_sram_ctrl" *) 
 module system_top_system_e203_0_0_sirv_1cyc_sram_ctrl
    (ifu_holdup_ena,
     \qout_r_reg[0] ,
@@ -88420,7 +87932,6 @@ module system_top_system_e203_0_0_sirv_1cyc_sram_ctrl__parameterized0
         .\qout_r_reg[0]_3 (\qout_r_reg[0]_3 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_AsyncResetReg" *) 
 module system_top_system_e203_0_0_sirv_AsyncResetReg
    (jtag_reset,
     q_reg_0,
@@ -88450,7 +87961,6 @@ module system_top_system_e203_0_0_sirv_AsyncResetReg
         .Q(q_reg_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_AsyncResetRegVec" *) 
 module system_top_system_e203_0_0_sirv_AsyncResetRegVec
    (wdog_io_regs_key_read,
     q_reg,
@@ -88473,7 +87983,6 @@ module system_top_system_e203_0_0_sirv_AsyncResetRegVec
         .wdog_io_regs_key_read(wdog_io_regs_key_read));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_AsyncResetRegVec_1" *) 
 module system_top_system_e203_0_0_sirv_AsyncResetRegVec_1
    (q_reg,
     q_reg_0,
@@ -88558,7 +88067,6 @@ module system_top_system_e203_0_0_sirv_AsyncResetRegVec_1
         .q_reg_3(q_reg_6));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_AsyncResetRegVec_129" *) 
 module system_top_system_e203_0_0_sirv_AsyncResetRegVec_129
    (AS,
     clk_16M,
@@ -88691,7 +88199,6 @@ module system_top_system_e203_0_0_sirv_AsyncResetRegVec_129
         .q_reg_1(reg_10_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_AsyncResetRegVec_36" *) 
 module system_top_system_e203_0_0_sirv_AsyncResetRegVec_36
    (jtag_reset,
     CLK,
@@ -91141,7 +90648,6 @@ module system_top_system_e203_0_0_sirv_AsyncResetReg_99
         .Q(q_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_DeglitchShiftRegister" *) 
 module system_top_system_e203_0_0_sirv_DeglitchShiftRegister
    (sync,
     last,
@@ -91198,7 +90704,6 @@ module system_top_system_e203_0_0_sirv_DeglitchShiftRegister
         .O(last_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_LevelGateway" *) 
 module system_top_system_e203_0_0_sirv_LevelGateway
    (inFlight_reg_0,
     inFlight_reg_1,
@@ -91582,7 +91087,6 @@ module system_top_system_e203_0_0_sirv_LevelGateway_153
         .Q(inFlight_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_ResetCatchAndSync" *) 
 module system_top_system_e203_0_0_sirv_ResetCatchAndSync
    (jtag_reset,
     CLK,
@@ -91601,7 +91105,6 @@ module system_top_system_e203_0_0_sirv_ResetCatchAndSync
         .jtag_reset(jtag_reset));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_ResetCatchAndSync_2" *) 
 module system_top_system_e203_0_0_sirv_ResetCatchAndSync_2
    (AS,
     clk_16M,
@@ -91662,7 +91165,6 @@ module system_top_system_e203_0_0_sirv_ResetCatchAndSync_42
         .q_reg_0(q_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_aon" *) 
 module system_top_system_e203_0_0_sirv_aon
    (ip_reg,
     corerst,
@@ -95459,7 +94961,6 @@ module system_top_system_e203_0_0_sirv_aon
         .zerocmp_reg_0(wdog_n_70));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_aon_lclkgen_regs" *) 
 module system_top_system_e203_0_0_sirv_aon_lclkgen_regs
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -95482,7 +94983,6 @@ module system_top_system_e203_0_0_sirv_aon_lclkgen_regs
         .\qout_r_reg[0]_1 (\qout_r_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_aon_top" *) 
 module system_top_system_e203_0_0_sirv_aon_top
    (aon_rtc_irq_a,
     corerst,
@@ -95716,7 +95216,6 @@ module system_top_system_e203_0_0_sirv_aon_top
         .wdg_irq_a(wdg_irq_a));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_aon_wrapper" *) 
 module system_top_system_e203_0_0_sirv_aon_wrapper
    (aon_reset,
     ip_reg,
@@ -95874,7 +95373,6 @@ module system_top_system_e203_0_0_sirv_aon_wrapper
         .wdg_irq_a(wdg_irq_a));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_clint" *) 
 module system_top_system_e203_0_0_sirv_clint
    (T_907,
     Q,
@@ -97573,7 +97071,6 @@ module system_top_system_e203_0_0_sirv_clint
         .Q(T_915[41]));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_clint_top" *) 
 module system_top_system_e203_0_0_sirv_clint_top
    (io_rtcToggle_r,
     T_907,
@@ -97655,7 +97152,6 @@ module system_top_system_e203_0_0_sirv_clint_top
         .tmr_irq_a(tmr_irq_a));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_debug_csr" *) 
 module system_top_system_e203_0_0_sirv_debug_csr
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -97857,7 +97353,6 @@ module system_top_system_e203_0_0_sirv_debug_csr
         .reset0(reset0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_debug_module" *) 
 module system_top_system_e203_0_0_sirv_debug_module
    (dut_io_pads_jtag_TDO_o_oval,
     dbg_irq_a,
@@ -98296,7 +97791,6 @@ module system_top_system_e203_0_0_sirv_debug_module
         .reset0(reset0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_debug_ram" *) 
 module system_top_system_e203_0_0_sirv_debug_ram
    (ram_dout,
     \qout_r_reg[2] ,
@@ -98587,7 +98081,6 @@ module system_top_system_e203_0_0_sirv_debug_ram
         .reset0(reset0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_flash_qspi" *) 
 module system_top_system_e203_0_0_sirv_flash_qspi
    (I64,
     I66,
@@ -100214,7 +99707,6 @@ module system_top_system_e203_0_0_sirv_flash_qspi
         .O(\insn_addr_len_reg[2]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_flash_qspi_top" *) 
 module system_top_system_e203_0_0_sirv_flash_qspi_top
    (\T_27_reg[0] ,
     \T_29_reg[0] ,
@@ -100684,7 +100176,6 @@ module system_top_system_e203_0_0_sirv_flash_qspi_top
         .\txd_reg[3] (\txd_reg[3] ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_axi_buffer" *) 
 module system_top_system_e203_0_0_sirv_gnrl_axi_buffer
    (\qout_r_reg[0] ,
     \qout_r_reg[1] ,
@@ -101455,7 +100946,6 @@ module system_top_system_e203_0_0_sirv_gnrl_axi_buffer_350
         .\qout_r_reg[9] (\qout_r_reg[9] ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_bypbuf" *) 
 module system_top_system_e203_0_0_sirv_gnrl_bypbuf
    (\qout_r_reg[0] ,
     \qout_r_reg[12] ,
@@ -102120,7 +101610,6 @@ module system_top_system_e203_0_0_sirv_gnrl_bypbuf__parameterized1
         .\qout_r_reg[52] (\qout_r_reg[52] ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_cdc_rx" *) 
 module system_top_system_e203_0_0_sirv_gnrl_cdc_rx
    (\qout_r_reg[0] ,
     i_aon_icb_rsp_valid,
@@ -102694,7 +102183,6 @@ module system_top_system_e203_0_0_sirv_gnrl_cdc_rx__parameterized2
         .isl_icb_cmd_valid(isl_icb_cmd_valid));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_cdc_tx" *) 
 module system_top_system_e203_0_0_sirv_gnrl_cdc_tx
    (aon_icb_cmd_valid,
     \qout_r_reg[0] ,
@@ -103026,7 +102514,6 @@ module system_top_system_e203_0_0_sirv_gnrl_cdc_tx__parameterized2
         .\qout_r_reg[0]_0 (o_rdy_sync_dffr_n_1));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_dffl" *) 
 module system_top_system_e203_0_0_sirv_gnrl_dffl
    (\qout_r_reg[12]_0 ,
     \qout_r_reg[10]_0 ,
@@ -158204,7 +157691,6 @@ module system_top_system_e203_0_0_sirv_gnrl_dffl__parameterized9
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_dfflr" *) 
 module system_top_system_e203_0_0_sirv_gnrl_dfflr
    (\qout_r_reg[5]_0 ,
     E,
@@ -221138,7 +220624,6 @@ module system_top_system_e203_0_0_sirv_gnrl_dfflr__parameterized9_28
         .Q(\qout_r_reg[40]_0 [9]));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_dfflrs" *) 
 module system_top_system_e203_0_0_sirv_gnrl_dfflrs
    (\qout_r_reg[0]_0 ,
     \qout_r_reg[0]_1 ,
@@ -224832,7 +224317,6 @@ module system_top_system_e203_0_0_sirv_gnrl_dfflrs_565
         .Q(\qout_r_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_dffr" *) 
 module system_top_system_e203_0_0_sirv_gnrl_dffr
    (o_rdy_sync_r,
     o_rdy_sync,
@@ -226294,7 +225778,6 @@ module system_top_system_e203_0_0_sirv_gnrl_dffr__parameterized1
         .Q(Q[4]));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_dffrs" *) 
 module system_top_system_e203_0_0_sirv_gnrl_dffrs
    (reset_flag_r,
     \qout_r_reg[0]_0 ,
@@ -226367,7 +225850,6 @@ module system_top_system_e203_0_0_sirv_gnrl_dffrs
         .Q(reset_flag_r));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_fifo" *) 
 module system_top_system_e203_0_0_sirv_gnrl_fifo
    (\qout_r_reg[0] ,
     \qout_r_reg[12] ,
@@ -237316,7 +236798,6 @@ module system_top_system_e203_0_0_sirv_gnrl_fifo__parameterized9_361
         .O(expl_axi_awsize));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_icb2apb" *) 
 module system_top_system_e203_0_0_sirv_gnrl_icb2apb
    (E,
     gpioA_apb_penable,
@@ -238119,7 +237600,6 @@ module system_top_system_e203_0_0_sirv_gnrl_icb2apb_170
         .uart2_apb_icb_rsp_ready(uart2_apb_icb_rsp_ready));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_icb2axi" *) 
 module system_top_system_e203_0_0_sirv_gnrl_icb2axi
    (expl_axi_icb_rsp_valid,
     expl_axi_icb_cmd_ready,
@@ -238823,7 +238303,6 @@ module system_top_system_e203_0_0_sirv_gnrl_icb2axi__parameterized0
         .\qout_r_reg[3]_0 (\qout_r_reg[3]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_icb_arbt" *) 
 module system_top_system_e203_0_0_sirv_gnrl_icb_arbt
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -239027,7 +238506,6 @@ module system_top_system_e203_0_0_sirv_gnrl_icb_arbt__parameterized2
         .\qout_r_reg[0]_2 (\qout_r_reg[0]_2 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_icb_buffer" *) 
 module system_top_system_e203_0_0_sirv_gnrl_icb_buffer
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -243983,7 +243461,6 @@ module system_top_system_e203_0_0_sirv_gnrl_icb_buffer__parameterized0_330
         .qspi0_ro_icb_rsp_ready(qspi0_ro_icb_rsp_ready));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_icb_n2w" *) 
 module system_top_system_e203_0_0_sirv_gnrl_icb_n2w
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -244022,7 +243499,6 @@ module system_top_system_e203_0_0_sirv_gnrl_icb_n2w
         .\qout_r_reg[0]_5 (\qout_r_reg[0]_5 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_icb_splt" *) 
 module system_top_system_e203_0_0_sirv_gnrl_icb_splt
    (rspid_fifo_o_valid,
     \qout_r_reg[0] ,
@@ -245237,7 +244713,6 @@ module system_top_system_e203_0_0_sirv_gnrl_icb_splt__parameterized2
         .\qout_r_reg[30]_0 (\qout_r_reg[30]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_pipe_stage" *) 
 module system_top_system_e203_0_0_sirv_gnrl_pipe_stage
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -247660,7 +247135,6 @@ module system_top_system_e203_0_0_sirv_gnrl_pipe_stage__parameterized7
         .\qout_r_reg[30]_1 (\qout_r_reg[1] ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_ram" *) 
 module system_top_system_e203_0_0_sirv_gnrl_ram
    (itcm_ram_dout,
     \mem[1].non_last.mem_r_reg_3_1 ,
@@ -247850,7 +247324,6 @@ module system_top_system_e203_0_0_sirv_gnrl_ram__parameterized0
         .\mem[1].non_last.mem_r_reg_3_3_0 (\mem[1].non_last.mem_r_reg_3_3 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_gnrl_sync" *) 
 module system_top_system_e203_0_0_sirv_gnrl_sync
    (o_rdy_sync,
     p_12_in,
@@ -248401,7 +247874,6 @@ module system_top_system_e203_0_0_sirv_gnrl_sync_76
         .\qout_r_reg[0]_0 (\sync_gen[0].i_is_0.sync_dffr_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_hclkgen_regs" *) 
 module system_top_system_e203_0_0_sirv_hclkgen_regs
    (\qout_r_reg[0] ,
     \qout_r_reg[0]_0 ,
@@ -248598,7 +248070,6 @@ module system_top_system_e203_0_0_sirv_hclkgen_regs
         .\qout_r_reg[0]_0 (\qout_r_reg[0]_15 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_icb1to16_bus" *) 
 module system_top_system_e203_0_0_sirv_icb1to16_bus
    (\qout_r_reg[1] ,
     \qout_r_reg[0]_rep ,
@@ -251912,7 +251383,6 @@ module system_top_system_e203_0_0_sirv_icb1to16_bus
         .wr(wr));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_icb1to2_bus" *) 
 module system_top_system_e203_0_0_sirv_icb1to2_bus
    (rspid_fifo_o_valid,
     \qout_r_reg[0] ,
@@ -251999,7 +251469,6 @@ module system_top_system_e203_0_0_sirv_icb1to2_bus
         .\qout_r_reg[30]_0 (\qout_r_reg[30]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_icb1to8_bus" *) 
 module system_top_system_e203_0_0_sirv_icb1to8_bus
    (\qout_r_reg[1] ,
     \qout_r_reg[0] ,
@@ -252979,7 +252448,6 @@ module system_top_system_e203_0_0_sirv_icb1to8_bus
         .sethaltnot_r(sethaltnot_r));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_jtag_dtm" *) 
 module system_top_system_e203_0_0_sirv_jtag_dtm
    (dut_io_pads_jtag_TDO_o_oval,
     dtm_req_valid,
@@ -254163,7 +253631,6 @@ module system_top_system_e203_0_0_sirv_jtag_dtm
         .\qout_r_reg[40]_0 (dbusReg));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_mrom" *) 
 module system_top_system_e203_0_0_sirv_mrom
    (\qout_r_reg[54] ,
     \qout_r_reg[1] ,
@@ -254219,7 +253686,6 @@ module system_top_system_e203_0_0_sirv_mrom
         .O(\qout_r[18]_i_9_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_mrom_top" *) 
 module system_top_system_e203_0_0_sirv_mrom_top
    (\qout_r_reg[54] ,
     \qout_r_reg[1] ,
@@ -254266,7 +253732,6 @@ module system_top_system_e203_0_0_sirv_mrom_top
         .\qout_r_reg[54] (\qout_r_reg[54] ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_plic_man" *) 
 module system_top_system_e203_0_0_sirv_plic_man
    (ext_irq_a,
     \qout_r_reg[2] ,
@@ -255398,7 +254863,6 @@ module system_top_system_e203_0_0_sirv_plic_man
         .inFlight_reg_1(\source_gen[9].irq_pend_dfflr_n_2 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_plic_top" *) 
 module system_top_system_e203_0_0_sirv_plic_top
    (ext_irq_a,
     \qout_r_reg[2] ,
@@ -255938,7 +255402,6 @@ module system_top_system_e203_0_0_sirv_plic_top
         .\qout_r_reg[31] (\qout_r_reg[31] ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_pmu" *) 
 module system_top_system_e203_0_0_sirv_pmu
    (run,
     pmu_io_regs_key_read,
@@ -256361,7 +255824,6 @@ module system_top_system_e203_0_0_sirv_pmu
         .Q(wdog_reset_r));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_pmu_core" *) 
 module system_top_system_e203_0_0_sirv_pmu_core
    (run_reg_0,
     pmu_io_regs_key_read,
@@ -258915,7 +258377,6 @@ module system_top_system_e203_0_0_sirv_pmu_core
         .Q(pmu_io_regs_sleep_read));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_qspi_arbiter" *) 
 module system_top_system_e203_0_0_sirv_qspi_arbiter
    (T_453,
     sel_0_reg_0,
@@ -259207,7 +258668,6 @@ module system_top_system_e203_0_0_sirv_qspi_arbiter
         .O(sel_0_reg_4));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_qspi_fifo" *) 
 module system_top_system_e203_0_0_sirv_qspi_fifo
    (\T_27_reg[0] ,
     \T_29_reg[0] ,
@@ -259439,7 +258899,6 @@ module system_top_system_e203_0_0_sirv_qspi_fifo
         .sel_0_reg_3(sel_0_reg_2));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_qspi_flashmap" *) 
 module system_top_system_e203_0_0_sirv_qspi_flashmap
    (CO,
     qspi0_ro_icb_rsp_valid,
@@ -260712,7 +260171,6 @@ module system_top_system_e203_0_0_sirv_qspi_flashmap
         .O(sel_0_reg_5));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_qspi_media" *) 
 module system_top_system_e203_0_0_sirv_qspi_media
    (mac_io_link_rx_valid,
     mac_io_link_active,
@@ -261238,7 +260696,6 @@ module system_top_system_e203_0_0_sirv_qspi_media
         .Q(\state_reg_n_0_[1] ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_qspi_physical" *) 
 module system_top_system_e203_0_0_sirv_qspi_physical
    (done_reg_0,
     qspi0_sck,
@@ -263652,7 +263109,6 @@ module system_top_system_e203_0_0_sirv_qspi_physical
         .Q(xfr));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_queue" *) 
 module system_top_system_e203_0_0_sirv_queue
    (maybe_full,
     \ram_index_reg[4]_0 ,
@@ -269230,7 +268686,6 @@ module system_top_system_e203_0_0_sirv_queue
         .O(wantSleep_i_2_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_queue_1" *) 
 module system_top_system_e203_0_0_sirv_queue_1
    (I66,
     \ctrl_sck_div_reg[4] ,
@@ -269932,7 +269387,6 @@ module system_top_system_e203_0_0_sirv_queue_1_195
         .O(flash_en_reg));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_repeater_6" *) 
 module system_top_system_e203_0_0_sirv_repeater_6
    (\saved_size_reg[1]_0 ,
     full_reg_0,
@@ -270586,7 +270040,6 @@ module system_top_system_e203_0_0_sirv_repeater_6
         .O(full_reg_1));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_rtc" *) 
 module system_top_system_e203_0_0_sirv_rtc
    (q_reg,
     ip_reg_0,
@@ -272343,7 +271796,6 @@ module system_top_system_e203_0_0_sirv_rtc
         .Q(q_reg[2]));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_sim_ram" *) 
 module system_top_system_e203_0_0_sirv_sim_ram
    (itcm_ram_dout,
     \mem[1].non_last.mem_r_reg_3_1_0 ,
@@ -275055,7 +274507,6 @@ module system_top_system_e203_0_0_sirv_sim_ram__parameterized0
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_sram_icb_ctrl" *) 
 module system_top_system_e203_0_0_sirv_sram_icb_ctrl
    (\qout_r_reg[0] ,
     ADDRBWRADDR,
@@ -275481,7 +274932,6 @@ module system_top_system_e203_0_0_sirv_sram_icb_ctrl__parameterized0
         .\qout_r_reg[0]_3 (\qout_r_reg[0]_7 ));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_tlfragmenter_qspi_1" *) 
 module system_top_system_e203_0_0_sirv_tlfragmenter_qspi_1
    (saved_size,
     repeater_io_full,
@@ -275837,7 +275287,6 @@ module system_top_system_e203_0_0_sirv_tlfragmenter_qspi_1
         .\saved_size_reg[1]_0 (saved_size));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_tlwidthwidget_qspi" *) 
 module system_top_system_e203_0_0_sirv_tlwidthwidget_qspi
    (qspi0_ro_icb_rsp_rdata,
     Q,
@@ -276119,7 +275568,6 @@ module system_top_system_e203_0_0_sirv_tlwidthwidget_qspi
         .O(qspi0_ro_icb_rsp_rdata[7]));
 endmodule
 
-(* ORIG_REF_NAME = "sirv_wdog" *) 
 module system_top_system_e203_0_0_sirv_wdog
    (wdog_io_regs_cfg_read,
     wdog_io_regs_key_read,
@@ -276979,7 +276427,6 @@ module system_top_system_e203_0_0_sirv_wdog
         .Q(wdog_io_regs_cfg_read[5]));
 endmodule
 
-(* ORIG_REF_NAME = "spi_master_apb_if" *) 
 module system_top_system_e203_0_0_spi_master_apb_if
    (s_int_en,
     spi_swrst,
@@ -284928,7 +284375,6 @@ module system_top_system_e203_0_0_spi_master_apb_if_244
         .O(spi_qwr_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "spi_master_clkgen" *) 
 module system_top_system_e203_0_0_spi_master_clkgen
    (\FSM_sequential_state_reg[0] ,
     running_reg_0,
@@ -286372,7 +285818,6 @@ module system_top_system_e203_0_0_spi_master_clkgen_248
         .O(running_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "spi_master_controller" *) 
 module system_top_system_e203_0_0_spi_master_controller
    (CO,
     do_rx_reg_0,
@@ -288180,7 +287625,6 @@ module system_top_system_e203_0_0_spi_master_controller_246
         .\tx_CS_reg[0]_6 (\tx_CS[0]_i_2_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "spi_master_fifo" *) 
 module system_top_system_e203_0_0_spi_master_fifo
    (Q,
     \elements_reg[4]_0 ,
@@ -303392,7 +302836,6 @@ module system_top_system_e203_0_0_spi_master_fifo_247
         .O(\elements_reg[4]_1 ));
 endmodule
 
-(* ORIG_REF_NAME = "spi_master_rx" *) 
 module system_top_system_e203_0_0_spi_master_rx
    (\counter_trgt_reg[15]_0 ,
     rx_CS,
@@ -306436,7 +305879,6 @@ module system_top_system_e203_0_0_spi_master_rx_249
         .O(spi_clk_reg));
 endmodule
 
-(* ORIG_REF_NAME = "spi_master_tx" *) 
 module system_top_system_e203_0_0_spi_master_tx
    (CO,
     \FSM_sequential_state_reg[2] ,
@@ -311142,7 +310584,6 @@ module system_top_system_e203_0_0_spi_master_tx_250
         .Q(tx_CS));
 endmodule
 
-(* ORIG_REF_NAME = "system" *) 
 module system_top_system_e203_0_0_system
    (ADDRARDADDR,
     \qout_r_reg[52] ,
@@ -312104,7 +311545,443 @@ module system_top_system_e203_0_0_system
        (.O(qspi0_dq[3]));
 endmodule
 
-(* ORIG_REF_NAME = "timer_cntrl" *) 
+(* CHECK_LICENSE_TYPE = "system_top_system_e203_0_0,system,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
+(* X_CORE_INFO = "system,Vivado 2020.2" *) 
+(* NotValidForBitStream *)
+module system_top_system_e203_0_0
+   (clk_16M,
+    CLK32768KHZ,
+    ck_rst,
+    qspi0_cs,
+    qspi0_sck,
+    qspi0_dq,
+    gpioA,
+    gpioB,
+    expl_axi_arvalid,
+    expl_axi_arready,
+    expl_axi_araddr,
+    expl_axi_arcache,
+    expl_axi_arprot,
+    expl_axi_arlock,
+    expl_axi_arburst,
+    expl_axi_arlen,
+    expl_axi_arsize,
+    expl_axi_awvalid,
+    expl_axi_awready,
+    expl_axi_awaddr,
+    expl_axi_awcache,
+    expl_axi_awprot,
+    expl_axi_awlock,
+    expl_axi_awburst,
+    expl_axi_awlen,
+    expl_axi_awsize,
+    expl_axi_rvalid,
+    expl_axi_rready,
+    expl_axi_rdata,
+    expl_axi_rresp,
+    expl_axi_rlast,
+    expl_axi_wvalid,
+    expl_axi_wready,
+    expl_axi_wdata,
+    expl_axi_wstrb,
+    expl_axi_wlast,
+    expl_axi_bvalid,
+    expl_axi_bready,
+    expl_axi_bresp,
+    mcu_TDO,
+    mcu_TCK,
+    mcu_TDI,
+    mcu_TMS,
+    pmu_paden,
+    pmu_padrst,
+    mcu_wakeup);
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk_16M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk_16M, FREQ_HZ 16000000, ASSOCIATED_BUSIF expl_axi, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk_16M;
+  input CLK32768KHZ;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ck_rst;
+  output qspi0_cs;
+  output qspi0_sck;
+  inout [3:0]qspi0_dq;
+  inout [31:0]gpioA;
+  inout [31:0]gpioB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARVALID" *) output expl_axi_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARREADY" *) input expl_axi_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARADDR" *) output [31:0]expl_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARCACHE" *) output [3:0]expl_axi_arcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARPROT" *) output [2:0]expl_axi_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARLOCK" *) output [1:0]expl_axi_arlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARBURST" *) output [1:0]expl_axi_arburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARLEN" *) output [3:0]expl_axi_arlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi ARSIZE" *) output [2:0]expl_axi_arsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWVALID" *) output expl_axi_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWREADY" *) input expl_axi_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWADDR" *) output [31:0]expl_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWCACHE" *) output [3:0]expl_axi_awcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWPROT" *) output [2:0]expl_axi_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWLOCK" *) output [1:0]expl_axi_awlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWBURST" *) output [1:0]expl_axi_awburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWLEN" *) output [3:0]expl_axi_awlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi AWSIZE" *) output [2:0]expl_axi_awsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RVALID" *) input expl_axi_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RREADY" *) output expl_axi_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RDATA" *) input [31:0]expl_axi_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RRESP" *) input [1:0]expl_axi_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi RLAST" *) input expl_axi_rlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WVALID" *) output expl_axi_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WREADY" *) input expl_axi_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WDATA" *) output [31:0]expl_axi_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WSTRB" *) output [3:0]expl_axi_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi WLAST" *) output expl_axi_wlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi BVALID" *) input expl_axi_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi BREADY" *) output expl_axi_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 expl_axi BRESP" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME expl_axi, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 16000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [1:0]expl_axi_bresp;
+  inout mcu_TDO;
+  inout mcu_TCK;
+  inout mcu_TDI;
+  inout mcu_TMS;
+  inout pmu_paden;
+  inout pmu_padrst;
+  inout mcu_wakeup;
+
+  wire \<const0> ;
+  wire CLK32768KHZ;
+  wire ck_rst;
+  wire clk_16M;
+  wire [13:0]\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr ;
+  wire [12:0]\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr ;
+  wire \dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ;
+  wire \dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ;
+  wire [30:0]\^expl_axi_araddr ;
+  wire expl_axi_arready;
+  wire [1:1]\^expl_axi_arsize ;
+  wire expl_axi_arvalid;
+  wire [30:0]\^expl_axi_awaddr ;
+  wire expl_axi_awready;
+  wire [1:1]\^expl_axi_awsize ;
+  wire expl_axi_awvalid;
+  wire expl_axi_bready;
+  wire [1:0]expl_axi_bresp;
+  wire expl_axi_bvalid;
+  wire [31:0]expl_axi_rdata;
+  wire expl_axi_rready;
+  wire [1:0]expl_axi_rresp;
+  wire expl_axi_rvalid;
+  wire [31:0]expl_axi_wdata;
+  wire expl_axi_wlast;
+  wire expl_axi_wready;
+  wire [3:0]expl_axi_wstrb;
+  wire expl_axi_wvalid;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire [31:0]gpioA;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire [31:0]gpioB;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_TCK;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_TDI;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_TDO;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_TMS;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire mcu_wakeup;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_33_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_34__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_34_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_35__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_35_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_36__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_36_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_37__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_37_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_38__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_38_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_39__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_39_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_40__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_40_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_41__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_41_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_42__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_42_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_43__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_43_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_44__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_44_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_45__0_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_45_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_46_n_0 ;
+  wire \mem[1].non_last.mem_r_reg_0_0_i_47_n_0 ;
+  wire pmu_paden;
+  wire pmu_padrst;
+  wire qspi0_cs;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire [3:0]qspi0_dq;
+  wire qspi0_sck;
+
+  assign expl_axi_araddr[31] = \<const0> ;
+  assign expl_axi_araddr[30:0] = \^expl_axi_araddr [30:0];
+  assign expl_axi_arburst[1] = \<const0> ;
+  assign expl_axi_arburst[0] = \<const0> ;
+  assign expl_axi_arcache[3] = \<const0> ;
+  assign expl_axi_arcache[2] = \<const0> ;
+  assign expl_axi_arcache[1] = \<const0> ;
+  assign expl_axi_arcache[0] = \<const0> ;
+  assign expl_axi_arlen[3] = \<const0> ;
+  assign expl_axi_arlen[2] = \<const0> ;
+  assign expl_axi_arlen[1] = \<const0> ;
+  assign expl_axi_arlen[0] = \<const0> ;
+  assign expl_axi_arlock[1] = \<const0> ;
+  assign expl_axi_arlock[0] = \<const0> ;
+  assign expl_axi_arprot[2] = \<const0> ;
+  assign expl_axi_arprot[1] = \<const0> ;
+  assign expl_axi_arprot[0] = \<const0> ;
+  assign expl_axi_arsize[2] = \<const0> ;
+  assign expl_axi_arsize[1] = \^expl_axi_arsize [1];
+  assign expl_axi_arsize[0] = \<const0> ;
+  assign expl_axi_awaddr[31] = \<const0> ;
+  assign expl_axi_awaddr[30:0] = \^expl_axi_awaddr [30:0];
+  assign expl_axi_awburst[1] = \<const0> ;
+  assign expl_axi_awburst[0] = \<const0> ;
+  assign expl_axi_awcache[3] = \<const0> ;
+  assign expl_axi_awcache[2] = \<const0> ;
+  assign expl_axi_awcache[1] = \<const0> ;
+  assign expl_axi_awcache[0] = \<const0> ;
+  assign expl_axi_awlen[3] = \<const0> ;
+  assign expl_axi_awlen[2] = \<const0> ;
+  assign expl_axi_awlen[1] = \<const0> ;
+  assign expl_axi_awlen[0] = \<const0> ;
+  assign expl_axi_awlock[1] = \<const0> ;
+  assign expl_axi_awlock[0] = \<const0> ;
+  assign expl_axi_awprot[2] = \<const0> ;
+  assign expl_axi_awprot[1] = \<const0> ;
+  assign expl_axi_awprot[0] = \<const0> ;
+  assign expl_axi_awsize[2] = \<const0> ;
+  assign expl_axi_awsize[1] = \^expl_axi_awsize [1];
+  assign expl_axi_awsize[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  system_top_system_e203_0_0_system inst
+       (.ADDRARDADDR(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr ),
+        .CLK32768KHZ(CLK32768KHZ),
+        .D({expl_axi_rdata,expl_axi_rresp[1]}),
+        .ck_rst(ck_rst),
+        .clk_16M(clk_16M),
+        .expl_axi_araddr(\^expl_axi_araddr ),
+        .expl_axi_arready(expl_axi_arready),
+        .expl_axi_arsize(\^expl_axi_arsize ),
+        .expl_axi_arvalid(expl_axi_arvalid),
+        .expl_axi_awaddr(\^expl_axi_awaddr ),
+        .expl_axi_awready(expl_axi_awready),
+        .expl_axi_awsize(\^expl_axi_awsize ),
+        .expl_axi_awvalid(expl_axi_awvalid),
+        .expl_axi_bready(expl_axi_bready),
+        .expl_axi_bresp(expl_axi_bresp[1]),
+        .expl_axi_bvalid(expl_axi_bvalid),
+        .expl_axi_rready(expl_axi_rready),
+        .expl_axi_rvalid(expl_axi_rvalid),
+        .expl_axi_wdata(expl_axi_wdata),
+        .expl_axi_wlast(expl_axi_wlast),
+        .expl_axi_wready(expl_axi_wready),
+        .expl_axi_wstrb(expl_axi_wstrb),
+        .expl_axi_wvalid(expl_axi_wvalid),
+        .gpioA(gpioA),
+        .gpioB(gpioB),
+        .mcu_TCK(mcu_TCK),
+        .mcu_TDI(mcu_TDI),
+        .mcu_TDO(mcu_TDO),
+        .mcu_TMS(mcu_TMS),
+        .mcu_wakeup(mcu_wakeup),
+        .\mem[1].non_last.mem_r_reg_0_0 (\mem[1].non_last.mem_r_reg_0_0_i_33_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_0 (\mem[1].non_last.mem_r_reg_0_0_i_34_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_1 (\mem[1].non_last.mem_r_reg_0_0_i_35_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_10 (\mem[1].non_last.mem_r_reg_0_0_i_44_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_11 (\mem[1].non_last.mem_r_reg_0_0_i_45_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_12 (\mem[1].non_last.mem_r_reg_0_0_i_34__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_13 (\mem[1].non_last.mem_r_reg_0_0_i_35__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_14 (\mem[1].non_last.mem_r_reg_0_0_i_36__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_15 (\mem[1].non_last.mem_r_reg_0_0_i_37__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_16 (\mem[1].non_last.mem_r_reg_0_0_i_38__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_17 (\mem[1].non_last.mem_r_reg_0_0_i_39__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_18 (\mem[1].non_last.mem_r_reg_0_0_i_40__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_19 (\mem[1].non_last.mem_r_reg_0_0_i_41__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_2 (\mem[1].non_last.mem_r_reg_0_0_i_36_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_20 (\mem[1].non_last.mem_r_reg_0_0_i_42__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_21 (\mem[1].non_last.mem_r_reg_0_0_i_43__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_22 (\mem[1].non_last.mem_r_reg_0_0_i_44__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_23 (\mem[1].non_last.mem_r_reg_0_0_i_45__0_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_24 (\mem[1].non_last.mem_r_reg_0_0_i_46_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_25 (\mem[1].non_last.mem_r_reg_0_0_i_47_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_3 (\mem[1].non_last.mem_r_reg_0_0_i_37_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_4 (\mem[1].non_last.mem_r_reg_0_0_i_38_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_5 (\mem[1].non_last.mem_r_reg_0_0_i_39_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_6 (\mem[1].non_last.mem_r_reg_0_0_i_40_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_7 (\mem[1].non_last.mem_r_reg_0_0_i_41_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_8 (\mem[1].non_last.mem_r_reg_0_0_i_42_n_0 ),
+        .\mem[1].non_last.mem_r_reg_0_0_9 (\mem[1].non_last.mem_r_reg_0_0_i_43_n_0 ),
+        .pmu_paden(pmu_paden),
+        .pmu_padrst(pmu_padrst),
+        .\qout_r_reg[52] (\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr ),
+        .qspi0_cs(qspi0_cs),
+        .qspi0_dq(qspi0_dq),
+        .qspi0_sck(qspi0_sck),
+        .ren(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .ren_0(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_33 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [12]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_33_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_34 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [11]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_34_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_34__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [13]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_34__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_35 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [10]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_35_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_35__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [12]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_35__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_36 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [9]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_36_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_36__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [11]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_36__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_37 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [8]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_37_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_37__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [10]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_37__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_38 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [7]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_38_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_38__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [9]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_38__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_39 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [6]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_39_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_39__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [8]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_39__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_40 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [5]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_40_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_40__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [7]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_40__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_41 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [4]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_41_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_41__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [6]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_41__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_42 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [3]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_42_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_42__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [5]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_42__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_43 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [2]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_43_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_43__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [4]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_43__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_44 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [1]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_44_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_44__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [3]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_44__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_45 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/itcm_ram_addr [0]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_45_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_45__0 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [2]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_45__0_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_46 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [1]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_46_n_0 ),
+        .R(1'b0));
+  FDRE \mem[1].non_last.mem_r_reg_0_0_i_47 
+       (.C(clk_16M),
+        .CE(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/ren ),
+        .D(\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/dtcm_ram_addr [0]),
+        .Q(\mem[1].non_last.mem_r_reg_0_0_i_47_n_0 ),
+        .R(1'b0));
+endmodule
+
 module system_top_system_e203_0_0_timer_cntrl
    (r_active_reg_0,
     r_active_reg_1,
@@ -312436,7 +312313,6 @@ module system_top_system_e203_0_0_timer_cntrl_277
         .O(r_active_reg_1));
 endmodule
 
-(* ORIG_REF_NAME = "timer_module" *) 
 module system_top_system_e203_0_0_timer_module
    (s_ctrl_active,
     Q,
@@ -313888,7 +313764,6 @@ module system_top_system_e203_0_0_timer_module_253
         .s_timer3_apb_rst(s_timer3_apb_rst));
 endmodule
 
-(* ORIG_REF_NAME = "uart_interrupt" *) 
 module system_top_system_e203_0_0_uart_interrupt
    (IIR_o,
     \iir_q_reg[2]_0 ,
@@ -314152,7 +314027,6 @@ module system_top_system_e203_0_0_uart_interrupt_238
         .O(\iir_q_reg[2]_1 ));
 endmodule
 
-(* ORIG_REF_NAME = "uart_rx" *) 
 module system_top_system_e203_0_0_uart_rx
    (\FSM_sequential_CS_reg[1]_0 ,
     err_o_reg_0,
@@ -316990,7 +316864,6 @@ module system_top_system_e203_0_0_uart_rx_240
         .Q(p_0_in));
 endmodule
 
-(* ORIG_REF_NAME = "uart_tx" *) 
 module system_top_system_e203_0_0_uart_tx
    (\FSM_sequential_CS_reg[2]_0 ,
     \FSM_sequential_CS_reg[1]_0 ,
@@ -319627,7 +319500,6 @@ module system_top_system_e203_0_0_uart_tx_242
         .O(\FSM_sequential_CS_reg[0]_1 ));
 endmodule
 
-(* ORIG_REF_NAME = "up_down_counter" *) 
 module system_top_system_e203_0_0_up_down_counter
    (s_cnt_saw,
     CO,

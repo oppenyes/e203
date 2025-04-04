@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 -- Date        : Fri Apr  4 11:30:22 2025
 -- Host        : Lab running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top system_top_axi_gpio_0_0 -prefix
+--               system_top_axi_gpio_0_0_ system_top_axi_gpio_0_0_stub.vhdl
 -- Design      : system_top_axi_gpio_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a200tfbg484-2

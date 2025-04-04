@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tfbg484-2
 
@@ -113,6 +114,10 @@ set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0_board.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/src/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/src/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/src/200T_lcd+snake.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2_ooc.xdc]
 set_property used_in_synthesis false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0_1/system_top_auto_cc_0_clocks.xdc]

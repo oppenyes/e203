@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Apr  5 00:36:16 2025
+| Date         : Sat Apr  5 01:05:11 2025
 | Host         : Lab running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_top_wrapper_utilization_synth.rpt -pb system_top_wrapper_utilization_synth.pb
 | Design       : system_top_wrapper
@@ -168,6 +168,7 @@ Table of Contents
 | system_top_proc_sys_reset_1_0     |    1 |
 | system_top_proc_sys_reset_0_0     |    1 |
 | system_top_mig_7series_0_1        |    1 |
+| system_top_lcd_rgb_snake_0_0      |    1 |
 | system_top_clk_wiz_0_0            |    1 |
 | system_top_axi_lite_for_snake_0_0 |    1 |
 | system_top_axi_gpio_0_0           |    1 |

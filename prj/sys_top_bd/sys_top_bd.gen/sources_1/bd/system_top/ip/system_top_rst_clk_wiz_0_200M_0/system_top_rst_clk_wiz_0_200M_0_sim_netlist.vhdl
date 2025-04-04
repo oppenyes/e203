@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 -- Date        : Thu Feb  6 00:14:56 2025
 -- Host        : lab101 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/oppenyes/workspace/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_top_rst_clk_wiz_0_200M_0 -prefix
+--               system_top_rst_clk_wiz_0_200M_0_ system_top_rst_clk_wiz_0_200M_0_sim_netlist.vhdl
 -- Design      : system_top_rst_clk_wiz_0_200M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity system_top_rst_clk_wiz_0_200M_0_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_rst_clk_wiz_0_200M_0_cdc_sync : entity is "cdc_sync";
 end system_top_rst_clk_wiz_0_200M_0_cdc_sync;
 
 architecture STRUCTURE of system_top_rst_clk_wiz_0_200M_0_cdc_sync is
@@ -237,8 +235,6 @@ entity system_top_rst_clk_wiz_0_200M_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_rst_clk_wiz_0_200M_0_upcnt_n : entity is "upcnt_n";
 end system_top_rst_clk_wiz_0_200M_0_upcnt_n;
 
 architecture STRUCTURE of system_top_rst_clk_wiz_0_200M_0_upcnt_n is
@@ -403,8 +399,6 @@ entity system_top_rst_clk_wiz_0_200M_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_rst_clk_wiz_0_200M_0_lpf : entity is "lpf";
 end system_top_rst_clk_wiz_0_200M_0_lpf;
 
 architecture STRUCTURE of system_top_rst_clk_wiz_0_200M_0_lpf is
@@ -591,8 +585,6 @@ entity system_top_rst_clk_wiz_0_200M_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_rst_clk_wiz_0_200M_0_sequence_psr : entity is "sequence_psr";
 end system_top_rst_clk_wiz_0_200M_0_sequence_psr;
 
 architecture STRUCTURE of system_top_rst_clk_wiz_0_200M_0_sequence_psr is
@@ -931,8 +923,6 @@ entity system_top_rst_clk_wiz_0_200M_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of system_top_rst_clk_wiz_0_200M_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of system_top_rst_clk_wiz_0_200M_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_top_rst_clk_wiz_0_200M_0_proc_sys_reset : entity is "proc_sys_reset";
 end system_top_rst_clk_wiz_0_200M_0_proc_sys_reset;
 
 architecture STRUCTURE of system_top_rst_clk_wiz_0_200M_0_proc_sys_reset is

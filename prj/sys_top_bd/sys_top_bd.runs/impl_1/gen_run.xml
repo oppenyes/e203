@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1743784509">
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1743786225">
   <File Type="BITSTR-BMM" Name="system_top_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="system_top_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="system_top_wrapper_timing_summary_init.rpt"/>
@@ -141,9 +141,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="system_top_system_e203_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_top_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_top_util_vector_logic_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_top_rst_clk_wiz_0_200M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_top_lcd_rgb_snake_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_top_axi_lite_for_snake_0_0"/>
 </GenRun>
