@@ -16,7 +16,7 @@
             <spirit:name>RST</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>sys_rst_n</spirit:name>
+            <spirit:name>rst_n</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -131,11 +131,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 04 17:03:39 UTC 2025</spirit:value>
+            <spirit:value>Sat Apr 05 06:31:37 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c894bfe1</spirit:value>
+            <spirit:value>9:862f494b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -146,7 +146,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c894bfe1</spirit:value>
+            <spirit:value>9:862f494b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -162,11 +162,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 04 17:03:39 UTC 2025</spirit:value>
+            <spirit:value>Sat Apr 05 06:31:37 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c894bfe1</spirit:value>
+            <spirit:value>9:862f494b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -181,11 +181,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 04 17:03:39 UTC 2025</spirit:value>
+            <spirit:value>Sat Apr 05 06:31:37 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:a286c932</spirit:value>
+            <spirit:value>9:9143cedf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -201,11 +201,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 04 17:03:39 UTC 2025</spirit:value>
+            <spirit:value>Sat Apr 05 06:31:37 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:a286c932</spirit:value>
+            <spirit:value>9:9143cedf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -220,11 +220,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 04 17:03:39 UTC 2025</spirit:value>
+            <spirit:value>Sat Apr 05 06:31:37 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c894bfe1</spirit:value>
+            <spirit:value>9:862f494b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -238,11 +238,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 04 17:04:33 UTC 2025</spirit:value>
+            <spirit:value>Sat Apr 05 06:32:25 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c894bfe1</spirit:value>
+            <spirit:value>9:862f494b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -266,75 +266,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>snake_x</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>snake_y</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>food_x</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>food_y</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>CLK100MHZ</spirit:name>
+        <spirit:name>CLK50MHZ</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -347,7 +279,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>sys_rst_n</spirit:name>
+        <spirit:name>rst_n</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -363,23 +295,6 @@
         <spirit:name>key</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">3</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>led</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
           <spirit:vector>
             <spirit:left spirit:format="long">3</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
@@ -457,36 +372,36 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/clk_div.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/clk_div.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/key_led.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/key_led.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/rgb_config.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/rgb_config.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/lcd_driver.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/lcd_driver.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/snake.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/snake.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/snake_top.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/snake_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/word.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/word.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/word1.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/word1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -494,7 +409,7 @@
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/lcd_rgb_char.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/lcd_rgb_char.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -513,36 +428,36 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/clk_div.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/clk_div.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/key_led.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/key_led.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/rgb_config.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/rgb_config.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/lcd_driver.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/lcd_driver.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/snake.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/snake.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/snake_top.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/snake_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/word.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/word.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/word1.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/word1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -550,7 +465,7 @@
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/df41/src/lcd_rgb_char.v</spirit:name>
+        <spirit:name>../../ipshared/85e6/src/lcd_rgb_char.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -606,7 +521,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>lcd_rgb_snake_v1_0</spirit:description>
+  <spirit:description>only cmd port</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -620,7 +535,7 @@
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3b5e6d1d_ARCHIVE_LOCATION">e:/desktop/my_git/lcd_snake/user_ip</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4696d5d_ARCHIVE_LOCATION">e:/desktop/my_git/lcd_snake/user_ip</xilinx:tag>
@@ -633,6 +548,50 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4c5d1930_ARCHIVE_LOCATION">e:/desktop/my_git/lcd_snake/user_ip</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6dfc5b73_ARCHIVE_LOCATION">e:/desktop/my_git/lcd_snake/user_ip</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@28fb4508_ARCHIVE_LOCATION">e:/desktop/my_git/lcd_snake/user_ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d7216e9_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1032570d_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@104bb78f_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ab7a659_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@336803a0_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61893f6b_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14367b61_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da5b6f0_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fb9c8d_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a288bd5_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@186f8e76_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ffd224d_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bdbd059_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@486a4994_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@928ece1_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3751c1f2_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52a7c90f_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@341bb8e7_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5db6eab6_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@203ade1d_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f094481_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7961b7c0_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3968af9c_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c28ee20_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49bfcb78_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36905fcb_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e5173e0_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d512b73_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@321eafc5_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67436525_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f788d50_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@523e15e8_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45cf1ee3_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4739ebec_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@718e1a3f_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5477721c_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c839934_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1301f1_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@702fd59b_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59eb8e3c_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@314897c0_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f82ae34_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eb958ba_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ef99922_ARCHIVE_LOCATION">e:/Desktop/my_git/e203_zs/user_ip/lcd_rgb_snake</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.LCD_CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
@@ -646,9 +605,9 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="52d00212"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6df055eb"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="f2c2b480"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a42bfd17"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5e08c996"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="8d4b2549"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="9c0c4e39"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

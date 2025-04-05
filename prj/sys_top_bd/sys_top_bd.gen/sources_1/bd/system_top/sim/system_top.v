@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Sat Apr  5 01:03:38 2025
+//Date        : Sat Apr  5 14:31:36 2025
 //Host        : Lab running 64-bit major release  (build 9200)
 //Command     : generate_target system_top.bd
 //Design      : system_top
@@ -1440,12 +1440,9 @@ module system_top
   wire [31:0]axi_lite_for_snake_0_snake_cmd;
   wire clk_in1_0_1;
   wire clk_wiz_0_clk_out2;
+  wire clk_wiz_0_clk_out3;
   wire clk_wiz_0_locked;
   wire fpga_rst_1;
-  wire [31:0]lcd_rgb_snake_0_food_x;
-  wire [31:0]lcd_rgb_snake_0_food_y;
-  wire [31:0]lcd_rgb_snake_0_snake_x;
-  wire [31:0]lcd_rgb_snake_0_snake_y;
   wire mcu_rst_1;
   wire [13:0]mig_7series_0_DDR3_ADDR;
   wire [2:0]mig_7series_0_DDR3_BA;
@@ -1656,9 +1653,7 @@ module system_top
         .S00_AXI_wstrb(system_e203_0_expl_axi_WSTRB),
         .S00_AXI_wvalid(system_e203_0_expl_axi_WVALID));
   system_top_axi_lite_for_snake_0_0 axi_lite_for_snake_0
-       (.food_x(lcd_rgb_snake_0_food_x),
-        .food_y(lcd_rgb_snake_0_food_y),
-        .s00_axi_aclk(clk_wiz_0_clk_out2),
+       (.s00_axi_aclk(clk_wiz_0_clk_out2),
         .s00_axi_araddr(axi_interconnect_0_M02_AXI_ARADDR[4:0]),
         .s00_axi_aresetn(M01_ARESETN_1),
         .s00_axi_arprot(axi_interconnect_0_M02_AXI_ARPROT),
@@ -1679,24 +1674,19 @@ module system_top
         .s00_axi_wready(axi_interconnect_0_M02_AXI_WREADY),
         .s00_axi_wstrb(axi_interconnect_0_M02_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M02_AXI_WVALID),
-        .snake_cmd(axi_lite_for_snake_0_snake_cmd),
-        .snake_x(lcd_rgb_snake_0_snake_x),
-        .snake_y(lcd_rgb_snake_0_snake_y));
+        .snake_cmd(axi_lite_for_snake_0_snake_cmd));
   system_top_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(clk_in1_0_1),
         .clk_out1(Net10),
         .clk_out2(clk_wiz_0_clk_out2),
+        .clk_out3(clk_wiz_0_clk_out3),
         .locked(clk_wiz_0_locked),
         .resetn(util_vector_logic_0_Res));
   system_top_lcd_rgb_snake_0_0 lcd_rgb_snake_0
-       (.CLK100MHZ(mig_7series_0_ui_clk),
-        .food_x(lcd_rgb_snake_0_food_x),
-        .food_y(lcd_rgb_snake_0_food_y),
+       (.CLK50MHZ(clk_wiz_0_clk_out3),
         .key({1'b0,1'b0,1'b0,1'b0}),
-        .snake_cmd(axi_lite_for_snake_0_snake_cmd),
-        .snake_x(lcd_rgb_snake_0_snake_x),
-        .snake_y(lcd_rgb_snake_0_snake_y),
-        .sys_rst_n(M01_ARESETN_1));
+        .rst_n(util_vector_logic_0_Res),
+        .snake_cmd(axi_lite_for_snake_0_snake_cmd));
   system_top_mig_7series_0_1 mig_7series_0
        (.aresetn(proc_sys_reset_1_peripheral_aresetn),
         .clk_ref_i(Net10),

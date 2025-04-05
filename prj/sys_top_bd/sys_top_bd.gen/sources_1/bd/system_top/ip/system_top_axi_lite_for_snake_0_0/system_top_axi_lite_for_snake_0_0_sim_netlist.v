@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat Apr  5 01:04:20 2025
+// Date        : Sat Apr  5 13:37:03 2025
 // Host        : Lab running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_lite_for_snake_0_0/system_top_axi_lite_for_snake_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top system_top_axi_lite_for_snake_0_0 -prefix
+//               system_top_axi_lite_for_snake_0_0_ system_top_axi_lite_for_snake_0_0_sim_netlist.v
 // Design      : system_top_axi_lite_for_snake_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,140 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_top_axi_lite_for_snake_0_0,axi_lite_for_snake_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_lite_for_snake_v1_0,Vivado 2020.2" *) 
-(* NotValidForBitStream *)
-module system_top_axi_lite_for_snake_0_0
-   (snake_cmd,
-    snake_x,
-    snake_y,
-    food_x,
-    food_y,
-    s00_axi_aclk,
-    s00_axi_aresetn,
-    s00_axi_awaddr,
-    s00_axi_awprot,
-    s00_axi_awvalid,
-    s00_axi_awready,
-    s00_axi_wdata,
-    s00_axi_wstrb,
-    s00_axi_wvalid,
-    s00_axi_wready,
-    s00_axi_bresp,
-    s00_axi_bvalid,
-    s00_axi_bready,
-    s00_axi_araddr,
-    s00_axi_arprot,
-    s00_axi_arvalid,
-    s00_axi_arready,
-    s00_axi_rdata,
-    s00_axi_rresp,
-    s00_axi_rvalid,
-    s00_axi_rready);
-  output [31:0]snake_cmd;
-  input [31:0]snake_x;
-  input [31:0]snake_y;
-  input [31:0]food_x;
-  input [31:0]food_y;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 16000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input s00_axi_aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) input [4:0]s00_axi_awaddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWREADY" *) output s00_axi_awready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WDATA" *) input [31:0]s00_axi_wdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WSTRB" *) input [3:0]s00_axi_wstrb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WVALID" *) input s00_axi_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WREADY" *) output s00_axi_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BRESP" *) output [1:0]s00_axi_bresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BVALID" *) output s00_axi_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BREADY" *) input s00_axi_bready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) input [4:0]s00_axi_araddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARPROT" *) input [2:0]s00_axi_arprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARVALID" *) input s00_axi_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARREADY" *) output s00_axi_arready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [31:0]s00_axi_rdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]s00_axi_rresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output s00_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 8, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 16000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s00_axi_rready;
-
-  wire \<const0> ;
-  wire s00_axi_aclk;
-  wire [4:0]s00_axi_araddr;
-  wire s00_axi_aresetn;
-  wire s00_axi_arready;
-  wire s00_axi_arvalid;
-  wire [4:0]s00_axi_awaddr;
-  wire s00_axi_awready;
-  wire s00_axi_awvalid;
-  wire s00_axi_bready;
-  wire s00_axi_bvalid;
-  wire [31:0]s00_axi_rdata;
-  wire s00_axi_rready;
-  wire s00_axi_rvalid;
-  wire [31:0]s00_axi_wdata;
-  wire s00_axi_wready;
-  wire [3:0]s00_axi_wstrb;
-  wire s00_axi_wvalid;
-
-  assign s00_axi_bresp[1] = \<const0> ;
-  assign s00_axi_bresp[0] = \<const0> ;
-  assign s00_axi_rresp[1] = \<const0> ;
-  assign s00_axi_rresp[0] = \<const0> ;
-  assign snake_cmd[31] = \<const0> ;
-  assign snake_cmd[30] = \<const0> ;
-  assign snake_cmd[29] = \<const0> ;
-  assign snake_cmd[28] = \<const0> ;
-  assign snake_cmd[27] = \<const0> ;
-  assign snake_cmd[26] = \<const0> ;
-  assign snake_cmd[25] = \<const0> ;
-  assign snake_cmd[24] = \<const0> ;
-  assign snake_cmd[23] = \<const0> ;
-  assign snake_cmd[22] = \<const0> ;
-  assign snake_cmd[21] = \<const0> ;
-  assign snake_cmd[20] = \<const0> ;
-  assign snake_cmd[19] = \<const0> ;
-  assign snake_cmd[18] = \<const0> ;
-  assign snake_cmd[17] = \<const0> ;
-  assign snake_cmd[16] = \<const0> ;
-  assign snake_cmd[15] = \<const0> ;
-  assign snake_cmd[14] = \<const0> ;
-  assign snake_cmd[13] = \<const0> ;
-  assign snake_cmd[12] = \<const0> ;
-  assign snake_cmd[11] = \<const0> ;
-  assign snake_cmd[10] = \<const0> ;
-  assign snake_cmd[9] = \<const0> ;
-  assign snake_cmd[8] = \<const0> ;
-  assign snake_cmd[7] = \<const0> ;
-  assign snake_cmd[6] = \<const0> ;
-  assign snake_cmd[5] = \<const0> ;
-  assign snake_cmd[4] = \<const0> ;
-  assign snake_cmd[3] = \<const0> ;
-  assign snake_cmd[2] = \<const0> ;
-  assign snake_cmd[1] = \<const0> ;
-  assign snake_cmd[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0 inst
-       (.S_AXI_ARREADY(s00_axi_arready),
-        .S_AXI_AWREADY(s00_axi_awready),
-        .S_AXI_WREADY(s00_axi_wready),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_araddr(s00_axi_araddr[4:2]),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .s00_axi_arvalid(s00_axi_arvalid),
-        .s00_axi_awaddr(s00_axi_awaddr[4:2]),
-        .s00_axi_awvalid(s00_axi_awvalid),
-        .s00_axi_bready(s00_axi_bready),
-        .s00_axi_bvalid(s00_axi_bvalid),
-        .s00_axi_rdata(s00_axi_rdata),
-        .s00_axi_rready(s00_axi_rready),
-        .s00_axi_rvalid(s00_axi_rvalid),
-        .s00_axi_wdata(s00_axi_wdata),
-        .s00_axi_wstrb(s00_axi_wstrb),
-        .s00_axi_wvalid(s00_axi_wvalid));
-endmodule
-
-(* ORIG_REF_NAME = "axi_lite_for_snake_v1_0" *) 
 module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0
    (S_AXI_WREADY,
     S_AXI_AWREADY,
@@ -220,7 +86,6 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0
         .s00_axi_wvalid(s00_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_lite_for_snake_v1_0_S00_AXI" *) 
 module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
    (S_AXI_WREADY,
     S_AXI_AWREADY,
@@ -499,31 +364,31 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .Q(s00_axi_bvalid),
         .R(axi_awready_i_1_n_0));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8888BBB8)) 
     \axi_rdata[0]_i_1 
        (.I0(\axi_rdata[0]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[0]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[0]));
   LUT5 #(
-    .INIT(32'hAFC0A0C0)) 
+    .INIT(32'hAFA0CFCF)) 
     \axi_rdata[0]_i_2 
        (.I0(slv_reg7[0]),
         .I1(slv_reg6[0]),
         .I2(sel0[1]),
-        .I3(sel0[0]),
-        .I4(slv_reg5[0]),
+        .I3(slv_reg5[0]),
+        .I4(sel0[0]),
         .O(\axi_rdata[0]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hBBBBBBB8)) 
     \axi_rdata[10]_i_1 
        (.I0(\axi_rdata[10]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[10]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[10]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -535,13 +400,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[10]),
         .O(\axi_rdata[10]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[11]_i_1 
        (.I0(\axi_rdata[11]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[11]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[11]),
         .O(reg_data_out[11]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -553,13 +418,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[11]),
         .O(\axi_rdata[11]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8BBB8BB8)) 
     \axi_rdata[12]_i_1 
        (.I0(\axi_rdata[12]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[12]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[12]),
         .O(reg_data_out[12]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -571,13 +436,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[12]),
         .O(\axi_rdata[12]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[13]_i_1 
        (.I0(\axi_rdata[13]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[13]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[13]),
         .O(reg_data_out[13]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -589,13 +454,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[13]),
         .O(\axi_rdata[13]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hBB8BBB88)) 
     \axi_rdata[14]_i_1 
        (.I0(\axi_rdata[14]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[14]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[14]),
         .O(reg_data_out[14]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -607,13 +472,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[14]),
         .O(\axi_rdata[14]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[15]_i_1 
        (.I0(\axi_rdata[15]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[15]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[15]),
         .O(reg_data_out[15]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -625,13 +490,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[15]),
         .O(\axi_rdata[15]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[16]_i_1 
        (.I0(\axi_rdata[16]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[16]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[16]),
         .O(reg_data_out[16]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -661,13 +526,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[17]),
         .O(\axi_rdata[17]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hBBBBBBB8)) 
     \axi_rdata[18]_i_1 
        (.I0(\axi_rdata[18]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[18]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[18]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -679,13 +544,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[18]),
         .O(\axi_rdata[18]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[19]_i_1 
        (.I0(\axi_rdata[19]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[19]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[19]),
         .O(reg_data_out[19]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -697,13 +562,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[19]),
         .O(\axi_rdata[19]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[1]_i_1 
        (.I0(\axi_rdata[1]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[1]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[1]),
         .O(reg_data_out[1]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -715,12 +580,12 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[1]),
         .O(\axi_rdata[1]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8888BBB8)) 
     \axi_rdata[20]_i_1 
        (.I0(\axi_rdata[20]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[20]),
+        .I2(slv_reg0[20]),
+        .I3(sel0[0]),
         .I4(sel0[1]),
         .O(reg_data_out[20]));
   LUT5 #(
@@ -733,13 +598,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[20]),
         .O(\axi_rdata[20]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8BBB8BB8)) 
     \axi_rdata[21]_i_1 
        (.I0(\axi_rdata[21]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[21]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[21]),
         .O(reg_data_out[21]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -751,13 +616,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[21]),
         .O(\axi_rdata[21]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8B88B88)) 
     \axi_rdata[22]_i_1 
        (.I0(\axi_rdata[22]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[22]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[22]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -769,13 +634,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[22]),
         .O(\axi_rdata[22]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[23]_i_1 
        (.I0(\axi_rdata[23]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[23]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[23]),
         .O(reg_data_out[23]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -787,13 +652,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[23]),
         .O(\axi_rdata[23]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8B88B88)) 
     \axi_rdata[24]_i_1 
        (.I0(\axi_rdata[24]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[24]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[24]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -805,13 +670,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[24]),
         .O(\axi_rdata[24]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hBBBBBBB8)) 
     \axi_rdata[25]_i_1 
        (.I0(\axi_rdata[25]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[25]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[25]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -823,13 +688,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[25]),
         .O(\axi_rdata[25]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8888BBB8)) 
     \axi_rdata[26]_i_1 
        (.I0(\axi_rdata[26]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[26]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[26]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -841,13 +706,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[26]),
         .O(\axi_rdata[26]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[27]_i_1 
        (.I0(\axi_rdata[27]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[27]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[27]),
         .O(reg_data_out[27]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -859,13 +724,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[27]),
         .O(\axi_rdata[27]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8BBB8BB8)) 
     \axi_rdata[28]_i_1 
        (.I0(\axi_rdata[28]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[28]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[28]),
         .O(reg_data_out[28]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -877,13 +742,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[28]),
         .O(\axi_rdata[28]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8B88B88)) 
     \axi_rdata[29]_i_1 
        (.I0(\axi_rdata[29]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[29]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[29]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -895,13 +760,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[29]),
         .O(\axi_rdata[29]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8888BBB8)) 
     \axi_rdata[2]_i_1 
        (.I0(\axi_rdata[2]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[2]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[2]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -913,13 +778,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[2]),
         .O(\axi_rdata[2]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8888BBB8)) 
     \axi_rdata[30]_i_1 
        (.I0(\axi_rdata[30]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[30]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[30]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -931,13 +796,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[30]),
         .O(\axi_rdata[30]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8BBB8B8)) 
     \axi_rdata[31]_i_1 
        (.I0(\axi_rdata[31]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[31]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[31]),
         .O(reg_data_out[31]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -949,13 +814,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[31]),
         .O(\axi_rdata[31]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8BBB8BB8)) 
     \axi_rdata[3]_i_1 
        (.I0(\axi_rdata[3]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[3]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[3]),
         .O(reg_data_out[3]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -967,13 +832,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[3]),
         .O(\axi_rdata[3]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hBB8BBB88)) 
     \axi_rdata[4]_i_1 
        (.I0(\axi_rdata[4]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[4]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[4]),
         .O(reg_data_out[4]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -985,13 +850,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[4]),
         .O(\axi_rdata[4]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8BBB8BB8)) 
     \axi_rdata[5]_i_1 
        (.I0(\axi_rdata[5]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[5]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[5]),
         .O(reg_data_out[5]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -1003,13 +868,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[5]),
         .O(\axi_rdata[5]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8BBB8BB8)) 
     \axi_rdata[6]_i_1 
        (.I0(\axi_rdata[6]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
-        .I3(slv_reg0[6]),
-        .I4(sel0[1]),
+        .I2(sel0[1]),
+        .I3(sel0[0]),
+        .I4(slv_reg0[6]),
         .O(reg_data_out[6]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -1021,13 +886,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[6]),
         .O(\axi_rdata[6]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'h8888BBB8)) 
     \axi_rdata[7]_i_1 
        (.I0(\axi_rdata[7]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[7]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[7]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -1039,13 +904,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[7]),
         .O(\axi_rdata[7]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hB8B88B88)) 
     \axi_rdata[8]_i_1 
        (.I0(\axi_rdata[8]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[8]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[8]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -1057,13 +922,13 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I4(slv_reg5[8]),
         .O(\axi_rdata[8]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h88888B88)) 
+    .INIT(32'hBBBBBBB8)) 
     \axi_rdata[9]_i_1 
        (.I0(\axi_rdata[9]_i_2_n_0 ),
         .I1(sel0[2]),
-        .I2(sel0[0]),
+        .I2(sel0[1]),
         .I3(slv_reg0[9]),
-        .I4(sel0[1]),
+        .I4(sel0[0]),
         .O(reg_data_out[9]));
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
@@ -2223,6 +2088,139 @@ module system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0_S00_AXI
         .I1(s00_axi_rvalid),
         .I2(S_AXI_ARREADY),
         .O(slv_reg_rden__0));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "system_top_axi_lite_for_snake_0_0,axi_lite_for_snake_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_lite_for_snake_v1_0,Vivado 2020.2" *) 
+(* NotValidForBitStream *)
+module system_top_axi_lite_for_snake_0_0
+   (snake_cmd,
+    snake_x,
+    snake_y,
+    food_x,
+    food_y,
+    s00_axi_aclk,
+    s00_axi_aresetn,
+    s00_axi_awaddr,
+    s00_axi_awprot,
+    s00_axi_awvalid,
+    s00_axi_awready,
+    s00_axi_wdata,
+    s00_axi_wstrb,
+    s00_axi_wvalid,
+    s00_axi_wready,
+    s00_axi_bresp,
+    s00_axi_bvalid,
+    s00_axi_bready,
+    s00_axi_araddr,
+    s00_axi_arprot,
+    s00_axi_arvalid,
+    s00_axi_arready,
+    s00_axi_rdata,
+    s00_axi_rresp,
+    s00_axi_rvalid,
+    s00_axi_rready);
+  output [31:0]snake_cmd;
+  input [31:0]snake_x;
+  input [31:0]snake_y;
+  input [31:0]food_x;
+  input [31:0]food_y;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 16000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input s00_axi_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) input [4:0]s00_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWREADY" *) output s00_axi_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WDATA" *) input [31:0]s00_axi_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WSTRB" *) input [3:0]s00_axi_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WVALID" *) input s00_axi_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WREADY" *) output s00_axi_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BRESP" *) output [1:0]s00_axi_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BVALID" *) output s00_axi_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BREADY" *) input s00_axi_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) input [4:0]s00_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARPROT" *) input [2:0]s00_axi_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARVALID" *) input s00_axi_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARREADY" *) output s00_axi_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [31:0]s00_axi_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]s00_axi_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output s00_axi_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 8, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 16000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s00_axi_rready;
+
+  wire \<const0> ;
+  wire s00_axi_aclk;
+  wire [4:0]s00_axi_araddr;
+  wire s00_axi_aresetn;
+  wire s00_axi_arready;
+  wire s00_axi_arvalid;
+  wire [4:0]s00_axi_awaddr;
+  wire s00_axi_awready;
+  wire s00_axi_awvalid;
+  wire s00_axi_bready;
+  wire s00_axi_bvalid;
+  wire [31:0]s00_axi_rdata;
+  wire s00_axi_rready;
+  wire s00_axi_rvalid;
+  wire [31:0]s00_axi_wdata;
+  wire s00_axi_wready;
+  wire [3:0]s00_axi_wstrb;
+  wire s00_axi_wvalid;
+
+  assign s00_axi_bresp[1] = \<const0> ;
+  assign s00_axi_bresp[0] = \<const0> ;
+  assign s00_axi_rresp[1] = \<const0> ;
+  assign s00_axi_rresp[0] = \<const0> ;
+  assign snake_cmd[31] = \<const0> ;
+  assign snake_cmd[30] = \<const0> ;
+  assign snake_cmd[29] = \<const0> ;
+  assign snake_cmd[28] = \<const0> ;
+  assign snake_cmd[27] = \<const0> ;
+  assign snake_cmd[26] = \<const0> ;
+  assign snake_cmd[25] = \<const0> ;
+  assign snake_cmd[24] = \<const0> ;
+  assign snake_cmd[23] = \<const0> ;
+  assign snake_cmd[22] = \<const0> ;
+  assign snake_cmd[21] = \<const0> ;
+  assign snake_cmd[20] = \<const0> ;
+  assign snake_cmd[19] = \<const0> ;
+  assign snake_cmd[18] = \<const0> ;
+  assign snake_cmd[17] = \<const0> ;
+  assign snake_cmd[16] = \<const0> ;
+  assign snake_cmd[15] = \<const0> ;
+  assign snake_cmd[14] = \<const0> ;
+  assign snake_cmd[13] = \<const0> ;
+  assign snake_cmd[12] = \<const0> ;
+  assign snake_cmd[11] = \<const0> ;
+  assign snake_cmd[10] = \<const0> ;
+  assign snake_cmd[9] = \<const0> ;
+  assign snake_cmd[8] = \<const0> ;
+  assign snake_cmd[7] = \<const0> ;
+  assign snake_cmd[6] = \<const0> ;
+  assign snake_cmd[5] = \<const0> ;
+  assign snake_cmd[4] = \<const0> ;
+  assign snake_cmd[3] = \<const0> ;
+  assign snake_cmd[2] = \<const0> ;
+  assign snake_cmd[1] = \<const0> ;
+  assign snake_cmd[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  system_top_axi_lite_for_snake_0_0_axi_lite_for_snake_v1_0 inst
+       (.S_AXI_ARREADY(s00_axi_arready),
+        .S_AXI_AWREADY(s00_axi_awready),
+        .S_AXI_WREADY(s00_axi_wready),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_araddr(s00_axi_araddr[4:2]),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .s00_axi_arvalid(s00_axi_arvalid),
+        .s00_axi_awaddr(s00_axi_awaddr[4:2]),
+        .s00_axi_awvalid(s00_axi_awvalid),
+        .s00_axi_bready(s00_axi_bready),
+        .s00_axi_bvalid(s00_axi_bvalid),
+        .s00_axi_rdata(s00_axi_rdata),
+        .s00_axi_rready(s00_axi_rready),
+        .s00_axi_rvalid(s00_axi_rvalid),
+        .s00_axi_wdata(s00_axi_wdata),
+        .s00_axi_wstrb(s00_axi_wstrb),
+        .s00_axi_wvalid(s00_axi_wvalid));
 endmodule
 `ifndef GLBL
 `define GLBL

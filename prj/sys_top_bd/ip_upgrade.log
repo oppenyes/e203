@@ -1,6 +1,201 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr  5 14:30:15 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_axi_lite_for_snake_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_top_axi_lite_for_snake_0_0 (xilinx.com:user:axi_lite_for_snake:2.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr  5 14:25:26 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_lcd_rgb_snake_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_top_lcd_rgb_snake_0_0 from xilinx.com:user:lcd_rgb_snake:1.0 (Rev. 2) to xilinx.com:user:lcd_rgb_snake:2.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_top_lcd_rgb_snake_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'CLK100MHZ'
+
+-Upgrade has removed port 'food_x'
+
+-Upgrade has removed port 'food_y'
+
+-Upgrade has removed port 'led'
+
+-Upgrade has removed port 'snake_x'
+
+-Upgrade has removed port 'snake_y'
+
+-Upgrade has removed port 'sys_rst_n'
+
+-Upgrade has added port 'CLK50MHZ'
+
+-Upgrade has added port 'rst_n'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr  5 13:35:53 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_axi_lite_for_snake_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_top_axi_lite_for_snake_0_0 (xilinx.com:user:axi_lite_for_snake:2.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr  5 13:18:21 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_axi_lite_for_snake_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_top_axi_lite_for_snake_0_0 (xilinx.com:user:axi_lite_for_snake:2.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr  5 12:27:05 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_axi_lite_for_snake_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_top_axi_lite_for_snake_0_0 from xilinx.com:user:axi_lite_for_snake:2.0 (Rev. 1) to xilinx.com:user:axi_lite_for_snake:2.1 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr  5 02:15:51 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_axi_lite_for_snake_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_top_axi_lite_for_snake_0_0 (xilinx.com:user:axi_lite_for_snake:2.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr  5 02:01:51 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_lcd_rgb_snake_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_top_lcd_rgb_snake_0_0 (xilinx.com:user:lcd_rgb_snake:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr  5 01:23:21 2025
+| Host         : Lab running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_top_lcd_rgb_snake_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_top_lcd_rgb_snake_0_0 (xilinx.com:user:lcd_rgb_snake:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 | Date         : Sat Apr  5 01:03:22 2025
 | Host         : Lab running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

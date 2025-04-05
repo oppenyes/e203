@@ -1,9 +1,9 @@
 {
-   """""ActiveEmotionalView""""":"Default View",
-   """""Default View_ScaleFactor""""":"1.23665",
-   """""Default View_TopLeft""""":"1291,57",
-   """""ExpandedHierarchyInLayout""""":"",
-   """""guistr""""":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+   """"""""ActiveEmotionalView"""""""":"Default View",
+   """"""""Default View_ScaleFactor"""""""":"1.23665",
+   """"""""Default View_TopLeft"""""""":"1291,57",
+   """"""""ExpandedHierarchyInLayout"""""""":"",
+   """"""""guistr"""""""":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port DDR3 -pg 1 -lvl 6 -x 2300 -y 550 -defaultsOSRD
 preplace port LED -pg 1 -lvl 6 -x 2300 -y 290 -defaultsOSRD
@@ -69,11 +69,11 @@ preplace netloc axi_gpio_0_GPIO 1 5 1 N 290
 levelinfo -pg 1 0 170 470 930 1640 1960 2300
 pagesize -pg 1 -db -bbox -sgen -160 -40 2450 930
 ",
-   """"ActiveEmotionalView"""":"Default View",
-   """"Default View_ScaleFactor"""":"0.831262",
-   """"Default View_TopLeft"""":"677,304",
-   """"ExpandedHierarchyInLayout"""":"",
-   """"guistr"""":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+   """""""ActiveEmotionalView""""""":"Default View",
+   """""""Default View_ScaleFactor""""""":"0.831262",
+   """""""Default View_TopLeft""""""":"677,304",
+   """""""ExpandedHierarchyInLayout""""""":"",
+   """""""guistr""""""":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port DDR3 -pg 1 -lvl 6 -x 1650 -y 70 -defaultsOSRD
 preplace port LED -pg 1 -lvl 6 -x 1650 -y 390 -defaultsOSRD
@@ -139,11 +139,11 @@ preplace netloc axi_interconnect_0_M01_AXI 1 4 1 N 370
 levelinfo -pg 1 0 170 420 730 1140 1480 1650
 pagesize -pg 1 -db -bbox -sgen -160 0 1800 940
 ",
-   """ActiveEmotionalView""":"Default View",
-   """Default View_ScaleFactor""":"0.772504",
-   """Default View_TopLeft""":"715,-1",
-   """ExpandedHierarchyInLayout""":"",
-   """guistr""":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+   """"""ActiveEmotionalView"""""":"Default View",
+   """"""Default View_ScaleFactor"""""":"0.772504",
+   """"""Default View_TopLeft"""""":"715,-1",
+   """"""ExpandedHierarchyInLayout"""""":"",
+   """"""guistr"""""":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port DDR3 -pg 1 -lvl 6 -x 1650 -y 70 -defaultsOSRD
 preplace port LED -pg 1 -lvl 6 -x 1650 -y 390 -defaultsOSRD
@@ -209,11 +209,11 @@ preplace netloc axi_interconnect_0_M01_AXI 1 4 1 N 370
 levelinfo -pg 1 0 170 420 730 1140 1480 1650
 pagesize -pg 1 -db -bbox -sgen -160 0 1800 940
 ",
-   ""ActiveEmotionalView"":"Default View",
-   ""Default View_ScaleFactor"":"0.88907",
-   ""Default View_TopLeft"":"777,-63",
-   ""ExpandedHierarchyInLayout"":"",
-   ""guistr"":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   """""ActiveEmotionalView""""":"Default View",
+   """""Default View_ScaleFactor""""":"0.88907",
+   """""Default View_TopLeft""""":"777,-63",
+   """""ExpandedHierarchyInLayout""""":"",
+   """""guistr""""":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
 preplace port DDR3 -pg 1 -lvl 6 -x 1560 -y 70 -defaultsOSRD
 preplace port LED -pg 1 -lvl 6 -x 1560 -y 390 -defaultsOSRD
@@ -279,11 +279,11 @@ preplace netloc mig_7series_0_DDR3 1 5 1 NJ 70
 levelinfo -pg 1 0 170 420 710 1090 1400 1560
 pagesize -pg 1 -db -bbox -sgen -150 -10 1700 960
 ",
-   "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.08489",
-   "Default View_TopLeft":"1608,301",
-   "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   """"ActiveEmotionalView"""":"Default View",
+   """"Default View_ScaleFactor"""":"1.08489",
+   """"Default View_TopLeft"""":"1608,301",
+   """"ExpandedHierarchyInLayout"""":"",
+   """"guistr"""":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
 preplace port DDR3 -pg 1 -lvl 7 -x 2470 -y 140 -defaultsOSRD
 preplace port LED -pg 1 -lvl 7 -x 2470 -y 550 -defaultsOSRD
@@ -356,6 +356,243 @@ preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1530 150n
 preplace netloc axi_interconnect_0_M02_AXI 1 4 1 1490 170n
 levelinfo -pg 1 0 170 420 730 1310 1770 2190 2470
 pagesize -pg 1 -db -bbox -sgen -150 -130 2610 1240
+",
+   """ActiveEmotionalView""":"Default View",
+   """Default View_ScaleFactor""":"1.75726",
+   """Default View_TopLeft""":"855,-3",
+   """ExpandedHierarchyInLayout""":"",
+   """guistr""":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR3 -pg 1 -lvl 6 -x 1730 -y 420 -defaultsOSRD
+preplace port LED -pg 1 -lvl 6 -x 1730 -y 620 -defaultsOSRD
+preplace port CLK100MHZ -pg 1 -lvl 0 -x 0 -y 850 -defaultsOSRD
+preplace port fpga_rst -pg 1 -lvl 0 -x 0 -y 910 -defaultsOSRD
+preplace port CLK32768KHZ -pg 1 -lvl 0 -x 0 -y 1160 -defaultsOSRD
+preplace port mcu_rst -pg 1 -lvl 0 -x 0 -y 930 -defaultsOSRD
+preplace port mcu_TCK -pg 1 -lvl 6 -x 1730 -y 1220 -defaultsOSRD
+preplace port mcu_TDI -pg 1 -lvl 6 -x 1730 -y 1240 -defaultsOSRD
+preplace port mcu_TDO -pg 1 -lvl 6 -x 1730 -y 1200 -defaultsOSRD
+preplace port mcu_TMS -pg 1 -lvl 6 -x 1730 -y 1260 -defaultsOSRD
+preplace port mcu_wakeup -pg 1 -lvl 6 -x 1730 -y 1320 -defaultsOSRD
+preplace port pmu_paden -pg 1 -lvl 6 -x 1730 -y 1280 -defaultsOSRD
+preplace port pmu_padrst -pg 1 -lvl 6 -x 1730 -y 1300 -defaultsOSRD
+preplace port qspi0_cs -pg 1 -lvl 6 -x 1730 -y 1100 -defaultsOSRD
+preplace port qspi0_sck -pg 1 -lvl 6 -x 1730 -y 1120 -defaultsOSRD
+preplace portBus gpioA -pg 1 -lvl 6 -x 1730 -y 1160 -defaultsOSRD
+preplace portBus gpioB -pg 1 -lvl 6 -x 1730 -y 1180 -defaultsOSRD
+preplace portBus qspi0_dq -pg 1 -lvl 6 -x 1730 -y 1140 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1100 -y 440 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 420 -y 840 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 3 -x 720 -y 380 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 720 -y 720 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 170 -y 920 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 5 -x 1510 -y 460 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 4 -x 1100 -y 1220 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1510 -y 620 -defaultsOSRD
+preplace inst rst_clk_wiz_0_200M -pg 1 -lvl 5 -x 1510 -y 940 -defaultsOSRD
+preplace inst system_e203_0 -pg 1 -lvl 5 -x 1510 -y 1200 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 1510 -y -60 -defaultsOSRD
+preplace inst lcd_rgb_snake_0 -pg 1 -lvl 4 -x 1100 -y 140 -defaultsOSRD
+preplace inst axi_lite_for_snake_0 -pg 1 -lvl 5 -x 1510 -y 110 -defaultsOSRD
+preplace netloc clk_in1_0_1 1 0 5 NJ 850 320J 750 510 140 890 -70 N
+preplace netloc mig_7series_0_ui_clk 1 2 4 550 280 920 270 NJ 270 1680
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 2 890 600 1250J
+preplace netloc clk_wiz_0_locked 1 2 3 550 980 NJ 980 N
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 3 1 900 380n
+preplace netloc clk_wiz_0_clk_out2 1 2 3 530 610 910 610 1290
+preplace netloc fpga_rst_1 1 0 1 NJ 910
+preplace netloc mcu_rst_1 1 0 1 NJ 930
+preplace netloc util_vector_logic_0_Res 1 1 4 330 760 520 150 920J 0 1280
+preplace netloc CLK32768KHZ_1 1 0 5 NJ 1160 NJ 1160 NJ 1160 NJ 1160 1250J
+preplace netloc Net 1 5 1 NJ 1160
+preplace netloc Net1 1 5 1 NJ 1180
+preplace netloc Net2 1 5 1 NJ 1220
+preplace netloc Net3 1 5 1 NJ 1240
+preplace netloc Net4 1 5 1 NJ 1200
+preplace netloc Net5 1 5 1 NJ 1260
+preplace netloc Net6 1 5 1 NJ 1320
+preplace netloc Net7 1 5 1 NJ 1280
+preplace netloc Net8 1 5 1 NJ 1300
+preplace netloc system_e203_0_qspi0_cs 1 5 1 NJ 1100
+preplace netloc Net9 1 5 1 NJ 1140
+preplace netloc system_e203_0_qspi0_sck 1 5 1 NJ 1120
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 4 540 -10 NJ -10 1310J 250 1690
+preplace netloc mig_7series_0_mmcm_locked 1 2 4 530 -20 NJ -20 1320J 240 1710
+preplace netloc Net10 1 2 3 NJ 820 NJ 820 1320
+preplace netloc proc_sys_reset_0_mb_reset 1 3 1 890 680n
+preplace netloc util_vector_logic_1_Res 1 4 1 NJ 1220
+preplace netloc M01_ARESETN_1 1 3 2 930 620 1260
+preplace netloc lcd_rgb_snake_0_snake_x 1 4 1 1290 -50n
+preplace netloc lcd_rgb_snake_0_snake_y 1 4 1 N 90
+preplace netloc lcd_rgb_snake_0_food_x 1 4 1 N 110
+preplace netloc lcd_rgb_snake_0_food_y 1 4 1 N 130
+preplace netloc axi_lite_for_snake_0_snake_cmd 1 3 3 930 10 1300J 230 1710
+preplace netloc system_e203_0_expl_axi 1 3 3 930 280 NJ 280 1700
+preplace netloc mig_7series_0_DDR3 1 5 1 NJ 420
+preplace netloc axi_gpio_0_GPIO 1 5 1 NJ 620
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1270 440n
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 N 420
+preplace netloc axi_interconnect_0_M02_AXI 1 4 1 1250 50n
+levelinfo -pg 1 0 170 420 720 1100 1510 1730
+pagesize -pg 1 -db -bbox -sgen -150 -130 1870 1380
+",
+   ""ActiveEmotionalView"":"Default View",
+   ""Default View_ScaleFactor"":"1.76484",
+   ""Default View_TopLeft"":"845,-76",
+   ""ExpandedHierarchyInLayout"":"",
+   ""guistr"":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR3 -pg 1 -lvl 6 -x 1790 -y 460 -defaultsOSRD
+preplace port LED -pg 1 -lvl 6 -x 1790 -y 660 -defaultsOSRD
+preplace port CLK100MHZ -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace port fpga_rst -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
+preplace port CLK32768KHZ -pg 1 -lvl 0 -x 0 -y 1070 -defaultsOSRD
+preplace port mcu_rst -pg 1 -lvl 0 -x 0 -y 650 -defaultsOSRD
+preplace port mcu_TCK -pg 1 -lvl 6 -x 1790 -y 1130 -defaultsOSRD
+preplace port mcu_TDI -pg 1 -lvl 6 -x 1790 -y 1150 -defaultsOSRD
+preplace port mcu_TDO -pg 1 -lvl 6 -x 1790 -y 1110 -defaultsOSRD
+preplace port mcu_TMS -pg 1 -lvl 6 -x 1790 -y 1170 -defaultsOSRD
+preplace port mcu_wakeup -pg 1 -lvl 6 -x 1790 -y 1230 -defaultsOSRD
+preplace port pmu_paden -pg 1 -lvl 6 -x 1790 -y 1190 -defaultsOSRD
+preplace port pmu_padrst -pg 1 -lvl 6 -x 1790 -y 1210 -defaultsOSRD
+preplace port qspi0_cs -pg 1 -lvl 6 -x 1790 -y 1010 -defaultsOSRD
+preplace port qspi0_sck -pg 1 -lvl 6 -x 1790 -y 1030 -defaultsOSRD
+preplace portBus gpioA -pg 1 -lvl 6 -x 1790 -y 1070 -defaultsOSRD
+preplace portBus gpioB -pg 1 -lvl 6 -x 1790 -y 1090 -defaultsOSRD
+preplace portBus qspi0_dq -pg 1 -lvl 6 -x 1790 -y 1050 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1120 -y 480 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 430 -y 740 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 3 -x 720 -y 430 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 720 -y 650 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 170 -y 640 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 5 -x 1580 -y 500 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 4 -x 1120 -y 1130 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1580 -y 660 -defaultsOSRD
+preplace inst rst_clk_wiz_0_200M -pg 1 -lvl 5 -x 1580 -y 850 -defaultsOSRD
+preplace inst system_e203_0 -pg 1 -lvl 5 -x 1580 -y 1110 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 1580 -y 60 -defaultsOSRD
+preplace inst lcd_rgb_snake_0 -pg 1 -lvl 4 -x 1120 -y 180 -defaultsOSRD
+preplace inst axi_lite_for_snake_0 -pg 1 -lvl 5 -x 1580 -y 260 -defaultsOSRD
+preplace netloc clk_in1_0_1 1 0 5 NJ 250 320 170 NJ 170 900 40 1380J
+preplace netloc mig_7series_0_ui_clk 1 2 4 550 330 930 320 1310J 390 1750
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 2 910 50 1340J
+preplace netloc clk_wiz_0_locked 1 2 3 550 890 NJ 890 N
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 3 1 900 420n
+preplace netloc clk_wiz_0_clk_out2 1 2 3 530 550 920 640 1280
+preplace netloc fpga_rst_1 1 0 1 NJ 630
+preplace netloc mcu_rst_1 1 0 1 NJ 650
+preplace netloc util_vector_logic_0_Res 1 1 4 330 630 520 310 900 310 1300
+preplace netloc CLK32768KHZ_1 1 0 5 NJ 1070 NJ 1070 NJ 1070 NJ 1070 1270J
+preplace netloc Net 1 5 1 NJ 1070
+preplace netloc Net1 1 5 1 NJ 1090
+preplace netloc Net2 1 5 1 NJ 1130
+preplace netloc Net3 1 5 1 NJ 1150
+preplace netloc Net4 1 5 1 NJ 1110
+preplace netloc Net5 1 5 1 NJ 1170
+preplace netloc Net6 1 5 1 NJ 1230
+preplace netloc Net7 1 5 1 NJ 1190
+preplace netloc Net8 1 5 1 NJ 1210
+preplace netloc system_e203_0_qspi0_cs 1 5 1 NJ 1010
+preplace netloc Net9 1 5 1 NJ 1050
+preplace netloc system_e203_0_qspi0_sck 1 5 1 NJ 1030
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 4 540 20 NJ 20 1370J 380 1760
+preplace netloc mig_7series_0_mmcm_locked 1 2 4 530 10 NJ 10 1400J 140 1770
+preplace netloc Net10 1 2 3 540J 750 NJ 750 1410
+preplace netloc proc_sys_reset_0_mb_reset 1 3 1 890 610n
+preplace netloc util_vector_logic_1_Res 1 4 1 NJ 1130
+preplace netloc M01_ARESETN_1 1 3 2 910 650 1390
+preplace netloc lcd_rgb_snake_0_snake_x 1 4 1 1410 70n
+preplace netloc lcd_rgb_snake_0_snake_y 1 4 1 1360 130n
+preplace netloc lcd_rgb_snake_0_food_x 1 4 1 1350 150n
+preplace netloc lcd_rgb_snake_0_food_y 1 4 1 1330 170n
+preplace netloc axi_lite_for_snake_0_snake_cmd 1 3 3 940 30 1390J 130 1750
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1290 480n
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 N 460
+preplace netloc axi_interconnect_0_M02_AXI 1 4 1 1320 200n
+preplace netloc system_e203_0_expl_axi 1 3 3 940 740 NJ 740 1750
+preplace netloc mig_7series_0_DDR3 1 5 1 NJ 460
+preplace netloc axi_gpio_0_GPIO 1 5 1 NJ 660
+levelinfo -pg 1 0 170 430 720 1120 1580 1790
+pagesize -pg 1 -db -bbox -sgen -150 -10 1930 1290
+",
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.15661",
+   "Default View_TopLeft":"962,10",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR3 -pg 1 -lvl 6 -x 1810 -y 460 -defaultsOSRD
+preplace port LED -pg 1 -lvl 6 -x 1810 -y 660 -defaultsOSRD
+preplace port CLK100MHZ -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace port fpga_rst -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
+preplace port CLK32768KHZ -pg 1 -lvl 0 -x 0 -y 1070 -defaultsOSRD
+preplace port mcu_rst -pg 1 -lvl 0 -x 0 -y 650 -defaultsOSRD
+preplace port mcu_TCK -pg 1 -lvl 6 -x 1810 -y 1130 -defaultsOSRD
+preplace port mcu_TDI -pg 1 -lvl 6 -x 1810 -y 1150 -defaultsOSRD
+preplace port mcu_TDO -pg 1 -lvl 6 -x 1810 -y 1110 -defaultsOSRD
+preplace port mcu_TMS -pg 1 -lvl 6 -x 1810 -y 1170 -defaultsOSRD
+preplace port mcu_wakeup -pg 1 -lvl 6 -x 1810 -y 1230 -defaultsOSRD
+preplace port pmu_paden -pg 1 -lvl 6 -x 1810 -y 1190 -defaultsOSRD
+preplace port pmu_padrst -pg 1 -lvl 6 -x 1810 -y 1210 -defaultsOSRD
+preplace port qspi0_cs -pg 1 -lvl 6 -x 1810 -y 1010 -defaultsOSRD
+preplace port qspi0_sck -pg 1 -lvl 6 -x 1810 -y 1030 -defaultsOSRD
+preplace portBus gpioA -pg 1 -lvl 6 -x 1810 -y 1070 -defaultsOSRD
+preplace portBus gpioB -pg 1 -lvl 6 -x 1810 -y 1090 -defaultsOSRD
+preplace portBus qspi0_dq -pg 1 -lvl 6 -x 1810 -y 1050 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1130 -y 480 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 430 -y 740 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 3 -x 750 -y 430 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 750 -y 650 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 170 -y 640 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 5 -x 1580 -y 500 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 4 -x 1130 -y 1130 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1580 -y 660 -defaultsOSRD
+preplace inst rst_clk_wiz_0_200M -pg 1 -lvl 5 -x 1580 -y 850 -defaultsOSRD
+preplace inst system_e203_0 -pg 1 -lvl 5 -x 1580 -y 1110 -defaultsOSRD
+preplace inst lcd_rgb_snake_0 -pg 1 -lvl 4 -x 1130 -y 180 -defaultsOSRD
+preplace inst axi_lite_for_snake_0 -pg 1 -lvl 5 -x 1580 -y 260 -defaultsOSRD
+preplace netloc clk_in1_0_1 1 0 2 NJ 250 320
+preplace netloc mig_7series_0_ui_clk 1 2 4 580 330 930 90 NJ 90 1750
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 2 960 300 1320J
+preplace netloc clk_wiz_0_locked 1 2 3 570 890 NJ 890 N
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 3 1 950 420n
+preplace netloc clk_wiz_0_clk_out2 1 2 3 540 550 970 310 1340
+preplace netloc fpga_rst_1 1 0 1 NJ 630
+preplace netloc mcu_rst_1 1 0 1 NJ 650
+preplace netloc util_vector_logic_0_Res 1 1 4 330 630 550 320 920 290 1300
+preplace netloc CLK32768KHZ_1 1 0 5 NJ 1070 NJ 1070 NJ 1070 NJ 1070 1300J
+preplace netloc Net 1 5 1 NJ 1070
+preplace netloc Net1 1 5 1 NJ 1090
+preplace netloc Net2 1 5 1 NJ 1130
+preplace netloc Net3 1 5 1 NJ 1150
+preplace netloc Net4 1 5 1 NJ 1110
+preplace netloc Net5 1 5 1 NJ 1170
+preplace netloc Net6 1 5 1 NJ 1230
+preplace netloc Net7 1 5 1 NJ 1190
+preplace netloc Net8 1 5 1 NJ 1210
+preplace netloc system_e203_0_qspi0_cs 1 5 1 NJ 1010
+preplace netloc Net9 1 5 1 NJ 1050
+preplace netloc system_e203_0_qspi0_sck 1 5 1 NJ 1030
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 4 570 80 NJ 80 NJ 80 1760
+preplace netloc mig_7series_0_mmcm_locked 1 2 4 560 60 NJ 60 NJ 60 1790
+preplace netloc Net10 1 2 3 530J 900 NJ 900 1310
+preplace netloc proc_sys_reset_0_mb_reset 1 3 1 920 610n
+preplace netloc util_vector_logic_1_Res 1 4 1 NJ 1130
+preplace netloc M01_ARESETN_1 1 3 2 940 320 1330
+preplace netloc lcd_rgb_snake_0_snake_x 1 4 1 N 220
+preplace netloc lcd_rgb_snake_0_snake_y 1 4 1 N 240
+preplace netloc lcd_rgb_snake_0_food_x 1 4 1 N 260
+preplace netloc lcd_rgb_snake_0_food_y 1 4 1 N 280
+preplace netloc axi_lite_for_snake_0_snake_cmd 1 3 3 970 50 NJ 50 1770
+preplace netloc clk_wiz_0_clk_out3 1 2 2 520 170 NJ
+preplace netloc axi_gpio_0_GPIO 1 5 1 NJ 660
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 N 460
+preplace netloc axi_interconnect_0_M02_AXI 1 4 1 1280 200n
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1290 480n
+preplace netloc mig_7series_0_DDR3 1 5 1 NJ 460
+preplace netloc system_e203_0_expl_axi 1 3 3 980 70 NJ 70 1780
+levelinfo -pg 1 0 170 430 750 1130 1580 1810
+pagesize -pg 1 -db -bbox -sgen -150 -10 1950 1290
 "
 }
 0

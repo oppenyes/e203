@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Apr  5 01:10:39 2025
+| Date         : Sat Apr  5 14:38:08 2025
 | Host         : Lab running 64-bit major release  (build 9200)
 | Command      : report_methodology -file system_top_wrapper_methodology_drc_routed.rpt -pb system_top_wrapper_methodology_drc_routed.pb -rpx system_top_wrapper_methodology_drc_routed.rpx
 | Design       : system_top_wrapper
@@ -1130,62 +1130,62 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X70Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X66Y172 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X65Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X69Y171 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X66Y170 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X65Y172 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X68Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X69Y173 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X69Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X66Y170 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X67Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X68Y170 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X65Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X68Y172 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X66Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X67Y170 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X71Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X67Y173 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X63Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X70Y172 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X66Y172 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X66Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X64Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X68Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_top_i/mig_7series_0/u_system_top_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-18#1 Warning

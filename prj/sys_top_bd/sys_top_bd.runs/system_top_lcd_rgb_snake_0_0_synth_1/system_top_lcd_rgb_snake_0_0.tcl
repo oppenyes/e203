@@ -95,7 +95,7 @@ set_property ip_output_repo e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/system_top_lcd_rgb_snake_0_0.xci
+read_ip -quiet E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.srcs/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/system_top_lcd_rgb_snake_0_0.xci
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/src/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/src/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_lcd_rgb_snake_0_0/src/clk_wiz_0/clk_wiz_0_ooc.xdc]

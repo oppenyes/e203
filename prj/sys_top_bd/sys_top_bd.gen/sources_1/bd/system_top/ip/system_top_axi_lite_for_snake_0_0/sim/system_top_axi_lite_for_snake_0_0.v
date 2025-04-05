@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:axi_lite_for_snake:2.0
+// IP VLNV: xilinx.com:user:axi_lite_for_snake:2.1
 // IP Revision: 1
 
 `timescale 1ns/1ps

@@ -47,40 +47,30 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:lcd_rgb_snake:1.0
-// IP Revision: 2
+// IP VLNV: xilinx.com:user:lcd_rgb_snake:2.0
+// IP Revision: 1
 
 (* X_CORE_INFO = "lcd_rgb_snake,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "system_top_lcd_rgb_snake_0_0,lcd_rgb_snake,{}" *)
-(* CORE_GENERATION_INFO = "system_top_lcd_rgb_snake_0_0,lcd_rgb_snake,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=lcd_rgb_snake,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "system_top_lcd_rgb_snake_0_0,lcd_rgb_snake,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=lcd_rgb_snake,x_ipVersion=2.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_top_lcd_rgb_snake_0_0 (
   snake_cmd,
-  snake_x,
-  snake_y,
-  food_x,
-  food_y,
-  CLK100MHZ,
-  sys_rst_n,
+  CLK50MHZ,
+  rst_n,
   key,
-  led,
   lcd_de,
   lcd_rgb,
   lcd_clk
 );
 
 input wire [31 : 0] snake_cmd;
-output wire [31 : 0] snake_x;
-output wire [31 : 0] snake_y;
-output wire [31 : 0] food_x;
-output wire [31 : 0] food_y;
-input wire CLK100MHZ;
+input wire CLK50MHZ;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME sys_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 sys_rst_n RST" *)
-input wire sys_rst_n;
+input wire rst_n;
 input wire [3 : 0] key;
-output wire [3 : 0] led;
 output wire lcd_de;
 inout wire [2 : 0] lcd_rgb;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME lcd_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN system_top_lcd_rgb_snake_0_0_lcd_clk, INSERT_VIP 0" *)
@@ -89,14 +79,9 @@ output wire lcd_clk;
 
   lcd_rgb_snake inst (
     .snake_cmd(snake_cmd),
-    .snake_x(snake_x),
-    .snake_y(snake_y),
-    .food_x(food_x),
-    .food_y(food_y),
-    .CLK100MHZ(CLK100MHZ),
-    .sys_rst_n(sys_rst_n),
+    .CLK50MHZ(CLK50MHZ),
+    .rst_n(rst_n),
     .key(key),
-    .led(led),
     .lcd_de(lcd_de),
     .lcd_rgb(lcd_rgb),
     .lcd_clk(lcd_clk)

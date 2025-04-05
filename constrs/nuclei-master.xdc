@@ -155,6 +155,7 @@ set_property PACKAGE_PIN W21  [get_ports {gpioB[8]}]
 set_property PACKAGE_PIN U20  [get_ports {gpioB[7]}]
 set_property PACKAGE_PIN AB22 [get_ports {gpioB[6]}]
 set_property PACKAGE_PIN AB21 [get_ports {gpioB[5]}]
+#####            useless            #####
 set_property PACKAGE_PIN Y22  [get_ports {gpioB[4]}]
 set_property PACKAGE_PIN Y21  [get_ports {gpioB[3]}]
 set_property PACKAGE_PIN AA21 [get_ports {gpioB[2]}]

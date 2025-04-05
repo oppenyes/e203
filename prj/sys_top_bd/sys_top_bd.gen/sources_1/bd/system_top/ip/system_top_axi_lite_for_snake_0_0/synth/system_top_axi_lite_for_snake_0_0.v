@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:axi_lite_for_snake:2.0
+// IP VLNV: xilinx.com:user:axi_lite_for_snake:2.1
 // IP Revision: 1
 
 (* X_CORE_INFO = "axi_lite_for_snake_v1_0,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "system_top_axi_lite_for_snake_0_0,axi_lite_for_snake_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "system_top_axi_lite_for_snake_0_0,axi_lite_for_snake_v1_0,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=axi_lite_for_snake,x_ipVersion=2.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=5}" *)
+(* CORE_GENERATION_INFO = "system_top_axi_lite_for_snake_0_0,axi_lite_for_snake_v1_0,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=axi_lite_for_snake,x_ipVersion=2.1,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=5}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_top_axi_lite_for_snake_0_0 (
   snake_cmd,

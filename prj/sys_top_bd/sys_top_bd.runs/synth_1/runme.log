@@ -22,106 +22,111 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18756
+INFO: [Synth 8-7075] Helper process launched with PID 25068
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1221.656 ; gain = 82.930
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1223.270 ; gain = 84.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system_top_wrapper' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'system_top' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1291]
-INFO: [Synth 8-6157] synthesizing module 'system_top_axi_gpio_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_gpio_0_0' (1#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_top_axi_interconnect_0_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1836]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_gpio_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_gpio_0_0' (1#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_interconnect_0_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1826]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_13VSFJX' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:12]
-INFO: [Synth 8-6157] synthesizing module 'system_top_auto_cc_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_auto_cc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_cc_0' (2#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_auto_cc_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_cc_0' (2#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_auto_cc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'system_top_auto_cc_0' is unconnected for instance 'auto_cc' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:303]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'system_top_auto_cc_0' is unconnected for instance 'auto_cc' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:303]
 WARNING: [Synth 8-7023] instance 'auto_cc' of module 'system_top_auto_cc_0' has 74 connections declared, but only 72 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:303]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_13VSFJX' (3#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:12]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1T5VXFF' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:378]
-INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_0' (4#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_0' (4#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_auto_pc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'system_top_auto_pc_0' is unconnected for instance 'auto_pc' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:601]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'system_top_auto_pc_0' is unconnected for instance 'auto_pc' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:601]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'system_top_auto_pc_0' has 56 connections declared, but only 54 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:601]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1T5VXFF' (5#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:378]
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_J9QNG1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:658]
-INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_1' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_1' (6#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_1' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_1' (6#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_J9QNG1' (7#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:658]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1U10WOS' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:948]
-INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_2' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_2' (8#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_auto_pc_2' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_auto_pc_2' (8#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_auto_pc_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'system_top_auto_pc_2' is unconnected for instance 'auto_pc' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1219]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'system_top_auto_pc_2' is unconnected for instance 'auto_pc' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1219]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'system_top_auto_pc_2' has 70 connections declared, but only 68 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1219]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1U10WOS' (9#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:948]
-INFO: [Synth 8-6157] synthesizing module 'system_top_xbar_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_xbar_0' (10#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_interconnect_0_0' (11#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1836]
-INFO: [Synth 8-6157] synthesizing module 'system_top_axi_lite_for_snake_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_axi_lite_for_snake_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_lite_for_snake_0_0' (12#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_axi_lite_for_snake_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_top_clk_wiz_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_clk_wiz_0_0' (13#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'system_top_lcd_rgb_snake_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_lcd_rgb_snake_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_lcd_rgb_snake_0_0' (14#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_lcd_rgb_snake_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'led' of module 'system_top_lcd_rgb_snake_0_0' is unconnected for instance 'lcd_rgb_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1691]
-WARNING: [Synth 8-7071] port 'lcd_de' of module 'system_top_lcd_rgb_snake_0_0' is unconnected for instance 'lcd_rgb_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1691]
-WARNING: [Synth 8-7071] port 'lcd_rgb' of module 'system_top_lcd_rgb_snake_0_0' is unconnected for instance 'lcd_rgb_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1691]
-WARNING: [Synth 8-7071] port 'lcd_clk' of module 'system_top_lcd_rgb_snake_0_0' is unconnected for instance 'lcd_rgb_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1691]
-WARNING: [Synth 8-7023] instance 'lcd_rgb_snake_0' of module 'system_top_lcd_rgb_snake_0_0' has 12 connections declared, but only 8 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1691]
-INFO: [Synth 8-6157] synthesizing module 'system_top_mig_7series_0_1' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_mig_7series_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_mig_7series_0_1' (15#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_mig_7series_0_1_stub.v:5]
-WARNING: [Synth 8-7071] port 'app_sr_active' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1700]
-WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1700]
-WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1700]
-WARNING: [Synth 8-7071] port 's_axi_bid' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1700]
-WARNING: [Synth 8-7071] port 's_axi_rid' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1700]
-WARNING: [Synth 8-7071] port 'init_calib_complete' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1700]
-WARNING: [Synth 8-7071] port 'device_temp' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1700]
-WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'system_top_mig_7series_0_1' has 64 connections declared, but only 57 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1700]
-INFO: [Synth 8-6157] synthesizing module 'system_top_proc_sys_reset_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_proc_sys_reset_0_0' (16#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_proc_sys_reset_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1758]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1758]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'system_top_proc_sys_reset_0_0' has 10 connections declared, but only 8 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1758]
-INFO: [Synth 8-6157] synthesizing module 'system_top_proc_sys_reset_1_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_proc_sys_reset_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_proc_sys_reset_1_0' (17#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_proc_sys_reset_1_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1767]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1767]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1767]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1767]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_1' of module 'system_top_proc_sys_reset_1_0' has 10 connections declared, but only 6 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1767]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1774]
-INFO: [Synth 8-6157] synthesizing module 'system_top_rst_clk_wiz_0_200M_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_rst_clk_wiz_0_200M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_rst_clk_wiz_0_200M_0' (18#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_rst_clk_wiz_0_200M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1774]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1774]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1774]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1774]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1774]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_200M' of module 'system_top_rst_clk_wiz_0_200M_0' has 10 connections declared, but only 5 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1774]
-INFO: [Synth 8-6157] synthesizing module 'system_top_system_e203_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_system_e203_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_system_e203_0_0' (19#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_system_e203_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_top_util_vector_logic_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_util_vector_logic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_util_vector_logic_0_0' (20#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_util_vector_logic_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_top_util_vector_logic_1_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_util_vector_logic_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_top_util_vector_logic_1_0' (21#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-29520-Lab/realtime/system_top_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_xbar_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_xbar_0' (10#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_interconnect_0_0' (11#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1826]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_lite_for_snake_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_axi_lite_for_snake_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_lite_for_snake_0_0' (12#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_axi_lite_for_snake_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'snake_x' of module 'system_top_axi_lite_for_snake_0_0' is unconnected for instance 'axi_lite_for_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1655]
+WARNING: [Synth 8-7071] port 'snake_y' of module 'system_top_axi_lite_for_snake_0_0' is unconnected for instance 'axi_lite_for_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1655]
+WARNING: [Synth 8-7071] port 'food_x' of module 'system_top_axi_lite_for_snake_0_0' is unconnected for instance 'axi_lite_for_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1655]
+WARNING: [Synth 8-7071] port 'food_y' of module 'system_top_axi_lite_for_snake_0_0' is unconnected for instance 'axi_lite_for_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1655]
+WARNING: [Synth 8-7023] instance 'axi_lite_for_snake_0' of module 'system_top_axi_lite_for_snake_0_0' has 26 connections declared, but only 22 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1655]
+INFO: [Synth 8-6157] synthesizing module 'system_top_clk_wiz_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_clk_wiz_0_0' (13#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_clk_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1685]
+INFO: [Synth 8-6157] synthesizing module 'system_top_lcd_rgb_snake_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_lcd_rgb_snake_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_lcd_rgb_snake_0_0' (14#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_lcd_rgb_snake_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'lcd_de' of module 'system_top_lcd_rgb_snake_0_0' is unconnected for instance 'lcd_rgb_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1685]
+WARNING: [Synth 8-7071] port 'lcd_rgb' of module 'system_top_lcd_rgb_snake_0_0' is unconnected for instance 'lcd_rgb_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1685]
+WARNING: [Synth 8-7071] port 'lcd_clk' of module 'system_top_lcd_rgb_snake_0_0' is unconnected for instance 'lcd_rgb_snake_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1685]
+WARNING: [Synth 8-7023] instance 'lcd_rgb_snake_0' of module 'system_top_lcd_rgb_snake_0_0' has 7 connections declared, but only 4 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1685]
+INFO: [Synth 8-6157] synthesizing module 'system_top_mig_7series_0_1' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_mig_7series_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_mig_7series_0_1' (15#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_mig_7series_0_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'app_sr_active' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1690]
+WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1690]
+WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1690]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1690]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1690]
+WARNING: [Synth 8-7071] port 'init_calib_complete' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1690]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'system_top_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1690]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'system_top_mig_7series_0_1' has 64 connections declared, but only 57 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1690]
+INFO: [Synth 8-6157] synthesizing module 'system_top_proc_sys_reset_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_proc_sys_reset_0_0' (16#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1748]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1748]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'system_top_proc_sys_reset_0_0' has 10 connections declared, but only 8 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1748]
+INFO: [Synth 8-6157] synthesizing module 'system_top_proc_sys_reset_1_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_proc_sys_reset_1_0' (17#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_proc_sys_reset_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1757]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1757]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1757]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1757]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_1' of module 'system_top_proc_sys_reset_1_0' has 10 connections declared, but only 6 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1757]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1764]
+INFO: [Synth 8-6157] synthesizing module 'system_top_rst_clk_wiz_0_200M_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_rst_clk_wiz_0_200M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_rst_clk_wiz_0_200M_0' (18#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_rst_clk_wiz_0_200M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1764]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1764]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1764]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1764]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'system_top_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1764]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_200M' of module 'system_top_rst_clk_wiz_0_200M_0' has 10 connections declared, but only 5 given [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1764]
+INFO: [Synth 8-6157] synthesizing module 'system_top_system_e203_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_system_e203_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_system_e203_0_0' (19#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_system_e203_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_util_vector_logic_0_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_util_vector_logic_0_0' (20#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_top_util_vector_logic_1_0' [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_util_vector_logic_1_0' (21#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/.Xil/Vivado-26468-Lab/realtime/system_top_util_vector_logic_1_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'system_top' (22#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/synth/system_top.v:1291]
 INFO: [Synth 8-6155] done synthesizing module 'system_top_wrapper' (23#1) [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1280.945 ; gain = 142.219
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1282.230 ; gain = 143.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1298.867 ; gain = 160.141
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.230 ; gain = 143.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1298.867 ; gain = 160.141
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.230 ; gain = 143.527
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1298.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1282.230 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -169,26 +174,26 @@ Parsing XDC File [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth
 Finished Parsing XDC File [E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1321.660 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1318.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1321.660 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1318.969 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1321.660 ; gain = 182.934
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1318.969 ; gain = 180.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1321.660 ; gain = 182.934
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1318.969 ; gain = 180.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0_1/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0_in_context.xdc, line 6).
 Applied set_property IO_BUFFER_TYPE = NONE for DDR3_addr[0]. (constraint file  e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/system_top_mig_7series_0_1_in_context.xdc, line 2).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_addr[0]. (constraint file  e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/system_top_mig_7series_0_1_in_context.xdc, line 3).
 Applied set_property IO_BUFFER_TYPE = NONE for DDR3_addr[10]. (constraint file  e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_mig_7series_0_1_1/system_top_mig_7series_0_1/system_top_mig_7series_0_1_in_context.xdc, line 4).
@@ -494,10 +499,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for system_top_i/system_e203_0. (cons
 Applied set_property KEEP_HIERARCHY = SOFT for system_top_i/lcd_rgb_snake_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for system_top_i/axi_lite_for_snake_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1321.660 ; gain = 182.934
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1318.969 ; gain = 180.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1321.660 ; gain = 182.934
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1318.969 ; gain = 180.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -519,26 +524,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1321.660 ; gain = 182.934
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1318.969 ; gain = 180.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1360.027 ; gain = 221.301
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1361.102 ; gain = 222.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1360.547 ; gain = 221.820
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1361.551 ; gain = 222.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1380.066 ; gain = 241.340
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1381.102 ; gain = 242.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -555,38 +560,139 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_x[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin snake_y[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_x[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_y[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_y[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_y[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_lite_for_snake_0 has unconnected pin food_y[28]
+INFO: [Common 17-14] Message 'Synth 8-4442' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1384.941 ; gain = 246.215
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.273 ; gain = 247.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1384.941 ; gain = 246.215
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.273 ; gain = 247.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1384.941 ; gain = 246.215
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.273 ; gain = 247.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1384.941 ; gain = 246.215
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.273 ; gain = 247.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1384.941 ; gain = 246.215
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.273 ; gain = 247.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1384.941 ; gain = 246.215
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.273 ; gain = 247.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -636,23 +742,24 @@ Report Cell Usage:
 |18    |OBUF                            |     4|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1384.941 ; gain = 246.215
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.273 ; gain = 247.570
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1384.941 ; gain = 223.422
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1384.941 ; gain = 246.215
+Synthesis finished with 0 errors, 128 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1386.273 ; gain = 210.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.273 ; gain = 247.570
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1397.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1398.371 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1405.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1406.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-64 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+65 Infos, 46 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1405.109 ; gain = 266.383
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1406.125 ; gain = 267.422
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/synth_1/system_top_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_top_wrapper_utilization_synth.rpt -pb system_top_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr  5 01:05:11 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  5 14:33:00 2025...
