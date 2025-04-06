@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Apr  5 14:33:00 2025
+| Date         : Sat Apr  5 17:47:28 2025
 | Host         : Lab running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_top_wrapper_utilization_synth.rpt -pb system_top_wrapper_utilization_synth.pb
 | Design       : system_top_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    7 |     0 |       285 |  2.46 |
+| Bonded IOB                  |    9 |     0 |       285 |  3.16 |
 | Bonded IPADs                |    0 |     0 |        14 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         8 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |        10 |  0.00 |
@@ -149,7 +149,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |    4 |                  IO |
+| OBUF     |    6 |                  IO |
 | IBUF     |    3 |                  IO |
 +----------+------+---------------------+
 
@@ -163,6 +163,7 @@ Table of Contents
 | system_top_xbar_0                 |    1 |
 | system_top_util_vector_logic_1_0  |    1 |
 | system_top_util_vector_logic_0_0  |    1 |
+| system_top_system_ila_0_0         |    1 |
 | system_top_system_e203_0_0        |    1 |
 | system_top_rst_clk_wiz_0_200M_0   |    1 |
 | system_top_proc_sys_reset_1_0     |    1 |

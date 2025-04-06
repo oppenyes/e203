@@ -110,14 +110,15 @@ set_property PACKAGE_PIN M16  [get_ports {gpioA[8]}]
 
 
 ## key_in C
-set_property PACKAGE_PIN AA6  [get_ports {gpioA[7]}]
+set_property PACKAGE_PIN AA6  [get_ports {AA6}]
 ## key_in R
 set_property PACKAGE_PIN W7   [get_ports {gpioA[6]}]
 ## key_in L
 set_property PACKAGE_PIN V7   [get_ports {gpioA[5]}]
 ## key_in D
 set_property PACKAGE_PIN AB7  [get_ports {gpioA[4]}]
-## key_in U
+## key_in U #####            useless    take analog pmod       #####
+#set_property PACKAGE_PIN G16   [get_ports {gpioA[3]}]
 set_property PACKAGE_PIN Y6   [get_ports {gpioA[3]}]
 ## RGB B
 set_property PACKAGE_PIN B13  [get_ports {gpioA[2]}]
@@ -155,13 +156,19 @@ set_property PACKAGE_PIN W21  [get_ports {gpioB[8]}]
 set_property PACKAGE_PIN U20  [get_ports {gpioB[7]}]
 set_property PACKAGE_PIN AB22 [get_ports {gpioB[6]}]
 set_property PACKAGE_PIN AB21 [get_ports {gpioB[5]}]
-#####            useless            #####
-set_property PACKAGE_PIN Y22  [get_ports {gpioB[4]}]
-set_property PACKAGE_PIN Y21  [get_ports {gpioB[3]}]
-set_property PACKAGE_PIN AA21 [get_ports {gpioB[2]}]
-set_property PACKAGE_PIN AA20 [get_ports {gpioB[1]}]
-set_property PACKAGE_PIN W22  [get_ports {gpioB[0]}]
+#####            useless    take analog pmod       #####
+set_property PACKAGE_PIN G15  [get_ports {gpioB[4]}]
+set_property PACKAGE_PIN G13  [get_ports {gpioB[3]}]
+set_property PACKAGE_PIN H13 [get_ports {gpioB[2]}]
+set_property PACKAGE_PIN H14 [get_ports {gpioB[1]}]
+set_property PACKAGE_PIN J14  [get_ports {gpioB[0]}]
+#-----------------------------------LCD-----------------------------------------
+set_property -dict {PACKAGE_PIN W22 IOSTANDARD LVCMOS33} [get_ports {lcd_rgb[0]}]
+set_property -dict {PACKAGE_PIN AA20 IOSTANDARD LVCMOS33} [get_ports {lcd_rgb[1]}]
+set_property -dict {PACKAGE_PIN AA21 IOSTANDARD LVCMOS33} [get_ports {lcd_rgb[2]}]
 
+set_property -dict {PACKAGE_PIN Y21 IOSTANDARD LVCMOS33} [get_ports lcd_clk]
+set_property -dict {PACKAGE_PIN Y22 IOSTANDARD LVCMOS33} [get_ports lcd_de]
 #####            clock & rst define           #####
 
 set_property IOSTANDARD LVCMOS15 [get_ports fpga_rst  ]

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x89C2004BDCDDB245",
+      "boundary_crc": "0x84A46FCDF137C36F",
       "device": "xc7a200tfbg484-2",
       "gen_directory": "../../../../sys_top_bd.gen/sources_1/bd/system_top",
       "name": "system_top",
@@ -33,7 +33,6 @@
       "mig_7series_0": "",
       "util_vector_logic_1": "",
       "axi_gpio_0": "",
-      "rst_clk_wiz_0_200M": "",
       "system_e203_0": "",
       "lcd_rgb_snake_0": "",
       "axi_lite_for_snake_0": ""
@@ -197,6 +196,45 @@
       },
       "qspi0_sck": {
         "direction": "O"
+      },
+      "lcd_de": {
+        "direction": "O"
+      },
+      "lcd_rgb": {
+        "direction": "IO",
+        "left": "2",
+        "right": "0"
+      },
+      "lcd_clk": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "system_top_lcd_rgb_snake_0_0_lcd_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "key": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
       }
     },
     "components": {
@@ -498,16 +536,16 @@
               }
             },
             "interface_nets": {
-              "auto_cc_to_m00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_cc/M_AXI"
-                ]
-              },
               "m00_couplers_to_auto_cc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_cc/S_AXI"
+                ]
+              },
+              "auto_cc_to_m00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_cc/M_AXI"
                 ]
               }
             },
@@ -706,16 +744,16 @@
               }
             },
             "interface_nets": {
-              "m02_couplers_to_auto_pc": {
-                "interface_ports": [
-                  "S_AXI",
-                  "auto_pc/S_AXI"
-                ]
-              },
               "auto_pc_to_m02_couplers": {
                 "interface_ports": [
                   "M_AXI",
                   "auto_pc/M_AXI"
+                ]
+              },
+              "m02_couplers_to_auto_pc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_pc/S_AXI"
                 ]
               }
             },
@@ -736,36 +774,6 @@
           }
         },
         "interface_nets": {
-          "axi_interconnect_0_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
-          "s00_couplers_to_xbar": {
-            "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
-            ]
-          },
-          "m00_couplers_to_axi_interconnect_0": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
-            ]
-          },
-          "m01_couplers_to_axi_interconnect_0": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m00_couplers": {
-            "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
-            ]
-          },
           "xbar_to_m01_couplers": {
             "interface_ports": [
               "xbar/M01_AXI",
@@ -778,10 +786,40 @@
               "m02_couplers/M_AXI"
             ]
           },
+          "m00_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "M00_AXI",
+              "m00_couplers/M_AXI"
+            ]
+          },
+          "s00_couplers_to_xbar": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
+            ]
+          },
+          "axi_interconnect_0_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
           "xbar_to_m02_couplers": {
             "interface_ports": [
               "xbar/M02_AXI",
               "m02_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m00_couplers": {
+            "interface_ports": [
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
             ]
           }
         },
@@ -992,12 +1030,6 @@
           }
         }
       },
-      "rst_clk_wiz_0_200M": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "system_top_rst_clk_wiz_0_200M_0",
-        "xci_path": "ip\\system_top_rst_clk_wiz_0_200M_0\\system_top_rst_clk_wiz_0_200M_0.xci",
-        "inst_hier_path": "rst_clk_wiz_0_200M"
-      },
       "system_e203_0": {
         "vlnv": "xilinx.com:user:system_e203:3.0",
         "xci_name": "system_top_system_e203_0_0",
@@ -1043,22 +1075,10 @@
           "mig_7series_0/DDR3"
         ]
       },
-      "axi_interconnect_0_M00_AXI": {
-        "interface_ports": [
-          "axi_interconnect_0/M00_AXI",
-          "mig_7series_0/S_AXI"
-        ]
-      },
       "axi_interconnect_0_M02_AXI": {
         "interface_ports": [
           "axi_interconnect_0/M02_AXI",
           "axi_lite_for_snake_0/S00_AXI"
-        ]
-      },
-      "system_e203_0_expl_axi": {
-        "interface_ports": [
-          "system_e203_0/expl_axi",
-          "axi_interconnect_0/S00_AXI"
         ]
       },
       "axi_interconnect_0_M01_AXI": {
@@ -1071,6 +1091,18 @@
         "interface_ports": [
           "LED",
           "axi_gpio_0/GPIO"
+        ]
+      },
+      "axi_interconnect_0_M00_AXI": {
+        "interface_ports": [
+          "axi_interconnect_0/M00_AXI",
+          "mig_7series_0/S_AXI"
+        ]
+      },
+      "system_e203_0_expl_axi": {
+        "interface_ports": [
+          "system_e203_0/expl_axi",
+          "axi_interconnect_0/S00_AXI"
         ]
       }
     },
@@ -1098,8 +1130,7 @@
       "clk_wiz_0_locked": {
         "ports": [
           "clk_wiz_0/locked",
-          "proc_sys_reset_0/dcm_locked",
-          "rst_clk_wiz_0_200M/dcm_locked"
+          "proc_sys_reset_0/dcm_locked"
         ]
       },
       "proc_sys_reset_0_interconnect_aresetn": {
@@ -1140,7 +1171,6 @@
           "clk_wiz_0/resetn",
           "proc_sys_reset_0/ext_reset_in",
           "mig_7series_0/sys_rst",
-          "rst_clk_wiz_0_200M/ext_reset_in",
           "lcd_rgb_snake_0/rst_n"
         ]
       },
@@ -1238,8 +1268,7 @@
         "ports": [
           "clk_wiz_0/clk_out1",
           "mig_7series_0/clk_ref_i",
-          "mig_7series_0/sys_clk_i",
-          "rst_clk_wiz_0_200M/slowest_sync_clk"
+          "mig_7series_0/sys_clk_i"
         ]
       },
       "proc_sys_reset_0_mb_reset": {
@@ -1293,6 +1322,30 @@
         "ports": [
           "clk_wiz_0/clk_out3",
           "lcd_rgb_snake_0/CLK50MHZ"
+        ]
+      },
+      "lcd_rgb_snake_0_lcd_de": {
+        "ports": [
+          "lcd_rgb_snake_0/lcd_de",
+          "lcd_de"
+        ]
+      },
+      "Net11": {
+        "ports": [
+          "lcd_rgb",
+          "lcd_rgb_snake_0/lcd_rgb"
+        ]
+      },
+      "lcd_rgb_snake_0_lcd_clk": {
+        "ports": [
+          "lcd_rgb_snake_0/lcd_clk",
+          "lcd_clk"
+        ]
+      },
+      "key_0_1": {
+        "ports": [
+          "key",
+          "lcd_rgb_snake_0/key"
         ]
       }
     },
