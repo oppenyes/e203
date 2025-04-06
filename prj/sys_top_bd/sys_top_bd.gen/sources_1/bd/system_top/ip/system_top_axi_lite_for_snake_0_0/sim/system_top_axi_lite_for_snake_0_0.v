@@ -47,18 +47,17 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:axi_lite_for_snake:2.1
+// IP VLNV: xilinx.com:user:axi_lite_for_snake:3.1
 // IP Revision: 1
 
 `timescale 1ns/1ps
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_top_axi_lite_for_snake_0_0 (
-  snake_cmd,
-  snake_x,
-  snake_y,
-  food_x,
-  food_y,
+  CLK50MHZ,
+  lcd_de,
+  lcd_clk,
+  lcd_rgb,
   s00_axi_aclk,
   s00_axi_aresetn,
   s00_axi_awaddr,
@@ -82,11 +81,12 @@ module system_top_axi_lite_for_snake_0_0 (
   s00_axi_rready
 );
 
-output wire [31 : 0] snake_cmd;
-input wire [31 : 0] snake_x;
-input wire [31 : 0] snake_y;
-input wire [31 : 0] food_x;
-input wire [31 : 0] food_y;
+input wire CLK50MHZ;
+output wire lcd_de;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME lcd_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN system_top_axi_lite_for_snake_0_0_lcd_clk, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 lcd_clk CLK" *)
+output wire lcd_clk;
+inout wire [2 : 0] lcd_rgb;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 16000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *)
 input wire s00_axi_aclk;
@@ -138,11 +138,10 @@ input wire s00_axi_rready;
     .C_S00_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
     .C_S00_AXI_ADDR_WIDTH(5)  // Width of S_AXI address bus
   ) inst (
-    .snake_cmd(snake_cmd),
-    .snake_x(snake_x),
-    .snake_y(snake_y),
-    .food_x(food_x),
-    .food_y(food_y),
+    .CLK50MHZ(CLK50MHZ),
+    .lcd_de(lcd_de),
+    .lcd_clk(lcd_clk),
+    .lcd_rgb(lcd_rgb),
     .s00_axi_aclk(s00_axi_aclk),
     .s00_axi_aresetn(s00_axi_aresetn),
     .s00_axi_awaddr(s00_axi_awaddr),

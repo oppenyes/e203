@@ -341,7 +341,6 @@ proc create_root_design { parentCell } {
   set fpga_rst [ create_bd_port -dir I -type rst fpga_rst ]
   set gpioA [ create_bd_port -dir IO -from 31 -to 0 gpioA ]
   set gpioB [ create_bd_port -dir IO -from 31 -to 0 gpioB ]
-  set key [ create_bd_port -dir I -from 3 -to 0 key ]
   set lcd_clk [ create_bd_port -dir O -type clk lcd_clk ]
   set lcd_de [ create_bd_port -dir O lcd_de ]
   set lcd_rgb [ create_bd_port -dir IO -from 2 -to 0 lcd_rgb ]
@@ -373,7 +372,7 @@ proc create_root_design { parentCell } {
  ] $axi_interconnect_0
 
   # Create instance: axi_lite_for_snake_0, and set properties
-  set axi_lite_for_snake_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:axi_lite_for_snake:2.1 axi_lite_for_snake_0 ]
+  set axi_lite_for_snake_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:axi_lite_for_snake:3.1 axi_lite_for_snake_0 ]
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
@@ -397,9 +396,6 @@ proc create_root_design { parentCell } {
    CONFIG.RESET_PORT {resetn} \
    CONFIG.RESET_TYPE {ACTIVE_LOW} \
  ] $clk_wiz_0
-
-  # Create instance: lcd_rgb_snake_0, and set properties
-  set lcd_rgb_snake_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:lcd_rgb_snake:2.0 lcd_rgb_snake_0 ]
 
   # Create instance: mig_7series_0, and set properties
   set mig_7series_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_0 ]
@@ -463,20 +459,14 @@ proc create_root_design { parentCell } {
   connect_bd_net -net Net8 [get_bd_ports pmu_padrst] [get_bd_pins system_e203_0/pmu_padrst]
   connect_bd_net -net Net9 [get_bd_ports qspi0_dq] [get_bd_pins system_e203_0/qspi0_dq]
   connect_bd_net -net Net10 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mig_7series_0/clk_ref_i] [get_bd_pins mig_7series_0/sys_clk_i]
-  connect_bd_net -net Net11 [get_bd_ports lcd_rgb] [get_bd_pins lcd_rgb_snake_0/lcd_rgb]
-  connect_bd_net -net axi_lite_for_snake_0_snake_cmd [get_bd_pins axi_lite_for_snake_0/snake_cmd] [get_bd_pins lcd_rgb_snake_0/snake_cmd]
+  connect_bd_net -net Net11 [get_bd_ports lcd_rgb] [get_bd_pins axi_lite_for_snake_0/lcd_rgb]
+  connect_bd_net -net axi_lite_for_snake_0_lcd_clk [get_bd_ports lcd_clk] [get_bd_pins axi_lite_for_snake_0/lcd_clk]
+  connect_bd_net -net axi_lite_for_snake_0_lcd_de [get_bd_ports lcd_de] [get_bd_pins axi_lite_for_snake_0/lcd_de]
   connect_bd_net -net clk_in1_0_1 [get_bd_ports CLK100MHZ] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins axi_lite_for_snake_0/s00_axi_aclk] [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins system_e203_0/clk_16M]
-  connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins lcd_rgb_snake_0/CLK50MHZ]
+  connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins axi_lite_for_snake_0/CLK50MHZ] [get_bd_pins clk_wiz_0/clk_out3]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/dcm_locked]
   connect_bd_net -net fpga_rst_1 [get_bd_ports fpga_rst] [get_bd_pins util_vector_logic_0/Op1]
-  connect_bd_net -net key_0_1 [get_bd_ports key] [get_bd_pins lcd_rgb_snake_0/key]
-  connect_bd_net -net lcd_rgb_snake_0_food_x [get_bd_pins axi_lite_for_snake_0/food_x]
-  connect_bd_net -net lcd_rgb_snake_0_food_y [get_bd_pins axi_lite_for_snake_0/food_y]
-  connect_bd_net -net lcd_rgb_snake_0_lcd_clk [get_bd_ports lcd_clk] [get_bd_pins lcd_rgb_snake_0/lcd_clk]
-  connect_bd_net -net lcd_rgb_snake_0_lcd_de [get_bd_ports lcd_de] [get_bd_pins lcd_rgb_snake_0/lcd_de]
-  connect_bd_net -net lcd_rgb_snake_0_snake_x [get_bd_pins axi_lite_for_snake_0/snake_x]
-  connect_bd_net -net lcd_rgb_snake_0_snake_y [get_bd_pins axi_lite_for_snake_0/snake_y]
   connect_bd_net -net mcu_rst_1 [get_bd_ports mcu_rst] [get_bd_pins util_vector_logic_0/Op2]
   connect_bd_net -net mig_7series_0_mmcm_locked [get_bd_pins mig_7series_0/mmcm_locked] [get_bd_pins proc_sys_reset_1/dcm_locked]
   connect_bd_net -net mig_7series_0_ui_clk [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
@@ -486,7 +476,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net proc_sys_reset_1_peripheral_aresetn [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins mig_7series_0/aresetn] [get_bd_pins proc_sys_reset_1/peripheral_aresetn]
   connect_bd_net -net system_e203_0_qspi0_cs [get_bd_ports qspi0_cs] [get_bd_pins system_e203_0/qspi0_cs]
   connect_bd_net -net system_e203_0_qspi0_sck [get_bd_ports qspi0_sck] [get_bd_pins system_e203_0/qspi0_sck]
-  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins clk_wiz_0/resetn] [get_bd_pins lcd_rgb_snake_0/rst_n] [get_bd_pins mig_7series_0/sys_rst] [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins util_vector_logic_0/Res]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins clk_wiz_0/resetn] [get_bd_pins mig_7series_0/sys_rst] [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins util_vector_logic_0/Res]
   connect_bd_net -net util_vector_logic_1_Res [get_bd_pins system_e203_0/ck_rst] [get_bd_pins util_vector_logic_1/Res]
 
   # Create address segments

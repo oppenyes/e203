@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat Apr  5 13:37:03 2025
+// Date        : Sun Apr  6 11:11:53 2025
 // Host        : Lab running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top system_top_axi_lite_for_snake_0_0 -prefix
-//               system_top_axi_lite_for_snake_0_0_ system_top_axi_lite_for_snake_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_lite_for_snake_0_0/system_top_axi_lite_for_snake_0_0_stub.v
 // Design      : system_top_axi_lite_for_snake_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a200tfbg484-2
@@ -14,18 +14,16 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "axi_lite_for_snake_v1_0,Vivado 2020.2" *)
-module system_top_axi_lite_for_snake_0_0(snake_cmd, snake_x, snake_y, food_x, food_y, 
-  s00_axi_aclk, s00_axi_aresetn, s00_axi_awaddr, s00_axi_awprot, s00_axi_awvalid, 
-  s00_axi_awready, s00_axi_wdata, s00_axi_wstrb, s00_axi_wvalid, s00_axi_wready, 
-  s00_axi_bresp, s00_axi_bvalid, s00_axi_bready, s00_axi_araddr, s00_axi_arprot, 
-  s00_axi_arvalid, s00_axi_arready, s00_axi_rdata, s00_axi_rresp, s00_axi_rvalid, 
-  s00_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="snake_cmd[31:0],snake_x[31:0],snake_y[31:0],food_x[31:0],food_y[31:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[4:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[4:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
-  output [31:0]snake_cmd;
-  input [31:0]snake_x;
-  input [31:0]snake_y;
-  input [31:0]food_x;
-  input [31:0]food_y;
+module system_top_axi_lite_for_snake_0_0(CLK50MHZ, lcd_de, lcd_clk, lcd_rgb, s00_axi_aclk, 
+  s00_axi_aresetn, s00_axi_awaddr, s00_axi_awprot, s00_axi_awvalid, s00_axi_awready, 
+  s00_axi_wdata, s00_axi_wstrb, s00_axi_wvalid, s00_axi_wready, s00_axi_bresp, 
+  s00_axi_bvalid, s00_axi_bready, s00_axi_araddr, s00_axi_arprot, s00_axi_arvalid, 
+  s00_axi_arready, s00_axi_rdata, s00_axi_rresp, s00_axi_rvalid, s00_axi_rready)
+/* synthesis syn_black_box black_box_pad_pin="CLK50MHZ,lcd_de,lcd_clk,lcd_rgb[2:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[4:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[4:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
+  input CLK50MHZ;
+  output lcd_de;
+  output lcd_clk;
+  inout [2:0]lcd_rgb;
   input s00_axi_aclk;
   input s00_axi_aresetn;
   input [4:0]s00_axi_awaddr;

@@ -110,7 +110,7 @@ set_property PACKAGE_PIN M16  [get_ports {gpioA[8]}]
 
 
 ## key_in C
-set_property PACKAGE_PIN AA6  [get_ports {AA6}]
+set_property PACKAGE_PIN AA6  [get_ports {gpioA[7]}]
 ## key_in R
 set_property PACKAGE_PIN W7   [get_ports {gpioA[6]}]
 ## key_in L

@@ -33,20 +33,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_
 # IP: bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_axi_gpio_0_0 || ORIG_REF_NAME==system_top_axi_gpio_0_0} -quiet] -quiet
 
-# IP: bd/system_top/ip/system_top_rst_clk_wiz_0_200M_0/system_top_rst_clk_wiz_0_200M_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_rst_clk_wiz_0_200M_0 || ORIG_REF_NAME==system_top_rst_clk_wiz_0_200M_0} -quiet] -quiet
-
 # IP: bd/system_top/ip/system_top_system_e203_0_0_1/system_top_system_e203_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_system_e203_0_0 || ORIG_REF_NAME==system_top_system_e203_0_0} -quiet] -quiet
 
-# IP: bd/system_top/ip/system_top_lcd_rgb_snake_0_0/system_top_lcd_rgb_snake_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_lcd_rgb_snake_0_0 || ORIG_REF_NAME==system_top_lcd_rgb_snake_0_0} -quiet] -quiet
-
 # IP: bd/system_top/ip/system_top_axi_lite_for_snake_0_0/system_top_axi_lite_for_snake_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_axi_lite_for_snake_0_0 || ORIG_REF_NAME==system_top_axi_lite_for_snake_0_0} -quiet] -quiet
-
-# IP: bd/system_top/ip/system_top_system_ila_0_0/system_top_system_ila_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_system_ila_0_0 || ORIG_REF_NAME==system_top_system_ila_0_0} -quiet] -quiet
 
 # IP: bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_top_auto_pc_2 || ORIG_REF_NAME==system_top_auto_pc_2} -quiet] -quiet

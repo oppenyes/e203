@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Sun Apr  6 10:37:06 2025
+//Date        : Sun Apr  6 11:11:10 2025
 //Host        : Lab running 64-bit major release  (build 9200)
 //Command     : generate_target system_top.bd
 //Design      : system_top
@@ -1287,7 +1287,7 @@ module s00_couplers_imp_1U10WOS
         .s_axi_wvalid(s00_couplers_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "system_top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system_top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_top.hwdef" *) 
+(* CORE_GENERATION_INFO = "system_top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system_top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=19,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_top.hwdef" *) 
 module system_top
    (CLK100MHZ,
     CLK32768KHZ,
@@ -1310,7 +1310,6 @@ module system_top
     fpga_rst,
     gpioA,
     gpioB,
-    key,
     lcd_clk,
     lcd_de,
     lcd_rgb,
@@ -1346,8 +1345,7 @@ module system_top
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.FPGA_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.FPGA_RST, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input fpga_rst;
   inout [31:0]gpioA;
   inout [31:0]gpioB;
-  input [3:0]key;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.LCD_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.LCD_CLK, CLK_DOMAIN system_top_lcd_rgb_snake_0_0_lcd_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) output lcd_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.LCD_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.LCD_CLK, CLK_DOMAIN system_top_axi_lite_for_snake_0_0_lcd_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) output lcd_clk;
   output lcd_de;
   inout [2:0]lcd_rgb;
   inout mcu_TCK;
@@ -1446,15 +1444,13 @@ module system_top
   wire axi_interconnect_0_M02_AXI_WREADY;
   wire [3:0]axi_interconnect_0_M02_AXI_WSTRB;
   wire axi_interconnect_0_M02_AXI_WVALID;
-  wire [31:0]axi_lite_for_snake_0_snake_cmd;
+  wire axi_lite_for_snake_0_lcd_clk;
+  wire axi_lite_for_snake_0_lcd_de;
   wire clk_in1_0_1;
   wire clk_wiz_0_clk_out2;
   wire clk_wiz_0_clk_out3;
   wire clk_wiz_0_locked;
   wire fpga_rst_1;
-  wire [3:0]key_0_1;
-  wire lcd_rgb_snake_0_lcd_clk;
-  wire lcd_rgb_snake_0_lcd_de;
   wire mcu_rst_1;
   wire [13:0]mig_7series_0_DDR3_ADDR;
   wire [2:0]mig_7series_0_DDR3_BA;
@@ -1529,9 +1525,8 @@ module system_top
   assign LED_tri_o[1:0] = axi_gpio_0_GPIO_TRI_O;
   assign clk_in1_0_1 = CLK100MHZ;
   assign fpga_rst_1 = fpga_rst;
-  assign key_0_1 = key[3:0];
-  assign lcd_clk = lcd_rgb_snake_0_lcd_clk;
-  assign lcd_de = lcd_rgb_snake_0_lcd_de;
+  assign lcd_clk = axi_lite_for_snake_0_lcd_clk;
+  assign lcd_de = axi_lite_for_snake_0_lcd_de;
   assign mcu_rst_1 = mcu_rst;
   assign qspi0_cs = system_e203_0_qspi0_cs;
   assign qspi0_sck = system_e203_0_qspi0_sck;
@@ -1668,7 +1663,11 @@ module system_top
         .S00_AXI_wstrb(system_e203_0_expl_axi_WSTRB),
         .S00_AXI_wvalid(system_e203_0_expl_axi_WVALID));
   system_top_axi_lite_for_snake_0_0 axi_lite_for_snake_0
-       (.s00_axi_aclk(clk_wiz_0_clk_out2),
+       (.CLK50MHZ(clk_wiz_0_clk_out3),
+        .lcd_clk(axi_lite_for_snake_0_lcd_clk),
+        .lcd_de(axi_lite_for_snake_0_lcd_de),
+        .lcd_rgb(lcd_rgb[2:0]),
+        .s00_axi_aclk(clk_wiz_0_clk_out2),
         .s00_axi_araddr(axi_interconnect_0_M02_AXI_ARADDR[4:0]),
         .s00_axi_aresetn(M01_ARESETN_1),
         .s00_axi_arprot(axi_interconnect_0_M02_AXI_ARPROT),
@@ -1688,8 +1687,7 @@ module system_top
         .s00_axi_wdata(axi_interconnect_0_M02_AXI_WDATA),
         .s00_axi_wready(axi_interconnect_0_M02_AXI_WREADY),
         .s00_axi_wstrb(axi_interconnect_0_M02_AXI_WSTRB),
-        .s00_axi_wvalid(axi_interconnect_0_M02_AXI_WVALID),
-        .snake_cmd(axi_lite_for_snake_0_snake_cmd));
+        .s00_axi_wvalid(axi_interconnect_0_M02_AXI_WVALID));
   system_top_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(clk_in1_0_1),
         .clk_out1(Net10),
@@ -1697,14 +1695,6 @@ module system_top
         .clk_out3(clk_wiz_0_clk_out3),
         .locked(clk_wiz_0_locked),
         .resetn(util_vector_logic_0_Res));
-  system_top_lcd_rgb_snake_0_0 lcd_rgb_snake_0
-       (.CLK50MHZ(clk_wiz_0_clk_out3),
-        .key(key_0_1),
-        .lcd_clk(lcd_rgb_snake_0_lcd_clk),
-        .lcd_de(lcd_rgb_snake_0_lcd_de),
-        .lcd_rgb(lcd_rgb[2:0]),
-        .rst_n(util_vector_logic_0_Res),
-        .snake_cmd(axi_lite_for_snake_0_snake_cmd));
   system_top_mig_7series_0_1 mig_7series_0
        (.aresetn(proc_sys_reset_1_peripheral_aresetn),
         .clk_ref_i(Net10),

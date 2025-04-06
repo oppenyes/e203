@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr  6 11:11:16 2025
+# Process ID: 28004
+# Current directory: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1
+# Command line: vivado.exe -log system_top_axi_lite_for_snake_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_axi_lite_for_snake_0_0.tcl
+# Log file: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1/system_top_axi_lite_for_snake_0_0.vds
+# Journal file: E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_top_axi_lite_for_snake_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/my_git/e203_zs/prj/ip_repo/axi_lite_for_snake_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/my_git/e203_zs/prj/ip_repo/axi_lite_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/my_git/e203_zs/user_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top system_top_axi_lite_for_snake_0_0 -part xc7a200tfbg484-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20448
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1189.523 ; gain = 50.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_lite_for_snake_0_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_lite_for_snake_0_0/synth/system_top_axi_lite_for_snake_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_lite_for_snake_v1_0' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/hdl/axi_lite_for_snake_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_lite_for_snake_v1_0_S00_AXI' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:426]
+INFO: [Synth 8-6157] synthesizing module 'lcd_rgb_snake' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/lcd_rgb_char.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_snake' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/key_led.v:2]
+	Parameter CNT_MAX bound to: 25'b1011111010111100001000000 
+INFO: [Synth 8-6155] done synthesizing module 'key_snake' (2#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/key_led.v:2]
+INFO: [Synth 8-6157] synthesizing module 'snake_top' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'snake' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake.v:1]
+	Parameter hbp bound to: 10'b0010010000 
+	Parameter vbp bound to: 10'b0000011111 
+	Parameter h_begin bound to: 100 - type: integer 
+	Parameter v_begin bound to: 300 - type: integer 
+	Parameter h_diff bound to: 100 - type: integer 
+	Parameter v_diff bound to: 240 - type: integer 
+	Parameter h_lose bound to: 256 - type: integer 
+	Parameter v_lose bound to: 224 - type: integer 
+	Parameter h_start bound to: 240 - type: integer 
+	Parameter v_start bound to: 134 - type: integer 
+	Parameter pass_diff bound to: 200 - type: integer 
+	Parameter length bound to: 20 - type: integer 
+WARNING: [Synth 8-6090] variable 'h_all' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake.v:333]
+WARNING: [Synth 8-6090] variable 'v_all' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake.v:334]
+WARNING: [Synth 8-6090] variable 'h_all' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake.v:340]
+WARNING: [Synth 8-6090] variable 'v_all' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake.v:349]
+INFO: [Synth 8-226] default block is never used [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake.v:461]
+INFO: [Synth 8-6155] done synthesizing module 'snake' (3#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake.v:1]
+INFO: [Synth 8-6157] synthesizing module 'word' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/word.v:1]
+	Parameter data bound to: 4096'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000111000000000000000000000000111000000000000000000001100000000001111000000000000000000000001111000000000000000001111000111100000011111000000000000000000000001111000000000000000000011110000000011111000000000000000000000011111000000000000000001111000111100000111100000000000000000000000011110111000000000000001111100000000111100000000000000000000000111100000000011000000011111001111100001110000000000000000000000000111101111100000000000011110000000001111000000000000000000000001111000000001111000000011110001111000111100001100000000000000110001111001111100000000001111000000000011110000110000111111111111111111111111111111000000111100011100001110000111100000000000011110011110001111100000000011110000000000111100011110000111000000000111100000000000000000000111100011111011111111111100111111111111110111100001111000000000111000011111111111111111110000000000000001111000000000000000000000011111111111110000000000000111000001111001111000001111000000011100011111100011110000000000000000000000011110000000000000001110001111111000011100000111000000000000011100001110000001111000000111000111100000111100000000000000111000000111100000111100000011111011001110001111111111111000000000001111000011111111111111000011100011110000001111000000000000001111111111111111111111000000011110110011100011111100111110000110000011111111111111111000000001111001111000000011110000000000000011110000011110000011100000000011111100111001100000011110000001111000111111111111000011000000111111111110000000111100011000000000111100000111100000111000000000111111001111111100011111000000001111001110000011110000111000000111111111000000001111001111000000001111000001111000001110000000000001100011101111000111100000000001111111100000111100011111000001110111100011111111111111111000000011110000011110000011100000000000111001111011100001111000000000001111111000000111000111110000000001110000011100000000000000000000111100000111100000111000000000001110011110111000011110000000000001111100000001110011111000000000111000000000000000000000000000001111111111111111111110000000000011100111001110000111101110000000001111000000011111111100000000011100000111110000000011100000000011110001111111000011100000000001110001110011111111111111110000000011111000000111111110000000001111111111111111111111111100000000111100111111111000111000000011111100011100111111011110000000000001111111000001111111000000000111111111000111100000001111000000001110001111111111000000000000111111000111001110000111100000000000011111110000001111100001100001111110000001111000000011100000000000000111111111111000000000000111110011100011100001111000000000001111111110000011110000011000001110000000011110000000111000000000000011110111101111000000000000111100111000111000011110000000000011100111100001111110000110000000000000001111100000001110000000000001111001111011111000000000001111011110001110000111100000000001110000111000111111110001100000000000111111111000000011100000000000111110011110011111000000000011110111000111100001111000000000111100001110111110111110011000000011111111011110000000111000000000011110000111100011111100000000111011110001110000011110000000001110000000011111000111111110001111111110000111100000001110000000001111000001111000011111111100001110111111111100000111100000000111000000001111000001111111100011111110000001111111111111100000001111100000011110000011111111000011111100111111001111111000000011100000001111100000001111111000011110000000011110000000111000000111100000000111100000001111000000001110000111100000111100000001110000000111100000000000111111000110000000000111100000001110000011110000000001111000000001100000000011000001100000000111000000000000000001100000000000000011110000000000000001111000000011100000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'word' (4#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/word.v:1]
+WARNING: [Synth 8-689] width (128) of port connection 'M' does not match port width (224) of module 'word' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake_top.v:46]
+INFO: [Synth 8-6157] synthesizing module 'word1' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/word1.v:1]
+	Parameter data bound to: 5120'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000000000000000111100000000000000000000000000001111000000000000000111100001111111111111111000000000000000000111001111000000000000000000000011111000000000000000011110000000000011110000000000000001100000111110111100000000000000011110000111111111111111100000000000000000011111111110000000000000000000001111100000000000000001111100011111111111111111110000011111000011111011110000000000000001111000011111111111111100000000000000000001111001111100000000000000000000011110000000000000000011111001111111111111111111000001111100001111001111000000000000000111100000111100000111110000001111111111100111100111110000000000111111111111111111111111100000000111110111111111111111111100000011111001111111111111111100000000011110000001111000011110000000111111111110111100001110000000000011111111111111111111111110000000001111000000001111000000000000001111100111111111111111110000011111111111100111100011111000000011111111110011110000000000110000001111111111111111111111111000000000111100111111111111111111000000011110011111111111111111000001111111111110001111011111000000000000001111011111111111111111000000111100001111000001111000000000000001100011111111111111111100000001111011110000111100000000000111111111111000111111111000000000000000111101111111111111111100000011110000111100000111100000000000000000001100001111000000110000000011001111000011110000000000011001111001100001111111000000000000000011110111110001111000000000001111000011110000011110000000000000000000000000111100000000000000000000011100001111000000000000000111100000000111111110000000000110001111111111000111100000000000111111111111111111111111100001111111001111111111111111111110000000000010000000111100000000000000011110000011111111111111100000111100111111111100011110000000000011111111111111111111111110000111111100111111111111111111111001111111101111111111111111111100000001111011111111110111111111100011111011111111110001111000110000001111111111111111111111111000011111110011111111111111111111100111111110111111111111111111110000000111111111111111110111111110000111101111111111111111111111000000111100001111000001111000000000001111000001111111111111110000011111111011111111111111111111000000011111101111001111000011110000001111111111111111111111111100000011110000111100000111100000000000111100000111111111111111000000000111100000011110111100000000001111111110000000111100000000000000111111101111110001111000110000001111000011111111111110000000000011110000011111111111111100000000011110000001111011110000000011111111100011111111111111110000000001111110001111000111100000000000111000001111111111111000000000001111000001111000000011110000000001111000000111101111000000000111111110001111111111111111000000000111110000111100011110000000000111100000111111111111100000000000111100000111111111111111000000000111100000011110111100000000011111111000111111111111111100000000001111100011110001111000000000011110111111111111111111100000000011110000011111111111111100000000011110000011110011110011100001100111100000000011110000000000000001111111001111111111111111000001111011111111111111111110000000001111001001111111111111110000000001111000011111001111001111100000011110000000001111000000000000000111111100111111111111111100000111101111111111111111110000000000111101110111100000001111000000000111100001111100111100111100000001111000000000111100000000000000111111111011111111111111110000011110000011110000111110000000000011111111111111111111111100000000011110001111100011111111110000000111101111111111111111111110000111110111111111000111100000000001111000001111100011111000000000001111111101111111111111110000000001111011111100001111111111000000011110111111111111111111111000111110011111111100011110000000000111100000011111011111000000000000111111100111111111111111000000001111111111100000011111111000000001111011111111111111111111100011111000111111110001111000000000111100000000111111111000000000000011111100011110000000111100000001111111111100000000000000000000000111100000000011110000000000011111000001001111000111100001100011110000000001111111000000000000011111100001111000000011110000001111111111111111000000001111100011111110000000001111000000000001111000000000111111111111111110011111000000011111111111000000000000111100000111100000111111000001111110011111111111111111111110001111111000000000111100000000000011000000000011111111111111111001111000011111111111111111111110000001100000011110000011111100000111110000011111111111111111110000111111000000000011110000000000000000000000001111000000000000001111111111111111100111111111111000000000000001111000000111110000000110000000000001111111111111000011110000000000001111000000000000000000000000111100000000000000001110111111110000000011111111000000000000000000000000011000000000000000000000000000000000000000000000000000000000111100000000000000000000000011110000000000000000000001110000000000000000011100 
+INFO: [Synth 8-6155] done synthesizing module 'word1' (5#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/word1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'snake_top' (6#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/lcd_driver.v:25]
+	Parameter H_SYNC_4342 bound to: 11'b00000101001 
+	Parameter H_BACK_4342 bound to: 11'b00000000010 
+	Parameter H_DISP_4342 bound to: 11'b00111100000 
+	Parameter H_FRONT_4342 bound to: 11'b00000000010 
+	Parameter H_TOTAL_4342 bound to: 11'b01000001101 
+	Parameter V_SYNC_4342 bound to: 11'b00000001010 
+	Parameter V_BACK_4342 bound to: 11'b00000000010 
+	Parameter V_DISP_4342 bound to: 11'b00100010000 
+	Parameter V_FRONT_4342 bound to: 11'b00000000010 
+	Parameter V_TOTAL_4342 bound to: 11'b00100011110 
+	Parameter H_SYNC_7084 bound to: 11'b00010000000 
+	Parameter H_BACK_7084 bound to: 11'b00001011000 
+	Parameter H_DISP_7084 bound to: 11'b01100100000 
+	Parameter H_FRONT_7084 bound to: 11'b00000101000 
+	Parameter H_TOTAL_7084 bound to: 11'b10000100000 
+	Parameter V_SYNC_7084 bound to: 11'b00000000010 
+	Parameter V_BACK_7084 bound to: 11'b00000100001 
+	Parameter V_DISP_7084 bound to: 11'b00111100000 
+	Parameter V_FRONT_7084 bound to: 11'b00000001010 
+	Parameter V_TOTAL_7084 bound to: 11'b01000001101 
+	Parameter H_SYNC_7016 bound to: 11'b00000010100 
+	Parameter H_BACK_7016 bound to: 11'b00010001100 
+	Parameter H_DISP_7016 bound to: 11'b10000000000 
+	Parameter H_FRONT_7016 bound to: 11'b00010100000 
+	Parameter H_TOTAL_7016 bound to: 11'b10101000000 
+	Parameter V_SYNC_7016 bound to: 11'b00000000011 
+	Parameter V_BACK_7016 bound to: 11'b00000010100 
+	Parameter V_DISP_7016 bound to: 11'b01001011000 
+	Parameter V_FRONT_7016 bound to: 11'b00000001100 
+	Parameter V_TOTAL_7016 bound to: 11'b01001111011 
+	Parameter H_SYNC_1018 bound to: 11'b00000001010 
+	Parameter H_BACK_1018 bound to: 11'b00001010000 
+	Parameter H_DISP_1018 bound to: 11'b10100000000 
+	Parameter H_FRONT_1018 bound to: 11'b00001000110 
+	Parameter H_TOTAL_1018 bound to: 11'b10110100000 
+	Parameter V_SYNC_1018 bound to: 11'b00000000011 
+	Parameter V_BACK_1018 bound to: 11'b00000001010 
+	Parameter V_DISP_1018 bound to: 11'b01100100000 
+	Parameter V_FRONT_1018 bound to: 11'b00000001010 
+	Parameter V_TOTAL_1018 bound to: 11'b01100110111 
+	Parameter H_SYNC_4384 bound to: 11'b00010000000 
+	Parameter H_BACK_4384 bound to: 11'b00001011000 
+	Parameter H_DISP_4384 bound to: 11'b01100100000 
+	Parameter H_FRONT_4384 bound to: 11'b00000101000 
+	Parameter H_TOTAL_4384 bound to: 11'b10000100000 
+	Parameter V_SYNC_4384 bound to: 11'b00000000010 
+	Parameter V_BACK_4384 bound to: 11'b00000100001 
+	Parameter V_DISP_4384 bound to: 11'b00111100000 
+	Parameter V_FRONT_4384 bound to: 11'b00000001010 
+	Parameter V_TOTAL_4384 bound to: 11'b01000001101 
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (7#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/lcd_driver.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_rgb_snake' (8#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/lcd_rgb_char.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'axi_lite_for_snake_v1_0_S00_AXI' (9#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/hdl/axi_lite_for_snake_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'axi_lite_for_snake_v1_0' (10#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/hdl/axi_lite_for_snake_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_lite_for_snake_0_0' (11#1) [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ip/system_top_axi_lite_for_snake_0_0/synth/system_top_axi_lite_for_snake_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1257.574 ; gain = 118.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1257.574 ; gain = 118.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1257.574 ; gain = 118.297
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1257.574 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1368.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1368.344 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1368.344 ; gain = 229.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1368.344 ; gain = 229.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1368.344 ; gain = 229.066
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'color_reg' [e:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.gen/sources_1/bd/system_top/ipshared/8411/src/snake.v:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1368.344 ; gain = 229.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   13 Bit       Adders := 22    
+	   4 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 27    
+	   3 Input   11 Bit       Adders := 2     
+	   4 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	              100 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   3 Input  100 Bit        Muxes := 1     
+	   2 Input  100 Bit        Muxes := 6     
+	   4 Input  100 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 4     
+	   4 Input   24 Bit        Muxes := 1     
+	   4 Input   11 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 6     
+	   2 Input   10 Bit        Muxes := 20    
+	   4 Input   10 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 5     
+	   4 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 8     
+	   4 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   6 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   6 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   5 Input    2 Bit        Muxes := 2     
+	  11 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 20    
+	   5 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 2     
+	  13 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1370.980 ; gain = 231.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++----------------------------------+------------+---------------+----------------+
+|Module Name                       | RTL Object | Depth x Width | Implemented As | 
++----------------------------------+------------+---------------+----------------+
+|word                              | p_0_out    | 32x114        | LUT            | 
+|word1                             | p_0_out    | 32x124        | LUT            | 
+|system_top_axi_lite_for_snake_0_0 | p_0_out    | 32x114        | LUT            | 
+|system_top_axi_lite_for_snake_0_0 | p_0_out    | 32x124        | LUT            | 
++----------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1370.980 ; gain = 231.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1370.980 ; gain = 231.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1433.363 ; gain = 294.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'axi_lite_for_snake_v1_0_S00_AXI_insti_0' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'axi_lite_for_snake_v1_0_S00_AXI_insti_1' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.203 ; gain = 308.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.203 ; gain = 308.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.203 ; gain = 308.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.203 ; gain = 308.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.203 ; gain = 308.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.203 ; gain = 308.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   160|
+|2     |LUT1   |    13|
+|3     |LUT2   |   307|
+|4     |LUT3   |   196|
+|5     |LUT4   |   390|
+|6     |LUT5   |   694|
+|7     |LUT6   |  1219|
+|8     |MUXF7  |    14|
+|9     |MUXF8  |     2|
+|10    |FDCE   |    70|
+|11    |FDPE   |     4|
+|12    |FDRE   |   396|
+|13    |FDSE   |    29|
+|14    |LDC    |     1|
+|15    |LDP    |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.203 ; gain = 308.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1448.203 ; gain = 198.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.203 ; gain = 308.926
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1458.832 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 178 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1458.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 1 instance 
+  LDP => LDPE: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 6 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1458.832 ; gain = 319.555
+INFO: [Common 17-1381] The checkpoint 'E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1/system_top_axi_lite_for_snake_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Desktop/my_git/e203_zs/prj/sys_top_bd/sys_top_bd.runs/system_top_axi_lite_for_snake_0_0_synth_1/system_top_axi_lite_for_snake_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_top_axi_lite_for_snake_0_0_utilization_synth.rpt -pb system_top_axi_lite_for_snake_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  6 11:11:53 2025...
